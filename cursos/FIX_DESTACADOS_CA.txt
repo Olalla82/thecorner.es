@@ -1,0 +1,27 @@
+// Cursos destacats: usar mateixa lògica que llistat normal (CONSORCI només g.mostrar_web, FOAP c.mostrar_web O g.mostrar_web)
+$query_destacados = "
+    SELECT DISTINCT
+        c.id as id_curs, 
+        c.nom_comercial,
+        TRIM(SUBSTRING_INDEX(c.nom_comercial, '|', -1)) as nom_curs,
+        g.curs_destacat AS destacat,
+        g.id as id_grup,
+        g.data_inici,
+        g.data_final,
+        c.tipus_subvencionada,
+        c.especialitat_formativa,
+        g.modalitat,
+        saf.consorci_soc
+    FROM gen_cursos c 
+    INNER JOIN gen_grups g ON g.curs = c.id
+    LEFT JOIN soc_accions_formatives saf ON saf.id = g.soc_accio_formativa
+    WHERE c.tipus_subvencionada IN ('FOAP', 'CONSORCI')
+    AND g.curs_destacat = 1
+    AND g.data_final >= CURDATE()
+    AND (
+      (saf.consorci_soc = 1 AND g.mostrar_web = 1) OR
+      (COALESCE(saf.consorci_soc, 0) != 1 AND (c.mostrar_web = 1 OR g.mostrar_web = 1))
+    )
+    ORDER BY g.data_inici ASC
+    LIMIT 3
+";

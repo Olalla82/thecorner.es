@@ -1,0 +1,52 @@
+{
+    "id": 1,
+    "name": "package",
+    "hash": "1mnf1f55W8689c201ee6fd9",
+    "name_hash": "package_1mnf1f55W8689c201ee6fd9",
+    "status": 10,
+    "scan_file": null,
+    "site_url": "https:\/\/thecorner.es",
+    "template_id": "full_site",
+    "filter_exts": null,
+    "filter_files": null,
+    "filter_dirs": null,
+    "filter_tables": null,
+    "store_path": "\/home\/customer\/www\/thecorner.es\/public_html\/wp-content\/njt-fastdup\/packages",
+    "store_url": "https:\/\/thecorner.es\/wp-content\/njt-fastdup\/packages\/",
+    "store_path_temp": "\/home\/customer\/www\/thecorner.es\/public_html\/wp-content\/njt-fastdup\/tmp",
+    "Archive": {
+        "is_filter": 0,
+        "export_onlydb": false,
+        "filter_exts": [],
+        "filter_dirs": [
+            "\/home\/customer\/www\/thecorner.es\/public_html\/wp-content\/njt-fastdup"
+        ],
+        "filter_files": [
+            "\/home\/customer\/www\/thecorner.es\/public_html\/php_errorlog_old"
+        ],
+        "read_checks": [],
+        "recursive_links": [],
+        "addon_sites": [],
+        "file": "package_1mnf1f55W8689c201ee6fd9_archive.zip",
+        "sql_path": null,
+        "zip_archive": null,
+        "zip_path": null,
+        "compress_dir": "\/home\/customer\/www\/thecorner.es\/public_html",
+        "scan_path": null,
+        "unreadable_log": [],
+        "dir_exclude_log": [],
+        "recursive_links_log": [],
+        "exts_exclude_log": [],
+        "add_file_error_log": [],
+        "file_exclude_log": []
+    },
+    "Database": {
+        "is_filter": false,
+        "filter_tables": [],
+        "file": "package_1mnf1f55W8689c201ee6fd9_database.sql",
+        "prefix": "wp_"
+    },
+    "created": "2025-08-13 05:18:22",
+    "njt_fastdup_archive_name": "wp-content\/njt-fastdup",
+    "njt_fastdup_dir_plugin": "wp-content\/plugins"
+}

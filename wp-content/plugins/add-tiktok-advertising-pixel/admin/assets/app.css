@@ -1,0 +1,286 @@
+:root {
+    --ttap-gradient: linear-gradient(to right, hsl(150 100% 50%), hsl(190 100% 60%));
+    --ttap-gradient-hov: linear-gradient(to right, hsl(190 100% 60%), hsl(150 100% 50%));
+    --ttap-bg1: rgba(255, 255, 255, 0.6);
+    --ttap-color1: #13F2AF;
+    --ttap-color1-hov: rgb(0, 204, 153);
+}
+
+.ttap-container  {
+    font-family: 'Roboto', sans-serif;
+    line-height: 150%;
+    background-color: var(--ttap-bg1);
+    border: 3px solid var(--ttap-color1);
+    margin: 20px 20px 0 0;
+    padding-bottom: 20px;
+}
+.wrap.container-fluid.ttap-container .ttap-logo {
+    font-size: 24px;
+    font-weight: 700;
+    padding: 1em 0;
+}
+/*****************************************
+                TABS
+*****************************************/
+.ttap-tab.nav-tab {
+    padding: 10px 30px;
+    font-size: 15px;
+    background-color: #FFF;
+    color: #333;
+    border: none;
+}
+.ttap-tab.nav-tab:hover, .ttap-tab.nav-tab.nav-tab-active {
+    background-color: var(--ttap-color1);
+    color: #fff;
+    border: none;
+}
+.nav-tab-wrapper, .wrap h2.nav-tab-wrapper, h1.nav-tab-wrapper {
+    border-bottom: 5px solid var(--ttap-color1);
+}
+
+/*****************************************
+                Segment
+*****************************************/
+.ttap-segment {
+    position: relative;
+    padding: 30px;
+    background-color: #fff;
+    border: 1px solid var(--ttap-color1);
+    /* box-shadow: 3px 3px 0 0 var(--ttap-color1); */
+    margin: 20px 0;
+}
+.ttap-segment::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--ttap-gradient);
+    z-index: -1;
+    transform: translate(5px, 5px);
+}
+.ttap-segment h2 {
+    position: relative;
+    display: inline-block;
+    z-index: 0;
+    margin: auto;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+.ttap-segment h2::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--ttap-gradient);
+    z-index: -1;
+    transform: translateY(120%) scale(1.02);
+    height: 50%;
+    opacity: 0.5;
+  }
+/*****************************************
+                Form
+*****************************************/
+.ttap-container .ttap-input,
+.ttap-container .ttap-select,
+.ttap-container .ttap-textarea {
+    width: 100%;
+    padding: 2px 10px;
+    color: #333;
+    border: 1px solid var(--ttap-color1);
+    border-radius: 0;
+}
+.ttap-container .ttap-textarea {
+    height:120px;
+}
+.ttap-container .ttap-disabled {
+    background-color: #f9fffe;
+}
+
+.ttap-container .ttap-submit, .ttap-btn {
+    display: block;
+    width: 100%;
+    background-color: var(--ttap-color1);
+    color: #fff;
+    border: 0;
+    padding: 8px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.ttap-container .ttap-submit:hover, .ttap-btn:hover {
+    background-color: var(--ttap-color1-hov);
+    color: #fff;
+    cursor: pointer;
+}
+
+/*****************************************
+            TOGGLE CHECKBOX
+*****************************************/
+.ttap-container .ttap-toggle {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 26px;
+}
+  
+.ttap-container .ttap-toggle input {
+    display:none;
+}
+  
+.ttap-container .ttap-toggle-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.ttap-container .ttap-toggle-slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 24px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.ttap-container input:checked + .ttap-toggle-slider {
+    background-color: var(--ttap-color1);
+}
+
+.ttap-container input:focus + .ttap-toggle-slider {
+    box-shadow: 0 0 1px var(--ttap-color1);
+}
+
+.ttap-container input:checked + .ttap-toggle-slider:before {
+    -webkit-transform: translateX(28px);
+    -ms-transform: translateX(28px);
+    transform: translateX(28px);
+}
+  
+.ttap-container .ttap-toggle-slider.ttap-toggle-round {
+    border-radius: 0px;
+}
+
+.ttap-container .ttap-toggle-slider.ttap-toggle-round:before {
+    border-radius: 1px;
+}
+/*****************************************
+                ALERTS
+*****************************************/
+.ttap-alert {
+    padding: 10px;
+    padding-left: 15px;
+    border: 1px solid #3b8fd2;
+    border-left: 4px solid #3b8fd2;
+    margin: 10px 0 5px;
+    line-height: 150%;
+    color: #fff;
+}
+.ttap-alert a {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 1px dotted;
+}
+.ttap-alert.ttap-info {
+    background-color: #47A8F5;
+}
+.ttap-alert.ttap-success {
+    background-color: var(--ttap-color1);
+    border-color: var(--ttap-color1-hov);
+}
+.ttap-alert.ttap-note a {
+    color: #333;
+}
+.ttap-alert.ttap-note {
+    color: #333;
+    background-color: #fff;
+    border-color: #333;
+}
+.ttap-alert.ttap-note .closebtn {
+    color: #333;
+}
+.closebtn {
+    color: white;
+    float: right;
+    font-size: 22px;
+    line-height: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.closebtn:hover {
+    color: black;
+}
+.ttap-comment {
+    font-size: 12px;
+    margin-bottom: 0;
+    color: #888;
+}
+
+.ttap-tiktokicon {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 100;
+}
+.ttap-tiktokicon img {
+    width: 80px;
+    height: 80px;
+}
+
+
+.ttap-growth table {
+    width: 46%;
+    background: #fff;
+    border: 1px solid #ccc;
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+.ttap-growth table a {
+    font-weight: 500;
+    text-decoration: none;
+}
+.ttap-growth table td {
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+}
+
+.ttap-growth {
+    margin-top: 20px;
+}
+.ttap-growth:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.ttap-growth ul {
+    width: calc(25% - 10px);
+    float: left;
+    background-color: #fff;
+    margin: 5px;
+    padding: 10px 0 0;
+}
+.ttap-growth ul li {
+    padding: 5px 15px 15px;
+    border-bottom: 1px solid #eee;
+}
+.ttap-growth ul li a {
+    text-decoration: none;
+}
+.ttap-growth ul li:last-of-type {
+    padding-bottom: 10px;
+    border-bottom: 0px;
+}
+.ttap-growth ul .ttap-btn {
+	border-radius: 0!important;
+}

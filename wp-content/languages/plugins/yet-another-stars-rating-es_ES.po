@@ -1,0 +1,1843 @@
+# Translation of Plugins - YASR &#8211; Yet Another Star Rating Plugin for WordPress - Stable (latest release) in Spanish (Spain)
+# This file is distributed under the same license as the Plugins - YASR &#8211; Yet Another Star Rating Plugin for WordPress - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2023-09-29 19:30:33+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: es\n"
+"Project-Id-Version: Plugins - YASR &#8211; Yet Another Star Rating Plugin for WordPress - Stable (latest release)\n"
+
+#. Author URI of the plugin
+#: yet-another-stars-rating.php
+msgid "https://yetanotherstarsrating.com/?utm_source=wp_repo&utm_medium=link&utm_campaign=author_url"
+msgstr "https://yetanotherstarsrating.com/?utm_source=wp_repo&utm_medium=link&utm_campaign=author_url"
+
+#. Author of the plugin
+#: yet-another-stars-rating.php
+msgid "YetAnotherStarsRating.com"
+msgstr "YetAnotherStarsRating.com"
+
+#: includes/shortcodes/classes/YasrShortcodesAjax.php:358
+msgid "This post doesn't exists or is private"
+msgstr "Esta entrada no existe o es privada"
+
+#: includes/shortcodes/classes/YasrShortcodesAjax.php:790
+msgid "You can't rate again"
+msgstr "No puedes volver a valorarlo"
+
+#: admin/editor/YasrMetaboxBelowEditor.php:109
+msgid "Schema"
+msgstr "Schema"
+
+#: admin/settings/classes/YasrSettingsStyle.php:251
+msgid "%s (You need a plugin like %s to upload it). %s Aspect ratio must be 1:1 and width x height at least 32x32"
+msgstr "%s (Necesitas un plugin como %s para subirlo). %s La relación de aspecto debe ser 1:1 y el ancho x alto de al menos 32x32"
+
+#: admin/settings/classes/YasrSettingsStyle.php:225
+msgid "\"Active\" image"
+msgstr "Imagen «activa»"
+
+#: admin/settings/classes/YasrSettingsStyle.php:220
+#: admin/settings/classes/YasrSettingsStyle.php:245
+msgid "Upload"
+msgstr "Subir"
+
+#: admin/settings/classes/YasrSettingsStyle.php:199
+msgid "\"Off\" image"
+msgstr "Imagen «inactiva»"
+
+#: admin/settings/classes/YasrSettingsStyle.php:194
+msgid "Upload Custom Icons"
+msgstr "Subir iconos personalizados"
+
+#: admin/settings/classes/YasrSettingsStyle.php:60
+msgid "Choose Stars Set %s"
+msgstr "Elegir conjunto de estrellas %s"
+
+#: admin/settings/classes/YasrSettingsStyle.php:52
+msgid "Custom Star Set %s"
+msgstr "Conjunto personalizado de estrellas %s"
+
+#: admin/settings/classes/YasrSettingsDescriptions.php:145
+msgid "This only applies to multi criteria rating"
+msgstr "Esto solo se aplica a la puntuación de varios criterios"
+
+#: includes/shortcodes/classes/YasrShortcodesAjax.php:793
+msgid "You can't rate again for this post"
+msgstr "No puedes valorar de nuevo esta entrada"
+
+#: includes/shortcodes/classes/YasrShortcodesAjax.php:434
+msgid "Error, most probably you submitted the wrong set"
+msgstr "Error, lo más probable es que ya hayas enviado el conjunto equivocado"
+
+#: includes/classes/YasrDB.php:1425
+msgid "Error Establishing A Database Connection"
+msgstr "Error al establecer una conexión con la base de datos"
+
+#: admin/settings/classes/YasrStatsExport.php:136
+msgid "Unlock with premium"
+msgstr "Desbloquear con la versión premium"
+
+#: admin/settings/classes/YasrStatsExport.php:122
+msgid "Export"
+msgstr "Exportar"
+
+#: admin/settings/classes/YasrStatsExport.php:83
+msgid "Save all author ratings."
+msgstr "Guardar todas las valoraciones del autor."
+
+#: admin/settings/classes/YasrStatsExport.php:65
+#: admin/settings/classes/YasrStatsExport.php:74
+msgid "Export all ratings saved through the shortcode "
+msgstr "Exporta todas las valoraciones mediante el shortcode "
+
+#: admin/settings/classes/YasrStatsExport.php:46
+msgid "Upload folder is not writable, data can't be saved!"
+msgstr "La carpeta de subidas no tiene permisos de escritura, ¡no se pueden guardar los datos!"
+
+#: admin/settings/classes/YasrStatsExport.php:43
+msgid "The files are deleted automatically after 7 days."
+msgstr "Los archivos de borran automáticamente después de 7 días."
+
+#: admin/settings/classes/YasrStatsExport.php:41
+msgid "All the .csv files are saved into"
+msgstr "Todos los archivos .csv se guardan en"
+
+#: admin/settings/classes/YasrStatsExport.php:37
+msgid "Export Data"
+msgstr "Exportar datos"
+
+#: admin/settings/classes/YasrSettingsRightColumn.php:41
+#: admin/settings/classes/YasrStats.php:56
+msgid "Export data"
+msgstr "Exportar datos"
+
+#: includes/blocks/display-posts/block.json
+msgctxt "block keyword"
+msgid "order"
+msgstr "orden"
+
+#: includes/blocks/display-posts/block.json
+msgctxt "block keyword"
+msgid "posts"
+msgstr "entradas"
+
+#: includes/blocks/display-posts/block.json
+msgctxt "block description"
+msgid "Display your posts according to YASR ratings. This shortcode works only on pages."
+msgstr "Muestra tus entradas según las valoraciones de YASR. Este shortcode solo funciona en páginas."
+
+#: includes/blocks/display-posts/block.json
+msgctxt "block title"
+msgid "Yasr: Order posts by rating"
+msgstr "Yasr: Ordenar entradas por valoración"
+
+#. translators: %s: Post title. Only visible to screen readers.
+#: templates/content.php:50
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Sigue leyendo %s <span class=\"meta-nav\">&rarr;</span>"
+
+#: templates/content.php:42
+msgid "Edit"
+msgstr "Editar"
+
+#: includes/shortcodes/classes/YasrDisplayPosts.php:189
+msgid "No posts found"
+msgstr "No se han encontrado entradas"
+
+#: admin/settings/classes/YasrSettingsDescriptions.php:56
+msgid ""
+"Here you can order your posts by ratings (please note that this may not work with all themes)\n"
+"            and enable/disable ratings in your archive pages (homepage, categories, tags, etc.)"
+msgstr ""
+"Aquí puedes ordenar tus entradas por valoraciones (por favor, ten en cuenta que puede que esto no funcione con todos los temas)\n"
+"y activar/desactivar valoraciones en tus páginas de archivo (portada, categorías, etiquetas, etc.)"
+
+#: admin/settings/classes/YasrSettingsGeneral.php:398
+msgid "Tags"
+msgstr "Etiquetas"
+
+#: admin/settings/classes/YasrSettingsGeneral.php:387
+msgid "Categories"
+msgstr "Categorías"
+
+#: admin/settings/classes/YasrSettingsGeneral.php:376
+msgid "Home Page"
+msgstr "Página de inicio"
+
+#: admin/settings/classes/YasrSettingsGeneral.php:365
+msgid "Apply to:"
+msgstr "Aplicar a:"
+
+#: admin/settings/classes/YasrSettingsGeneral.php:352
+msgid "Sort by Authors' rating"
+msgstr "Ordenar por valoración del autor"
+
+#: admin/settings/classes/YasrSettingsGeneral.php:351
+msgid "Sort by Visitors' average rating"
+msgstr "Ordenar por valoración media de los visitantes"
+
+#: admin/settings/classes/YasrSettingsGeneral.php:350
+msgid "Sort by Visitors' ratings count"
+msgstr "Ordenar por contador de valoraciones de los visitantes"
+
+#: admin/settings/classes/YasrSettingsGeneral.php:345
+msgid "Do you want to order posts by ratings?"
+msgstr "¿Quieres ordenar las entradas por sus valoraciones?"
+
+#: admin/settings/classes/YasrSettingsRightColumn.php:161
+msgid "Donations"
+msgstr "Donaciones"
+
+#: admin/settings/classes/YasrSettingsRightColumn.php:147
+msgid "If you want, you can also help with a donation, thanks!"
+msgstr "Si quieres, también puedes ayudar con un donativo, ¡gracias!"
+
+#: admin/settings/classes/YasrSettingsRightColumn.php:145
+msgid "I can still work on it only thanks to all the amazing people like you who bought the PRO version over the years."
+msgstr "Puedo seguir trabajando en ello sólo gracias a toda las personas geniales como tú que han comprado la versión PRO durante años."
+
+#: admin/settings/classes/YasrSettingsRightColumn.php:143
+msgid "If you don't need the pro version, you may consider to make a donation, thanks!"
+msgstr "Si no necesitas la versión pro, podrías plantearte hacer un donativo, ¡gracias!"
+
+#: admin/settings/classes/YasrSettingsRightColumn.php:141
+msgid "I can still work on it only thanks to all the people who bought the PRO version over the years."
+msgstr "Puedo seguir trabajando en ello sólo gracias a toda las personas que han comprado la versión PRO durante años."
+
+#: admin/settings/classes/YasrSettingsRightColumn.php:136
+msgid "First version of YASR was released in 2014."
+msgstr "La primera versión de YASR se lanzó en 2014."
+
+#: admin/editor/YasrEditorHooks.php:603
+msgid "Wrong nonce"
+msgstr "Nonce incorrecto"
+
+#: admin/settings/classes/YasrSettingsMultiset.php:638
+msgid "Multi Set name must be shorter than 40 chars"
+msgstr "El nombre del conjunto múltiple debe tener menos de 40 caracteres"
+
+#: admin/settings/classes/YasrSettingsMultiset.php:633
+msgid "Multi Set name must be longer than 3 chars"
+msgstr "El nombre del conjunto múltiple debe tener más de 3 caracteres"
+
+#: admin/settings/classes/YasrSettingsMultiset.php:466
+msgid "This operation %s can't be %s undone."
+msgstr "Esta operación %s no se puede %s deshacer."
+
+#: admin/settings/classes/YasrSettingsMultiset.php:462
+msgid "If you remove something you will remove all the votes for that set or field."
+msgstr "Si eliminas algo eliminarás todos los votos de ese conjunto o campo."
+
+#: admin/settings/classes/YasrSettingsMultiset.php:285
+msgid "Select Set:"
+msgstr "Seleccionar conjunto:"
+
+#: admin/settings/classes/YasrSettingsRightColumn.php:220
+#: admin/settings/classes/YasrSettingsRightColumn.php:251
+msgid "Install"
+msgstr "Instalar"
+
+#: admin/settings/classes/YasrSettingsRightColumn.php:40
+msgid "Fake ratings"
+msgstr "Valoraciones falsas"
+
+#: admin/settings/classes/YasrImportRatingPlugins.php:941
+msgid "You've already imported %s data on"
+msgstr "Ya has importado datos %s en"
+
+#: admin/settings/classes/YasrImportRatingPlugins.php:910
+msgid ""
+"The only way to be sure to get ALL data is, for every single post or page, getting the total \n"
+"            number of votes, and save the current average as the rating for all votes. %s\n"
+"            E.g. A post has 130 votes with an average of 4.4: since is impossible to know the single rating,\n"
+"            YASR will import 130 votes with an average of 4.4. %s\n"
+"            Because of this, statistics in front end will be disabled for all post or page published before \n"
+"            the import."
+msgstr ""
+"El único modo de asegurarse de obtener TODOS los datos es, para una entrada o página única, obtener el total\n"
+"del número de votos, y guardar el promedio actual como la valoración de todos los votos. %s\n"
+"P.ej. Una entrada tiene 130 votos con un promedio de 4.4: como es imposible conocer la valoración individual,\n"
+"YASR importará 130 votos con un promedio de 4.4. %s\n"
+"A causa de esto, las estadísticas en portada se desactivarán para toda entrada o página publicada antes de\n"
+"la importación."
+
+#: admin/settings/classes/YasrImportRatingPlugins.php:904
+msgid ""
+"If you use a rating scale different than 1 to 5, all ratings will be \n"
+"            converted to work with a 5 ratings star scale."
+msgstr ""
+"Si usas una escala de valoración que sea distinta que de 1 a 5, todas las valoraciones se\n"
+"convertirán para que funcionen con una escala de valoración de 5 estrellas."
+
+#: admin/settings/classes/YasrImportRatingPlugins.php:898
+msgid "%s Please note: %s KK Star Ratings doesn't save information about the single vote."
+msgstr "%s Por favor, ten en cuenta: %s KK Star Ratings no guarda información sobre cada voto único."
+
+#: admin/settings/classes/YasrImportRatingPlugins.php:890
+msgid "%s Please note: %s depending on the settings, %s may save data in different ways."
+msgstr "%s Por favor, ten en cuenta: %s dependiendo de los ajustes, %s puede guardar datos de diferentes modos."
+
+#: admin/settings/classes/YasrImportRatingPlugins.php:871
+msgid "Plugin found:"
+msgstr "Plugin encontrado:"
+
+#: admin/settings/classes/YasrSettingsDescriptions.php:181
+msgid ""
+"A Multi-criteria set allows you to insert a rating for each aspect of your review (up to nine rows).\n"
+"                    %s Once you've saved it, you can insert \n"
+"                    the rates while typing your article in the %s box below the editor.%s %s\n"
+"                    See it in action %s here%s ."
+msgstr ""
+"Un conjunto de múltiples criterios te permite insertar una valoración para cada aspecto de tu reseña (hasta nueve filas).\n"
+"\t%s Una vez hayas guardado, puedes insertar\t\t\t\t\n"
+"las valoraciones mientras tecleas tu artículo en la caja %s de debajo del editor. %s %s\n"
+"Míralo en acción %s aquí%s."
+
+#: admin/settings/classes/YasrSettingsDescriptions.php:178
+msgid "Multi-criteria based rating system."
+msgstr "Sistema de valoración basado en múltiples criterios."
+
+#: admin/settings/classes/YasrSettingsMultiset.php:134
+#: admin/settings/classes/YasrSettingsMultiset.php:375
+msgid "Add new Criteria"
+msgstr "Añadir nuevo criterio"
+
+#: admin/settings/classes/YasrSettingsMultiset.php:109
+msgid "Unique name to identify your set."
+msgstr "Nombre único para identificar tu conjunto."
+
+#: admin/settings/classes/YasrSettingsMultiset.php:100
+msgid "Add new Multi Set"
+msgstr "Añadir nuevo conjunto múltiple"
+
+#: admin/editor/YasrMetaboxBelowEditor.php:140
+#: admin/settings/classes/YasrSettings.php:233
+msgid "Multi Criteria"
+msgstr "Criterios múltiples"
+
+#: includes/blocks/visitor-votes/block.json
+msgctxt "block keyword"
+msgid "stars"
+msgstr "estrellas"
+
+#: includes/blocks/visitor-votes/block.json
+msgctxt "block keyword"
+msgid "votes"
+msgstr "votos"
+
+#: includes/blocks/visitor-votes/block.json
+msgctxt "block keyword"
+msgid "visitor"
+msgstr "visitante"
+
+#: includes/blocks/visitor-votes/block.json
+msgctxt "block description"
+msgid "Insert the ability for your visitors to vote."
+msgstr "Inserta la posibilidad de que voten tus visitantes."
+
+#: includes/blocks/visitor-votes/block.json
+msgctxt "block title"
+msgid "Yasr: Visitor Votes"
+msgstr "Yasr: Votos de visitantes"
+
+#: includes/blocks/user-rate-history/block.json
+msgctxt "block keyword"
+msgid "history"
+msgstr "historial"
+
+#: includes/blocks/user-rate-history/block.json
+msgctxt "block keyword"
+msgid "list"
+msgstr "lista"
+
+#: includes/blocks/user-rate-history/block.json
+msgctxt "block keyword"
+msgid "ratings"
+msgstr "valoraciones"
+
+#: includes/blocks/user-rate-history/block.json
+msgctxt "block description"
+msgid "If user is logged in, this shortcode shows a list of all the ratings provided by the user on [yasr_visitor_votes] shortcode"
+msgstr "Si el usuario está conectado, este shortcode muestra una lista de todas las valoraciones proporcionadas por el usuario en el shortcode [yasr_visitor_votes]."
+
+#: includes/blocks/user-rate-history/block.json
+msgctxt "block title"
+msgid "Yasr: User Rate History"
+msgstr "Yasr: Historial de valoraciones del usuario"
+
+#: includes/blocks/ranking-visitor-votes/block.json
+msgctxt "block title"
+msgid "Yasr: Ranking by visitors votes"
+msgstr "Yasr: Clasificación por votos de los visitantes"
+
+#: includes/blocks/ranking-users/block.json
+msgctxt "block keyword"
+msgid "visitors"
+msgstr "visitantes"
+
+#: includes/blocks/ranking-users/block.json
+msgctxt "block description"
+msgid "This ranking shows the most active users, displaying the login name if logged in or \"Anonymous\" if not"
+msgstr "Esta clasificación muestra los usuarios más activos, mostrando el nombre de acceso si están conectados o «Anónimo» si no lo están."
+
+#: includes/blocks/ranking-users/block.json
+msgctxt "block title"
+msgid "Yasr: Most Active Visitors"
+msgstr "Yasr: Visitantes más activos"
+
+#: includes/blocks/ranking-reviewers/block.json
+msgctxt "block keyword"
+msgid "authors"
+msgstr "autores"
+
+#: includes/blocks/ranking-reviewers/block.json
+#: includes/blocks/ranking-users/block.json
+#: includes/blocks/ranking-visitor-votes/block.json
+msgctxt "block keyword"
+msgid "most"
+msgstr "más"
+
+#: includes/blocks/ranking-reviewers/block.json
+msgctxt "block description"
+msgid "This ranking shows the most active reviewers on your site."
+msgstr "Esta clasificación muestra los usuarios más activos en tu sitio."
+
+#: includes/blocks/ranking-reviewers/block.json
+msgctxt "block title"
+msgid "Yasr: Most Active Authors"
+msgstr "Yasr: Autores más activos"
+
+#: includes/blocks/ranking-overall-rating/block.json
+#: includes/blocks/ranking-reviewers/block.json
+#: includes/blocks/ranking-users/block.json
+#: includes/blocks/ranking-visitor-votes/block.json
+msgctxt "block keyword"
+msgid "chart"
+msgstr "gráfico"
+
+#: includes/blocks/ranking-overall-rating/block.json
+#: includes/blocks/ranking-reviewers/block.json
+#: includes/blocks/ranking-users/block.json
+#: includes/blocks/ranking-visitor-votes/block.json
+msgctxt "block keyword"
+msgid "highest"
+msgstr "mayor"
+
+#: includes/blocks/ranking-overall-rating/block.json
+#: includes/blocks/ranking-reviewers/block.json
+#: includes/blocks/ranking-users/block.json
+#: includes/blocks/ranking-visitor-votes/block.json
+msgctxt "block keyword"
+msgid "ranking"
+msgstr "clasificación"
+
+#: includes/blocks/ranking-overall-rating/block.json
+msgctxt "block title"
+msgid "Yasr: Ranking by overall rating"
+msgstr "Yasr: Clasificación por valoración general"
+
+#: includes/blocks/overall-rating/block.json
+msgctxt "block keyword"
+msgid "overall"
+msgstr "global"
+
+#: includes/blocks/overall-rating/block.json
+msgctxt "block keyword"
+msgid "author"
+msgstr "autor"
+
+#: includes/blocks/display-posts/block.json
+#: includes/blocks/overall-rating/block.json
+#: includes/blocks/visitor-votes/block.json
+msgctxt "block keyword"
+msgid "rating"
+msgstr "valoración"
+
+#: includes/blocks/overall-rating/block.json
+msgctxt "block description"
+msgid "Insert the author rating."
+msgstr "Inserta la valoración del autor."
+
+#: includes/blocks/overall-rating/block.json
+msgctxt "block title"
+msgid "Yasr: Overall Rating"
+msgstr "Yasr: Valoración global"
+
+#: includes/classes/YasrScriptsLoader.php:78
+msgid "Rating"
+msgstr "Valoración"
+
+#: admin/editor/YasrEditorHooks.php:431
+msgid ""
+"If user is logged in, this shortcode shows a list of all the ratings \n"
+"                                provided by the user on [yasr_visitor_votes] shortcode."
+msgstr ""
+"Si el usuario está conectado, este shortcode muestra una lista de todas las valoraciones \n"
+"                                proporcionadas por el usuario en el shortcode [yasr_visitor_votes]."
+
+#: admin/editor/YasrEditorHooks.php:419
+msgid "User Rate History"
+msgstr "Historial de valoración del usuario"
+
+#: includes/shortcodes/classes/YasrShortcodesAjax.php:764
+msgid "Not in Ajax Contest"
+msgstr "No está en el contexto de Ajax"
+
+#: includes/shortcodes/classes/YasrShortcodesAjax.php:117
+msgid "Error in Ajax Call, missing required param."
+msgstr "Error en la llamada Ajax, falta un parámetro obligatorio."
+
+#: admin/settings/classes/YasrSettingsFooter.php:86
+msgid "Thank you for using %s. Please %s rate it%s 5 stars on %s"
+msgstr "Gracias por usar %s. Por favor, %svalóralo%s con 5 estrellas en %s"
+
+#: admin/settings/classes/YasrSettingsDescriptions.php:109
+msgid "Customize YASR strings."
+msgstr "Personaliza las cadenas de YASR."
+
+#: admin/settings/classes/YasrSettingsDescriptions.php:107
+msgid "Customize strings"
+msgstr "Personalizar cadenas"
+
+#: admin/settings/classes/YasrSettingsGeneral.php:716
+msgid "Restore default strings"
+msgstr "Restaurar las cadenas por defecto"
+
+#: admin/settings/classes/YasrSettingsGeneral.php:705
+msgid "Allowed html tags:"
+msgstr "Etiquetas HTML permitidas:"
+
+#: admin/settings/classes/YasrSettingsGeneral.php:694
+msgid "%s In these fields you can use %s pattern to show the rating (as text)."
+msgstr "%s En estos campos puedes usar el patrón %s para mostrar la valoración (como texto)."
+
+#: includes/shortcodes/classes/YasrShortcodesAjax.php:387
+msgid "Missing required param"
+msgstr "Falta un parámetro obligatorio"
+
+#: includes/shortcodes/classes/YasrShortcodesAjax.php:384
+msgid "Error with rating"
+msgstr "Error con la valoración"
+
+#: includes/shortcodes/classes/YasrShortcodesAjax.php:287
+#: includes/shortcodes/classes/YasrShortcodesAjax.php:466
+#: includes/shortcodes/classes/YasrShortcodesAjax.php:490
+msgid "Error in Ajax Call, rating can't be saved."
+msgstr "Error en la llamada Ajax, no se puede guardar la valoración."
+
+#: includes/shortcodes/classes/YasrShortcodesAjax.php:99
+msgid "Error in Ajax Call, rating can't be saved"
+msgstr "Error en la llamada Ajax, no se puede guardar la valoración."
+
+#: admin/classes/YasrAdmin.php:226
+msgid "Manage Ratings"
+msgstr "Gestionar valoraciones"
+
+#: admin/classes/YasrEditCategory.php:91
+msgid "This will overwrite YASR itemType in all existing posts or pages for this category "
+msgstr "Esto sobreescribirá el itemType de YASR en todas las páginas o entradas de esta categoría"
+
+#: admin/settings/classes/YasrSettingsDescriptions.php:43
+msgid "Please note that this may not work with all themes"
+msgstr "Por favor, ten en cuenta que esto puede que no funcione con todos los temas"
+
+#: admin/editor/YasrMetaboxBelowEditor.php:363
+msgid "This shortcode will print a Multi Set with all the ratings given through the comment form "
+msgstr "Este shortcode imprimirá un conjunto múltiple con todas las valoraciones dadas a través del formulario de comentarios"
+
+#: includes/shortcodes/classes/YasrShortcodesAjax.php:176
+msgid "Only logged in user can rate."
+msgstr "Solo pueden valorar los usuarios conectados."
+
+#: includes/shortcodes/classes/YasrShortcodesAjax.php:684
+msgid "Can't show rankings, wrong nonce."
+msgstr "No se pueden mostrar las clasificaciones. El nonce es erróneo."
+
+#: includes/classes/YasrScriptsLoader.php:84
+msgid "Post"
+msgstr "Enrada"
+
+#: includes/rest/classes/YasrCustomEndpoint.php:244
+msgid "Invalid Comment ID"
+msgstr "ID de comentario no válido"
+
+#: admin/editor/yasr-metabox-top-right.php:79
+msgid "Remember to insert this shortcode %s where you want to display this rating."
+msgstr "Recuerda insertar este shortcode %s donde quieras mostrar esta valoración."
+
+#: admin/editor/YasrMetaboxBelowEditor.php:335
+#: admin/editor/YasrMetaboxBelowEditor.php:349
+msgid "Use this shortcode to print only the average of "
+msgstr "Usa este shortcode para mostrar solo el promedio de"
+
+#: admin/editor/YasrMetaboxBelowEditor.php:325
+msgid "Shortcodes"
+msgstr "Shortcodes"
+
+#: admin/editor/YasrMetaboxBelowEditor.php:317
+msgid "By enabling this, all ratings fields will be mandatory."
+msgstr "Al activar esto todos los campos de valoraciones serán obligatorios."
+
+#: admin/editor/YasrMetaboxBelowEditor.php:297
+msgid "Insert this Multi Set in the comment form?"
+msgstr "¿Insertamos este conjunto múltiple en el formulario de comentarios?"
+
+#: admin/editor/YasrMetaboxBelowEditor.php:278
+msgid "Pro Only features"
+msgstr "Características solo Pro"
+
+#: admin/editor/YasrMetaboxBelowEditor.php:253
+msgid "This is just a preview, you can't vote here."
+msgstr "Esto es solo una vista previa, no puedes votar aquí."
+
+#: admin/editor/YasrMetaboxBelowEditor.php:227
+msgid "Rate each element, and copy this shortcode %s where you want to display this rating."
+msgstr "Valora cada elemento, y copia este shortcode %s donde quieras mostrar esta valoración."
+
+#: admin/settings/classes/YasrSettingsGeneral.php:672
+msgid "Custom text to display when rating is updated (only for logged in users)"
+msgstr "Texto personalizado a mostrar cuando se actualiza una valoración (solo para usuarios conectados)"
+
+#: admin/settings/classes/YasrSettingsGeneral.php:666
+msgid "Custom text to display when rating is saved"
+msgstr "Texto personalizado a mostrar cuando se guarda una valoración"
+
+#: admin/settings/classes/YasrSettingsRightColumn.php:245
+msgid ""
+"\"Comments Not Replied To\" introduces a new area in the administrative dashboard that allows you to\n"
+"        see what comments to which you - as the site author - have not yet replied."
+msgstr ""
+"«Comentarios no respondidos» introduce una nueva área en el escritorio administrativo que te permite \n"
+"        ver qué comentarios a los que tú —como autor del sitio— aún no has respondido."
+
+#: admin/settings/classes/YasrSettingsMultiset.php:614
+msgid "Multi Set's name and first 2 elements can't be empty"
+msgstr "No pueden estar vacíos el nombre del conjunto múltiple y los 2 primeros elementos"
+
+#: admin/settings/classes/YasrSettingsMultiset.php:1193
+msgid "Field # %d must be shorter than 40 chars"
+msgstr "El campo # %d debe ser menor de 40 caracteres"
+
+#: admin/settings/classes/YasrSettingsMultiset.php:1178
+#: admin/settings/classes/YasrSettingsMultiset.php:1186
+msgid "Field # %d must be at least 3 chars"
+msgstr "El campo # %d debe ser, al menos, de 3 caracteres"
+
+#: admin/settings/classes/YasrSettingsMultiset.php:788
+msgid "You already have a set with this name."
+msgstr "Ya tienes un conjunto con este nombre."
+
+#: admin/settings/classes/YasrSettingsRightColumn.php:185
+msgid "You may also like..."
+msgstr "Puede que también te guste..."
+
+#: admin/settings/classes/YasrSettingsRightColumn.php:211
+msgid ""
+"Movie Helper allows you to easily add links to movie and tv shows, just by searching\n"
+"    them while you're writing your content. Search, click, done!"
+msgstr ""
+"Movie Helper te permite añadir enlaces fácilmente a películas y programas de televisión, simplemente buscándolos\n"
+"mientras escribes tu contenido. ¡Busca, haz clic, y ya!"
+
+#: includes/shortcodes/classes/YasrNoStarsRankings.php:86
+msgid "User"
+msgstr "Usuario"
+
+#: includes/classes/YasrLastRatingsWidget.php:79
+msgid "You must login to see this widget."
+msgstr "Debes acceder para ver este widget."
+
+#: admin/editor/YasrEditorHooks.php:467
+msgid ""
+"This ranking shows the highest rated posts rated through the \n"
+"                                yasr_overall_rating shortcode"
+msgstr ""
+"Esta clasificación muestra las entradas mejor valoradas mediante el\n"
+"shortcode yasr_oveall_rating"
+
+#: includes/shortcodes/classes/YasrShortcodesAjax.php:648
+msgid "Wrong nonce. Rating can't be updated"
+msgstr "Nonce incorrecto. No se puede actualizar la valoración"
+
+#: includes/shortcodes/classes/YasrRankings.php:197
+#: includes/shortcodes/classes/YasrRankings.php:238
+msgid "No posts found with these parameters. Try to remove some filters."
+msgstr "No hay ninguna entrada con estos parámetros. Prueba a eliminar algún filtro."
+
+#: admin/settings/classes/YasrSettingsRankings.php:268
+msgid "End Date"
+msgstr "Fecha de finalización"
+
+#: admin/settings/classes/YasrSettingsRankings.php:258
+msgid "Start Date"
+msgstr "Fecha de inicio"
+
+#: admin/settings/classes/YasrSettingsGeneral.php:761
+msgid "Since you're using the caching plugin %s you should enable this."
+msgstr "Como estás usando el plugin de caché %s deberías activar esto."
+
+#: admin/settings/classes/YasrSettingsGeneral.php:702
+msgid "Leave a field empty to disable it."
+msgstr "Deja un campo vació para desactivarlo."
+
+#: admin/settings/classes/YasrSettingsRankings.php:427
+msgid "Choose Multi Set"
+msgstr "Elegir conjunto múltiple"
+
+#: admin/settings/classes/YasrSettingsDescriptions.php:128
+msgid "More info here"
+msgstr "Más información aquí"
+
+#: admin/settings/classes/YasrSettingsDescriptions.php:122
+msgid ""
+"If ratings in a post or page are found, YASR will create structured data to show them in search results\n"
+"    (SERP)"
+msgstr ""
+"Si hay valoraciones en una entrada o página, YAST creará datos estructurados para mostrarlas en los resultados de búsqueda\n"
+"  (SERP) "
+
+#: admin/settings/classes/YasrSettingsDescriptions.php:120
+msgid "Structured data options"
+msgstr "Opciones de datos estructurados"
+
+#: admin/settings/classes/YasrSettingsDescriptions.php:71
+msgid "Who is allowed to vote?"
+msgstr "¿Quién está autorizado para votar?"
+
+#: admin/settings/classes/YasrSettingsDescriptions.php:89
+msgid "Show stats for visitors votes?"
+msgstr "¿Mostramos estadísticas de los votos de los visitantes?"
+
+#: admin/settings/classes/YasrSettingsDescriptions.php:54
+msgid "Archive Pages"
+msgstr "Páginas de archivos"
+
+#: admin/settings/classes/YasrSettingsDescriptions.php:39
+msgid "Enable this if you want to show stars next to the title."
+msgstr "Actívalo si quieres mostrar las estrellas junto al título."
+
+#: admin/settings/classes/YasrSettingsDescriptions.php:22
+msgid ""
+"Automatically adds YASR in your posts or pages. %s\n"
+"            Disable this if you prefer to use shortcodes."
+msgstr ""
+"Añade automáticamente YASR en tus entradas o páginas. %s\n"
+"   Desactiva esto si prefieres usar shortcodes."
+
+#: admin/settings/classes/YasrSettingsGeneral.php:511
+msgid "Select \"Yes\" to enable."
+msgstr "Selecciona «Sí» para activar."
+
+#: admin/settings/classes/YasrSettingsGeneral.php:445
+msgid "Enable to show \"Visitor Votes\" in archive pages"
+msgstr "Activar para mostrar «Votos de los visitantes» en las páginas de archivos"
+
+#: admin/settings/classes/YasrSettingsGeneral.php:423
+msgid "Enable to show \"Overall Rating\" in archive pages."
+msgstr "Activar para mostrar la «Valoración global» en las páginas de archivos."
+
+#: admin/settings/classes/YasrSettingsGeneral.php:237
+msgid "Select yes if you want to use auto insert only in custom post types"
+msgstr "Selecciona «Sí» si quieres usar la inserción automática solo en tipos de contenidos personalizados"
+
+#: admin/settings/classes/YasrSettingsGeneral.php:104
+msgid "Advanced Settings"
+msgstr "Ajustes avanzados"
+
+#: admin/settings/classes/YasrSettingsRankings.php:466
+msgid "This shortcode was not found."
+msgstr "No se ha encontrado este shortcode."
+
+#: admin/editor/yasr-metabox-top-right.php:76
+#: admin/editor/YasrMetaboxBelowEditor.php:222
+#: admin/editor/YasrMetaboxBelowEditor.php:246
+#: admin/editor/YasrMetaboxBelowEditor.php:329
+#: admin/editor/YasrMetaboxBelowEditor.php:343
+#: admin/editor/YasrMetaboxBelowEditor.php:357
+#: admin/settings/yasr-settings-rankings.php:50
+msgid "Copy Shortcode"
+msgstr "Copiar shortcode"
+
+#: admin/settings/yasr-settings-rankings.php:31
+msgid "Rankings Options"
+msgstr "Opciones de clasificaciones"
+
+#: admin/settings/classes/YasrSettingsRankings.php:405
+msgid "User display name"
+msgstr "Nombre público del usuario"
+
+#: admin/settings/classes/YasrSettingsRankings.php:402
+msgid "Do you want to use Username or Display Name?"
+msgstr "¿Quieres usar el nombre de usuario o el nombre público?"
+
+#: admin/settings/classes/YasrSettingsRankings.php:361
+msgid "Do you want to specify a custom post type?"
+msgstr "¿Quieres especificar un tipo de contenido personalizado?"
+
+#: admin/settings/classes/YasrSettingsRankings.php:311
+msgid "Search Categories:"
+msgstr "Buscar categorías:"
+
+#: admin/settings/classes/YasrSettingsRankings.php:292
+msgid "Do you want to specify a category?"
+msgstr "¿Quieres especificar una categoría?"
+
+#: admin/settings/classes/YasrSettingsRankings.php:243
+msgid "Use return %s to insert the text."
+msgstr "Utiliza intro %s para insertar el texto."
+
+#: admin/settings/classes/YasrSettingsRankings.php:229
+msgid "Text to show"
+msgstr "Texto a mostrar"
+
+#: admin/settings/classes/YasrSettingsRankings.php:216
+msgid "Yes, after the stars"
+msgstr "Sí, después de las estrellas"
+
+#: admin/settings/classes/YasrSettingsRankings.php:215
+msgid "Yes, before the stars"
+msgstr "Sí, antes de las estrellas"
+
+#: admin/settings/classes/YasrSettingsRankings.php:211
+msgid "Show text before or after the stars?"
+msgstr "¿Mostrar el texto antes o después de las estrellas?"
+
+#: admin/settings/classes/YasrSettingsRankings.php:200
+msgid "votes required for highest rated"
+msgstr "votos obligatorios para la valoración más alta"
+
+#: admin/settings/classes/YasrSettingsRankings.php:179
+msgid "votes required for most rated"
+msgstr "votos obligatorios para lo más valorado"
+
+#: admin/settings/classes/YasrSettingsRankings.php:156
+msgid "At least..."
+msgstr "Al menos…"
+
+#: admin/settings/classes/YasrSettingsRankings.php:132
+msgid "Default View"
+msgstr "Vista por defecto"
+
+#: admin/settings/classes/YasrSettingsRankings.php:79
+msgid "How many rows?"
+msgstr "¿Cuántas filas?"
+
+#: admin/settings/classes/YasrSettingsRankings.php:43
+msgid "Select Ranking"
+msgstr "Seleccionar clasificación"
+
+#: admin/editor/YasrEditorHooks.php:538
+msgid "%s Click here %s to customize the ranking and see a live preview"
+msgstr "%s Haz clic aquí %s para personalizar la clasificación y ver una vista previa en directo"
+
+#: admin/yasr-admin-init.php:31 includes/classes/YasrScriptsLoader.php:562
+msgid "This feature is available only in the pro version"
+msgstr "Esta características está disponible solo en la versión pro"
+
+#: includes/shortcodes/classes/YasrNoStarsRankings.php:128
+msgid "Account deleted"
+msgstr "Cuenta borrada"
+
+#: admin/editor/YasrEditorHooks.php:528
+msgid "This ranking shows the most active users, displaying the login name if logged in or “Anonymous” if not."
+msgstr "Esta clasificación muestra los usuarios más activos, mostrando el nombre de acceso si están conectados o «Anónimo» si no lo están."
+
+#: admin/editor/YasrEditorHooks.php:509
+msgid "This ranking shows the most active reviewers on your site."
+msgstr "Esta clasificación muestra los 5 usuarios más activos en tu sitio."
+
+#: admin/editor/YasrEditorHooks.php:497
+msgid "Most Active Authors"
+msgstr "Autores más activos"
+
+#: admin/editor/YasrEditorHooks.php:487
+msgid ""
+"This ranking shows both the highest and most rated posts rated through the \n"
+"                                    yasr_visitor_votes shortcode.  For an item to appear in this chart, it has to be rated at least twice. "
+msgstr ""
+"Esta clasificación muestra las entradas más y mejor valoradas mediante el \n"
+"                                    shortcode `yasr_visitor_votes`. Para que aparezca un elemento en este gráfico, tiene que haber sido valorado al menos dos veces."
+
+#: admin/editor/YasrEditorHooks.php:476
+msgid "Ranking by visitors votes"
+msgstr "Clasificación por votos de los visitantes"
+
+#: admin/editor/YasrEditorHooks.php:456
+msgid "Ranking by overall rating"
+msgstr "Clasificación por valoración general"
+
+#: admin/editor/YasrEditorHooks.php:283
+#: admin/settings/classes/YasrSettings.php:245
+msgid "Rankings"
+msgstr "Clasificaciones"
+
+#: admin/settings/classes/YasrSettingsGeneral.php:737
+msgid "Load results with AJAX?"
+msgstr "¿Cargar los resultados con AJAX?"
+
+#: includes/rest/classes/YasrCustomEndpoint.php:181
+msgid "No posts found. Try remove some filters"
+msgstr "No se han encontrado entradas. Intenta eliminar algunos filtros"
+
+#: admin/editor/YasrMetaboxSchemaFields.php:341
+msgid "The date on which the Movie was created."
+msgstr "La fecha en la que se ha creado la película."
+
+#: admin/editor/YasrMetaboxSchemaFields.php:335
+msgid "The duration of the movie in ISO 8601 date format."
+msgstr "La duración de la película en formato de fecha ISO 8601."
+
+#: admin/editor/YasrMetaboxSchemaFields.php:328
+msgid "Insert one or more director %s. Use return %s to separate the directors."
+msgstr "Inserta uno o más directores %s. Usa volver %s para separar los directores."
+
+#: admin/editor/YasrMetaboxSchemaFields.php:319
+msgid "Insert one or more actors %s. Use return %s to separate the actors."
+msgstr "Inserta uno o más actores %s. Usa volver %s para separar los actores."
+
+#: admin/editor/YasrMetaboxSchemaFields.php:292
+msgid "The number of pages in the book, must be a number."
+msgstr "El número de páginas del libro, debe ser un número."
+
+#: admin/editor/YasrMetaboxSchemaFields.php:284
+msgid "The ISBN of the book. Google only supports ISBN-13. More info %s here %s"
+msgstr "El ISBN del libro. Google solo es compatible con ISBN-13. Más información %s aquí %s"
+
+#: admin/editor/YasrMetaboxSchemaFields.php:278
+msgid "The format of the book. "
+msgstr "El formato del libro."
+
+#: admin/editor/YasrMetaboxSchemaFields.php:271
+msgid "The edition of the book. "
+msgstr "La edición del libro."
+
+#: admin/editor/YasrMetaboxSchemaFields.php:266
+msgid "The author of the book. "
+msgstr "El autor del libro."
+
+#: admin/settings/classes/YasrSettingsGeneral.php:313
+msgid "Only on single posts or pages"
+msgstr "Solo en entradas o páginas individuales"
+
+#: admin/settings/classes/YasrSettingsGeneral.php:312
+msgid "Only on archive pages (categories, tags, etc.)"
+msgstr "Solo en páginas de archivo (categorías, etiquetas, etc.)"
+
+#: admin/settings/classes/YasrSettingsGeneral.php:310
+msgid "Where do you want show ratings?"
+msgstr "¿Dónde quieres mostrar puntuaciones?"
+
+#: admin/settings/classes/YasrSettingsDescriptions.php:37
+msgid "Enable stars next to the title?"
+msgstr "¿Activar las estrellas al lado del título?"
+
+#: admin/editor/yasr-metabox-schema.php:95
+msgid "Optional. If empty, post title will be used instead."
+msgstr "Opcional, Si está vacío se usará el título de la entrada en su lugar."
+
+#: admin/editor/yasr-metabox-schema.php:85
+msgid "ItemType Name"
+msgstr "Nombre del ItemType"
+
+#. Description of the plugin
+#: yet-another-stars-rating.php
+msgid "Boost the way people interact with your site with an easy WordPress stars rating system! With schema.org rich snippets YASR will improve your SEO"
+msgstr "¡Impulsa el modo en que la gente interactúa con tu sitio con un sencillo sistema de valoración con estrellas para WordPress! Con los snippets enriquecidos de schema.org YASR mejorará tu SEO"
+
+#: admin/settings/classes/YasrSettingsRightColumn.php:67
+msgid "No credit-card, risk free!"
+msgstr "¡Sin tarjetas de crédito, riesgo cero!"
+
+#: admin/settings/classes/YasrSettingsRightColumn.php:64
+msgid "Start Free Trial"
+msgstr "Empieza la prueba gratuita"
+
+#: admin/settings/classes/YasrSettingsRightColumn.php:54
+msgid "Upgrade Now"
+msgstr "Actualizar ahora"
+
+#: admin/settings/classes/YasrSettingsGeneral.php:612
+msgid "Also, %sread Google guidelines%s"
+msgstr "También, %slee las directrices de Google%s"
+
+#: admin/settings/classes/YasrSettingsGeneral.php:563
+msgid "Choose whether the site represents an organization or a person."
+msgstr "Elige si el sitio representa a una organización o a una persona."
+
+#: admin/settings/classes/YasrSettingsDescriptions.php:74
+msgid "Select who can rate your posts for %syasr_visitor_votes%s and %syasr_visitor_multiset%s shortcodes"
+msgstr "Selecciona quién valora tus entradas para los shortcodes %syasr_visitor_votes%s y %syasr_visitor_multiset%s"
+
+#: admin/editor/YasrMetaboxSchemaFields.php:235
+msgid "Operating systems supported e.g. (Windows 11, OSX 12, Android 12)"
+msgstr "Sistemas operativos compatibles, por ejemplo, Windows 11, OSX 12, Android 12"
+
+#: admin/editor/YasrMetaboxSchemaFields.php:230
+msgid "Type of software application, e.g. 'Game, Multimedia'. "
+msgstr "Tipo de aplicación de software, por ejemplo, «Juego, Multimedia»."
+
+#: admin/classes/YasrEditCategory.php:87
+msgid "Check to update YASR itemType"
+msgstr "Marca para actualizar el itemType de YASR"
+
+#: admin/yasr-admin-init.php:49
+msgid "Upgrade to %s to unlock this feature"
+msgstr "Actualiza a %s para desbloquear esta característica"
+
+#: admin/classes/YasrEditCategory.php:67
+msgid "Select default itemType"
+msgstr "Seleccionar el itemType por defecto"
+
+#: includes/shortcodes/classes/YasrNoStarsRankings.php:119
+msgid "Anonymous"
+msgstr "Anónimo"
+
+#: includes/shortcodes/classes/YasrNoStarsRankings.php:87
+msgid "Number of votes"
+msgstr "Número de votos"
+
+#: admin/settings/classes/YasrSettingsRankings.php:404
+msgid "Username"
+msgstr "Nombre de usuario"
+
+#: includes/shortcodes/classes/YasrNoStarsRankings.php:90
+msgid "Reviews"
+msgstr "Reseñas"
+
+#: admin/settings/classes/YasrSettingsGeneral.php:752
+msgid ""
+"This should be enabled if you're using caching plugins.\n"
+"                        Not required for yasr_overall_rating and yasr_multiset."
+msgstr ""
+"Esto debería activarse si estás usando plugins de caché.\n"
+"      No es obligatorio para yasr_overall_rating y yasr_multiset."
+
+#: admin/editor/YasrMetaboxSchemaFields.php:207
+msgid "More info %s here %s and %s here %s"
+msgstr "Más información %s aquí %s y %s aquí %s"
+
+#: admin/editor/YasrMetaboxSchemaFields.php:193
+msgid "A video depicting the steps to make the dish (URL)"
+msgstr "Un vídeo detallando los pasos para hacer el plato (URL)"
+
+#: admin/editor/YasrMetaboxSchemaFields.php:187
+msgid "The steps to make dish. %s Use return %s to separate the steps."
+msgstr "Los pasos para hacer el plato. %s Utiliza Intro %s para separar los pasos."
+
+#: admin/editor/YasrMetaboxSchemaFields.php:178
+msgid ""
+"A single ingredient used in the recipe, e.g. sugar, flour or garlic. %s \n"
+"                                        Use return %s to separate the ingredients."
+msgstr ""
+"Un ingrediente individual usado en la receta, por ejemplo, azúcar, harina o ajo. %s \n"
+"                            Utiliza Intro %s para separar los ingredientes."
+
+#: admin/editor/YasrMetaboxSchemaFields.php:164
+msgid "The region associated with your recipe. For example, \"Mediterranean\", or \"American\"."
+msgstr "La región asociada con tu receta. Por ejemplo, «mediterránea» o «americana»."
+
+#: admin/editor/YasrMetaboxSchemaFields.php:159
+msgid "The type of meal or course your recipe is about"
+msgstr "El tipo de comida o plato sobre el que es tu receta"
+
+#: admin/editor/YasrMetaboxSchemaFields.php:154
+msgid "The number of calories"
+msgstr "El número de calorías"
+
+#: admin/editor/YasrMetaboxSchemaFields.php:149
+msgid "Other terms for your recipe"
+msgstr "Otros términos de tu receta"
+
+#: admin/editor/YasrMetaboxSchemaFields.php:144
+msgid "A short summary describing the dish."
+msgstr "Un resumen corto describiendo el plato."
+
+#: admin/editor/YasrMetaboxSchemaFields.php:139
+msgid "The length of time it takes to prepare the dish, in ISO 8601 format."
+msgstr "La cantidad de tiempo que lleva preparar el plato, en formato ISO 8601."
+
+#: admin/editor/YasrMetaboxSchemaFields.php:134
+msgid "The time it takes to actually cook the dish in ISO 8601 format."
+msgstr "El tiempo que se tarda realmente en cocinar el plato, en formato ISO 8601."
+
+#: admin/editor/YasrMetaboxSchemaFields.php:116
+msgid "A business phone number meant to be the primary contact method for customers."
+msgstr "Un número de teléfono de trabajo para que sea el método principal de contacto para los clientes."
+
+#: admin/editor/YasrMetaboxSchemaFields.php:109
+msgid ""
+"The relative price range of a business, commonly specified by either a numerical range\n"
+"                                            (for example, \"$10-15\") or a normalized number of currency signs (for example, \"$$$\")"
+msgstr ""
+"El rango relativo de precios de un negocio, normalmente especificado con un rango numérico \n"
+"                (por ejemplo, «10-15 €») o con símbolos de moneda normalizados (por ejemplo, «€€€»)"
+
+#: admin/editor/YasrMetaboxSchemaFields.php:104
+msgid "The physical location of the business. "
+msgstr "La ubicación física del negocio."
+
+#: admin/editor/YasrMetaboxSchemaFields.php:459
+msgid "More info %s here %s"
+msgstr "Más información %s aquí %s"
+
+#: admin/editor/YasrMetaboxSchemaFields.php:70
+msgid "Select global identifier. More info %s here %s"
+msgstr "Selecciona un identificador global. Más información %s aquí %s"
+
+#: admin/editor/YasrMetaboxSchemaFields.php:58
+msgid "Merchant-specific identifier for product."
+msgstr "Identificador específico del vendedor del producto."
+
+#: admin/editor/YasrMetaboxSchemaFields.php:53
+msgid "The brand of the product."
+msgstr "La marca del producto"
+
+#: includes/rest/classes/YasrCustomEndpoint.php:222
+msgid "Post ID doesn't exists"
+msgstr "El ID de la entrada no existe"
+
+#: includes/rest/classes/YasrCustomEndpoint.php:213
+msgid "Invalid Post ID"
+msgstr "ID de entrada no válido"
+
+#: includes/rest/classes/YasrCustomEndpoint.php:349
+msgid "This Multi Set doesn't exists"
+msgstr "Este conjunto múltiple no existe"
+
+#: includes/classes/YasrLastRatingsWidget.php:238
+msgid "You rated %s on"
+msgstr "Valoraste %s en"
+
+#: includes/yasr-widgets.php:462
+msgid "No recent ratings yet"
+msgstr "Aún no hay valoraciones recientes"
+
+#: admin/settings/classes/YasrImportRatingPlugins.php:654
+msgid "No Multi Rating data found"
+msgstr "No se han encontrado datos de Multi Rating"
+
+#: admin/settings/classes/YasrImportRatingPlugins.php:868
+msgid "No supported plugin has been found"
+msgstr "Se ha encontrado un plugin que no es compatible"
+
+#: admin/settings/classes/YasrStatsListTable.php:256
+msgid "Imported Data"
+msgstr "Datos importados"
+
+#: admin/settings/classes/YasrStatsListTable.php:251
+msgid "Field doesn't exists"
+msgstr "El campo no existe"
+
+#: admin/settings/classes/YasrStatsListTable.php:227
+msgid "Multi Set doesn't exists"
+msgstr "El conjunto múltiple no existe"
+
+#: admin/settings/classes/YasrStats.php:36
+msgid "MultiSet"
+msgstr "Conjunto múltiple"
+
+#: includes/classes/YasrLastRatingsWidget.php:123
+msgid "No Recent votes yet"
+msgstr "Aún no hay votos recientes"
+
+#: admin/settings/yasr-stats-page.php:33
+msgid "Ratings Stats"
+msgstr "Estadísticas de valoraciones"
+
+#: includes/shortcodes/classes/YasrMultiSet.php:96
+msgid "No Set Found with this ID"
+msgstr "No se ha encontrado ningún conjunto con este ID"
+
+#: admin/editor/yasr-metabox-schema.php:102
+msgid "Select ItemType"
+msgstr "Seleccionar el tipo de elemento"
+
+#: admin/editor/yasr-metabox-schema.php:68
+msgid "Is this a review?"
+msgstr "¿Esto es una reseña?"
+
+#: admin/settings/classes/YasrSettingsGeneral.php:604
+msgid ""
+"Please keep in mind that since September, 16, 2019 blogPosting itemType will\n"
+"                                        no show stars in SERP anymore. %sHere%s the announcement by Google."
+msgstr ""
+"Por favor, ten en cuenta que desde el 16 de septiembre de 2019 el tipo de elemento de publicación en el blog ya \n"
+"                            no muestra estrellas en las SERP. %sAquí%s tienes el anuncio de Google."
+
+#: admin/settings/classes/YasrSettingsGeneral.php:181
+msgid "Right"
+msgstr "Derecha"
+
+#: admin/settings/classes/YasrSettingsGeneral.php:180
+msgid "Center"
+msgstr "Centro"
+
+#: admin/settings/classes/YasrSettingsGeneral.php:179
+msgid "Left"
+msgstr "Izquierda"
+
+#: admin/settings/classes/YasrSettingsGeneral.php:177
+msgid "Align"
+msgstr "Alineación"
+
+#: admin/settings/classes/YasrSettingsGeneral.php:518
+msgid "Example"
+msgstr "Ejemplo"
+
+#: admin/settings/classes/YasrSettingsDescriptions.php:92
+msgid "Enable or disable the chart bar icon (and tooltip hover it) next to the %syasr_visitor_votes%s shortcode"
+msgstr "Activa o desactiva el icono de gráfica de barras (y la información emergente al pasar el cursor sobre el mismo) junto al shortcode%s yasr_visitor_votes%s."
+
+#: admin/settings/classes/YasrSettingsGeneral.php:164
+msgid "After the content"
+msgstr "Después del contenido"
+
+#: admin/settings/classes/YasrSettingsGeneral.php:163
+msgid "Before the content"
+msgstr "Antes del contenido"
+
+#: admin/settings/classes/YasrImportRatingPlugins.php:967
+msgid "Import data"
+msgstr "Importar datos"
+
+#: admin/settings/classes/YasrImportRatingPlugins.php:755
+msgid ""
+"You' re using a star set different from 5 %s\n"
+"                                Import can not be done"
+msgstr ""
+"Estás usando un conjunto de estrellas distinto al de 5 %s\n"
+"                            No se puede hacer la importación"
+
+#: admin/settings/classes/YasrSettings.php:264
+#: admin/settings/yasr-settings-migration.php:37
+msgid "Migration Tools"
+msgstr "Herramientas de migración"
+
+#: admin/settings/classes/YasrImportRatingPlugins.php:706
+msgid ""
+"To import %s seems like %s %d %s INSERT queries are necessary. %s\n"
+"                There is nothing wrong with that, but some hosting provider can have a query limit/hour. %s\n"
+"                I strongly suggest to contact your hosting and ask about your plan limit"
+msgstr ""
+"Para la importación de %s se parezca a %s %d %s son necesarias consultas del tipo INSERT. %s\n"
+"                No pasa nada malo con eso, pero algún proveedor de alojamiento puede tener un límite de consultas por horas. %s\n"
+"                Te sugiero encarecidamente que contactes con tu alojamiento y le preguntes por el límite de tu plan"
+
+#: admin/settings/classes/YasrImportRatingPlugins.php:597
+msgid "No Rate My Post data found"
+msgstr "No se han encontrado datos de Rate My Post"
+
+#: admin/settings/classes/YasrImportRatingPlugins.php:534
+msgid "No KK Star Ratings data found"
+msgstr "No se han encontrado datos de KK Star Ratings"
+
+#: admin/settings/classes/YasrImportRatingPlugins.php:498
+#: admin/settings/classes/YasrImportRatingPlugins.php:562
+#: admin/settings/classes/YasrImportRatingPlugins.php:619
+#: admin/settings/classes/YasrImportRatingPlugins.php:683
+msgid "Woot! All data have been imported!"
+msgstr "¡Olé! ¡Se han importado todos los datos!"
+
+#: admin/settings/classes/YasrImportRatingPlugins.php:463
+msgid "No WP Post Rating data found"
+msgstr "No se han encontrado datos de WP Post Rating"
+
+#: includes/blocks/ranking-visitor-votes/block.json
+msgctxt "block description"
+msgid "This ranking shows both the highest and most rated posts rated through the yasr_visitor_votes shortcode. For an item to appear in this chart, it has to be rated at least twice."
+msgstr "Esta clasificación muestra las entradas más y mejor puntuadas mediante el shortcode yasr_visitor_votes. Para que aparezca un elemento en este gráfico tiene que haber sido puntuado al menos dos veces."
+
+#: includes/blocks/ranking-overall-rating/block.json
+msgctxt "block description"
+msgid "This ranking shows the highest rated posts rated through the overall_rating shortcode."
+msgstr "Esta clasificación muestra las entradas mejor puntuadas mediante el shortcode overall_rating."
+
+#: admin/settings/classes/YasrSettingsGeneral.php:698
+msgid ""
+"%s In these fields you can use %s pattern to show the\n"
+"                    total count, and %s pattern to show the average."
+msgstr ""
+"%s En estos campos puedes usar el patrón %s para mostrar el \n"
+"            contador total y el patrón %s para mostrar el promedio."
+
+#: admin/settings/classes/YasrSettingsGeneral.php:660
+msgid "Custom text to display when login is required to vote"
+msgstr "Texto personalizado a mostrar cuando se requiere acceder para votar"
+
+#: admin/settings/classes/YasrSettingsRightColumn.php:271
+msgid "Please rate YASR 5 stars on"
+msgstr "Por favor, valora YASR con 5 estrellas en"
+
+#: admin/settings/classes/YasrSettingsRightColumn.php:114
+msgid "Youtube channel"
+msgstr "Canal de YouTube"
+
+#: admin/settings/classes/YasrSettingsRightColumn.php:108
+msgid "Documentation"
+msgstr "Documentación"
+
+#: admin/settings/classes/YasrSettingsRightColumn.php:93
+msgid "YASR official website"
+msgstr "Sitio oficial de YASR"
+
+#: admin/settings/classes/YasrSettingsRightColumn.php:46
+msgid "...And much more!!"
+msgstr "…¡¡Y mucho más!!"
+
+#: admin/editor/YasrEditorHooks.php:345
+msgid "Insert the ability for your visitors to vote"
+msgstr "Inserta la posibilidad de que voten tus visitantes"
+
+#: admin/editor/YasrEditorHooks.php:316
+msgid "Insert the author rating"
+msgstr "Inserta la puntuación del autor"
+
+#: yet-another-stars-rating.php:177
+msgid "Thank you for using Yasr Pro"
+msgstr "Gracias por utilizar Yasr Pro"
+
+#: admin/settings/classes/YasrSettingsRightColumn.php:42
+msgid "Dedicate support"
+msgstr "Soporte dedicado"
+
+#: admin/settings/classes/YasrSettingsRightColumn.php:39
+msgid "Upload your own theme"
+msgstr "Sube tu propio tema"
+
+#: admin/settings/classes/YasrSettingsRightColumn.php:38
+msgid "20+ ready to use themes"
+msgstr "+20 temas listos para utilizar"
+
+#: admin/settings/classes/YasrSettingsRightColumn.php:37
+msgid "Custom Rankings"
+msgstr "Valoraciones personalizadas"
+
+#: admin/settings/classes/YasrSettingsRightColumn.php:36
+msgid "User Reviews"
+msgstr "Reseñas de usuarios"
+
+#: admin/settings/classes/YasrSettingsRightColumn.php:32
+msgid "Upgrade to YASR Pro"
+msgstr "Actualiza a YASR Pro"
+
+#: admin/settings/classes/YasrSettingsStyle.php:427
+msgid "Upgrade to %s"
+msgstr "Actualiza a %s"
+
+#: yet-another-stars-rating.php:172
+msgid "Buy Yasr Pro"
+msgstr "Compra Yasr Pro"
+
+#: admin/settings/classes/YasrStats.php:68
+msgid "Upgrade"
+msgstr "Actualiza"
+
+#: admin/editor/YasrEditorHooks.php:303
+#: admin/settings/classes/YasrSettingsGeneral.php:148
+#: admin/settings/classes/YasrSettingsGeneral.php:283
+#: admin/settings/classes/YasrStats.php:46
+msgid "Overall Rating"
+msgstr "Puntuación global"
+
+#: includes/shortcodes/classes/YasrNoStarsRankings.php:89
+msgid "Author"
+msgstr "Autor"
+
+#: includes/classes/YasrScriptsLoader.php:80
+msgid "out of 5 stars"
+msgstr "de 5 estrellas"
+
+#: includes/yasr-widgets.php:489
+msgid "Recent Ratings"
+msgstr "Puntuaciones recientes"
+
+#: includes/classes/YasrLastRatingsWidget.php:227 includes/yasr-widgets.php:440
+msgid "Vote %s from %s on"
+msgstr "Voto %s de %s en"
+
+#: includes/yasr-widgets.php:386
+msgid "Show the 5 most recent rated posts"
+msgstr "Muestra las 5 entradas puntuadas más recientemente"
+
+#: includes/yasr-widgets.php:384
+msgid "Yasr Recent Ratings"
+msgstr "Puntuaciones recientes de Yasr"
+
+#: includes/yasr-widgets.php:262
+msgid "Rate This:"
+msgstr "Puntúa esto:"
+
+#: includes/yasr-widgets.php:204
+msgid "Show Yasr Visitor Votes"
+msgstr "Mostrar los votos Yasr de los visitantes"
+
+#: includes/yasr-widgets.php:202
+msgid "Yasr Visitor Votes"
+msgstr "Votos Yasr de los visitantes"
+
+#: includes/yasr-widgets.php:123 includes/yasr-widgets.php:301
+msgid "Size:"
+msgstr "Tamaño:"
+
+#: includes/yasr-widgets.php:113 includes/yasr-widgets.php:283
+#: includes/yasr-widgets.php:496
+msgid "Title:"
+msgstr "Título:"
+
+#: includes/yasr-widgets.php:100
+msgid "Our Rating:"
+msgstr "Nuestra puntuación:"
+
+#: includes/yasr-widgets.php:47
+msgid "Display Overall Rating"
+msgstr "Muestra la puntuación global"
+
+#: includes/yasr-widgets.php:45
+msgid "Yasr Overall Rating"
+msgstr "Puntuación global Yasr"
+
+#: admin/editor/yasr-metabox-top-right.php:96
+#: admin/js/src/guten/yasrSidebar.js:58
+msgid "Disable auto insert for this post or page?"
+msgstr "¿Desactivar inserción automática en esta entrada o página?"
+
+#: admin/settings/classes/YasrSettingsStyle.php:166
+#: admin/settings/classes/YasrSettingsStyle.php:344
+msgid "Save Settings"
+msgstr "Guardar ajustes"
+
+#: admin/settings/classes/YasrSettingsStyle.php:425
+msgid "Looking for more?"
+msgstr "¿Buscas algo más?"
+
+#: admin/settings/classes/YasrSettingsDescriptions.php:206
+msgid ""
+"If you select no, the \"Average\" row will not be displayed. \n"
+"        You can override this in the single multi set by using the parameter \"show_average\"."
+msgstr ""
+"Si eliges NO, la fila «Promedio» no se mostrará. \n"
+"Puedes omitir esto en el conjunto múltiple concreto usando el parámetro «show_average»"
+
+#: admin/settings/classes/YasrSettingsDescriptions.php:204
+msgid "Show average?"
+msgstr "¿Mostrar promedio?"
+
+#: admin/settings/classes/YasrSettingsGeneral.php:594
+msgid "Image Url (if empty siteicon will be used instead)"
+msgstr "URL de la imagen (si se deja vacío se usará en su lugar el icono del sitio)"
+
+#: admin/settings/classes/YasrSettingsGeneral.php:583
+msgid "Publisher name (e.g. Google)"
+msgstr "Nombre del editor (p.ej. Google)"
+
+#: admin/editor/YasrEditorHooks.php:396
+msgid "Hide Average?"
+msgstr "¿Ocultar promedio?"
+
+#: admin/settings/classes/YasrSettingsStyle.php:98
+msgid "Choose Stars Set"
+msgstr "Elige el conjunto de estrellas"
+
+#: admin/settings/classes/YasrSettings.php:221
+msgid "Aspect & Styles"
+msgstr "Aspecto y estilos"
+
+#. Plugin URI of the plugin
+#: yet-another-stars-rating.php
+msgid "http://wordpress.org/plugins/yet-another-stars-rating/"
+msgstr "https://es.wordpress.org/plugins/yet-another-stars-rating/"
+
+#. Plugin Name of the plugin
+#: yet-another-stars-rating.php
+msgid "Yet Another Stars Rating"
+msgstr "Yet Another Stars Rating"
+
+#: admin/settings/classes/YasrSettingsMultiset.php:270
+msgid "Manage Multi Set"
+msgstr "Gestionar conjunto múltiple"
+
+#: admin/settings/yasr-settings-multiset.php:45
+msgid "Save"
+msgstr "Guardar"
+
+#: admin/settings/classes/YasrSettings.php:209
+msgid "General Settings"
+msgstr "Ajustes generales"
+
+#: admin/classes/YasrAdmin.php:224 admin/settings/yasr-settings.php:33
+#: yet-another-stars-rating.php:152
+msgid "Settings"
+msgstr "Ajustes"
+
+#: admin/editor/yasr-metabox-top-right.php:57
+#: admin/js/src/guten/blocks/deprecated/deprecated_blocks.js:111
+#: admin/js/src/guten/yasrGutenUtils.js:213
+msgid "Rate this article / item"
+msgstr "Puntúa este artículo / elemento"
+
+#: includes/classes/YasrPhpFieldsHelper.php:363
+msgid "Choose which set you want to use"
+msgstr "﻿Elegir qué conjunto quieres utilizar"
+
+#: includes/shortcodes/classes/YasrNoStarsRankings.php:69
+msgid "Problem while retrieving the top 10 active users chart. Are you sure you have votes to show?"
+msgstr "Problema al recuperar el gráfico de los 10 usuarios más activos. ¿Seguro que hay votos que mostrar?"
+
+#: includes/shortcodes/classes/YasrNoStarsRankings.php:42
+msgid "Problem while retrieving the top 5 most active reviewers. Did you publish any review?"
+msgstr "Problema al recuperar los 5 usuarios más activos. ¿Publicaste alguna reseña?"
+
+#: includes/shortcodes/classes/YasrMultiSet.php:223
+msgid "Average"
+msgstr "Promedio"
+
+#: admin/settings/classes/YasrSettingsRankings.php:135
+#: includes/classes/YasrScriptsLoader.php:83
+msgid "Highest Rated"
+msgstr "Mejor puntuación"
+
+#: admin/settings/classes/YasrSettingsRankings.php:134
+#: includes/classes/YasrScriptsLoader.php:82
+msgid "Most Rated"
+msgstr "Mayor puntuación"
+
+#: includes/classes/YasrScriptsLoader.php:81
+msgid "Order by"
+msgstr "Ordenar por"
+
+#: admin/settings/classes/YasrSettingsRankings.php:234
+msgid "Rating:"
+msgstr "Valoración:"
+
+#: includes/shortcodes/classes/YasrVisitorMultiSet.php:61
+#: includes/shortcodes/classes/YasrVisitorMultiSet.php:69
+msgid "Submit!"
+msgstr "¡Enviar!"
+
+#: includes/shortcodes/classes/YasrVisitorMultiSet.php:161
+msgid "Thank you for voting!"
+msgstr "¡Gracias por votar!"
+
+#: includes/classes/YasrScriptsLoader.php:79
+msgid "Loading, please wait"
+msgstr "Cargando por favor espere"
+
+#: admin/settings/classes/YasrSettingsRightColumn.php:274
+msgid " It will require just 1 min but it's a HUGE help for me. Thank you."
+msgstr "Sólo requiere 1 minuto pero es una ENORME ayuda para mí. Gracias."
+
+#: admin/settings/classes/YasrSettingsDescriptions.php:164
+msgid "Leave it blank if you don't know what you're doing."
+msgstr "Déjalo en blanco si no sabes lo que estás haciendo."
+
+#: admin/settings/classes/YasrSettingsDescriptions.php:161
+msgid "Use the text area to write your own CSS styles and override the default ones."
+msgstr "Utiliza el área de texto para escribir tus propios estilos CSS y omitir los estilos por defecto."
+
+#: admin/settings/classes/YasrSettingsDescriptions.php:160
+msgid "Custom CSS Styles"
+msgstr "Estilos CSS personalizados"
+
+#: admin/settings/classes/YasrSettingsStyle.php:43
+msgid "Style Options"
+msgstr "Opciones de estilo"
+
+#: admin/settings/classes/YasrSettingsMultiset.php:1009
+msgid "Something goes wrong trying to insert set field name in edit form. Please report it"
+msgstr "Algo va mal al tratar de insertar el nombre del conjunto en el formulario de edición. Por favor, informa de ello"
+
+#: admin/settings/classes/YasrSettingsMultiset.php:950
+msgid "Something goes wrong trying to update a Multi Set's element. Please report it"
+msgstr "Algo va mal al tratar de de actualizar un elemento de conjuntos múltiple. Por favor, informa de ello"
+
+#: admin/settings/classes/YasrSettingsMultiset.php:893
+msgid "Something goes wrong trying to delete a Multi Set's element. Please report it"
+msgstr "Algo va mal al tratar de eliminar un elemento de conjunto múltiple. Por favor, informa de ello"
+
+#: admin/settings/classes/YasrSettingsMultiset.php:855
+msgid "Something goes wrong trying to delete a Multi Set . Please report it"
+msgstr "Algo va mal al tratar de eliminar un conjunto múltiple. Por favor, informa de ello"
+
+#: admin/settings/classes/YasrSettingsMultiset.php:658
+msgid "Something goes wrong trying insert set field name. Please report it"
+msgstr "Algo va mal al tratar de insertar el nombre del campo del conjunto. Por favor, informa de ello"
+
+#: admin/settings/classes/YasrSettingsMultiset.php:669
+#: admin/settings/classes/YasrSettingsMultiset.php:833
+msgid "Settings Saved"
+msgstr "Ajustes guardados"
+
+#: admin/settings/classes/YasrSettingsMultiset.php:279
+msgid "No Multi Set were found"
+msgstr "No se ha encontrado ningún conjunto múltiple"
+
+#: admin/settings/classes/YasrSettingsMultiset.php:486
+msgid "Save changes"
+msgstr "Guardar los cambios"
+
+#: admin/settings/classes/YasrSettingsMultiset.php:492
+msgid "You can use up to 9 elements"
+msgstr "Puedes utilizar hasta 9 elementos"
+
+#: admin/settings/classes/YasrSettingsMultiset.php:447
+msgid "Remove whole set?"
+msgstr "¿Eliminar todo el conjunto?"
+
+#: admin/settings/classes/YasrSettingsMultiset.php:142
+msgid "Create New Set"
+msgstr "Crear nuevo conjunto"
+
+#: admin/settings/classes/YasrSettingsMultiset.php:166
+msgid "Element "
+msgstr "Elemento"
+
+#: admin/settings/classes/YasrSettingsStyle.php:384
+msgid "Dark theme"
+msgstr "Tema oscuro"
+
+#: admin/settings/classes/YasrSettingsStyle.php:379
+msgid "Light theme"
+msgstr "Tema claro"
+
+#: admin/settings/classes/YasrSettingsStyle.php:368
+msgid "Dark"
+msgstr "Oscuro"
+
+#: admin/settings/classes/YasrSettingsStyle.php:367
+msgid "Light"
+msgstr "Claro"
+
+#: admin/settings/classes/YasrSettingsDescriptions.php:143
+msgid "Which color scheme do you want to use?"
+msgstr "¿Qué esquema de colores quieres utilizar?"
+
+#: admin/settings/classes/YasrSettingsGeneral.php:557
+msgid "You can always change itemType in the single post or page."
+msgstr "Siempre puedes cambiarlo en la entrada o página."
+
+#: admin/settings/classes/YasrSettingsGeneral.php:545
+msgid "Select default itemType for all post or pages"
+msgstr "Selecciona el tipo de elemento por defecto para todas las entradas o páginas"
+
+#: admin/settings/classes/YasrSettingsGeneral.php:469
+msgid "Allow everybody (logged in and anonymous)"
+msgstr "Permitir a todos (conectados y anónimos)"
+
+#: admin/settings/classes/YasrSettingsGeneral.php:468
+msgid "Allow only logged-in users"
+msgstr "Permitir sólo a usuarios conectados"
+
+#: admin/settings/classes/YasrSettingsGeneral.php:679
+msgid "Custom text to display when an user has already rated"
+msgstr "Texto personalizado a mostrar cuando un usuario ya ha puntuado"
+
+#: admin/settings/classes/YasrSettingsGeneral.php:654
+msgid "Custom text to display AFTER Visitor Rating"
+msgstr "Texto personalizado a mostrar DESPUÉS de la puntuación del visitante"
+
+#: admin/settings/classes/YasrSettingsGeneral.php:648
+msgid "Custom text to display BEFORE Visitor Rating"
+msgstr "Texto personalizado a mostrar ANTES de la puntuación del visitante"
+
+#: admin/settings/classes/YasrSettingsGeneral.php:642
+msgid "Custom text to display before Overall Rating"
+msgstr "Texto personalizado a mostrar antes de la puntuación global"
+
+#: admin/settings/classes/YasrSettingsGeneral.php:223
+msgid "Use only in custom post types?"
+msgstr "¿Utilizar sólo en tipos de contenidos personalizados?"
+
+#: admin/settings/classes/YasrSettingsGeneral.php:206
+#: admin/settings/classes/YasrSettingsGeneral.php:295
+msgid "Exclude Pages?"
+msgstr "¿Excluir páginas?"
+
+#: admin/settings/classes/YasrSettingsGeneral.php:193
+#: admin/settings/classes/YasrSettingsRankings.php:110
+#: admin/js/src/guten/yasrGutenUtils.js:5
+msgid "Size"
+msgstr "Tamaño"
+
+#: admin/settings/classes/YasrSettingsGeneral.php:161
+msgid "Where?"
+msgstr "¿Dónde?"
+
+#: admin/settings/classes/YasrSettingsGeneral.php:149
+#: admin/settings/classes/YasrSettingsGeneral.php:165
+#: admin/settings/classes/YasrSettingsGeneral.php:314
+msgid "Both"
+msgstr "Ambas"
+
+#: admin/settings/classes/YasrSettingsGeneral.php:145
+#: admin/settings/classes/YasrSettingsGeneral.php:280
+msgid "What?"
+msgstr "¿Qué?"
+
+#: admin/settings/classes/YasrSettingsGeneral.php:209
+#: admin/settings/classes/YasrSettingsGeneral.php:226
+#: admin/settings/classes/YasrSettingsGeneral.php:298
+#: admin/settings/classes/YasrSettingsGeneral.php:349
+#: admin/settings/classes/YasrSettingsRankings.php:214
+#: admin/settings/classes/YasrSettingsRankings.php:294
+#: admin/settings/classes/YasrSettingsRankings.php:363
+msgid "No"
+msgstr "No"
+
+#: admin/settings/classes/YasrSettingsGeneral.php:208
+#: admin/settings/classes/YasrSettingsGeneral.php:225
+#: admin/settings/classes/YasrSettingsGeneral.php:297
+#: admin/settings/classes/YasrSettingsRankings.php:295
+#: admin/settings/classes/YasrSettingsRankings.php:364
+msgid "Yes"
+msgstr "Sí"
+
+#: admin/settings/classes/YasrSettingsGeneral.php:129
+msgid "Use Auto Insert?"
+msgstr "¿Utilizar inserción automática?"
+
+#: admin/editor/yasr-metabox-schema.php:66
+msgid "Rich snippet options"
+msgstr "Opciones de rich snippets"
+
+#: admin/settings/classes/YasrSettingsGeneral.php:430
+msgid "Show \"Visitor Votes\" in Archive Page?"
+msgstr "¿Mostrar «Votos de visitantes» en la página de archivo?"
+
+#: admin/settings/classes/YasrSettingsGeneral.php:408
+msgid "Show \"Overall Rating\" in Archive Pages?"
+msgstr "¿Mostrar «Valoración global» en las páginas de archivos?"
+
+#: admin/settings/classes/YasrSettingsDescriptions.php:19
+msgid "Auto Insert Options"
+msgstr "Opciones de inserción automática"
+
+#: admin/settings/classes/YasrSettingsGeneral.php:34
+msgid "General settings"
+msgstr "Ajustes generales"
+
+#: admin/editor/YasrEditorHooks.php:173
+msgid "You don't have enough privileges to insert a Multi Set"
+msgstr "No tienes suficiente privilegios para insertar un conjunto múltiple"
+
+#: admin/editor/YasrEditorHooks.php:158
+msgid "You don't have enought privileges to insert Overall Rating"
+msgstr "No tienes suficientes privilegios para insertar la puntuación global"
+
+#: includes/classes/YasrScriptsLoader.php:75
+msgid "star"
+msgstr "estrella"
+
+#: includes/classes/YasrScriptsLoader.php:76
+msgid "stars"
+msgstr "estrellas"
+
+#: includes/shortcodes/classes/YasrShortcodesAjax.php:513
+msgid "Rating Saved"
+msgstr "Puntuación guardada"
+
+#: includes/classes/YasrLastRatingsWidget.php:292
+msgid "Pages"
+msgstr "Páginas"
+
+#: includes/classes/YasrLastRatingsWidget.php:194
+msgid "Ip address"
+msgstr "Dirección IP"
+
+#: admin/settings/classes/YasrStatsListTable.php:201
+#: includes/classes/YasrLastRatingsWidget.php:449 includes/yasr-widgets.php:428
+msgid "anonymous"
+msgstr "anónimo"
+
+#: admin/editor/YasrEditorHooks.php:517
+msgid "Most Active Users"
+msgstr "Usuarios más activos"
+
+#: admin/settings/yasr-settings-rankings.php:45
+msgid "Ranking preview"
+msgstr "Vista previa de la valoración"
+
+#: admin/editor/YasrEditorHooks.php:363
+msgid "Insert Multiset:"
+msgstr "Inserta conjunto múltiple"
+
+#: admin/editor/YasrEditorHooks.php:406
+msgid "Insert Multi Set"
+msgstr "Inserta conjunto múltiple"
+
+#: admin/editor/YasrEditorHooks.php:389
+msgid "If Readonly is checked, only you can insert the votes (in the box above the editor)"
+msgstr "Si está activado como sólo lectura, sólo se pueden insertar los votos (en la caja sobre el editor)"
+
+#: admin/editor/YasrEditorHooks.php:383
+msgid "Readonly?"
+msgstr "¿Solo lectura ?"
+
+#: admin/editor/YasrEditorHooks.php:377
+msgid "Choose wich set you want to insert."
+msgstr "Elige qué conjunto quieres insertar."
+
+#: admin/editor/YasrEditorHooks.php:342
+msgid "Insert Visitor Votes"
+msgstr "Inserta los votos de los visitantes"
+
+#: admin/editor/YasrEditorHooks.php:334
+#: admin/settings/classes/YasrSettingsGeneral.php:147
+#: admin/settings/classes/YasrSettingsGeneral.php:282
+#: admin/settings/classes/YasrStats.php:26
+msgid "Visitor Votes"
+msgstr "Votos de visitantes"
+
+#: includes/yasr-widgets.php:146 includes/yasr-widgets.php:323
+#: admin/js/src/guten/blocks/deprecated/deprecated_blocks.js:16
+#: admin/js/src/guten/yasrGutenUtils.js:10
+msgid "Large"
+msgstr "Grande"
+
+#: includes/yasr-widgets.php:138 includes/yasr-widgets.php:314
+#: admin/js/src/guten/blocks/deprecated/deprecated_blocks.js:15
+#: admin/js/src/guten/yasrGutenUtils.js:9
+msgid "Medium"
+msgstr "Medio"
+
+#: includes/yasr-widgets.php:130 includes/yasr-widgets.php:306
+#: admin/js/src/guten/blocks/deprecated/deprecated_blocks.js:14
+#: admin/js/src/guten/yasrGutenUtils.js:8
+msgid "Small"
+msgstr "Pequeño"
+
+#: admin/editor/YasrEditorHooks.php:321 admin/editor/YasrEditorHooks.php:350
+#: admin/js/src/guten/blocks/deprecated/deprecated_blocks.js:11
+msgid "Choose Size"
+msgstr "Elige tamaño"
+
+#: admin/editor/YasrEditorHooks.php:312
+msgid "Insert Overall Rating"
+msgstr "Inserta la puntuación global"
+
+#: admin/editor/YasrEditorHooks.php:223
+msgid "Read the doc"
+msgstr "Lee la documentación"
+
+#: admin/editor/YasrEditorHooks.php:268
+msgid "Main"
+msgstr "Principal"
+
+#: admin/editor/YasrMetaboxBelowEditor.php:243
+msgid "If, you want allow your visitor to vote on this multiset, use this shortcode"
+msgstr "Si quieres permitir a tu visitante vote en este conjunto múltiple, utiliza este shortcode"
+
+#: admin/classes/YasrAdmin.php:271 admin/classes/YasrAdmin.php:286
+#: admin/classes/YasrAdmin.php:301 admin/editor/YasrEditorHooks.php:596
+#: admin/settings/classes/YasrImportRatingPlugins.php:450
+#: admin/settings/classes/YasrImportRatingPlugins.php:524
+#: admin/settings/classes/YasrImportRatingPlugins.php:588
+#: admin/settings/classes/YasrImportRatingPlugins.php:644
+#: admin/settings/yasr-settings.php:27 admin/settings/yasr-stats-page.php:27
+#: includes/classes/YasrOnInstall.php:26
+msgid "You do not have sufficient permissions to access this page."
+msgstr "No tienes los permisos suficientes para acceder a esta página."

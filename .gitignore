@@ -1,0 +1,48 @@
+# Secrets and environment
+wp-config.php
+.env
+.env.*
+!.env.example
+
+# Database dumps and exports
+*.sql
+*.sql.gz
+*.dump
+*.bak.sql
+
+# Logs
+*.log
+php_errorlog
+error_log
+/debug.log
+wp-content/debug.log
+
+# Caches and generated files
+wp-content/cache/
+wp-content/wp-rocket-config/
+cursos/cache/
+
+# User uploads/media/form submissions: too large and may contain private data
+wp-content/uploads/
+
+# Security/firewall runtime data
+wp-content/wflogs/
+
+# Backups and archives
+*.zip
+*.rar
+*.tar
+*.tar.gz
+*.7z
+*.bak
+*.backup
+*.backup_antes_fix
+*.old
+*.orig
+.htaccess1
+
+# Local/dev helpers
+.DS_Store
+Thumbs.db
+*.tmp
+*.temp

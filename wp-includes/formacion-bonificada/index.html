@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- ── SEO: noindex — landing de pago ── -->
+    <meta name="robots" content="noindex, nofollow">
+    
+    <title>Lleva tu Empresa al Siguiente Nivel | Formación 100% Bonificable - The Corner</title>
+    <meta name="description" content="Formación bonificable para empresas: IA, Bienestar y Productividad, Office Avanzado. Impulsa a tu equipo con The Corner.">
+    <link rel="icon" type="image/png" href="img/logotc.png">
+    
+    <!-- Open Graph -->
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Formación Bonificable para Empresas | The Corner">
+    <meta property="og:description" content="Transforma tu equipo con formación en IA, Bienestar y Office. 100% bonificable vía FUNDAE.">
+    <meta property="og:site_name" content="The Corner — Formación Empresas">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Goldplay Alt Bold -->
+    <style>
+        @font-face {
+            font-family: 'Goldplay Alt';
+            src: url('fonts/GoldplayAlt-Bold.woff2') format('woff2'),
+                 url('fonts/GoldplayAlt-Bold.woff') format('woff');
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+        }
+    </style>
+    
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════
+     NAVBAR
+════════════════════════════════════════════════ -->
+<nav role="navigation" aria-label="Navegación principal">
+    <div class="nav-inner">
+        <a href="/" class="nav-logo" aria-label="The Corner — Inicio">
+            <img src="img/logo.png" alt="The Corner" class="brand-logo brand-logo-nav">
+        </a>
+        <ul class="nav-links">
+            <li><a href="#cursos">Cursos</a></li>
+            <li><a href="#bonificacion">Bonificación</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <a href="#contacto" class="nav-cta">Solicitar info →</a>
+    </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════════
+     HERO
+════════════════════════════════════════════════ -->
+<section class="hero" aria-labelledby="hero-heading">
+    <div class="container">
+        <div class="hero-grid">
+            <div class="hero-content">
+                <span class="hero-badge">🚀 100% Bonificable vía FUNDAE</span>
+                <h1 id="hero-heading">
+                    Lleva tu empresa<br>al <em>siguiente nivel</em>
+                </h1>
+                <p class="hero-desc">
+                    Formación profesional en IA, Habilidades Comunicativas, Productividad y Office para equipos que quieren crecer. 
+                    Totalmente bonificable a través de FUNDAE. Sin coste directo para tu empresa.
+                </p>
+                <div class="hero-btns">
+                    <a href="#cursos" class="btn-primary">
+                        Ver cursos <span>→</span>
+                    </a>
+                    <a href="#bonificacion" class="btn-secondary">Cómo funciona</a>
+                </div>
+            </div>
+
+            <div class="hero-form">
+                <div class="form-big">
+                    <h3>Déjanos tus datos</h3>
+                    <p>Te contactamos para diseñar tu programa formativo.</p>
+                    <form action="https://thecorner.es/thank-you-page/" method="post">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" name="your-name" placeholder="Nombre *" required autocomplete="given-name">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="apellidos" placeholder="Apellidos *" required autocomplete="family-name" data-message-label="Apellidos">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="email" name="your-email" placeholder="Email *" required autocomplete="email">
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" name="telefono" placeholder="Teléfono *" required autocomplete="tel">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="your-surname" placeholder="Empresa *" required>
+                        </div>
+                        <div class="form-group">
+                            <select name="num-empleados" required data-message-label="Nº de empleados">
+                                <option value="" disabled selected>Nº de empleados aproximado *</option>
+                                <option value="1-10">1-10 empleados</option>
+                                <option value="11-50">11-50 empleados</option>
+                                <option value="51-100">51-100 empleados</option>
+                                <option value="101-250">101-250 empleados</option>
+                                <option value="250+">Más de 250</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select name="tematica" required>
+                                <option value="" disabled selected>Curso(s) de interés *</option>
+                                <option value="Transformación con IA">Transformación con IA</option>
+                                <option value="Bienestar + Motivación">Habilidades + Productividad</option>
+                                <option value="Optimización con Office">Optimización con Office</option>
+                                <option value="Varios Cursos">Varios Cursos</option>
+                                <option value="Formación personalizada">Formación personalizada</option>
+                            </select>
+                        </div>
+                        <input type="hidden" name="origin" id="origin-field" value="15">
+                        <input type="hidden" name="acceptance-729" value="1">
+                        <input type="hidden" name="checkbox-243" value="">
+                        <textarea name="your-message" hidden></textarea>
+                        <button type="submit" class="form-submit">Solicitar información →</button>
+                        <button type="button" class="form-whatsapp"
+                            onclick="window.open('https://api.whatsapp.com/send/?phone=34660061358&text=Hola%21+Estoy+interesado/a+en+recibir+m%C3%A1s+informaci%C3%B3n+sobre+formaci%C3%B3n+bonificable+para+empresas&type=phone_number&app_absent=0','_blank')">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#25D366">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+                                <path d="M12 0C5.373 0 0 5.373 0 12c0 2.114.553 4.1 1.524 5.825L.057 23.927l6.273-1.447A11.953 11.953 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.007-1.371l-.359-.213-3.724.858.879-3.626-.234-.373A9.818 9.818 0 1112 21.818z"/>
+                            </svg>
+                            Prefiero información por WhatsApp
+                        </button>
+                        <p class="form-privacy">
+                            Al enviar aceptas nuestra
+                            <a href="https://thecorner.es/politica-de-privacidad">política de privacidad</a>.
+                            Sin spam.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     TRUST BAR
+════════════════════════════════════════════════ -->
+<div class="trust-bar" role="complementary" aria-label="Datos de confianza">
+    <div class="container trust-bar-inner">
+        <div class="trust-item">
+            <div class="trust-icon">💰</div>
+            <div>
+                <strong>100% Bonificable</strong>
+                <span>Vía FUNDAE</span>
+            </div>
+        </div>
+        <div class="trust-item">
+            <div class="trust-icon">📍</div>
+            <div>
+                <strong>38+ años</strong>
+                <span>Formando profesionales</span>
+            </div>
+        </div>
+        <div class="trust-item">
+            <div class="trust-icon">⚡</div>
+            <div>
+                <strong>Formación flexible</strong>
+                <span>Adaptada a tu empresa</span>
+            </div>
+        </div>
+        <div class="trust-item">
+            <div class="trust-icon">🎯</div>
+            <div>
+                <strong>Resultados medibles</strong>
+                <span>ROI garantizado</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     WHY SECTION
+════════════════════════════════════════════════ -->
+<section class="why-section">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-label">¿Por qué ahora?</span>
+            <h2>Invierte en tu equipo, transforma tu empresa</h2>
+            <p>No es gasto, es inversión estratégica que se paga sola</p>
+        </div>
+        <div class="why-grid">
+            <div class="why-card">
+                <div class="why-icon">💰</div>
+                <h3>Sin coste real</h3>
+                <p>La formación se bonifica directamente a través de la Seguridad Social.</p>
+            </div>
+            <div class="why-card">
+                <div class="why-icon">📈</div>
+                <h3>Más productividad</h3>
+                <p>Equipos formados son equipos más eficientes. Automatiza, optimiza y mejora procesos desde el día 1.</p>
+            </div>
+            <div class="why-card">
+                <div class="why-icon">🎯</div>
+                <h3>100% personalizado</h3>
+                <p>Adaptamos horarios, contenidos y ritmo a las necesidades específicas de tu empresa y sector.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     CURSOS — 3 Bloques Horizontales
+════════════════════════════════════════════════ -->
+<section class="cursos" id="cursos" aria-labelledby="cursos-heading">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-label accent">Propuesta formativa</span>
+            <h2 id="cursos-heading">3 bloques para transformar tu equipo</h2>
+            <p>Cada programa de 6 horas, diseñado para impacto inmediato</p>
+            <div class="bonificable-badge">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M7 10L9 12L13 8M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                100% Bonificable FUNDAE
+            </div>
+        </div>
+
+        <div class="cursos-grid">
+            
+            <!-- Bloque 1: IA -->
+            <article class="curso-card" aria-labelledby="ia-heading">
+                <div class="curso-content">
+                    <h3 id="ia-heading">Transformación con IA</h3>
+                    <div class="curso-duration">
+                        <svg width="16" height="16" viewBox="0 0 20 20" fill="none">
+                            <path d="M10 5V10L13 13M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        6 horas
+                    </div>
+                    <div class="curso-topics">
+                        <span class="topic-tag">Automatización</span>
+                        <span class="topic-tag">Productividad con IA</span>
+                        <span class="topic-tag">Asistentes inteligentes</span>
+                        <span class="topic-tag">Imágenes y vídeos</span>
+                    </div>
+                    <a href="#contacto" class="curso-cta">
+                        Más info <span>→</span>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Bloque 2: Bienestar -->
+            <article class="curso-card" aria-labelledby="bienestar-heading">
+                <div class="curso-content">
+                    <h3 id="bienestar-heading">Habilidades + Motivación = Productividad</h3>
+                    <div class="curso-duration">
+                        <svg width="16" height="16" viewBox="0 0 20 20" fill="none">
+                            <path d="M10 5V10L13 13M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        6 horas
+                    </div>
+                    <div class="curso-topics">
+                        <span class="topic-tag">Autoestima</span>
+                        <span class="topic-tag">Trabajo en equipo</span>
+                        <span class="topic-tag">Gestión del tiempo</span>
+                        <span class="topic-tag">Inteligencia emocional</span>
+                        <span class="topic-tag">Liderazgo</span>
+                    </div>
+                    <a href="#contacto" class="curso-cta">
+                        Más info <span>→</span>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Bloque 3: Office -->
+            <article class="curso-card" aria-labelledby="office-heading">
+                <div class="curso-content">
+                    <h3 id="office-heading">Optimización con Office</h3>
+                    <div class="curso-duration">
+                        <svg width="16" height="16" viewBox="0 0 20 20" fill="none">
+                            <path d="M10 5V10L13 13M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        6 horas
+                    </div>
+                    <div class="curso-topics">
+                        <span class="topic-tag">Excel avanzado</span>
+                        <span class="topic-tag">Word profesional</span>
+                        <span class="topic-tag">PowerPoint impactante</span>
+                        <span class="topic-tag">Tips y trucos</span>
+                    </div>
+                    <a href="#contacto" class="curso-cta">
+                        Más info <span>→</span>
+                    </a>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     BONIFICACIÓN INFO
+════════════════════════════════════════════════ -->
+<section class="bonificacion-section" id="bonificacion" aria-labelledby="bonif-heading">
+    <div class="container">
+        <div class="bonificacion-inner">
+            <h2 id="bonif-heading">¿Cómo funciona la bonificación?</h2>
+            <div class="bonificacion-steps">
+                <div class="bonif-step">
+                    <div class="bonif-step-num">1</div>
+                    <div class="bonif-step-text">
+                        <h4>Crédito disponible</h4>
+                        <p>Todas las empresas tienen crédito anual de FUNDAE según su plantilla. No lo pierdas.</p>
+                    </div>
+                </div>
+                <div class="bonif-step">
+                    <div class="bonif-step-num">2</div>
+                    <div class="bonif-step-text">
+                        <h4>Sin coste directo</h4>
+                        <p>La formación se descuenta de tus Seguros Sociales.</p>
+                    </div>
+                </div>
+                <div class="bonif-step">
+                    <div class="bonif-step-num">3</div>
+                    <div class="bonif-step-text">
+                        <h4>Nosotros gestionamos</h4>
+                        <p>The Corner tramita todo con FUNDAE. Tú solo te preocupas de formar a tu equipo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bonif-note">
+                <strong>Importante:</strong> La bonificación se realiza a través de FUNDAE (Fundación Estatal para la Formación en el Empleo). 
+                Nos encargamos de todos los trámites para que aproveches al máximo tu crédito formativo.
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     FORM SECTION
+════════════════════════════════════════════════ -->
+<section class="form-section" id="contacto" aria-labelledby="form-heading">
+    <div class="container">
+        <div class="form-section-inner">
+
+            <div class="form-section-left">
+                <span class="section-label accent">Da el paso</span>
+                <h2 id="form-heading">Solicita información sin compromiso</h2>
+                <p>
+                    Nos dejas tus datos, te llamamos en menos de 24/48h para orientarte y, 
+                    si encaja, diseñamos un programa a medida para tu equipo.
+                </p>
+                <ul class="form-benefits">
+                    <li>Sin compromiso — solo te orientamos</li>
+                    <li>Diagnóstico de necesidades gratuito</li>
+                    <li>Propuesta personalizada para tu empresa</li>
+                    <li>Gestión completa de la bonificación FUNDAE</li>
+                </ul>
+            </div>
+
+            <div class="form-big">
+                <h3>Déjanos tus datos</h3>
+                <p>Te contactamos para diseñar tu programa formativo.</p>
+                <form action="https://thecorner.es/thank-you-page/" method="post">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" name="your-name" placeholder="Nombre *" required autocomplete="given-name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="apellidos" placeholder="Apellidos *" required autocomplete="family-name" data-message-label="Apellidos">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="email" name="your-email" placeholder="Email *" required autocomplete="email">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="telefono" placeholder="Teléfono *" required autocomplete="tel">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="your-surname" placeholder="Empresa *" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="cargo" placeholder="Cargo (opcional)" data-message-label="Cargo">
+                    </div>
+                    <div class="form-group">
+                        <select name="num-empleados" required data-message-label="Nº de empleados">
+                            <option value="" disabled selected>Nº de empleados aproximado *</option>
+                            <option value="1-10">1-10 empleados</option>
+                            <option value="11-50">11-50 empleados</option>
+                            <option value="51-100">51-100 empleados</option>
+                            <option value="101-250">101-250 empleados</option>
+                            <option value="250+">Más de 250</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select name="tematica" required>
+                            <option value="" disabled selected>Curso(s) de interés *</option>
+                            <option value="Transformación con IA">Transformación con IA</option>
+                            <option value="Bienestar + Motivación">Habilidades + Motivación</option>
+                            <option value="Optimización con Office">Optimización con Office</option>
+                            <option value="Varios Cursos">Varios Cursos</option>
+                            <option value="Formación personalizada">Formación personalizada</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="your-message" placeholder="Cuéntanos sobre las necesidades de tu empresa (opcional)"></textarea>
+                    </div>
+                    <input type="hidden" name="origin" id="origin-field-2" value="15">
+                    <input type="hidden" name="acceptance-729" value="1">
+                    <input type="hidden" name="checkbox-243" value="">
+                    <button type="submit" class="form-submit">Solicitar información →</button>
+                    <button type="button" class="form-whatsapp"
+                        onclick="window.open('https://api.whatsapp.com/send/?phone=34660061358&text=Hola%21+Estoy+interesado/a+en+recibir+m%C3%A1s+informaci%C3%B3n+sobre+formaci%C3%B3n+bonificable+para+empresas&type=phone_number&app_absent=0','_blank')">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#25D366">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+                            <path d="M12 0C5.373 0 0 5.373 0 12c0 2.114.553 4.1 1.524 5.825L.057 23.927l6.273-1.447A11.953 11.953 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.007-1.371l-.359-.213-3.724.858.879-3.626-.234-.373A9.818 9.818 0 1112 21.818z"/>
+                        </svg>
+                        Prefiero información por WhatsApp
+                    </button>
+                    <p class="form-privacy">
+                        Al enviar aceptas nuestra
+                        <a href="https://thecorner.es/politica-de-privacidad">política de privacidad</a>.
+                        Sin spam.
+                    </p>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════ -->
+<footer role="contentinfo">
+    <div class="container">
+        <div class="footer-inner">
+            <div>
+                <div class="footer-logo">
+                    <img src="img/logo.png" alt="The Corner" class="brand-logo brand-logo-footer">
+                </div>
+                <p class="footer-desc">
+                    Centro de Estudios en Santa Coloma de Gramenet desde 1988. 
+                    Formación para empresas, idiomas y cursos subvencionados. Más de 38 años formando profesionales.
+                </p>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <div class="contact-item">
+                    <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M2 3C2 2.44772 2.44772 2 3 2H5.15287C5.64171 2 6.0589 2.35341 6.13927 2.8356L6.87858 7.27147C6.95075 7.70451 6.73206 8.13397 6.3394 8.3303L4.79126 9.10437C5.90756 11.8783 8.12168 14.0924 10.8956 15.2087L11.6697 13.6606C11.866 13.2679 12.2955 13.0492 12.7285 13.1214L17.1644 13.8607C17.6466 13.9411 18 14.3583 18 14.8471V17C18 17.5523 17.5523 18 17 18H15C7.8203 18 2 12.1797 2 5V3Z"/>
+                    </svg>
+                    <a href="tel:933853954">93 385 39 54</a>
+                </div>
+                <div class="contact-item">
+                    <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                    </svg>
+                    <a href="mailto:empresas@thecorner.es">empresas@thecorner.es</a>
+                </div>
+                <div class="contact-item">
+                    <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                    </svg>
+                    <span>Santa Coloma de Gramenet</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 The Corner Centre d'Estudis® — Todos los derechos reservados | 
+            <a href="https://thecorner.es/politica-de-privacidad/" style="color: inherit;">Política de Privacidad</a> | 
+            <a href="https://thecorner.es/aviso-legal/" style="color: inherit;">Aviso Legal</a></p>
+        </div>
+    </div>
+</footer>
+
+<!-- ═══════════════════════════════════════════════
+     STICKY FORM CTA
+════════════════════════════════════════════════ -->
+<div class="sticky-form-cta" role="complementary" aria-label="CTA Formulario">
+    <div class="sticky-form-inner">
+        <p class="sticky-form-text">
+            <span>Formación 100% bonificable</span> — Transforma tu equipo
+        </p>
+        <a href="#contacto" class="sticky-form-btn">Solicitar info →</a>
+    </div>
+</div>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

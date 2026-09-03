@@ -1,0 +1,32 @@
+{
+  "_comment": "Configuración para optimize_images_db.py",
+  
+  "database": {
+    "host": "localhost",
+    "user": "root",
+    "password": "",
+    "database": "thecorner_db",
+    "charset": "utf8mb4"
+  },
+  
+  "query": {
+    "_comment": "Ajusta los nombres de tabla y columnas según tu BBDD",
+    "table": "cursos",
+    "column_image_url": "imatge",
+    "column_name": "nom_curs"
+  },
+  
+  "optimization": {
+    "sizes": {
+      "hero": 1920,
+      "card": 800,
+      "thumbnail": 400
+    },
+    "webp_quality": 85,
+    "_quality_guide": "90-100: máxima calidad | 80-90: recomendado | 70-80: buena | <70: no recomendado"
+  },
+  
+  "output": {
+    "directory": "optimized_images"
+  }
+}

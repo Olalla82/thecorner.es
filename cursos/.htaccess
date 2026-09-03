@@ -1,0 +1,84 @@
+RewriteEngine On
+
+# Redirección temporal campaña email WhatsApp Business
+# RewriteRule ^marqueting-a-cercadors-seo-sem-i-analitica-web/?$ /cursos/whatsapp-business [R=302,L,QSA]
+RewriteRule ^integracio-de-components-software-en-pagines-web/?$ /cursos//publicacio-de-pagines-web-juliol [R=302,L,QSA]
+
+RewriteBase /cursos/
+AddDefaultCharset UTF-8
+
+# NO reescribir rutas de imágenes / assets (evita romper en local)
+RewriteCond %{REQUEST_URI} \.(jpg|jpeg|png|gif|webp|svg|css|js)$ [NC]
+RewriteRule .* - [L]
+
+# REDIRECCIÓN SEO: quitar .php (SOLO cuando el usuario lo pide)
+# EXCLUIR archivos del sistema de caché
+RewriteCond %{THE_REQUEST} \s/cursos/([^.]+)\.php[\s?] [NC]
+RewriteCond %{REQUEST_URI} !^/cursos/cache- [NC]
+RewriteCond %{REQUEST_URI} !^/cursos/test- [NC]
+RewriteCond %{REQUEST_URI} !^/cursos/EJEMPLO_ [NC]
+RewriteRule ^([^.]+)\.php$ /cursos/$1 [R=301,L]
+
+# Compresión Gzip/Brotli para mejorar velocidad
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/javascript application/javascript application/json
+  AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# Cache de navegador para imágenes (30 días)
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpeg "access plus 30 days"
+  ExpiresByType image/png "access plus 30 days"
+  ExpiresByType image/webp "access plus 30 days"
+  ExpiresByType text/css "access plus 7 days"
+  ExpiresByType application/javascript "access plus 7 days"
+</IfModule>
+
+# Redirecciones 301 de nombres antiguos
+RewriteRule ^cursos-gratuitos-standalone\.php$ cursos-gratuitos.php [R=301,L]
+RewriteRule ^cursos-gratuitos-standalone-ca\.php$ cursos-gratuitos-ca.php [R=301,L]
+
+# URLs limpias → archivos PHP (listados)
+RewriteRule ^cursos-gratuitos/?$ cursos-gratuitos.php [L,QSA]
+RewriteRule ^cursos-gratuitos-ca/?$ cursos-gratuitos-ca.php [L,QSA]
+
+# URLs limpias → Sistema de Caché (páginas administrativas)
+RewriteRule ^admin-dashboard/?$ admin-dashboard.php [L,QSA]
+RewriteRule ^admin/?$ admin-dashboard.php [L,QSA]
+RewriteRule ^dashboard/?$ admin-dashboard.php [L,QSA]
+RewriteRule ^admin-usuarios/?$ admin-usuarios.php [L,QSA]
+RewriteRule ^usuarios/?$ admin-usuarios.php [L,QSA]
+RewriteRule ^cache-admin/?$ cache-admin.php [L,QSA]
+RewriteRule ^cache-test/?$ cache-test.php [L,QSA]
+RewriteRule ^cache-cleanup/?$ cache-cleanup.php [L,QSA]
+RewriteRule ^cache-simple/?$ cache-simple.php [L,QSA]
+RewriteRule ^login/?$ login.php [L,QSA]
+RewriteRule ^logout/?$ logout.php [L,QSA]
+RewriteRule ^generate-password/?$ generate-password.php [L,QSA]
+
+# Favicon
+RewriteRule ^favicon\.ico$ https://thecorner.es/wp-content/uploads/2024/05/cropped-THE-CORNER-2022-Online-Perfiles-32x32.jpg [R=301,L]
+
+# Sitemap dinámico
+RewriteRule ^sitemap-index\.xml$ sitemap-index.php [L,QSA]
+RewriteRule ^sitemap\.xml$ sitemap.php [L,QSA]
+
+# Remover barra final si existe (excepto directorios reales)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} (.+)/$
+RewriteRule ^ %1 [R=301,L]
+
+# MUY IMPORTANTE: evitar que rutas tipo /wp-content/uploads pasen por PHP
+RewriteCond %{REQUEST_URI} ^/wp-content/uploads/ [NC]
+RewriteRule .* - [L]
+
+# Routing interno SOLO si no existe archivo o carpeta
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Ruta catalana: /ca/slug
+RewriteRule ^ca/([a-z0-9\-]+)$ curso-ca.php?slug=$1 [L,QSA]
+
+# Ruta española (por defecto): /slug
+RewriteRule ^([a-z0-9\-]+)$ curso.php?slug=$1 [L,QSA]

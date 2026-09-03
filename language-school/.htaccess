@@ -1,0 +1,71 @@
+# ==============================================================================
+# THE CORNER - Configuración Apache
+# Academia de inglés - Santa Coloma de Gramenet
+# ==============================================================================
+
+# ── DIRECTORIO INDEX ──────────────────────────────────────────────────────────
+DirectoryIndex index.html index.php
+
+# ── REDIRECCIONES URL LIMPIAS ─────────────────────────────────────────────────
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # ==========================================================================
+    # CURSO INTENSIVO INGLÉS JULIO
+    # ==========================================================================
+
+    # Redirección 301 de la URL antigua a la nueva
+    RewriteCond %{THE_REQUEST} \s/+language-school/summer-camp/?[\s?] [NC]
+    RewriteRule ^summer-camp/?$ /language-school/curso-intensivo-ingles-julio/ [R=301,L]
+
+    # La nueva URL muestra internamente el contenido de summer-camp
+    RewriteRule ^curso-intensivo-ingles-julio/?$ summer-camp/ [L]
+
+    # Reescribir recursos estáticos (JS, CSS, imágenes, fuentes)
+    RewriteRule ^curso-intensivo-ingles-julio/js/(.*)$ summer-camp/js/$1 [L]
+    RewriteRule ^curso-intensivo-ingles-julio/css/(.*)$ summer-camp/css/$1 [L]
+    RewriteRule ^curso-intensivo-ingles-julio/img/(.*)$ summer-camp/img/$1 [L]
+    RewriteRule ^curso-intensivo-ingles-julio/fonts/(.*)$ summer-camp/fonts/$1 [L]
+
+    # Redirigir /landing/index.html a /landing/
+    RewriteCond %{THE_REQUEST} ^GET.*index\.html [NC]
+    RewriteRule ^(.*)index\.html$ /$1 [R=301,L]
+
+    # Redirigir /kinder-corner/index.html a /kinder-corner/
+    RewriteCond %{THE_REQUEST} ^GET.*index\.html [NC]
+    RewriteRule ^(.*)index\.html$ /$1 [R=301,L]
+</IfModule>
+
+# ── SEGURIDAD ─────────────────────────────────────────────────────────────────
+Options -Indexes
+
+# Proteger archivos sensibles
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# ── COMPRESIÓN GZIP ───────────────────────────────────────────────────────────
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
+</IfModule>
+
+# ── CACHE PARA RECURSOS ESTÁTICOS ────────────────────────────────────────────
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType font/woff2 "access plus 1 year"
+</IfModule>
+
+# ── SEGURIDAD HEADERS ─────────────────────────────────────────────────────────
+<IfModule mod_headers.c>
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-XSS-Protection "1; mode=block"
+</IfModule>

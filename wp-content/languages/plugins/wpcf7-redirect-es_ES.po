@@ -1,0 +1,1194 @@
+# Translation of Plugins - Redirection for Contact Form 7 - Stable (latest release) in Spanish (Spain)
+# This file is distributed under the same license as the Plugins - Redirection for Contact Form 7 - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-04-23 18:05:11+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: es\n"
+"Project-Id-Version: Plugins - Redirection for Contact Form 7 - Stable (latest release)\n"
+
+#: templates/add-actions-dropdown.php:20
+msgid "Premium"
+msgstr "Premium"
+
+#: assets/dashboard/App.jsx:79 build/assets/backend-dashboard.js:1
+msgid "Licenses"
+msgstr "Licencias"
+
+#: classes/aff/class-ext-accessibe.php:334
+#: classes/aff/class-ext-accessibe.php:440
+msgid "Large"
+msgstr "Grande"
+
+#: classes/aff/class-ext-accessibe.php:371
+#: classes/aff/class-ext-accessibe.php:395
+#: classes/aff/class-ext-accessibe.php:453
+msgid "Left"
+msgstr "Izquierda"
+
+#: classes/aff/class-ext-accessibe.php:370
+#: classes/aff/class-ext-accessibe.php:394
+#: classes/aff/class-ext-accessibe.php:452
+msgid "Right"
+msgstr "Derecha"
+
+#: classes/aff/class-ext-accessibe.php:367
+msgid "Widget Position"
+msgstr "Posición del widget"
+
+#: classes/aff/class-ext-accessibe.php:357
+msgid "Widget Language"
+msgstr "Idioma del widget"
+
+#: classes/aff/class-ext-accessibe.php:349
+msgid "Link To Feedback"
+msgstr "Enlace a los comentarios"
+
+#: classes/aff/class-ext-accessibe.php:341
+msgid "Link To Statment"
+msgstr "Enlace a la declaración"
+
+#: classes/aff/class-ext-accessibe.php:333
+#: classes/aff/class-ext-accessibe.php:439
+msgid "Medium"
+msgstr "Medio"
+
+#: classes/aff/class-ext-accessibe.php:332
+#: classes/aff/class-ext-accessibe.php:438
+msgid "Small"
+msgstr "Pequeño"
+
+#: classes/aff/class-ext-accessibe.php:327
+msgid "Trigger Size"
+msgstr "Tamaño del disparador"
+
+#: classes/aff/class-ext-accessibe.php:318
+msgid "Trigger Icon"
+msgstr "Icono del disparador"
+
+#: classes/aff/class-ext-accessibe.php:309
+msgid "Trigger Color"
+msgstr "Color del disparador"
+
+#: classes/aff/class-ext-accessibe.php:299
+msgid "Main Color"
+msgstr "Color principal"
+
+#: classes/aff/class-ext-accessibe.php:290
+msgid "Hide Trigger"
+msgstr "Ocultar el disparador"
+
+#: classes/aff/class-ext-accessibe.php:282
+msgid "Hide On Mobile"
+msgstr "Ocultar en móviles"
+
+#: classes/aff/class-ext-accessibe.php:88
+msgid "Successfully activated"
+msgstr "Activado correctamente"
+
+#: classes/aff/templates/accesibie-content.php:103
+msgid "Terms of Service"
+msgstr "Términos de servicio"
+
+#. Author URI of the plugin
+#: wpcf7-redirect.php
+msgid "http://themeisle.com"
+msgstr "http://themeisle.com"
+
+#. Author of the plugin
+#: wpcf7-redirect.php
+msgid "Themeisle"
+msgstr "Themeisle"
+
+#: classes/aff/class-ext-accessibe.php:417
+#: classes/aff/class-ext-accessibe.php:475
+msgid "Bottom"
+msgstr "Inferior"
+
+#: classes/aff/class-ext-accessibe.php:416
+#: classes/aff/class-ext-accessibe.php:474
+msgid "Top"
+msgstr "Superior"
+
+#: classes/aff/templates/accesibie-content.php:92
+msgid "Your Password"
+msgstr "Tu contraseña"
+
+#: classes/aff/templates/accesibie-content.php:88
+msgid "Your Full Name"
+msgstr "Tu nombre completo"
+
+#: classes/aff/templates/accesibie-content.php:84
+msgid "Your Email Address"
+msgstr "Tu dirección de correo electrónico"
+
+#: wpcf7r-functions.php:191
+msgid "Eliminate Duplicates."
+msgstr "Eliminar duplicados."
+
+#: wpcf7r-functions.php:190
+msgid "Eliminate Duplicates"
+msgstr "Eliminar duplicados"
+
+#: classes/actions/class-wpcf7r-action-sendmail.php:77
+msgid "Each header in a new line"
+msgstr "Cada cabecera en una nueva línea"
+
+#: classes/actions/class-wpcf7r-action-sendmail.php:76
+msgid "Additional Headers"
+msgstr "Cabeceras adicionales"
+
+#. Plugin Name of the plugin
+#: wpcf7-redirect.php wpcf7r-functions.php:476 wpcf7r-functions.php:494
+#: wpcf7r-functions.php:532 assets/dashboard/App.jsx:93
+#: build/assets/backend-dashboard.js:1
+msgid "Redirection for Contact Form 7"
+msgstr "Redirección a Contact Form 7 Pro"
+
+#: classes/actions/class-wpcf7r-action-redirect.php:119
+msgid "Pass all the fields from the form as URL query parameters"
+msgstr "Pasar todos los campos del formulario como parámetros de consulta de la URL"
+
+#: wpcf7r-functions.php:545
+msgid "Contact Form Redirection"
+msgstr "Redirección de Contact Form 7"
+
+#: wpcf7r-functions.php:535
+msgid "Error: Contact Form 7 version is too old. Redirection for Contact Form 7 is compatible from version 4.8 and above. Please update Contact Form 7."
+msgstr "Error: la versión de Contact Form 7 es demasiado antigua. Redirection for Contact Form 7 es compatible con la versión 4.8 o superior. Por favor, actualiza Contact Form 7."
+
+#: classes/actions/class-wpcf7r-action-firescript.php:80
+msgid "Warning!"
+msgstr "¡Advertencia!"
+
+#: classes/actions/class-wpcf7r-action-redirect.php:128
+msgid "Pass specific fields from the form as URL query parameters"
+msgstr "Pasar campos específicos del formulario como parámetros de consulta de la URL"
+
+#: classes/actions/class-wpcf7r-action-redirect.php:111
+msgid "This option might not work as expected, since browsers often block popup windows. This option depends on the browser settings."
+msgstr "Esta opción puede no funcionar como se espera, ya que los navegadores suelen bloquear las ventanas de mensajes emergentes. Esta opción depende de los ajustes del navegador."
+
+#: classes/actions/class-wpcf7r-action-firescript.php:70
+#: classes/actions/class-wpcf7r-action-honeypot.php:55
+#: classes/actions/class-wpcf7r-action-redirect.php:110
+#: classes/actions/class-wpcf7r-action-redirect.php:192
+#: classes/actions/class-wpcf7r-action-sendmail.php:142
+msgid "Notice!"
+msgstr "¡Aviso!"
+
+#: classes/actions/class-wpcf7r-action-redirect.php:101
+msgid "Open page in a new tab"
+msgstr "Abrir la página en una nueva pestaña"
+
+#: wpcf7r-functions.php:183
+msgid "Send slack message."
+msgstr "Enviar un mensaje de slack."
+
+#: wpcf7r-functions.php:182
+msgid "Send slack message"
+msgstr "Enviar un mensaje de slack"
+
+#: classes/actions/class-wpcf7r-action-erase-data-request.php:203
+msgid "Unable to add this request. A valid email address or username must be supplied"
+msgstr "No se ha podido añadir esta solicitud. Se debe proporcionar una dirección de correo electrónico o un nombre de usuario válido"
+
+#: classes/actions/class-wpcf7r-action-erase-data-request.php:157
+msgid "Request added successfully."
+msgstr "Solicitud añadida correctamente."
+
+#: classes/actions/class-wpcf7r-action-erase-data-request.php:155
+msgid "Confirmation request initiated successfully."
+msgstr "Confirmación de petición iniciada correctamente."
+
+#: classes/actions/class-wpcf7r-action-erase-data-request.php:144
+msgid "Unable to initiate confirmation request."
+msgstr "No ha sido posible iniciar la petición de confirmación."
+
+#: classes/actions/class-wpcf7r-action-erase-data-request.php:101
+msgid "Send confirmation email"
+msgstr "Enviar un correo electrónico de confirmación"
+
+#: classes/actions/class-wpcf7r-action-erase-data-request.php:90
+#: classes/actions/class-wpcf7r-action-erase-data-request.php:91
+msgid "Email/Username does not exist error message"
+msgstr "Correo electrónico/nombre de usuario no existe un mensaje de error"
+
+#: classes/actions/class-wpcf7r-action-erase-data-request.php:81
+msgid "Add a text field to your form and save it"
+msgstr "Añade un campo de texto a tu formulario y guardalo"
+
+#: classes/actions/class-wpcf7r-action-erase-data-request.php:80
+msgid "Username field"
+msgstr "Campo de nombre de usuario"
+
+#: classes/actions/class-wpcf7r-action-erase-data-request.php:79
+msgid "The field that is used for username ([username])"
+msgstr "El campo que se utiliza para el nombre de usuario ([nombre de usuario])"
+
+#: classes/actions/class-wpcf7r-action-erase-data-request.php:73
+msgid "Export personal data"
+msgstr "Exportar los datos personales"
+
+#: classes/actions/class-wpcf7r-action-erase-data-request.php:72
+msgid "Remove personal data"
+msgstr "Eliminar los datos personales"
+
+#: classes/actions/class-wpcf7r-action-erase-data-request.php:66
+#: classes/actions/class-wpcf7r-action-erase-data-request.php:67
+msgid "Request type"
+msgstr "Tipo de solicitud"
+
+#: classes/actions/class-wpcf7r-action-erase-data-request.php:17
+#: templates/add-actions-dropdown.php:15
+msgid "Erase/Export Data Request"
+msgstr "Borrar/exportar la solicitud de datos"
+
+#: classes/class-wpcf7r-dashboard.php:743 wpcf7r-functions.php:86
+#: assets/dashboard/AddonsTab.jsx:205 build/assets/backend-dashboard.js:1
+msgid "Stripe Integration"
+msgstr "Integración con Stripe"
+
+#: classes/class-wpcf7r-leads-manager.php:94
+#: classes/class-wpcf7r-leads-manager.php:335
+msgid "Preview"
+msgstr "Vista previa"
+
+#: classes/class-wpcf7r-leads-manager.php:254
+msgid "Form does not exist"
+msgstr "El formulario no existe"
+
+#: classes/class-wpcf7r-leads-manager.php:92
+#: classes/class-wpcf7r-leads-manager.php:147
+msgid "Export"
+msgstr "Exportar"
+
+#: classes/class-wpcf7r-leads-manager.php:126
+msgid "Preview is not available: save lead action does not exist"
+msgstr "La vista previa no está disponible: la acción de guardar cliente potencial no existe"
+
+#: classes/class-wpcf7r-action.php:854
+msgid "Duplicate"
+msgstr "Duplicado"
+
+#: classes/actions/class-wpcf7r-action-save-lead.php:159
+msgid "No preview defined"
+msgstr "Sin vista previa definida"
+
+#: classes/class-wpcf7r-form-helper.php:334
+msgid "This form no longer exists"
+msgstr "Este formulario ya no existe"
+
+#: wpcf7r-functions.php:102
+msgid "Custom Validations"
+msgstr "Validaciones personalizadas"
+
+#: classes/actions/class-wpcf7r-action-sendmail.php:110
+msgid "Use plain text email"
+msgstr "Usar correo electrónico del texto sin formato"
+
+#: classes/actions/class-wpcf7r-action-redirect.php:137
+msgid "Encode passed query parameters"
+msgstr "Cifrar los parámetros de consulta pasados"
+
+#: wpcf7r-functions.php:94
+msgid "API Integrations"
+msgstr "Integraciones de la API"
+
+#: classes/class-wpcf7r-settings.php:182
+msgid "Reset all Settings - BE CAREFUL! this will delete all Redirection for Contact Form 7 data."
+msgstr "Restablecer todos los ajustes - ¡TEN CUIDADO! esto va borrar toda la redirección para los datos del formulario de contacto 7."
+
+#: classes/class-wpcf7r-post-types.php:189
+msgid "Action Meta"
+msgstr "Metadatos de acción"
+
+#: classes/actions/html/rule-title.php:22
+msgid "Rule title"
+msgstr "Título de la regla"
+
+#: classes/actions/html/rule-title.php:20
+msgid "Rule Title"
+msgstr "Título de la regla"
+
+#: classes/class-wpcf7r-leads-manager.php:581
+#: assets/dashboard/components/settings/SubmissionsEntries.jsx:51
+#: build/assets/backend-dashboard.js:1
+msgid "View"
+msgstr "Vista"
+
+#: classes/class-wpcf7r-leads-manager.php:334
+#: classes/class-wpcf7r-leads-manager.php:394
+#: assets/dashboard/components/settings/SubmissionsEntries.jsx:23
+#: build/assets/backend-dashboard.js:1
+msgid "Form"
+msgstr "Formulario"
+
+#: classes/class-wpcf7r-leads-manager.php:538
+msgid "Lead from contact form: "
+msgstr "Cliente potencial desde el formulario de contacto: "
+
+#: classes/class-wpcf7r-actions.php:130
+msgid "New Block"
+msgstr "Nuevo bloque"
+
+#: classes/class-wpcf7r-action.php:849
+#: classes/class-wpcf7r-leads-manager.php:584
+msgid "Move to trash"
+msgstr "Mover a la papelera"
+
+#: classes/class-wpcf7r-action.php:820 classes/class-wpcf7r-action.php:826
+#: classes/class-wpcf7r-action.php:844
+msgid "Edit"
+msgstr "Editar"
+
+#: classes/class-wpcf7r-action.php:422
+msgid "These tags are available only inside the loop as described by the plugin author"
+msgstr "Estas etiquetas están disponibles solo dentro del ciclo como lo describe el autor del plugin."
+
+#: classes/class-wpcf7r-action.php:411
+msgid "Available mail tags"
+msgstr "Etiquetas de correo disponibles"
+
+#: classes/class-wpcf7r-form.php:367
+msgid "You need to save your form"
+msgstr "Necesitas guardar tu formulario"
+
+#: classes/class-wpcf7r-lead.php:173
+msgid "File"
+msgstr "Archivo"
+
+#: classes/class-wpcf7r-html.php:270
+msgid "Your value here"
+msgstr "Tu valor aquí"
+
+#: classes/class-wpcf7r-html.php:221
+msgid "Is Not Empty"
+msgstr "No está vacío"
+
+#: wpcf7r-functions.php:908
+msgid "Spanish"
+msgstr "Español"
+
+#: wpcf7r-functions.php:907
+msgid "Russian"
+msgstr "Ruso"
+
+#: wpcf7r-functions.php:906
+msgid "Portuguese"
+msgstr "Portugués"
+
+#: wpcf7r-functions.php:905
+msgid "Japanese"
+msgstr "Japonés"
+
+#: wpcf7r-functions.php:904
+msgid "Italian"
+msgstr "Italiano"
+
+#: wpcf7r-functions.php:903
+msgid "Hebrew"
+msgstr "Hebreo"
+
+#: wpcf7r-functions.php:875
+msgid "Vietnam"
+msgstr "Vietnam"
+
+#: wpcf7r-functions.php:874
+msgid "Venezuela"
+msgstr "Venezuela"
+
+#: wpcf7r-functions.php:873
+msgid "Vatican City"
+msgstr "Ciudad del Vaticano"
+
+#: wpcf7r-functions.php:872
+msgid "Vanuatu"
+msgstr "Vanuatu"
+
+#: wpcf7r-functions.php:871
+msgid "Uzbekistan"
+msgstr "Uzbekistán"
+
+#: wpcf7r-functions.php:870
+msgid "Uruguay"
+msgstr "Uruguay"
+
+#: wpcf7r-functions.php:869
+msgid "Unknown or Invalid Region"
+msgstr "Región desconocida o inválida"
+
+#: wpcf7r-functions.php:868
+msgid "United States"
+msgstr "Estados Unidos"
+
+#: wpcf7r-functions.php:867
+msgid "United Kingdom"
+msgstr "Reino Unido"
+
+#: wpcf7r-functions.php:866
+msgid "United Arab Emirates"
+msgstr "Emirates Árabes Unidos"
+
+#: wpcf7r-functions.php:865
+msgid "Union of Soviet Socialist Republics"
+msgstr "República socialista de la Unión Soviética"
+
+#: wpcf7r-functions.php:864
+msgid "Ukraine"
+msgstr "Ucrania"
+
+#: wpcf7r-functions.php:863
+msgid "Uganda"
+msgstr "Uganda"
+
+#: wpcf7r-functions.php:862
+msgid "U.S. Virgin Islands"
+msgstr "Islas vírgenes de EEUU"
+
+#: wpcf7r-functions.php:846
+msgid "Taiwan"
+msgstr "Taiwan"
+
+#: wpcf7r-functions.php:845
+msgid "São Tomé and Príncipe"
+msgstr "Santo Tomé y Príncipe"
+
+#: wpcf7r-functions.php:844
+msgid "Syria"
+msgstr "Siria"
+
+#: wpcf7r-functions.php:843
+msgid "Switzerland"
+msgstr "Suiza"
+
+#: wpcf7r-functions.php:842
+msgid "Sweden"
+msgstr "Suecia"
+
+#: wpcf7r-functions.php:838
+msgid "Sudan"
+msgstr "Sudán"
+
+#: wpcf7r-functions.php:837
+msgid "Sri Lanka"
+msgstr "Sri Lanka"
+
+#: wpcf7r-functions.php:836
+msgid "Spain"
+msgstr "España"
+
+#: wpcf7r-functions.php:835
+msgid "South Korea"
+msgstr "Corea del Sur"
+
+#: wpcf7r-functions.php:833
+msgid "South Africa"
+msgstr "Sudáfrica"
+
+#: wpcf7r-functions.php:832
+msgid "Somalia"
+msgstr "Somalia"
+
+#: wpcf7r-functions.php:820
+msgid "Samoa"
+msgstr "Samoa"
+
+#: wpcf7r-functions.php:819
+msgid "Saint Vincent and the Grenadines"
+msgstr "San Vicente y las Granadinas"
+
+#: wpcf7r-functions.php:818
+msgid "Saint Pierre and Miquelon"
+msgstr "Saint Pierre y Miquelon"
+
+#: wpcf7r-functions.php:817
+msgid "Saint Martin"
+msgstr "San Martín"
+
+#: wpcf7r-functions.php:816
+msgid "Saint Lucia"
+msgstr "Santa Lucía"
+
+#: wpcf7r-functions.php:814
+msgid "Saint Helena"
+msgstr "Santa Helena"
+
+#: wpcf7r-functions.php:813
+msgid "Saint Barthélemy"
+msgstr "San Bartolomé"
+
+#: wpcf7r-functions.php:812
+msgid "Réunion"
+msgstr "Reunión"
+
+#: wpcf7r-functions.php:811
+msgid "Rwanda"
+msgstr "Ruanda"
+
+#: wpcf7r-functions.php:810
+msgid "Russia"
+msgstr "Rusia"
+
+#: wpcf7r-functions.php:809
+msgid "Romania"
+msgstr "Rumanía"
+
+#: wpcf7r-functions.php:807
+msgid "Puerto Rico"
+msgstr "Puerto Rico"
+
+#: wpcf7r-functions.php:806
+msgid "Portugal"
+msgstr "Portugal"
+
+#: wpcf7r-functions.php:791
+msgid "Norway"
+msgstr "Noruega"
+
+#: wpcf7r-functions.php:789
+msgid "North Vietnam"
+msgstr "Vietnam del norte"
+
+#: wpcf7r-functions.php:788
+msgid "North Korea"
+msgstr "Corea del Norte"
+
+#: wpcf7r-functions.php:785
+msgid "Nigeria"
+msgstr "Nigeria"
+
+#: wpcf7r-functions.php:784
+msgid "Niger"
+msgstr "Nigeria"
+
+#: wpcf7r-functions.php:783
+msgid "Nicaragua"
+msgstr "Nicaragua"
+
+#: wpcf7r-functions.php:782
+msgid "New Zealand"
+msgstr "Nueva Zelanda"
+
+#: wpcf7r-functions.php:778
+msgid "Netherlands"
+msgstr "Países Bajos"
+
+#: wpcf7r-functions.php:768
+msgid "Monaco"
+msgstr "Mónaco"
+
+#: wpcf7r-functions.php:767
+msgid "Moldova"
+msgstr "Moldavia"
+
+#: wpcf7r-functions.php:764
+msgid "Mexico"
+msgstr "México"
+
+#: wpcf7r-functions.php:760
+msgid "Mauritania"
+msgstr "Mauritania"
+
+#: wpcf7r-functions.php:757
+msgid "Malta"
+msgstr "Malta"
+
+#: wpcf7r-functions.php:756
+msgid "Mali"
+msgstr "Mali"
+
+#: wpcf7r-functions.php:755
+msgid "Maldives"
+msgstr "Maldivas"
+
+#: wpcf7r-functions.php:71
+msgid "Easily create and send PDF files generated automaticaly."
+msgstr "Crea y envía fácilmente archivos PDF generados automáticamente."
+
+#: templates/add-actions-dropdown.php:28 wpcf7r-functions.php:70
+msgid "Create PDF"
+msgstr "Crear PDF"
+
+#: templates/fields/field-upload.php:33
+msgid "Select File"
+msgstr "Seleccionar archivo"
+
+#: classes/class-wpcf7r-post-types.php:107
+msgctxt "Post Type Singular Name"
+msgid "Action"
+msgstr "Acción"
+
+#: classes/class-wpcf7r-post-types.php:106
+msgctxt "Post Type General Name"
+msgid "Actions"
+msgstr "Acciones"
+
+#: wpcf7r-functions.php:87
+msgid "Collect payments with your Contact Form 7 form. Setup product details and custom stripe fields."
+msgstr "Recibe pagos con tu formulario Contact Form 7. Configura los detalles del producto y los campos personalizados de Stripe."
+
+#: classes/class-wpcf7r-html.php:220
+msgid "Is Empty"
+msgstr "Está vacío"
+
+#: classes/class-wpcf7r-html.php:219
+msgid "Greater than"
+msgstr "Mayor que"
+
+#: classes/class-wpcf7r-html.php:218
+msgid "Less than"
+msgstr "Menor que"
+
+#: classes/class-wpcf7r-html.php:217
+msgid "Does not Contain"
+msgstr "No contiene"
+
+#: classes/class-wpcf7r-html.php:216
+msgid "Contains"
+msgstr "Contiene"
+
+#: classes/class-wpcf7r-html.php:215
+msgid "Non Equal"
+msgstr "No es igual"
+
+#: classes/class-wpcf7r-html.php:214
+msgid "Equal"
+msgstr "Igual a"
+
+#: classes/actions/class-wpcf7r-action-firescript.php:64
+msgid "Paste your JavaScript here"
+msgstr "Pega aquí tu JavaScript"
+
+#: classes/actions/class-wpcf7r-action-firescript.php:63
+msgid "(Don't use <script> tags)"
+msgstr "(No utilices etiquetas <script>)"
+
+#: classes/actions/class-wpcf7r-action-firescript.php:62
+msgid "Paste your JavaScript here."
+msgstr "Pega aquí tu JavaScript."
+
+#: classes/actions/class-wpcf7r-action-send-to-api.php:447
+msgid "XML Structure is incorrect"
+msgstr "La estructura XML es incorrecta"
+
+#: classes/actions/class-wpcf7r-action-send-to-api.php:65
+msgid "Missing url"
+msgstr "Falta url"
+
+#: classes/actions/class-wpcf7r-action-save-lead.php:55
+msgid "Tags mapping"
+msgstr "Asignación de etiquetas"
+
+#: classes/actions/class-wpcf7r-action-honeypot.php:187
+msgid "Something went wrong"
+msgstr "Algo ha ido mal"
+
+#: classes/actions/class-wpcf7r-action-honeypot.php:16
+#: templates/add-actions-dropdown.php:8
+msgid "Honeypot"
+msgstr "Señuelo"
+
+#: classes/actions/class-wpcf7r-action-redirect.php:193
+msgid "Redirection will always be the last action regardless of the actions order."
+msgstr "La redirección siempre será la última acción, independientemente del orden de las acciones."
+
+#: classes/actions/class-wpcf7r-action-redirect.php:168
+msgid "Number of seconds"
+msgstr "Número de segundos"
+
+#: classes/actions/class-wpcf7r-action-redirect.php:167
+msgid "How many seconds to delay"
+msgstr "Cuántos segundos retrasar"
+
+#: classes/actions/class-wpcf7r-action-redirect.php:154
+msgid "[get_param]!"
+msgstr "[get_param]!"
+
+#: classes/actions/class-wpcf7r-action-redirect.php:145
+msgid "Fields to pass as URL query parameters, separated by commas:"
+msgstr "Campos a pasar como parámetros de consulta de la URL, separados por comas:"
+
+#: classes/actions/class-wpcf7r-action-sendmail.php:83
+msgid "From:"
+msgstr "De:"
+
+#: classes/actions/class-wpcf7r-action-sendmail.php:15
+#: templates/add-actions-dropdown.php:7
+msgid "Send Email"
+msgstr "Enviar correo electrónico"
+
+#: classes/actions/class-wpcf7r-action-sendmail.php:104
+msgid "Add your form attachments shortcodes here"
+msgstr "Añade aquí tus shortcodes de adjuntos del formulario"
+
+#: classes/actions/class-wpcf7r-action-sendmail.php:84
+msgid "name <address>"
+msgstr "nombre <address>"
+
+#: classes/class-wpcf7r-post-types.php:136
+msgid "Redirection For Contact Form 7 Actions"
+msgstr "Redirección para acciones de Contact Form 7"
+
+#: classes/class-wpcf7r-post-types.php:65
+#: classes/class-wpcf7r-post-types.php:132
+msgid "Filter items list"
+msgstr "Filtrar la lista de elementos"
+
+#: classes/actions/class-wpcf7r-action-redirect.php:71
+#: classes/actions/class-wpcf7r-action-redirect.php:72
+msgid "Select a page"
+msgstr "Selecciona una página"
+
+#: classes/actions/class-wpcf7r-action-redirect.php:62
+msgid "Use custom URL"
+msgstr "Utilizar URL personalizada"
+
+#: classes/actions/class-wpcf7r-action-redirect.php:17
+#: templates/add-actions-dropdown.php:6
+msgid "Redirect"
+msgstr "Redirigir"
+
+#. translators:%s the action status name
+#: classes/actions/class-wpcf7r-action-redirect.php:183
+#: classes/actions/class-wpcf7r-action-save-lead.php:81
+#: classes/actions/class-wpcf7r-action-sendmail.php:133
+#: classes/class-wpcf7r-action.php:638 classes/class-wpcf7r-action.php:736
+msgid "Disabled"
+msgstr "Desactivado"
+
+#. translators:%s the action status name
+#: classes/actions/class-wpcf7r-action-redirect.php:182
+#: classes/actions/class-wpcf7r-action-save-lead.php:80
+#: classes/actions/class-wpcf7r-action-sendmail.php:132
+#: classes/class-wpcf7r-action.php:638 classes/class-wpcf7r-action.php:735
+msgid "Enabled"
+msgstr "Activado"
+
+#: classes/class-wpcf7r-post-types.php:64
+#: classes/class-wpcf7r-post-types.php:131
+msgid "Items list navigation"
+msgstr "Navegación por la lista de elementos"
+
+#: classes/class-wpcf7r-post-types.php:63
+#: classes/class-wpcf7r-post-types.php:130
+msgid "Items list"
+msgstr "Lista de elementos"
+
+#: classes/class-wpcf7r-post-types.php:62
+#: classes/class-wpcf7r-post-types.php:129
+msgid "Uploaded to this item"
+msgstr "Subido a este elemento"
+
+#: classes/class-wpcf7r-post-types.php:60
+#: classes/class-wpcf7r-post-types.php:127
+msgid "Use as featured image"
+msgstr "Usar como imagen destacada"
+
+#: classes/class-wpcf7r-post-types.php:59
+#: classes/class-wpcf7r-post-types.php:126
+msgid "Remove featured image"
+msgstr "Eliminar la imagen destacada"
+
+#: classes/class-wpcf7r-post-types.php:58
+#: classes/class-wpcf7r-post-types.php:125
+msgid "Set featured image"
+msgstr "Establecer la imagen destacada"
+
+#: classes/class-wpcf7r-post-types.php:57
+#: classes/class-wpcf7r-post-types.php:124
+msgid "Featured Image"
+msgstr "Imagen destacada"
+
+#: classes/class-wpcf7r-post-types.php:56
+#: classes/class-wpcf7r-post-types.php:123
+msgid "Not found in Trash"
+msgstr "No se ha encontrado en la papelera"
+
+#: classes/class-wpcf7r-post-types.php:55
+#: classes/class-wpcf7r-post-types.php:122
+msgid "Not found"
+msgstr "No encontrado"
+
+#: classes/class-wpcf7r-post-types.php:54
+#: classes/class-wpcf7r-post-types.php:121
+msgid "Search Item"
+msgstr "Buscar elemento"
+
+#: classes/class-wpcf7r-post-types.php:53
+#: classes/class-wpcf7r-post-types.php:120
+msgid "View Items"
+msgstr "Ver elementos"
+
+#: classes/class-wpcf7r-post-types.php:52
+#: classes/class-wpcf7r-post-types.php:119
+msgid "View Item"
+msgstr "Ver elemento"
+
+#: classes/class-wpcf7r-post-types.php:51
+#: classes/class-wpcf7r-post-types.php:118
+msgid "Update Item"
+msgstr "Actualizar elemento"
+
+#: wpcf7r-functions.php:650
+msgid "British Indian Ocean Territory"
+msgstr "Territorio Británico del Océano Índico"
+
+#: wpcf7r-functions.php:648
+msgid "Brazil"
+msgstr "Brazil"
+
+#: wpcf7r-functions.php:647
+msgid "Bouvet Island"
+msgstr "Isla Bouvet"
+
+#: wpcf7r-functions.php:646
+msgid "Botswana"
+msgstr "Botsuana"
+
+#: wpcf7r-functions.php:645
+msgid "Bosnia and Herzegovina"
+msgstr "Bosnia y Herzegovina"
+
+#: wpcf7r-functions.php:644
+msgid "Bolivia"
+msgstr "Bolivia"
+
+#: wpcf7r-functions.php:643
+msgid "Bhutan"
+msgstr "Bhutan"
+
+#: wpcf7r-functions.php:642
+msgid "Bermuda"
+msgstr "Bermudas"
+
+#: wpcf7r-functions.php:641
+msgid "Benin"
+msgstr "Benin"
+
+#: wpcf7r-functions.php:640
+msgid "Belize"
+msgstr "Belize"
+
+#: wpcf7r-functions.php:639
+msgid "Belgium"
+msgstr "Bélgica"
+
+#: wpcf7r-functions.php:638
+msgid "Belarus"
+msgstr "Bielorusia"
+
+#: wpcf7r-functions.php:637
+msgid "Barbados"
+msgstr "Barbados"
+
+#: wpcf7r-functions.php:636
+msgid "Bangladesh"
+msgstr "Bangladesh"
+
+#: wpcf7r-functions.php:635
+msgid "Bahrain"
+msgstr "Bahrain"
+
+#: wpcf7r-functions.php:634
+msgid "Bahamas"
+msgstr "Bahamas"
+
+#: wpcf7r-functions.php:633
+msgid "Azerbaijan"
+msgstr "Azerbaijan"
+
+#: wpcf7r-functions.php:632
+msgid "Austria"
+msgstr "Austria"
+
+#: wpcf7r-functions.php:631
+msgid "Australia"
+msgstr "Australia"
+
+#: wpcf7r-functions.php:630
+msgid "Aruba"
+msgstr "Aruba"
+
+#: wpcf7r-functions.php:629
+msgid "Armenia"
+msgstr "Armenia"
+
+#: wpcf7r-functions.php:628
+msgid "Argentina"
+msgstr "Argentina"
+
+#: wpcf7r-functions.php:627
+msgid "Antigua and Barbuda"
+msgstr "Antigua y Barbuda"
+
+#: wpcf7r-functions.php:626
+msgid "Antarctica"
+msgstr "Antártida"
+
+#: wpcf7r-functions.php:625
+msgid "Anguilla"
+msgstr "Anguilla"
+
+#: wpcf7r-functions.php:624
+msgid "Angola"
+msgstr "Angola"
+
+#: wpcf7r-functions.php:623
+msgid "Andorra"
+msgstr "Andorra"
+
+#: wpcf7r-functions.php:622
+msgid "American Samoa"
+msgstr "American Samoa"
+
+#: wpcf7r-functions.php:621
+msgid "Algeria"
+msgstr "Algeria"
+
+#: wpcf7r-functions.php:620
+msgid "Albania"
+msgstr "Albania"
+
+#: wpcf7r-functions.php:619
+msgid "Afghanistan"
+msgstr "Afghanistan"
+
+#: wpcf7r-functions.php:118
+msgid "Create Posts"
+msgstr "Crear entradas"
+
+#: wpcf7r-functions.php:699
+msgid "French Southern Territories"
+msgstr "Territorios Australes Franceses"
+
+#: wpcf7r-functions.php:698
+msgid "French Polynesia"
+msgstr "Polinesia francés"
+
+#: wpcf7r-functions.php:697
+msgid "French Guiana"
+msgstr "Guayana Francesa"
+
+#: wpcf7r-functions.php:696
+msgid "France"
+msgstr "Francia"
+
+#: wpcf7r-functions.php:695
+msgid "Finland"
+msgstr "Finlandia"
+
+#: wpcf7r-functions.php:694
+msgid "Fiji"
+msgstr "Fiji"
+
+#: wpcf7r-functions.php:693
+msgid "Faroe Islands"
+msgstr "Islas Feroe"
+
+#: wpcf7r-functions.php:692
+msgid "Falkland Islands"
+msgstr "Islas Falkland"
+
+#: wpcf7r-functions.php:691
+msgid "Ethiopia"
+msgstr "Etiopía"
+
+#: wpcf7r-functions.php:690
+msgid "Estonia"
+msgstr "Estonia"
+
+#: wpcf7r-functions.php:689
+msgid "Eritrea"
+msgstr "Eritrea"
+
+#: wpcf7r-functions.php:688
+msgid "Equatorial Guinea"
+msgstr "Guinea Ecuatorial"
+
+#: wpcf7r-functions.php:687
+msgid "El Salvador"
+msgstr "El Salvador"
+
+#: wpcf7r-functions.php:686
+msgid "Egypt"
+msgstr "Egipto"
+
+#: wpcf7r-functions.php:685
+msgid "Ecuador"
+msgstr "Ecuador"
+
+#: wpcf7r-functions.php:682
+msgid "Dominican Republic"
+msgstr "República Dominicana"
+
+#: wpcf7r-functions.php:681
+msgid "Dominica"
+msgstr "Dominica"
+
+#: wpcf7r-functions.php:680
+msgid "Djibouti"
+msgstr "Djibouti"
+
+#: wpcf7r-functions.php:679
+msgid "Denmark"
+msgstr "Dinamarca"
+
+#: wpcf7r-functions.php:678
+msgid "Côte d’Ivoire"
+msgstr "Costa de Marfil"
+
+#: wpcf7r-functions.php:677
+msgid "Czech Republic"
+msgstr "República Checa"
+
+#: wpcf7r-functions.php:676
+msgid "Cyprus"
+msgstr "Chipre"
+
+#: wpcf7r-functions.php:675
+msgid "Cuba"
+msgstr "Cuba"
+
+#: wpcf7r-functions.php:674
+msgid "Croatia"
+msgstr "Croacia"
+
+#: wpcf7r-functions.php:673
+msgid "Costa Rica"
+msgstr "Costa Rica"
+
+#: wpcf7r-functions.php:672
+msgid "Cook Islands"
+msgstr "Islas Cook"
+
+#: wpcf7r-functions.php:671
+msgid "Congo - Kinshasa"
+msgstr "Congo - Kinshasa"
+
+#: wpcf7r-functions.php:670
+msgid "Congo - Brazzaville"
+msgstr "Congo - Brazzaville"
+
+#: wpcf7r-functions.php:669
+msgid "Comoros"
+msgstr "Comoros"
+
+#: wpcf7r-functions.php:668
+msgid "Colombia"
+msgstr "Colombia"
+
+#: wpcf7r-functions.php:666
+msgid "Christmas Island"
+msgstr "Navidad, Isla de"
+
+#: wpcf7r-functions.php:665
+msgid "China"
+msgstr "China"
+
+#: wpcf7r-functions.php:664
+msgid "Chile"
+msgstr "Chile"
+
+#: wpcf7r-functions.php:663
+msgid "Chad"
+msgstr "Chad"
+
+#: wpcf7r-functions.php:662
+msgid "Central African Republic"
+msgstr "República Central de África"
+
+#: wpcf7r-functions.php:661
+msgid "Cayman Islands"
+msgstr "Islas Caimán"
+
+#: wpcf7r-functions.php:660
+msgid "Cape Verde"
+msgstr "Cape Verde"
+
+#: wpcf7r-functions.php:658
+msgid "Canada"
+msgstr "Canada"
+
+#: wpcf7r-functions.php:657
+msgid "Cameroon"
+msgstr "Camerún"
+
+#: wpcf7r-functions.php:656
+msgid "Cambodia"
+msgstr "Cambodia"
+
+#: wpcf7r-functions.php:655
+msgid "Burundi"
+msgstr "Burundi"
+
+#: wpcf7r-functions.php:654
+msgid "Burkina Faso"
+msgstr "Burkina Faso"
+
+#: wpcf7r-functions.php:653
+msgid "Bulgaria"
+msgstr "Bulgaria"
+
+#: wpcf7r-functions.php:652
+msgid "Brunei"
+msgstr "Brunei"
+
+#: wpcf7r-functions.php:651
+msgid "British Virgin Islands"
+msgstr "Islas Vírgenes Británicas"
+
+#: classes/class-wpcf7r-dashboard.php:747 wpcf7r-functions.php:62
+#: assets/dashboard/AddonsTab.jsx:59 assets/dashboard/AddonsTab.jsx:119
+#: build/assets/backend-dashboard.js:1
+msgid "Conditional Logic"
+msgstr "Lógica condicional"
+
+#: classes/class-wpcf7r-dashboard.php:727 templates/add-actions-dropdown.php:33
+#: wpcf7r-functions.php:150 assets/dashboard/AddonsTab.jsx:219
+#: build/assets/backend-dashboard.js:1
+msgid "Salesforce Integration"
+msgstr "Salesforce Integration"
+
+#: classes/class-wpcf7r-dashboard.php:723 wpcf7r-functions.php:78
+#: assets/dashboard/AddonsTab.jsx:191 build/assets/backend-dashboard.js:1
+msgid "PayPal Integration"
+msgstr "Integración con PayPal"
+
+#: classes/actions/class-wpcf7r-action-firescript.php:81
+msgid "This option is for developers only - use with caution. If the plugin does not redirect after you have added scripts, it means you have a problem with your script. Either fix the script, or remove it."
+msgstr "Esta opción es solo para desarrolladores - úsala con precaución. Si el plugin no redirige después de que hayas añadido los scripts, significa que tienes un problema con tu script. Corrige el script o elimínalo."
+
+#: classes/class-wpcf7r-post-types.php:40
+msgctxt "Post Type Singular Name"
+msgid "Entry"
+msgstr "Registro"
+
+#: classes/class-wpcf7r-post-types.php:39
+msgctxt "Post Type General Name"
+msgid "Entries"
+msgstr "Registros"
+
+#. translators: email subject.
+#: classes/actions/class-wpcf7r-action-sendmail.php:91
+msgid "Subject"
+msgstr "Asunto"
+
+#: classes/actions/class-wpcf7r-action-sendmail.php:56
+#: classes/actions/class-wpcf7r-action-sendmail.php:63
+#: classes/actions/class-wpcf7r-action-sendmail.php:70
+msgid "Email addresses separated by comma (,)"
+msgstr "Direcciones de correo electrónico separadas por coma (,)"
+
+#: classes/actions/class-wpcf7r-action-redirect.php:79
+#: classes/actions/class-wpcf7r-action-redirect.php:80
+msgid "Use external URL"
+msgstr "Usar una URL externa"
+
+#: wpcf7r-functions.php:548
+msgid "Error: Please install and activate Contact Form 7."
+msgstr "Error: por favor, instala y activa Contact Form 7."

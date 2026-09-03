@@ -1,0 +1,32 @@
+# Translation of Plugins - Store file uploads for Contact Form 7 - Stable (latest release) in Spanish (Spain)
+# This file is distributed under the same license as the Plugins - Store file uploads for Contact Form 7 - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2021-01-29 18:38:18+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: es\n"
+"Project-Id-Version: Plugins - Store file uploads for Contact Form 7 - Stable (latest release)\n"
+
+#. Author of the plugin
+#: store-file-uploads-for-contact-form-7.php
+msgid "Mircea N."
+msgstr "Mircea N."
+
+#. Description of the plugin
+#: store-file-uploads-for-contact-form-7.php
+msgid "Store all files uploded trough Contact Form 7 in your Media Library"
+msgstr "Almacena todos los archivos subidos a través de Contact Form 7 en tu biblioteca de medios"
+
+#. Plugin URI of the plugin
+#: store-file-uploads-for-contact-form-7.php
+msgid "https://namir.ro/store-file-uploads-for-contact-form-7/"
+msgstr "https://namir.ro/store-file-uploads-for-contact-form-7/"
+
+#. Plugin Name of the plugin
+#: store-file-uploads-for-contact-form-7.php
+msgid "Store file uploads for Contact Form 7"
+msgstr "Store file uploads for Contact Form 7"

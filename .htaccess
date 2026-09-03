@@ -1,0 +1,195 @@
+# ======================================================
+# REDIRECCIONES SEO
+# ======================================================
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+#########################################################
+# MEMORIA RESULTATS 
+#########################################################
+
+RewriteRule ^memoria-resultats-2025\.html$ /memoria-resultats-2025 [R=301,L]
+RewriteRule ^memoria-resultats-2025/?$ /cursos/memoria-resultats-2025.html [L,QSA]
+RewriteRule ^memoria-resultats-2025\.css$ /cursos/memoria-resultats-2025.css [L,QSA]
+
+#########################################################
+# SUBDOMINIO CURSOS GRATUITOS
+#########################################################
+
+RewriteCond %{HTTP_HOST} ^cursosgratuitos\.thecorner\.es$ [NC]
+RewriteRule ^ https://thecorner.es/cursos/cursos-gratuitos [R=301,L]
+
+#########################################################
+# CURSOS GRATUITOS (ES)
+#########################################################
+
+# Página principal
+RewriteRule ^cursos-gratuitos/?$ /cursos/cursos-gratuitos [R=301,L]
+
+# Fichas individuales
+RewriteRule ^cursos-gratuitos/(.+)$ /cursos/$1 [R=301,L]
+
+#########################################################
+# CURSOS GRATUITOS (CA)
+#########################################################
+
+# Página principal
+RewriteRule ^ca/cursos-gratuitos/?$ /cursos/cursos-gratuitos-ca [R=301,L]
+
+# Fichas individuales
+RewriteRule ^ca/cursos-gratuitos/(.+)$ /cursos/ca/$1 [R=301,L]
+
+</IfModule>
+
+# ======================================================
+# FIN REDIRECCIONES SEO
+
+# BEGIN WP Rocket v3.3.3.1
+AddDefaultCharset UTF-8
+<IfModule mod_mime.c>
+AddCharset UTF-8 .atom .css .js .json .rss .vtt .xml
+</IfModule>
+<IfModule mod_headers.c>
+Header unset ETag
+</IfModule>
+FileETag None
+
+<IfModule mod_alias.c>
+<FilesMatch "\.(html|htm|rtf|rtx|txt|xsd|xsl|xml)$">
+<IfModule mod_headers.c>
+Header set X-Powered-By "WP Rocket/3.3.3.1"
+Header unset Pragma
+Header append Cache-Control "public"
+Header unset Last-Modified
+</IfModule>
+</FilesMatch>
+
+<FilesMatch "\.(css|htc|js|asf|asx|wax|wmv|wmx|avi|bmp|class|divx|doc|docx|eot|exe|gif|gz|gzip|ico|jpg|jpeg|jpe|json|mdb|mid|midi|mov|qt|mp3|m4a|mp4|m4v|mpeg|mpg|mpe|mpp|otf|odb|odc|odf|odg|odp|ods|odt|ogg|pdf|png|pot|pps|ppt|pptx|ra|ram|svg|svgz|swf|tar|tif|tiff|ttf|ttc|wav|wma|wri|xla|xls|xlsx|xlt|xlw|zip)$">
+<IfModule mod_headers.c>
+Header unset Pragma
+Header append Cache-Control "public"
+</IfModule>
+</FilesMatch>
+</IfModule>
+
+<IfModule mod_expires.c>
+ExpiresActive on
+ExpiresDefault "access plus 1 month"
+ExpiresByType text/cache-manifest "access plus 0 seconds"
+ExpiresByType text/html "access plus 0 seconds"
+ExpiresByType text/xml "access plus 0 seconds"
+ExpiresByType application/xml "access plus 0 seconds"
+ExpiresByType application/json "access plus 0 seconds"
+ExpiresByType application/rss+xml "access plus 1 hour"
+ExpiresByType application/atom+xml "access plus 1 hour"
+ExpiresByType image/x-icon "access plus 1 week"
+ExpiresByType image/gif "access plus 4 months"
+ExpiresByType image/png "access plus 4 months"
+ExpiresByType image/jpeg "access plus 4 months"
+ExpiresByType image/webp "access plus 4 months"
+ExpiresByType video/ogg "access plus 1 month"
+ExpiresByType audio/ogg "access plus 1 month"
+ExpiresByType video/mp4 "access plus 1 month"
+ExpiresByType video/webm "access plus 1 month"
+ExpiresByType text/x-component "access plus 1 month"
+ExpiresByType font/ttf "access plus 4 months"
+ExpiresByType font/otf "access plus 4 months"
+ExpiresByType font/woff "access plus 4 months"
+ExpiresByType font/woff2 "access plus 4 months"
+ExpiresByType image/svg+xml "access plus 1 month"
+ExpiresByType application/vnd.ms-fontobject "access plus 1 month"
+ExpiresByType text/css "access plus 1 year"
+ExpiresByType application/javascript "access plus 1 year"
+</IfModule>
+
+<IfModule mod_deflate.c>
+SetOutputFilter DEFLATE
+<IfModule mod_setenvif.c>
+<IfModule mod_headers.c>
+SetEnvIfNoCase ^(Accept-EncodXng|X-cept-Encoding|X{15}|~{15}|-{15})$ ^((gzip|deflate)\s*,?\s*)+|[X~-]{4,13}$ HAVE_Accept-Encoding
+RequestHeader append Accept-Encoding "gzip,deflate" env=HAVE_Accept-Encoding
+SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png|rar|zip|exe|flv|mov|wma|mp3|avi|swf|mp?g|mp4|webm|webp|pdf)$ no-gzip dont-vary
+</IfModule>
+</IfModule>
+
+<IfModule mod_filter.c>
+AddOutputFilterByType DEFLATE application/atom+xml application/javascript application/json application/rss+xml application/vnd.ms-fontobject application/x-font-ttf application/xhtml+xml application/xml font/opentype image/svg+xml image/x-icon text/css text/html text/plain text/x-component text/xml
+</IfModule>
+
+<IfModule mod_headers.c>
+Header append Vary: Accept-Encoding
+</IfModule>
+</IfModule>
+
+# END WP Rocket
+
+
+# HTTPS forced by SG-Optimizer
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteCond %{REQUEST_URI} ^/confeccio-i-publicacio-pagines-web/$
+RewriteCond %{QUERY_STRING} (^|&)origin=([0-9]+)(&|.*)$
+RewriteRule ^ /cursos-gratuitos/confeccio-i-publicacio-pagines-web/?origin=%2#contacto [L,R=301]
+
+</IfModule>
+# END HTTPS
+
+SetEnv PHPRC /home/customer/www/thecorner.es/public_html/php.ini
+
+# Cursos: dejar que las URLs limpias de fichas las resuelva el sistema de cursos
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule ^cursos/ca/([a-z0-9-]+)/?$ /cursos/curso-ca.php?slug=$1 [L,QSA]
+RewriteRule ^cursos/([a-z0-9-]+)/?$ /cursos/curso.php?slug=$1 [L,QSA]
+RewriteRule ^cursos/ - [L]
+</IfModule>
+
+# ======================================================
+# SECURITY HEADERS
+# ======================================================
+
+<IfModule mod_headers.c>
+
+Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+
+Header always set X-Frame-Options "SAMEORIGIN"
+
+Header always set X-Content-Type-Options "nosniff"
+
+Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+Header always set Content-Security-Policy-Report-Only "default-src 'self';"
+
+Header always set Permissions-Policy "geolocation=(), microphone=(), camera=(), payment=(), usb=()"
+
+</IfModule>
+
+# BEGIN WordPress
+# Las directivas (líneas) entre «BEGIN WordPress» y «END WordPress» son
+# generadas dinámicamente y solo deberían ser modificadas mediante filtros de WordPress.
+# Cualquier cambio en las directivas que hay entre esos marcadores serán sobrescritas.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteRule ^ca/wp-login.php /wp-login.php [QSA,L]
+RewriteRule ^es/wp-login.php /wp-login.php [QSA,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+# SGO Unset Vary
+Header unset Vary
+# END
+
+AddHandler application/x-httpd-php82 .php .php5 .php4 .php3
