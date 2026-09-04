@@ -1430,6 +1430,9 @@ $description = substr(strip_tags($curso['sortides_professionals'] ?? $nombre),0,
 
 $google_reviews_data = obtener_google_reviews('es');
 
+$curso_shared_css_path = __DIR__ . '/assets/css/curso-shared.css';
+$curso_shared_css_version = is_file($curso_shared_css_path) ? filemtime($curso_shared_css_path) : '1';
+
 
 
 ?>
@@ -1504,57 +1507,30 @@ $google_reviews_data = obtener_google_reviews('es');
 
 <!-- Structured Data - Course -->
 
-<script type="application/ld+json">
-
-{
-
-  "@context": "https://schema.org",
-
-  "@type": "Course",
-
-  "name": "<?= htmlspecialchars($nombre) ?>",
-
-  "description": "<?= htmlspecialchars($description) ?>",
-
-  "provider": {
-
-    "@type": "EducationalOrganization",
-
-    "name": "The Corner",
-
-    "url": "https://thecorner.es"
-
-  },
-
-  "image": "<?= $imagen ?>",
-
-  "offers": {
-
-    "@type": "Offer",
-
-    "category": "Gratis",
-
-    "price": "0",
-
-    "priceCurrency": "EUR"
-
-  },
-
-  "hasCourseInstance": {
-
-    "@type": "CourseInstance",
-
-    "courseMode": "<?= $modalidad ?>",
-
-    "startDate": "<?= $curso['data_inici'] ?>",
-
-    "endDate": "<?= $curso['data_fi'] ?>"
-
-  }
-
-}
-
-</script>
+<script type="application/ld+json"><?= json_encode([
+    '@context' => 'https://schema.org',
+    '@type' => 'Course',
+    'name' => $nombre,
+    'description' => $description,
+    'provider' => [
+        '@type' => 'EducationalOrganization',
+        'name' => 'The Corner',
+        'url' => 'https://thecorner.es',
+    ],
+    'image' => $imagen,
+    'offers' => [
+        '@type' => 'Offer',
+        'category' => 'Gratis',
+        'price' => '0',
+        'priceCurrency' => 'EUR',
+    ],
+    'hasCourseInstance' => [
+        '@type' => 'CourseInstance',
+        'courseMode' => $modalidad,
+        'startDate' => $curso['data_inici'] ?? null,
+        'endDate' => $curso['data_fi'] ?? null,
+    ],
+], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES) ?></script>
 
 
 
@@ -1580,7 +1556,7 @@ $google_reviews_data = obtener_google_reviews('es');
 
 <!-- CSS crítico - carga bloqueante para evitar FOUC -->
 
-<link rel="stylesheet" href="/cursos/assets/css/curso-shared.css?v=<?= time() ?>">
+<link rel="stylesheet" href="/cursos/assets/css/curso-shared.css?v=<?= $curso_shared_css_version ?>">
 
 <link rel="stylesheet" href="/cursos/assets/css/cursos-gratuitos.css">
 
