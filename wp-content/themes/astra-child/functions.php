@@ -23,11 +23,3 @@ function child_enqueue_styles() {
 }
 
 add_action( 'wp_enqueue_scripts', 'child_enqueue_styles', 15 );
-
-function redirigir_404() {
-    if (is_404()) {
-        wp_redirect(home_url('/cursos-gratuitos/'));
-        exit();
-    }
-}
-add_action('template_redirect', 'redirigir_404');

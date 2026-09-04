@@ -1,0 +1,5 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://thecorner.es/sitemap.xml
+Sitemap: https://thecorner.es/cursos/sitemap-index.xml
