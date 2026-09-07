@@ -528,6 +528,34 @@ a{text-decoration:none;color:inherit}
   height:20px;
   fill:currentColor;
 }
+
+.footer-subsidy-logos{
+  flex:0 0 100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:100%;
+  margin:0 0 12px;
+  padding:18px 22px;
+  background:#fff;
+  border:1px solid #e5e7eb;
+  border-radius:8px;
+  box-shadow:0 14px 35px rgba(15,23,42,.06);
+}
+
+.footer-subsidy-logos img{
+  display:block;
+  width:min(100%, 980px);
+  height:auto;
+  object-fit:contain;
+}
+
+@media(max-width:768px){
+  .footer-subsidy-logos{
+    margin-bottom:6px;
+    padding:12px;
+  }
+}
 @media(max-width:768px){
   .footer-container{
     flex-direction:column;

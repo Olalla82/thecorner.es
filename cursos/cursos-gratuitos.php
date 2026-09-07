@@ -1,8 +1,11 @@
-﻿<?php
+<?php
 
 require_once __DIR__ . '/inc/common.php';
 
 require_once __DIR__ . '/inc/cache.php';
+
+$catalog_css_path = __DIR__ . '/assets/css/cursos-gratuitos.css';
+$catalog_css_version = is_file($catalog_css_path) ? filemtime($catalog_css_path) : '1';
 
 
 
@@ -1284,7 +1287,7 @@ type="text/javascript"></script>
 
 <!-- CSS crítico - carga bloqueante para evitar FOUC -->
 
-<link rel="stylesheet" href="/cursos/assets/css/cursos-gratuitos.css">
+<link rel="stylesheet" href="/cursos/assets/css/cursos-gratuitos.css?v=<?= $catalog_css_version ?>">
 
 
 <!-- Google Tag Manager (noscript) -->
@@ -2529,6 +2532,10 @@ while ($row = fetch_result($result_destacados)) {
 <footer class="site-footer">
 
   <div class="footer-container">
+
+    <div class="footer-subsidy-logos" aria-label="Entidades colaboradoras y financiadoras">
+      <img src="/cursos/assets/img/logos-subvencionada-2026.jpg" alt="Logotipos de SOC, Generalitat de Catalunya, Consorci per a la Formacio Continua de Catalunya, Ministerio de Educacion, SEPE e idiomasSL." width="1843" height="253" loading="lazy" decoding="async">
+    </div>
 
     <p class="footer-text">© <?= date('Y') ?> Centro de Estudios The Corner | Powered by Centro de Estudios The Corner</p>
 
