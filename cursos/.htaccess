@@ -37,11 +37,17 @@ RewriteRule ^([^.]+)\.php$ /cursos/$1 [R=301,L]
 
 # Redirecciones 301 de nombres antiguos
 RewriteRule ^cursos-gratuitos-standalone\.php$ cursos-gratuitos.php [R=301,L]
-RewriteRule ^cursos-gratuitos-standalone-ca\.php$ cursos-gratuitos-ca.php [R=301,L]
+RewriteRule ^cursos-gratuitos-standalone-ca\.php$ cursos-gratuitos-ca.php [R=301,L]
+
+# URL limpia para la memoria de resultados
+
+RewriteRule ^memoria-resultats-2025\.html$ /cursos/memoria-resultats-2025 [R=301,L,QSA]
 
 # URLs limpias → archivos PHP (listados)
 RewriteRule ^cursos-gratuitos/?$ cursos-gratuitos.php [L,QSA]
-RewriteRule ^cursos-gratuitos-ca/?$ cursos-gratuitos-ca.php [L,QSA]
+RewriteRule ^cursos-gratuitos-ca/?$ cursos-gratuitos-ca.php [L,QSA]
+
+RewriteRule ^memoria-resultats-2025/?$ memoria-resultats-2025.html [L,QSA]
 
 # URLs limpias → Sistema de Caché (páginas administrativas)
 RewriteRule ^admin-dashboard/?$ admin-dashboard.php [L,QSA]

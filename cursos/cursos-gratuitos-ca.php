@@ -2506,7 +2506,7 @@ function curso_img($curso){
 
       <span class="footer-separator">|</span>
 
-      <a href="/cursos/memoria-resultats-2025.html">Memòria de Resultats 2025</a>
+      <a href="/cursos/memoria-resultats-2025">Memòria de Resultats 2025</a>
 
     </div>
 
