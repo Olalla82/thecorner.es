@@ -2504,6 +2504,10 @@ function curso_img($curso){
 
       <a href="https://thecorner.es/canal-de-denuncias/">Canal de denúncies</a>
 
+      <span class="footer-separator">|</span>
+
+      <a href="/cursos/memoria-resultats-2025.html">Memòria de Resultats 2025</a>
+
     </div>
 
     
