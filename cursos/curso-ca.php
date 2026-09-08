@@ -1674,27 +1674,27 @@ src="https://www.facebook.com/tr?id=1755236761371264&ev=PageView&noscript=1"
 
       <div class="nav-menu__item nav-menu__item--dropdown">
 
-        Servicios
+        Serveis
 
         <div class="nav-dropdown">
 
-          <a href="https://thecorner.es/orientacion-profesional/" class="nav-dropdown__item">Orientación Laboral</a>
+          <a href="https://thecorner.es/orientacion-profesional/" class="nav-dropdown__item">Orientació Laboral</a>
 
-          <a href="https://thecorner.es/bolsa-de-trabajo/" class="nav-dropdown__item">Bolsa de Empleo</a>
+          <a href="https://thecorner.es/bolsa-de-trabajo/" class="nav-dropdown__item">Borsa d'ocupació</a>
 
-          <a href="https://thecorner.es/formacion-para-empresas/" class="nav-dropdown__item">Formación para Empresas</a>
+          <a href="https://thecorner.es/formacion-para-empresas/" class="nav-dropdown__item">Formació per a Empreses</a>
 
-          <a href="https://thecorner.es/english-language-school/" class="nav-dropdown__item">The Corner Idiomas</a>
+          <a href="https://thecorner.es/english-language-school/" class="nav-dropdown__item">The Corner Idiomes</a>
 
         </div>
 
       </div>
 
-      <a href="https://leveltest.thecorner.es/" class="nav-menu__item">Comprueba tu Nivel de Inglés</a>
+      <a href="https://leveltest.thecorner.es/" class="nav-menu__item">Comprova el teu nivell d'anglès</a>
 
-      <a href="https://thecorner.es/contacto/" class="nav-menu__item">Contacto</a>
+      <a href="https://thecorner.es/contacto/" class="nav-menu__item">Contacte</a>
 
-      <a href="https://thecorner.es/quienes-somos/" class="nav-menu__item">Quienes somos</a>
+      <a href="https://thecorner.es/quienes-somos/" class="nav-menu__item">Qui som</a>
 
       <div class="nav-menu__item nav-menu__item--dropdown lang-selector-menu" style="position:relative">
 
@@ -1702,7 +1702,7 @@ src="https://www.facebook.com/tr?id=1755236761371264&ev=PageView&noscript=1"
 
         <div class="nav-dropdown" style="min-width:180px">
 
-          <a href="/cursos/cursos-gratuitos" class="nav-dropdown__item">← Listado cursos</a>
+          <a href="/cursos/cursos-gratuitos" class="nav-dropdown__item">← Llistat cursos</a>
 
           <div style="height:1px;background:#f3f4f6;margin:8px 0"></div>
 
@@ -1762,11 +1762,11 @@ src="https://www.facebook.com/tr?id=1755236761371264&ev=PageView&noscript=1"
 
         <span>
 
-          <span class="hero-curso__label">Próxima convocatoria 2027</span>
+          <span class="hero-curso__label">Pròxima convocatòria 2027</span>
 
           <br>
 
-          <small>Pendiente de aprobación</small>
+          <small>Pendent d'aprovació</small>
 
         </span>
 
@@ -1778,7 +1778,7 @@ src="https://www.facebook.com/tr?id=1755236761371264&ev=PageView&noscript=1"
 
         <span class="hero-curso__icon"></span>
 
-        <span><span class="hero-curso__label">Horas totales:</span> <?= $curso['hores'] ?? 'No especificada' ?> h</span>
+        <span><span class="hero-curso__label">Hores totals:</span> <?= $curso['hores'] ?? 'No especificada' ?> h</span>
 
       </div>
 
@@ -1786,7 +1786,7 @@ src="https://www.facebook.com/tr?id=1755236761371264&ev=PageView&noscript=1"
 
       <div class="hero-curso__item hero-curso__item--full" style="margin-top: 12px; margin-bottom: -8px;">
 
-        <span class="btn-reservar btn-reservar--notify" style="width: 100%; text-align: center; display: block;">Avísame de la próxima convocatoria</span>
+        <span class="btn-reservar btn-reservar--notify" style="width: 100%; text-align: center; display: block;">Avisa'm de la propera convocatòria</span>
 
       </div>
 
@@ -1806,7 +1806,7 @@ src="https://www.facebook.com/tr?id=1755236761371264&ev=PageView&noscript=1"
 
         <?php 
 
-        $dies_traducidos = traducir_dies($curso['dies'], 'es');
+        $dies_traducidos = traducir_dies($curso['dies'], 'ca');
 
         // Si los días no contienen la modalidad (Presencial/Online), agregarla
 
@@ -1836,7 +1836,7 @@ src="https://www.facebook.com/tr?id=1755236761371264&ev=PageView&noscript=1"
 
         <span class="hero-curso__icon">🕑</span>
 
-        <span><span class="hero-curso__label">Inicio:</span> <?= $fecha_ini ?: 'A consultar' ?></span>
+        <span><span class="hero-curso__label">Inici:</span> <?= $fecha_ini ?: 'A consultar' ?></span>
 
       </div>
 
@@ -1858,7 +1858,7 @@ src="https://www.facebook.com/tr?id=1755236761371264&ev=PageView&noscript=1"
 
         <span class="hero-curso__icon">🕑</span>
 
-        <span><span class="hero-curso__label">Horario:</span> <?= substr($curso['hora_inici'], 0, 5) ?> - <?= substr($curso['hora_final'], 0, 5) ?></span>
+        <span><span class="hero-curso__label">Horari:</span> <?= substr($curso['hora_inici'], 0, 5) ?> - <?= substr($curso['hora_final'], 0, 5) ?></span>
 
       </div>
 
@@ -1870,7 +1870,7 @@ src="https://www.facebook.com/tr?id=1755236761371264&ev=PageView&noscript=1"
 
         <span class="hero-curso__icon">👥</span>
 
-        <span><span class="hero-curso__label">Horas totales:</span> <?= $curso['hores'] ?? 'No especificada' ?> h</span>
+        <span><span class="hero-curso__label">Hores totals:</span> <?= $curso['hores'] ?? 'No especificada' ?> h</span>
 
       </div>
 
@@ -1884,7 +1884,7 @@ src="https://www.facebook.com/tr?id=1755236761371264&ev=PageView&noscript=1"
 
     <div class="hero-curso__cta">
 
-      <a href="#reservar" class="btn-reservar">Reservar plaza</a>
+      <a href="#reservar" class="btn-reservar">Reservar plaça</a>
 
     </div>
 
@@ -1924,7 +1924,7 @@ src="https://www.facebook.com/tr?id=1755236761371264&ev=PageView&noscript=1"
 
       </svg>
 
-      <div class="caracteristica__label">Modalidad</div>
+      <div class="caracteristica__label">Modalitat</div>
 
       <div class="caracteristica__value"><?= $curso_inactivo ? 'No disponible' : strtolower($modalidad) ?></div>
 
@@ -1950,7 +1950,7 @@ src="https://www.facebook.com/tr?id=1755236761371264&ev=PageView&noscript=1"
 
       </svg>
 
-      <div class="caracteristica__label">Duración</div>
+      <div class="caracteristica__label">Duració</div>
 
       <div class="caracteristica__value"><?= $curso['hores'] ?? '0' ?></div>
 
@@ -1968,9 +1968,9 @@ src="https://www.facebook.com/tr?id=1755236761371264&ev=PageView&noscript=1"
 
       </svg>
 
-      <div class="caracteristica__label">Nivel</div>
+      <div class="caracteristica__label">Nivell</div>
 
-      <div class="caracteristica__value">Certificado Oficial</div>
+      <div class="caracteristica__value">Certificat Oficial</div>
 
     </div>
 
@@ -1990,9 +1990,9 @@ src="https://www.facebook.com/tr?id=1755236761371264&ev=PageView&noscript=1"
 
       </svg>
 
-      <div class="caracteristica__label">Precio</div>
+      <div class="caracteristica__label">Preu</div>
 
-      <div class="caracteristica__value">0 € subvencionado</div>
+      <div class="caracteristica__value">0 € subvencionat</div>
 
     </div>
 
@@ -2018,21 +2018,21 @@ src="https://www.facebook.com/tr?id=1755236761371264&ev=PageView&noscript=1"
 
     <div class="nav-curso__links">
 
-      <a href="#que-aprendere" class="nav-curso__link">¿Qué aprenderé?</a>
+      <a href="#que-aprendere" class="nav-curso__link">Què aprendré?</a>
 
-      <a href="#contenidos" class="nav-curso__link">Contenidos</a>
+      <a href="#contenidos" class="nav-curso__link">Continguts</a>
 
-      <a href="#a-quien-va-dirigido" class="nav-curso__link">¿A quién va dirigido?</a>
+      <a href="#a-quien-va-dirigido" class="nav-curso__link">A qui va dirigit?</a>
 
-      <a href="#de-que-podre-trabajar" class="nav-curso__link">¿De qué podré trabajar?</a>
+      <a href="#de-que-podre-trabajar" class="nav-curso__link">De què podré treballar?</a>
 
-      <a href="#testimonios" class="nav-curso__link">Testimonios</a>
+      <a href="#testimonios" class="nav-curso__link">Testimonis</a>
 
-      <a href="#relacionados" class="nav-curso__link">Relacionados</a>
+      <a href="#relacionados" class="nav-curso__link">Relacionats</a>
 
     </div>
 
-    <a href="#reservar" class="nav-curso__btn">Reservar plaza</a>
+    <a href="#reservar" class="nav-curso__btn">Reservar plaça</a>
 
   </div>
 
@@ -2058,7 +2058,7 @@ src="https://www.facebook.com/tr?id=1755236761371264&ev=PageView&noscript=1"
 
     <div class="card-curso">
 
-      <h2 class="card-curso__title">¿Qué aprenderé?</h2>
+      <h2 class="card-curso__title">Què aprendré?</h2>
 
       <ul class="card-curso__list">
 
@@ -2212,7 +2212,7 @@ src="https://www.facebook.com/tr?id=1755236761371264&ev=PageView&noscript=1"
 
     <div class="card-curso card-profesor" id="con-quien-aprendere">
 
-      <h2 class="card-curso__title">¿Con quién aprenderé?</h2>
+      <h2 class="card-curso__title">Amb qui aprendré?</h2>
 
       <?php if (!empty($curso['nom_formador'])): ?>
 
@@ -2246,7 +2246,7 @@ src="https://www.facebook.com/tr?id=1755236761371264&ev=PageView&noscript=1"
 
       <?php else: ?>
 
-      <p class="card-profesor__no-info">Información del formador no disponible</p>
+      <p class="card-profesor__no-info">Informació del formador no disponible</p>
 
       <?php endif; ?>
 
@@ -2272,7 +2272,7 @@ src="https://www.facebook.com/tr?id=1755236761371264&ev=PageView&noscript=1"
 
   <div class="continguts__container">
 
-    <h2 class="continguts__title">Contenidos del Curso</h2>
+    <h2 class="continguts__title">Continguts del Curs</h2>
 
     
 
@@ -2508,7 +2508,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     <div class="dirigit__content">
 
-      <h2 class="dirigit__title">¿A quién va dirigido?</h2>
+      <h2 class="dirigit__title">A qui va dirigit?</h2>
 
       
 
@@ -2520,7 +2520,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
           <span class="dirigit__icon">👤</span>
 
-          <span class="dirigit__text">Para personas desempleadas (colectivo prioritario)</span>
+          <span class="dirigit__text">Per a persones aturades (col·lectiu prioritari)</span>
 
         </div>
 
@@ -2530,7 +2530,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
           <span class="dirigit__icon">👤</span>
 
-          <span class="dirigit__text">Para personas trabajadoras</span>
+          <span class="dirigit__text">Per a persones treballadores</span>
 
         </div>
 
@@ -2540,7 +2540,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
           <span class="dirigit__icon">👤</span>
 
-          <span class="dirigit__text">Para personas autónomas</span>
+          <span class="dirigit__text">Per a persones autònomes</span>
 
         </div>
 
@@ -2550,7 +2550,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
           <span class="dirigit__icon">👤</span>
 
-          <span class="dirigit__text">Para personas desempleadas</span>
+          <span class="dirigit__text">Per a persones aturades</span>
 
         </div>
 
@@ -2560,7 +2560,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
           <span class="dirigit__icon">👤</span>
 
-          <span class="dirigit__text">Para personas trabajadoras (colectivo prioritario)</span>
+          <span class="dirigit__text">Per a persones treballadores (col·lectiu prioritari)</span>
 
         </div>
 
@@ -2570,7 +2570,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
           <span class="dirigit__icon">👤</span>
 
-          <span class="dirigit__text">Para personas autónomas (colectivo prioritario)</span>
+          <span class="dirigit__text">Per a persones autònomes (col·lectiu prioritari)</span>
 
         </div>
 
@@ -2580,7 +2580,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
       
 
-      <a href="#reservar" class="dirigit__btn">Reservar plaza</a>
+      <a href="#reservar" class="dirigit__btn">Reservar plaça</a>
 
     </div>
 
@@ -2604,7 +2604,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     <div class="treballar__card">
 
-      <h2 class="treballar__title">¿De qué podré trabajar?</h2>
+      <h2 class="treballar__title">De què podré treballar?</h2>
 
       
 
@@ -2622,7 +2622,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
           } else {
 
-            echo 'Podrás mejorar tus competencias profesionales con este curso.';
+            echo 'Podràs millorar les competències professionals amb aquest curs.';
 
           }
 
@@ -2850,7 +2850,7 @@ foreach ($grupos_relacionados_ids as $grupo_id) {
 
   <div class="relacionats">
 
-    <h2 class="relacionats__title">Cursos relacionados</h2>
+    <h2 class="relacionats__title">Cursos relacionats</h2>
 
     
 
@@ -2904,7 +2904,7 @@ foreach ($grupos_relacionados_ids as $grupo_id) {
 
     <div class="box-final">
 
-      <h2 class="box-final__title"><?php echo $curso_inactivo ? '¡Te avisamos de la próxima edición!' : 'Reservar plaza'; ?></h2>
+      <h2 class="box-final__title"><?php echo $curso_inactivo ? 'T\'avisem de la propera edició!' : 'Reservar plaça'; ?></h2>
 
       
 
@@ -2930,11 +2930,11 @@ foreach ($grupos_relacionados_ids as $grupo_id) {
 
         
 
-        <input type="text" name="your-name" placeholder="Nombre *" class="form-reserva__input" required>
+        <input type="text" name="your-name" placeholder="Nom *" class="form-reserva__input" required>
 
         
 
-        <input type="text" name="your-surname" placeholder="Apellidos *" class="form-reserva__input" required>
+        <input type="text" name="your-surname" placeholder="Cognoms *" class="form-reserva__input" required>
 
         
 
@@ -2942,7 +2942,7 @@ foreach ($grupos_relacionados_ids as $grupo_id) {
 
         
 
-        <input type="tel" name="telefono" placeholder="Teléfono *" class="form-reserva__input" required>
+        <input type="tel" name="telefono" placeholder="Telèfon *" class="form-reserva__input" required>
 
         
 
@@ -2950,21 +2950,21 @@ foreach ($grupos_relacionados_ids as $grupo_id) {
 
         
 
-        <label class="form-reserva__label">Situación laboral: *</label>
+        <label class="form-reserva__label">Situació laboral: *</label>
 
         <select name="menu-702" class="form-reserva__select" required>
 
           <option value="">Selecciona...</option>
 
-          <option value="Desempleado/a">Desempleado/a</option>
+          <option value="Desempleat/a">Desempleat/a</option>
 
-          <option value="Trabajador/a o Autónomo/a">Trabajador/a o Autónomo/a</option>
+          <option value="Treballador/a o Autònom/a">Traballador/a o Autònom/a</option>
 
         </select>
 
         
 
-        <!-- <textarea name="your-message" placeholder="Mensaje (opcional)" class="form-reserva__input" rows="3" style="resize: vertical; min-height: 60px;"></textarea> -->
+        <!-- <textarea name="your-message" placeholder="Missatge (opcional)" class="form-reserva__input" rows="3" style="resize: vertical; min-height: 60px;"></textarea> -->
 
         
 
@@ -2974,13 +2974,13 @@ foreach ($grupos_relacionados_ids as $grupo_id) {
 
           <label for="acceptance-729">
 
-            IDIOMES, S.L. como responsable del tratamiento tratará tus datos con la finalidad de dar respuesta a tu consulta o petición. 
+            IDIOMES, S.L. com a responsable del tractament tractarà les teves dades amb la finalitat de donar resposta a la teva consulta o petició. 
 
-            Puedes acceder, rectificar y suprimir tus datos, así como ejercer otros derechos consultando la información adicional y detallada sobre protección de datos en nuestra 
+            Pots accedir, rectificar i suprimir les teves dades, així com exercir altres drets consultant la informació addicional i detallada sobre protecció de dades a la nostra
 
-            <a href="https://thecorner.es/politica-de-privacitat/" target="_blank">Política de Privacidad</a>. 
+            <a href="https://thecorner.es/politica-de-privacitat/" target="_blank">Política de Privacitat</a>. 
 
-            He leído y acepto las condiciones contenidas en la política de privacidad sobre el tratamiento de mis datos para gestionar mi consulta o petición
+            He llegit i accepto les condicions contingudes a la política de privadesa sobre el tractament de les meves dades per gestionar la meva consulta o petició
 
           </label>
 
@@ -2994,7 +2994,7 @@ foreach ($grupos_relacionados_ids as $grupo_id) {
 
           <label for="checkbox-243">
 
-            Nos gustaría que nos prestaras tu consentimiento para: Enviarte información comercial sobre los productos, servicios, novedades de IDIOMES, S.L.
+           Ens agradaria que ens prestessis el teu consentiment per a: Enviar informació comercial sobre els productes, serveis, novetats d'IDIOMES, S.L.
 
           </label>
 
@@ -3002,7 +3002,7 @@ foreach ($grupos_relacionados_ids as $grupo_id) {
 
         
 
-        <button type="submit" class="form-reserva__submit"><?php echo $curso_inactivo ? 'QUIERO QUE ME AVISEN' : 'INSCRÍBETE'; ?></button>
+        <button type="submit" class="form-reserva__submit"><?php echo $curso_inactivo ? 'VULL QUE M\'AVISIN' : 'INSCRIU-TE'; ?></button>
 
       </form>
 
@@ -3014,7 +3014,7 @@ foreach ($grupos_relacionados_ids as $grupo_id) {
 
     <div class="box-final" id="testimonios">
 
-      <h2 class="box-final__title">¿Qué dicen de nosotros?</h2>
+      <h2 class="box-final__title">Què diuen de nosaltres?</h2>
 
       
 
@@ -3090,13 +3090,13 @@ foreach ($grupos_relacionados_ids as $grupo_id) {
 
             <p class="testimonio__text"><?= htmlspecialchars($text) ?></p>
 
-            <span class="testimonio__more">Leer más</span>
+            <span class="testimonio__more">Llegir més</span>
 
           </div>
 
         <?php else: ?>
 
-          <p style="text-align:center;color:#6b7280;">No hay reseñas disponibles en este momento.</p>
+          <p style="text-align:center;color:#6b7280;">No hi ha ressenyes disponibles en aquest moment.</p>
 
         <?php endif; ?>
 
@@ -3120,11 +3120,11 @@ foreach ($grupos_relacionados_ids as $grupo_id) {
 
           <p class="testimonio__rating">
 
-            La valoración general en <strong>Google</strong> es <strong><?= number_format($google_reviews_data['rating'], 1) ?></strong> de 5, basada en <strong><?= $google_reviews_data['user_ratings_total'] ?> reseñas</strong>
+           La valoració general a <strong>Google</strong> és <strong><?= number_format($google_reviews_data['rating'], 1) ?></strong> de 5, basada en <strong><?= $google_reviews_data['user_ratings_total'] ?> reseñas</strong>
 
           </p>
 
-          <span class="testimonio__badge">Verificado por: Google Reviews ⓘ</span>
+          <span class="testimonio__badge">Verificat per: Google Reviews ⓘ</span>
 
         </div>
 
@@ -3160,7 +3160,7 @@ foreach ($grupos_relacionados_ids as $grupo_id) {
 
     <div class="footer-links">
 
-      <a href="https://thecorner.es/aviso-legal/">Aviso Legal</a>
+      <a href="https://thecorner.es/aviso-legal/">Avis Legal</a>
 
       <span class="footer-separator">|</span>
 
@@ -3168,15 +3168,19 @@ foreach ($grupos_relacionados_ids as $grupo_id) {
 
       <span class="footer-separator">|</span>
 
-      <a href="https://thecorner.es/politica-de-privacidad/">Política de privacidad</a>
+      <a href="https://thecorner.es/politica-de-privacidad/">Política de privacitat</a>
 
       <span class="footer-separator">|</span>
 
-      <a href="https://thecorner.es/privacidad-en-redes-sociales/">Privacidad en redes sociales</a>
+      <a href="https://thecorner.es/privacidad-en-redes-sociales/">Privacitat a xarxes socials</a>
 
       <span class="footer-separator">|</span>
 
-      <a href="https://thecorner.es/canal-de-denuncias/">Canal de denuncias</a>
+      <a href="https://thecorner.es/canal-de-denuncias/">Canal de denuncies</a>
+
+      <span class="footer-separator">|</span>
+
+      <a href="https://thecorner.es/cursos/memoria-resultats-2025">Memoria Resultats 2025</a>
 
     </div>
 

@@ -3178,6 +3178,10 @@ foreach ($grupos_relacionados_ids as $grupo_id) {
 
       <a href="https://thecorner.es/canal-de-denuncias/">Canal de denuncias</a>
 
+      <span class="footer-separator">|</span>
+
+      <a href="https://thecorner.es/cursos/memoria-resultats-2025">Memoria Resultats 2025</a>
+
     </div>
 
     
