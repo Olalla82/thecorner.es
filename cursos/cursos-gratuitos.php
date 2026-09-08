@@ -2534,7 +2534,7 @@ while ($row = fetch_result($result_destacados)) {
   <div class="footer-container">
 
     <div class="footer-subsidy-logos" aria-label="Entidades colaboradoras y financiadoras">
-      <img src="/cursos/assets/img/logos-subvencionada-2026.jpg" alt="Logotipos de SOC, Generalitat de Catalunya, Consorci per a la Formacio Continua de Catalunya, Ministerio de Educacion, SEPE e idiomasSL." width="1843" height="253" loading="lazy" decoding="async">
+      <img src="/cursos/assets/img/logos-subvencionada-2026.webp" alt="Logotipos de SOC, Generalitat de Catalunya, Consorci per a la Formacio Continua de Catalunya, Ministerio de Educacion, SEPE e idiomasSL." width="1843" height="253" loading="lazy" decoding="async">
     </div>
 
     <p class="footer-text">© <?= date('Y') ?> Centro de Estudios The Corner | Powered by Centro de Estudios The Corner</p>

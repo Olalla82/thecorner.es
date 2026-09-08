@@ -2477,7 +2477,7 @@ function curso_img($curso){
   <div class="footer-container">
 
     <div class="footer-subsidy-logos" aria-label="Entidades colaboradoras y financiadoras">
-      <img src="/cursos/assets/img/logos-subvencionada-2026.jpg" alt="Logotips del SOC, Generalitat de Catalunya, Consorci per a la Formacio Continua de Catalunya, Ministerio de Educacion, SEPE i idiomesSL." width="1843" height="253" loading="lazy" decoding="async">
+      <img src="/cursos/assets/img/logos-subvencionada-2026.webp" alt="Logotips del SOC, Generalitat de Catalunya, Consorci per a la Formacio Continua de Catalunya, Ministerio de Educacion, SEPE i idiomesSL." width="1843" height="253" loading="lazy" decoding="async">
     </div>
 
     <p class="footer-text">© <?= date('Y') ?> Centre d'Estudis The Corner | Powered by Centre d'Estudis The Corner</p>
