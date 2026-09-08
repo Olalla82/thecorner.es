@@ -41,6 +41,7 @@ RewriteRule ^cursos-gratuitos-standalone-ca\.php$ cursos-gratuitos-ca.php [R=301
 
 # URL limpia para la memoria de resultados
 
+RewriteCond %{THE_REQUEST} \s/cursos/memoria-resultats-2025\.html[\s?] [NC]
 RewriteRule ^memoria-resultats-2025\.html$ /cursos/memoria-resultats-2025 [R=301,L,QSA]
 
 # URLs limpias → archivos PHP (listados)
