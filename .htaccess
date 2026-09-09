@@ -145,8 +145,11 @@ SetEnv PHPRC /home/customer/www/thecorner.es/public_html/php.ini
 # Landing estatica test de nivel
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteRule ^english-language-school/level-test\.html$ /language-school/level-test.html [L,QSA]
+RewriteCond %{THE_REQUEST} \s/+language-school/level-test\.html[\s?] [NC]
+RewriteRule ^language-school/level-test\.html$ /language-school/level-test [R=301,L]
+RewriteRule ^language-school/level-test/?$ /language-school/level-test.html [L,QSA]
 </IfModule>
+
 
 # Cursos: dejar que las URLs limpias de fichas las resuelva el sistema de cursos
 <IfModule mod_rewrite.c>
