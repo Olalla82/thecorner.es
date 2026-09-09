@@ -148,6 +148,7 @@ RewriteEngine On
 RewriteCond %{THE_REQUEST} \s/+language-school/level-test\.html[\s?] [NC]
 RewriteRule ^language-school/level-test\.html$ /language-school/level-test [R=301,L]
 RewriteRule ^language-school/level-test/?$ /language-school/level-test.html [L,QSA]
+RewriteRule ^language-school/ca/level-test/?$ /language-school/level-test-ca.html [L,QSA]
 </IfModule>
 
 
