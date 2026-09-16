@@ -13,9 +13,19 @@ DirectoryIndex index.html index.php
     
     # Redirigir /formacion-bonificada/index.html a /formacion-bonificada/
     RewriteCond %{THE_REQUEST} ^GET.*index\.html [NC]
-    RewriteRule ^(.*)index\.html$ /$1 [R=301,L]
-    
-
+    RewriteRule ^(.*)index\.html$ /$1 [R=301,L]
+
+    # Redirigir URLs antiguas de empresas a la nueva estructura bilingüe
+
+    RewriteCond %{THE_REQUEST} \s/+formacion-bonificada/empresas\.html[\s?] [NC]
+
+    RewriteRule ^empresas\.html$ /formacion-bonificada/empresas/ [R=301,L]
+
+    RewriteCond %{THE_REQUEST} \s/+formacion-bonificada/empreses\.html[\s?] [NC]
+
+    RewriteRule ^empreses\.html$ /formacion-bonificada/ca/empreses/ [R=301,L]
+
+    
 </IfModule>
 
 # ── SEGURIDAD ─────────────────────────────────────────────────────────────────

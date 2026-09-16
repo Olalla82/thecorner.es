@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Corner | Academia Inglés Santa Coloma - Formación Profesional</title>
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta property="og:site_name" content="The Corner">
+<meta property="og:title" content="The Corner | Academia de inglés y formación profesional">
+<meta property="og:description" content="Academia de inglés, formación subvencionada y formación para empresas en Santa Coloma de Gramenet.">
+<meta property="og:url" content="https://thecorner.es/">
+<meta property="og:image" content="https://thecorner.es/wp-content/uploads/2024/05/01-THE-CORNER-2022-Logo-Positivo-300x82.png">
+<meta property="og:image:alt" content="The Corner Centre d'Estudis">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Corner | Academia de inglés y formación profesional">
+<meta name="twitter:description" content="Academia de inglés, formación subvencionada y formación para empresas en Santa Coloma de Gramenet.">
+<meta name="twitter:image" content="https://thecorner.es/wp-content/uploads/2024/05/01-THE-CORNER-2022-Logo-Positivo-300x82.png">
+<meta name="twitter:image:alt" content="The Corner Centre d'Estudis">
+<meta name="description" content="Mejora tu futuro profesional. Centro de Estudios de Formación Subvencionada y Academia de Inglés para niños, adolescentes y adultos.">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<link rel="canonical" href="https://thecorner.es/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --lime: #c2d500;
+  --lime-d: #a3b500;
+  --navy: #1e1545;
+  --navy2: #2d2560;
+  --dark: #111;
+  --text: #3a3a3a;
+  --muted: #666;
+  --bg: #f7f7f3;
+  --white: #fff;
+  --border: #e4e4de;
+  --hh: 76px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:16px;scroll-behavior:smooth}
+body{font-family:'Lato',sans-serif;color:var(--text);background:var(--white);overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
+
+/* HEADER */
+.site-header{position:sticky;top:0;z-index:1000;width:100%;background:var(--white);border-bottom:1px solid var(--line);box-shadow:0 2px 4px rgba(0,0,0,.05)}
+.header-inner{width:min(1240px,calc(100% - 40px));margin:0 auto;display:flex;align-items:center;justify-content:space-between;min-height:80px}
+.brand{display:inline-flex;align-items:center;transition:opacity .3s}
+.brand:hover{opacity:.8}
+.brand img{width:200px;height:50px;object-fit:contain}
+.nav-menu{display:flex;align-items:center;gap:32px}
+.nav-menu__item{position:relative;color:#333;font-size:15px;font-weight:500;cursor:pointer;transition:color .3s}
+.nav-menu__item:hover{color:var(--lime)}
+.nav-menu__item--dropdown{display:flex;align-items:center;gap:6px}
+.nav-menu__item--dropdown::after{content:'▼';font-size:10px;transition:transform .3s}
+.nav-menu__item--dropdown:hover::after{transform:rotate(180deg)}
+.nav-dropdown{position:absolute;top:100%;left:0;min-width:220px;margin-top:12px;padding:12px 0;background:var(--white);border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,.12);opacity:0;visibility:hidden;transform:translateY(-10px);transition:all .3s ease;z-index:1001}
+.nav-menu__item:hover .nav-dropdown{opacity:1;visibility:visible;transform:translateY(0)}
+.nav-dropdown__item{display:block;padding:12px 24px;color:#333;font-size:14px;transition:all .3s;white-space:nowrap}
+.nav-dropdown__item:hover{background:#f8fafc;color:var(--lime)}
+.lang-selector-menu .nav-dropdown{min-width:120px}
+.nav-dropdown__item.active-lang{background:var(--lime);color:#fff;font-weight:600}
+.mobile-menu-toggle{display:none;flex-direction:column;gap:5px;padding:8px;border:0;background:transparent;cursor:pointer}
+.mobile-menu-toggle span{display:block;width:25px;height:3px;background:#333;border-radius:2px}
+@media(max-width:1024px){.nav-menu{display:none;flex-direction:column;align-items:stretch;gap:0;position:absolute;top:80px;left:20px;right:20px;padding:10px 0;background:var(--white);border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,.12)}.nav-menu.is-open{display:flex}.nav-menu__item{padding:14px 20px}.nav-dropdown{position:static;display:none;margin:8px 0 0;box-shadow:none;border:1px solid var(--line)}.nav-menu__item--dropdown:focus-within .nav-dropdown,.nav-menu__item--dropdown.is-open .nav-dropdown{display:block;opacity:1;visibility:visible;transform:none}.mobile-menu-toggle{display:flex}}
+/* HERO 3-panel */
+.hero{margin-top:0;display:grid;grid-template-columns:1fr 1fr 1fr;min-height:600px}
+.hp{position:relative;display:flex;flex-direction:column;justify-content:flex-end;padding:52px 44px;overflow:hidden;cursor:pointer}
+.hp-bg{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform .5s ease}
+.hp:hover .hp-bg{transform:scale(1.04)}
+.hp-overlay{position:absolute;inset:0;transition:opacity .3s}
+.hp-content{position:relative;z-index:2}
+.hp-tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;background:var(--lime);color:var(--navy);padding:4px 10px;border-radius:4px;margin-bottom:16px}
+.hp h2{font-family:'Heebo',sans-serif;font-weight:900;font-size:28px;line-height:1.15;color:#fff;margin-bottom:10px}
+.hp p{font-size:14px;color:rgba(255,255,255,.78);line-height:1.6;margin-bottom:24px;max-width:300px}
+.hp-pills{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:18px}
+.hp-pill{font-size:11px;font-weight:700;color:rgba(255,255,255,.85);border:1px solid rgba(255,255,255,.3);padding:3px 10px;border-radius:20px}
+.btn-lime{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:700;padding:13px 26px;border-radius:8px;background:var(--lime);color:var(--navy);transition:background .15s;width:fit-content}
+.btn-lime:hover{background:var(--lime-d)}
+.btn-outline{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:700;padding:11px 24px;border-radius:8px;border:2px solid rgba(255,255,255,.45);color:#fff;transition:border-color .15s,color .15s;width:fit-content}
+.btn-outline:hover{border-color:var(--lime);color:var(--lime)}
+
+/* new ribbon on empresas panel */
+.hp-new{position:absolute;top:24px;right:-30px;background:var(--lime);color:var(--navy);font-size:11px;font-weight:700;padding:5px 40px;transform:rotate(45deg);letter-spacing:1px;text-transform:uppercase;z-index:3}
+
+/* divider lime */
+.lime-bar{height:5px;background:var(--lime)}
+
+/* STATS */
+.stats{background:var(--navy);display:grid;grid-template-columns:repeat(4,1fr)}
+.stat{padding:30px 20px;border-right:1px solid rgba(255,255,255,.08);text-align:center}
+.stat:last-child{border-right:none}
+.stat-n{font-family:'Heebo',sans-serif;font-size:36px;font-weight:900;color:var(--lime);line-height:1}
+.stat-l{font-size:13px;color:rgba(255,255,255,.6);margin-top:6px}
+
+/* ABOUT SPLIT */
+.about{display:grid;grid-template-columns:1fr 1fr;min-height:480px}
+.about-img{position:relative;overflow:hidden}
+.about-img img{width:100%;height:100%;object-fit:cover}
+.about-img-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(30,21,69,.6) 0%,transparent 60%)}
+.about-img-stat{position:absolute;bottom:32px;left:32px;background:var(--lime);padding:16px 22px;border-radius:12px}
+.about-img-stat strong{font-family:'Heebo',sans-serif;font-size:28px;font-weight:900;color:var(--navy);display:block;line-height:1}
+.about-img-stat span{font-size:12px;font-weight:700;color:var(--navy);opacity:.75}
+.about-txt{padding:72px 64px;background:var(--bg);display:flex;flex-direction:column;justify-content:center}
+.sec-label{font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--lime-d);margin-bottom:16px}
+.about-txt h1,.about-txt h2{font-family:'Heebo',sans-serif;font-size:38px;font-weight:900;line-height:1.2;color:var(--navy);margin-bottom:20px}
+.about-txt p{font-size:16px;line-height:1.75;color:var(--muted);max-width:460px;margin-bottom:28px}
+.about-logos{display:flex;flex-wrap:wrap;gap:14px;margin-top:8px}
+.about-logo{background:var(--white);border:1px solid var(--border);border-radius:8px;padding:10px 16px;display:flex;align-items:center;justify-content:center;width:90px;height:52px}
+.about-logo img{max-height:32px;max-width:70px;object-fit:contain;filter:grayscale(.2)}
+
+/* SERVICES */
+.services{padding:88px 64px;background:var(--white)}
+.sec-hd{text-align:center;margin-bottom:60px}
+.sec-hd h2{font-family:'Heebo',sans-serif;font-size:40px;font-weight:900;color:var(--navy);margin-bottom:12px}
+.sec-hd p{font-size:17px;color:var(--muted);max-width:540px;margin:0 auto;line-height:1.65}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;max-width:1160px;margin:0 auto}
+
+.svc-card{border-radius:20px;overflow:hidden;border:1px solid var(--border);display:flex;flex-direction:column;transition:transform .22s,box-shadow .22s}
+.svc-card:hover{transform:translateY(-6px);box-shadow:0 20px 48px rgba(30,21,69,.12)}
+.svc-img{position:relative;height:220px;overflow:hidden}
+.svc-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.svc-card:hover .svc-img img{transform:scale(1.06)}
+.svc-img-overlay{position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(30,21,69,.85) 100%)}
+.svc-img-label{position:absolute;bottom:18px;left:20px;right:20px}
+.svc-img-label h3{font-family:'Heebo',sans-serif;font-size:22px;font-weight:900;color:#fff;line-height:1.2;margin-bottom:4px}
+.svc-badge{display:inline-block;font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;background:var(--lime);color:var(--navy);padding:3px 8px;border-radius:4px}
+.svc-body{padding:24px 24px 28px;background:var(--white);flex:1;display:flex;flex-direction:column}
+.svc-desc{font-size:14px;color:var(--muted);line-height:1.6;margin-bottom:20px}
+.svc-feats{display:flex;flex-direction:column;gap:9px;flex:1;margin-bottom:22px}
+.svc-feat{display:flex;align-items:flex-start;gap:9px;font-size:13px;color:var(--text);line-height:1.4}
+.feat-dot{width:16px;height:16px;background:var(--lime);border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:9px;color:var(--navy);font-weight:700;margin-top:1px}
+.svc-footer{padding-top:18px;border-top:1px solid var(--border);display:flex;align-items:center;justify-content:space-between}
+.svc-link{font-size:14px;font-weight:700;color:var(--navy);display:flex;align-items:center;gap:6px;transition:gap .15s}
+.svc-link:hover{gap:10px}
+.svc-arrow{width:22px;height:22px;background:var(--lime);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--navy)}
+
+/* empresa sub-tags */
+.emp-tags{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:16px}
+.emp-tag{font-size:12px;font-weight:700;color:var(--navy);background:var(--bg);border:1px solid var(--border);padding:4px 10px;border-radius:20px}
+
+/* SOCIAL PROOF */
+.proof{padding:88px 64px;background:var(--navy);position:relative;overflow:hidden}
+.proof::before{content:'';position:absolute;top:-120px;right:-120px;width:480px;height:480px;border-radius:50%;background:rgba(194,213,0,.06)}
+.proof::after{content:'';position:absolute;bottom:-80px;left:-80px;width:300px;height:300px;border-radius:50%;background:rgba(194,213,0,.04)}
+.proof-inner{max-width:1160px;margin:0 auto;position:relative;z-index:1}
+.proof-hd{margin-bottom:48px}
+.proof-hd .sec-label{color:var(--lime)}
+.proof-hd h2{font-family:'Heebo',sans-serif;font-size:38px;font-weight:900;color:#fff;margin-bottom:0}
+.proof-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.proof-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:28px;transition:background .2s}
+.proof-card:hover{background:rgba(255,255,255,.1)}
+.proof-stars{color:var(--lime);font-size:16px;margin-bottom:12px;letter-spacing:2px}
+.proof-q{font-size:15px;color:rgba(255,255,255,.85);line-height:1.65;margin-bottom:18px;font-style:italic}
+.proof-who{display:flex;align-items:center;gap:10px}
+.proof-avatar{width:36px;height:36px;border-radius:50%;overflow:hidden;flex-shrink:0;background:var(--navy2)}
+.proof-avatar img{width:100%;height:100%;object-fit:cover}
+.proof-name{font-size:13px;font-weight:700;color:#fff}
+.proof-role{font-size:12px;color:rgba(255,255,255,.5)}
+
+/* LOCATIONS */
+.locations{padding:88px 64px;background:var(--bg)}
+.loc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1160px;margin:44px auto 0}
+.loc-card{background:var(--white);border-radius:14px;overflow:hidden;border:1px solid var(--border);transition:transform .2s,box-shadow .2s}
+.loc-card:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(0,0,0,.08)}
+.loc-map{width:100%;height:200px;border:none;display:block}
+.loc-info{padding:20px 22px}
+.loc-name{font-family:'Heebo',sans-serif;font-weight:700;font-size:16px;color:var(--navy);margin-bottom:4px}
+.loc-addr{font-size:13px;color:var(--muted);line-height:1.5;margin-bottom:12px}
+.loc-tel{font-size:14px;font-weight:700;color:var(--lime-d);display:inline-flex;align-items:center;gap:5px}
+
+/* NEWS */
+.news{padding:88px 64px;background:var(--white)}
+.news-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;max-width:1160px;margin:44px auto 0}
+.news-card{display:block;color:inherit;border:1px solid var(--border);border-radius:12px;overflow:hidden;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.news-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(0,0,0,.09)}
+.news-thumb{height:160px;overflow:hidden}
+.news-thumb img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.news-card:hover .news-thumb img{transform:scale(1.07)}
+.news-body{padding:18px}
+.news-date{font-size:11px;font-weight:700;letter-spacing:.5px;color:var(--lime-d);margin-bottom:8px;text-transform:uppercase}
+.news-body h4{font-family:'Heebo',sans-serif;font-size:14px;font-weight:700;color:var(--navy);line-height:1.4;margin-bottom:12px}
+.news-more{font-size:12px;font-weight:700;color:var(--muted);display:flex;align-items:center;gap:4px;transition:color .15s}
+.news-card:hover .news-more{color:var(--navy)}
+
+/* NEWSLETTER */
+.nl{display:flex;align-items:center;justify-content:space-between;gap:40px;padding:56px 80px;background:var(--lime)}
+.nl-txt h2{font-family:'Heebo',sans-serif;font-size:26px;font-weight:900;color:var(--navy);margin-bottom:4px}
+.nl-txt p{font-size:14px;color:rgba(30,21,69,.7)}
+.nl-form{display:flex;gap:10px;flex-shrink:0}
+.nl-input{padding:13px 20px;border:none;border-radius:8px;font-size:14px;width:260px;background:rgba(255,255,255,.55);color:var(--navy);outline:none}
+.nl-input:focus{background:#fff}
+.nl-btn{padding:13px 22px;background:var(--navy);color:#fff;border:none;border-radius:8px;font-size:14px;font-weight:700;cursor:pointer;white-space:nowrap;transition:background .15s}
+.nl-btn:hover{background:var(--navy2)}
+
+/* FOOTER */
+.ftr{background:var(--navy);padding:60px 64px 32px}
+.ftr-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:48px;margin-bottom:48px}
+.ftr-brand-logo{height:36px;width:auto;margin-bottom:14px;filter:brightness(10)}
+.ftr-brand p{font-size:13px;color:rgba(255,255,255,.45);line-height:1.7;max-width:230px;margin-bottom:18px}
+.ftr-socials{display:flex;gap:8px}
+.soc{width:34px;height:34px;border-radius:8px;background:rgba(255,255,255,.07);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:rgba(255,255,255,.55);transition:background .15s,color .15s}
+.soc:hover{background:var(--lime);color:var(--navy)}
+.ftr-col h4{font-family:'Heebo',sans-serif;font-size:13px;font-weight:700;color:#fff;margin-bottom:16px;letter-spacing:.3px}
+.ftr-col ul li{margin-bottom:9px}
+.ftr-col ul li a{font-size:13px;color:rgba(255,255,255,.45);transition:color .15s}
+.ftr-col ul li a:hover{color:var(--lime)}
+.ftr-btm{padding-top:24px;border-top:1px solid rgba(255,255,255,.07);display:flex;align-items:center;justify-content:space-between;gap:20px}
+.ftr-btm p{font-size:12px;color:rgba(255,255,255,.3)}
+.ftr-legal{display:flex;gap:18px}
+.ftr-legal a{font-size:12px;color:rgba(255,255,255,.3);transition:color .15s}
+.ftr-legal a:hover{color:rgba(255,255,255,.6)}
+
+/* FLOATING BTN */
+.fl-btn{position:fixed;bottom:28px;right:28px;background:var(--lime);color:var(--navy);font-weight:700;font-size:14px;padding:14px 24px;border-radius:40px;border:none;cursor:pointer;display:flex;align-items:center;gap:8px;box-shadow:0 4px 20px rgba(194,213,0,.45);transition:all .2s;opacity:0;transform:translateY(10px);z-index:199}
+.fl-btn.vis{opacity:1;transform:translateY(0)}
+.fl-btn:hover{background:var(--lime-d)}
+
+/* RESPONSIVE */
+@media(max-width:1100px){
+  .hero{grid-template-columns:1fr}
+  .hp{min-height:300px}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .about{grid-template-columns:1fr}
+  .about-img{height:320px}
+  .about-txt{padding:48px 28px}
+  .services,.proof,.locations,.news{padding:60px 28px}
+  .svc-grid,.proof-grid,.loc-grid,.news-grid{grid-template-columns:1fr}
+  .ftr{padding:48px 28px 24px}
+  .ftr-grid{grid-template-columns:1fr 1fr;gap:32px}
+  .nl{flex-direction:column;text-align:center;padding:40px 28px}
+  .nl-form{flex-direction:column;width:100%}
+  .nl-input{width:100%}
+  .hdr{padding:0 20px}
+  .hdr-nav{display:none}
+}
+@media(max-width:640px){
+  .stats{grid-template-columns:1fr 1fr}
+  .ftr-grid{grid-template-columns:1fr}
+  .ftr-btm{flex-direction:column;align-items:flex-start;gap:10px}
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "EducationalOrganization",
+      "@id": "https://thecorner.es/#organization",
+      "name": "The Corner Centre d'Estudis",
+      "url": "https://thecorner.es/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://thecorner.es/wp-content/uploads/2024/05/01-THE-CORNER-2022-Logo-Positivo-300x82.png"
+      },
+      "description": "Centro de estudios especializado en idiomas, formación subvencionada y formación para empresas.",
+      "areaServed": {
+        "@type": "City",
+        "name": "Santa Coloma de Gramenet"
+      },
+      "sameAs": [
+        "https://www.instagram.com/centrethecorner/",
+        "https://es-es.facebook.com/centrethecorner/",
+        "https://www.youtube.com/channel/UCFXkeO4m2AUxJoXF4FtKe4A",
+        "https://es.linkedin.com/school/the-corner-centre-d%27estudis/"
+      ],
+      "subOrganization": [
+        { "@id": "https://thecorner.es/#tc1" },
+        { "@id": "https://thecorner.es/#tc2" },
+        { "@id": "https://thecorner.es/#tc3" }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://thecorner.es/#website",
+      "url": "https://thecorner.es/",
+      "name": "The Corner Centre d'Estudis",
+      "publisher": { "@id": "https://thecorner.es/#organization" },
+      "inLanguage": "es-ES"
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://thecorner.es/#tc1",
+      "name": "The Corner TC1",
+      "parentOrganization": { "@id": "https://thecorner.es/#organization" },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. de la Generalitat, 5",
+        "postalCode": "08922",
+        "addressLocality": "Santa Coloma de Gramenet",
+        "addressCountry": "ES"
+      },
+      "telephone": "+34 933 85 29 54",
+      "url": "https://thecorner.es/"
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://thecorner.es/#tc2",
+      "name": "The Corner TC2",
+      "parentOrganization": { "@id": "https://thecorner.es/#organization" },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Carrer de Sant Silvestre, 35",
+        "postalCode": "08922",
+        "addressLocality": "Santa Coloma de Gramenet",
+        "addressCountry": "ES"
+      },
+      "telephone": "+34 933 85 29 54",
+      "url": "https://thecorner.es/"
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://thecorner.es/#tc3",
+      "name": "The Corner TC3",
+      "parentOrganization": { "@id": "https://thecorner.es/#organization" },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rambla de Sant Sebastià, 14",
+        "postalCode": "08922",
+        "addressLocality": "Santa Coloma de Gramenet",
+        "addressCountry": "ES"
+      },
+      "telephone": "+34 933 85 29 54",
+      "url": "https://thecorner.es/"
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="/" aria-label="The Corner">
+      <img src="https://thecorner.es/wp-content/uploads/2025/09/logo.png" alt="Centre d'Estudis The Corner - Santa Coloma de Gramenet" width="200" height="50" decoding="async">
+    </a>
+    <nav class="nav-menu" aria-label="Navegación principal">
+      <div class="nav-menu__item nav-menu__item--dropdown">Servicios
+        <div class="nav-dropdown">
+          <a href="https://thecorner.es/orientacion-profesional/" class="nav-dropdown__item">Orientación Laboral</a>
+          <a href="https://thecorner.es/bolsa-de-trabajo/" class="nav-dropdown__item">Bolsa de Empleo</a>
+          <a href="https://thecorner.es/formacion-para-empresas/" class="nav-dropdown__item">Formación para Empresas</a>
+          <a href="https://thecorner.es/english-language-school/" class="nav-dropdown__item">The Corner Idiomas</a>
+        </div>
+      </div>
+      <a href="/language-school/level-test" class="nav-menu__item">Comprueba tu Nivel de Inglés</a>
+      <a href="https://thecorner.es/contacto/" class="nav-menu__item">Contacto</a>
+      <a href="https://thecorner.es/quienes-somos/" class="nav-menu__item">Quienes somos</a>
+      <div class="nav-menu__item nav-menu__item--dropdown lang-selector-menu">ES
+        <div class="nav-dropdown">
+          <a href="#" class="nav-dropdown__item active-lang">Español</a>
+          <a href="#" class="nav-dropdown__item">Català</a>
+        </div>
+      </div>
+    </nav>
+    <button class="mobile-menu-toggle" aria-label="Abrir menú" aria-expanded="false" type="button"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+
+  <!-- Panel Idiomas -->
+  <div class="hp" onclick="location.href='https://thecorner.es/english-language-school/'">
+    <div class="hp-bg" style="background-image:url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=900&q=80')"></div>
+    <div class="hp-overlay" style="background:linear-gradient(180deg,rgba(30,21,69,.1) 0%,rgba(30,21,69,.88) 100%)"></div>
+    <div class="hp-content">
+      <span class="hp-tag">Academia de idiomas</span>
+      <h2>Escuela de inglés para niños y adultos</h2>
+      <div class="hp-pills">
+        <span class="hp-pill">Kinder Corner</span>
+        <span class="hp-pill">Young Learners</span>
+        <span class="hp-pill">Teens</span>
+        <span class="hp-pill">Adultos</span>
+      </div>
+      <a href="https://thecorner.es/english-language-school/" class="btn-lime">Ver cursos →</a>
+    </div>
+  </div>
+
+  <!-- Panel Subvencionada -->
+  <div class="hp" onclick="location.href='https://thecorner.es/cursos/cursos-gratuitos'">
+    <div class="hp-bg" style="background-image:url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=900&q=80')"></div>
+    <div class="hp-overlay" style="background:linear-gradient(180deg,rgba(30,21,69,.25) 0%,rgba(30,21,69,.92) 100%)"></div>
+    <div class="hp-content">
+      <span class="hp-tag">Cursos gratuitos</span>
+      <h2>Formación subvencionada 25/26 con bolsa de trabajo</h2>
+      <p>Para trabajadores y personas en situación de desempleo. Titulaciones reconocidas por el SOC.</p>
+      <a href="https://thecorner.es/cursos/cursos-gratuitos" class="btn-outline">Ver convocatoria →</a>
+    </div>
+  </div>
+
+  <!-- Panel Empresas NUEVO -->
+  <div class="hp" onclick="location.href='https://thecorner.es/formacion-para-empresas/'" style="overflow:hidden">
+    <div class="hp-new">Nuevo</div>
+    <div class="hp-bg" style="background-image:url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=900&q=80')"></div>
+    <div class="hp-overlay" style="background:linear-gradient(180deg,rgba(20,12,55,.3) 0%,rgba(20,12,55,.93) 100%)"></div>
+    <div class="hp-content">
+      <span class="hp-tag">Para empresas</span>
+      <h2>Formación bonificada FUNDAE para tu equipo</h2>
+      <p>Sin coste real para tu empresa. Inglés, habilidades digitales, gestión y más. In-company o en nuestros centros.</p>
+      <a href="https://thecorner.es/formacion-para-empresas/" class="btn-lime">Solicitar información →</a>
+    </div>
+  </div>
+
+</section>
+<div class="lime-bar"></div>
+
+<!-- INTRODUCCIÓN SEO -->
+<!-- STATS -->
+<div class="stats">
+  <div class="stat"><div class="stat-n">+30</div><div class="stat-l">años de experiencia</div></div>
+  <div class="stat"><div class="stat-n">+20.000</div><div class="stat-l">alumnos satisfechos</div></div>
+  <div class="stat"><div class="stat-n">+50</div><div class="stat-l">profesionales expertos</div></div>
+  <div class="stat"><div class="stat-n">87%</div><div class="stat-l">encuentran empleo</div></div>
+</div>
+
+<!-- ABOUT -->
+<section class="about">
+  <div class="about-img">
+    <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=900&q=80" alt="Estudiantes en un aula de The Corner" width="900" height="600" loading="lazy" decoding="async">
+    <div class="about-img-overlay"></div>
+    <div class="about-img-stat">
+      <strong>+30</strong>
+      <span>años formando futuros</span>
+    </div>
+  </div>
+  <div class="about-txt">
+    <p class="sec-label">Quiénes somos</p>
+    <h1>Academia de inglés y formación profesional en Santa Coloma de Gramenet</h1>
+    <p>THE CORNER es un centro de estudios en Santa Coloma de Gramenet, especializado en idiomas para niños, adolescentes y adultos, formación subvencionada y bonificada para empresas y trabajadores.</p>
+    <div class="about-logos">
+      <div class="about-logo"><img src="https://thecorner.es/wp-content/uploads/2022/03/Capa-2.jpg" alt="Logotipo de entidad colaboradora" width="70" height="32" loading="lazy" decoding="async"></div>
+      <div class="about-logo"><img src="https://thecorner.es/wp-content/uploads/2022/03/logo_1.jpg" alt="Logotipo de entidad colaboradora" width="70" height="32" loading="lazy" decoding="async"></div>
+      <div class="about-logo"><img src="https://thecorner.es/wp-content/uploads/2022/03/logo2.jpg" alt="Logotipo de entidad colaboradora" width="70" height="32" loading="lazy" decoding="async"></div>
+      <div class="about-logo"><img src="https://thecorner.es/wp-content/uploads/2022/03/Capa-4.jpg" alt="Logotipo de entidad colaboradora" width="70" height="32" loading="lazy" decoding="async"></div>
+      <div class="about-logo"><img src="https://thecorner.es/wp-content/uploads/2022/03/Capa-3.jpg" alt="Logotipo de entidad colaboradora" width="70" height="32" loading="lazy" decoding="async"></div>
+      <div class="about-logo"><img src="https://thecorner.es/wp-content/uploads/2022/03/Layer-1.jpg" alt="Logotipo de entidad colaboradora" width="70" height="32" loading="lazy" decoding="async"></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services">
+  <div class="sec-hd">
+    <p class="sec-label">Nuestros servicios</p>
+    <h2>Aprender está a la vuelta de la esquina</h2>
+    <p>Tres áreas de formación para acompañarte en cada etapa de tu vida profesional y personal.</p>
+  </div>
+  <div class="svc-grid">
+
+    <!-- Idiomas -->
+    <div class="svc-card">
+      <div class="svc-img">
+        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=700&q=80" alt="Clase de inglés en la academia de idiomas" width="700" height="440" loading="lazy" decoding="async">
+        <div class="svc-img-overlay"></div>
+        <div class="svc-img-label">
+          <span class="svc-badge">Idiomas</span>
+          <h3>Academia de inglés</h3>
+        </div>
+      </div>
+      <div class="svc-body">
+        <p class="svc-desc">Inglés para todas las edades desde los 3 años. Preparación oficial Cambridge y Oxford.</p>
+        <div class="svc-feats">
+          <div class="svc-feat"><span class="feat-dot">✓</span><span>Kinder Corner — 3 a 6 años</span></div>
+          <div class="svc-feat"><span class="feat-dot">✓</span><span>Young Learners — 7 a 12 años</span></div>
+          <div class="svc-feat"><span class="feat-dot">✓</span><span>Teens — 13 a 17 años</span></div>
+          <div class="svc-feat"><span class="feat-dot">✓</span><span>Adultos — todos los niveles</span></div>
+          <div class="svc-feat"><span class="feat-dot">✓</span><span>Intensivos de verano</span></div>
+        </div>
+        <div class="svc-footer">
+          <a href="https://thecorner.es/english-language-school/" class="svc-link">Ver cursos <span class="svc-arrow">→</span></a>
+          <a href="https://leveltest.thecorner.es/" style="font-size:12px;font-weight:700;color:var(--muted)">Test de nivel</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Subvencionada -->
+    <div class="svc-card">
+      <div class="svc-img">
+        <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=700&q=80" alt="Formación subvencionada para trabajadores" width="700" height="440" loading="lazy" decoding="async">
+        <div class="svc-img-overlay"></div>
+        <div class="svc-img-label">
+          <span class="svc-badge">Gratuito</span>
+          <h3>Formación subvencionada</h3>
+        </div>
+      </div>
+      <div class="svc-body">
+        <p class="svc-desc">Cursos cofinanciados por el SOC para trabajadores y personas en situación de desempleo.</p>
+        <div class="svc-feats">
+          <div class="svc-feat"><span class="feat-dot">✓</span><span>100% gratuito — subvencionado</span></div>
+          <div class="svc-feat"><span class="feat-dot">✓</span><span>Administración, marketing, informática</span></div>
+          <div class="svc-feat"><span class="feat-dot">✓</span><span>Idiomas e inglés profesional</span></div>
+          <div class="svc-feat"><span class="feat-dot">✓</span><span>Titulaciones reconocidas oficialmente</span></div>
+          <div class="svc-feat"><span class="feat-dot">✓</span><span>Bolsa de trabajo incluida</span></div>
+        </div>
+        <div class="svc-footer">
+          <a href="https://thecorner.es/cursos/cursos-gratuitos" class="svc-link">Ver convocatoria <span class="svc-arrow">→</span></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Empresas NUEVO -->
+    <div class="svc-card" style="border-color:var(--lime)">
+      <div class="svc-img">
+        <img src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?w=700&q=80" alt="Formación para empresas y equipos" width="700" height="440" loading="lazy" decoding="async">
+        <div class="svc-img-overlay"></div>
+        <div class="svc-img-label">
+          <span class="svc-badge" style="background:var(--navy);color:var(--lime)">Nuevo · FUNDAE</span>
+          <h3>Formación para empresas</h3>
+        </div>
+      </div>
+      <div class="svc-body">
+        <p class="svc-desc">Bonificada con FUNDAE — sin coste real. In-company o en nuestros centros. Gestión incluida.</p>
+        <div class="emp-tags">
+          <span class="emp-tag">Inglés para equipos</span>
+          <span class="emp-tag">Habilidades directivas</span>
+          <span class="emp-tag">Marketing digital</span>
+          <span class="emp-tag">Ofimática avanzada</span>
+          <span class="emp-tag">RRHH y gestión</span>
+          <span class="emp-tag">A medida</span>
+        </div>
+        <div class="svc-feats">
+          <div class="svc-feat"><span class="feat-dot">✓</span><span>Gestión FUNDAE 100% a cargo nuestro</span></div>
+          <div class="svc-feat"><span class="feat-dot">✓</span><span>Horarios y modalidad flexible</span></div>
+        </div>
+        <div class="svc-footer">
+          <a href="https://thecorner.es/formacion-para-empresas/" class="svc-link">Solicitar información <span class="svc-arrow">→</span></a>
+          <span style="font-size:10px;font-weight:700;background:var(--lime);color:var(--navy);padding:3px 8px;border-radius:4px;letter-spacing:.5px">NUEVO</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- TESTIMONIOS -->
+<section class="proof">
+  <div class="proof-inner">
+    <div class="proof-hd">
+      <p class="sec-label">Testimonios</p>
+      <h2>Lo que dicen nuestros alumnos y empresas</h2>
+    </div>
+    <div class="proof-grid">
+      <div class="proof-card">
+        <div class="proof-stars">★★★★★</div>
+        <p class="proof-q">"Llevo tres años enviando a mi hijo a Kinder Corner y el progreso ha sido increíble. Los profes son muy cercanos y el ambiente es fantástico."</p>
+        <div class="proof-who">
+          <div class="proof-avatar" style="background:#c2d500;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;color:#1e1545">MC</div>
+          <div>
+            <div class="proof-name">María C.</div>
+            <div class="proof-role">Madre de alumno · Kinder Corner</div>
+          </div>
+        </div>
+      </div>
+      <div class="proof-card">
+        <div class="proof-stars">★★★★★</div>
+        <p class="proof-q">"Gracias al curso subvencionado de marketing digital encontré trabajo en menos de 2 meses. La bolsa de empleo de The Corner fue clave."</p>
+        <div class="proof-who">
+          <div class="proof-avatar" style="background:#3d3580;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;color:#fff">JR</div>
+          <div>
+            <div class="proof-name">Jordi R.</div>
+            <div class="proof-role">Alumni · Formación Subvencionada</div>
+          </div>
+        </div>
+      </div>
+      <div class="proof-card">
+        <div class="proof-stars">★★★★★</div>
+        <p class="proof-q">"Contratamos la formación bonificada para todo nuestro equipo comercial. El proceso fue sencillo, ellos gestionaron todo el papeleo de FUNDAE."</p>
+        <div class="proof-who">
+          <div class="proof-avatar" style="background:#1a2f45;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;color:#c2d500">AP</div>
+          <div>
+            <div class="proof-name">Ana P.</div>
+            <div class="proof-role">Directora RRHH · Formación Empresas</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCALIZACIONES -->
+<section class="locations">
+  <div style="max-width:1160px;margin:0 auto">
+    <p class="sec-label" style="text-align:center">Dónde estamos</p>
+    <h2 style="font-family:'Heebo',sans-serif;font-size:36px;font-weight:900;color:var(--navy);text-align:center">Tres centros en Santa Coloma de Gramenet</h2>
+  </div>
+  <div class="loc-grid">
+    <div class="loc-card">
+      <iframe class="loc-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.4860492610815!2d2.2072781113074704!3d41.450372291966815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4bc8e1ea8eac9%3A0x2b9020c088b1a868!2sThe%20Corner%20Centro%20de%20Estudios!5e0!3m2!1ses!2ses!4v1760102023778!5m2!1ses!2ses" loading="lazy"></iframe>
+      <div class="loc-info">
+        <div class="loc-name">The Corner TC1</div>
+        <div class="loc-addr">Av. de la Generalitat, 5 · 08922 Santa Coloma de Gramenet</div>
+        <a href="tel:933852954" class="loc-tel">📞 933 85 29 54</a>
+      </div>
+    </div>
+    <div class="loc-card">
+      <iframe class="loc-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.4942590621145!2d2.208329361307397!3d41.45019419197784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4bc902f0d05c9%3A0x33ee96c5c9ecd4c2!2sThe%20Corner%20Centre%20d'Estudis!5e0!3m2!1ses!2ses!4v1760102072301!5m2!1ses!2ses" loading="lazy"></iframe>
+      <div class="loc-info">
+        <div class="loc-name">The Corner TC2</div>
+        <div class="loc-addr">Carrer de Sant Silvestre, 35 · 08922 Santa Coloma de Gramenet</div>
+        <a href="tel:933852954" class="loc-tel">📞 933 85 29 54</a>
+      </div>
+    </div>
+    <div class="loc-card">
+      <iframe class="loc-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.4942590621145!2d2.208329361307397!3d41.45019419197784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4bc8e1ea9cc49%3A0x8e768caa7a509750!2sThe%20Corner%20Centre%20d'Estudis!5e0!3m2!1ses!2ses!4v1760102099075!5m2!1ses!2ses" loading="lazy"></iframe>
+      <div class="loc-info">
+        <div class="loc-name">The Corner TC3</div>
+        <div class="loc-addr">Rambla de Sant Sebastià, 14 · 08922 Santa Coloma de Gramenet</div>
+        <a href="tel:933852954" class="loc-tel">📞 933 85 29 54</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWS -->
+<section class="news">
+  <div style="max-width:1160px;margin:0 auto">
+    <p class="sec-label">Blog</p>
+    <h2 style="font-family:'Heebo',sans-serif;font-size:36px;font-weight:900;color:var(--navy)">Noticias y recursos</h2>
+  </div>
+    <div class="news-grid">
+    <a class="news-card" href="https://thecorner.es/foap-2025-en-cataluna-los-cursos-subvencionados-del-soc-se-retrasan-a-marzo/">
+      <div class="news-thumb"><img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=500&q=70" alt="Cursos subvencionados del SOC y formación profesional" width="500" height="160" loading="lazy" decoding="async"></div>
+      <div class="news-body">
+        <div class="news-date">Enero 2026</div>
+        <h4>FOAP 2025 en Cataluña: los cursos del SOC se retrasan a marzo</h4>
+        <div class="news-more">Leer más →</div>
+      </div>
+    </a>
+    <a class="news-card" href="https://thecorner.es/mas-alla-del-curriculum-con-el-programa-orienta/">
+      <div class="news-thumb"><img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=500&q=70" alt="Programa Orienta y desarrollo profesional" width="500" height="160" loading="lazy" decoding="async"></div>
+      <div class="news-body">
+        <div class="news-date">Octubre 2025</div>
+        <h4>Más allá del currículum con el programa Orienta</h4>
+        <div class="news-more">Leer más →</div>
+      </div>
+    </a>
+    <a class="news-card" href="https://thecorner.es/contratacion-de-jovenes-beneficios-y-incentivos-fiscales-para-las-empresas/">
+      <div class="news-thumb"><img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=500&q=70" alt="Contratación de jóvenes y oportunidades para empresas" width="500" height="160" loading="lazy" decoding="async"></div>
+      <div class="news-body">
+        <div class="news-date">Octubre 2025</div>
+        <h4>Por qué contratar jóvenes del programa Singulars es una gran oportunidad</h4>
+        <div class="news-more">Leer más →</div>
+      </div>
+    </a>
+    <a class="news-card" href="https://thecorner.es/extraescolares-de-ingles-5-razones-por-las-que-marcan-la-diferencia-en-la-educacion-de-tus-hijos/">
+      <div class="news-thumb"><img src="https://images.unsplash.com/photo-1560785496-3c9d27877182?w=500&q=70" alt="Extraescolares de inglés para niños" width="500" height="160" loading="lazy" decoding="async"></div>
+      <div class="news-body">
+        <div class="news-date">Septiembre 2025</div>
+        <h4>Extraescolares de inglés: 5 razones que marcan la diferencia</h4>
+        <div class="news-more">Leer más →</div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<div class="nl">
+  <div class="nl-txt">
+    <h2>Suscríbete al newsletter</h2>
+    <p>Convocatorias, recursos y novedades en tu bandeja de entrada.</p>
+  </div>
+  <form class="nl-form" onsubmit="event.preventDefault()">
+    <input type="email" class="nl-input" placeholder="Tu correo electrónico">
+    <button class="nl-btn" type="submit">Suscribirme →</button>
+  </form>
+</div>
+
+<!-- FOOTER -->
+<footer class="ftr">
+  <div class="ftr-grid">
+    <div class="ftr-brand">
+      <img class="ftr-brand-logo" src="https://thecorner.es/wp-content/uploads/2024/05/01-THE-CORNER-2022-Logo-Positivo-300x82.png" alt="The Corner Centre d'Estudis" width="300" height="82" loading="lazy" decoding="async">
+      <p>Centro de estudios en Santa Coloma de Gramenet. Idiomas, formación subvencionada y bonificada para empresas.</p>
+      <div class="ftr-socials">
+        <a href="https://es-es.facebook.com/centrethecorner/" class="soc" aria-label="Facebook">f</a>
+        <a href="https://www.instagram.com/centrethecorner/" class="soc" aria-label="Instagram">ig</a>
+        <a href="https://mobile.twitter.com/centrethecorner" class="soc" aria-label="Twitter">X</a>
+        <a href="https://www.youtube.com/channel/UCFXkeO4m2AUxJoXF4FtKe4A" class="soc" aria-label="YouTube">▶</a>
+        <a href="https://es.linkedin.com/school/the-corner-centre-d%27estudis/" class="soc" aria-label="LinkedIn">in</a>
+      </div>
+    </div>
+    <div class="ftr-col">
+      <h4>Academia de Idiomas</h4>
+      <ul>
+        <li><a href="https://thecorner.es/language-school-kinder-corner/">Kinder Corner</a></li>
+        <li><a href="https://thecorner.es/language-school-young-learners/">Young Learners</a></li>
+        <li><a href="https://thecorner.es/language-school-teens/">Teens</a></li>
+        <li><a href="https://thecorner.es/ingles-para-adultos/">Adultos</a></li>
+        <li><a href="https://leveltest.thecorner.es/">Test de nivel</a></li>
+      </ul>
+    </div>
+    <div class="ftr-col">
+      <h4>Formación</h4>
+      <ul>
+        <li><a href="https://thecorner.es/cursos/cursos-gratuitos">Cursos subvencionados</a></li>
+        <li><a href="https://thecorner.es/formacion-para-empresas/">Para empresas · FUNDAE</a></li>
+        <li><a href="https://thecorner.es/ingles-para-empresas/">Inglés para empresas</a></li>
+        <li><a href="https://thecorner.es/orientacion-profesional/">Orientación profesional</a></li>
+        <li><a href="https://thecorner.es/bolsa-de-trabajo/">Bolsa de empleo</a></li>
+      </ul>
+    </div>
+    <div class="ftr-col">
+      <h4>The Corner</h4>
+      <ul>
+        <li><a href="https://thecorner.es/quienes-somos/">Quiénes somos</a></li>
+        <li><a href="https://thecorner.es/contacto/">Contacto</a></li>
+        <li><a href="https://thecorner.es/aviso-legal/">Aviso legal</a></li>
+        <li><a href="https://thecorner.es/politica-de-privacidad/">Política de privacidad</a></li>
+        <li><a href="https://app.kenjo.io/whistleblower/1b180c4af6c42961c73733c2c61cc42e60fc9d11c5553f466affcba42bb6dc13">Canal de denuncias</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ftr-btm">
+    <p>© 2026 Centro de Estudios The Corner. Todos los derechos reservados.</p>
+    <div class="ftr-legal">
+      <a href="https://thecorner.es/aviso-legal/">Aviso Legal</a>
+      <a href="https://thecorner.es/politica-de-cookies/">Cookies</a>
+      <a href="https://thecorner.es/politica-de-privacidad/">Privacidad</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating CTA -->
+<button class="fl-btn" id="flBtn" onclick="location.href='https://thecorner.es/contacto/'">
+  💬 ¡Infórmate!
+</button>
+
+<script>
+window.addEventListener('scroll',function(){
+  document.getElementById('flBtn').classList.toggle('vis', window.scrollY > 400);
+});
+</script>
+<script>
+  document.querySelectorAll('.mobile-menu-toggle').forEach((button) => {
+    const nav = button.closest('.site-header').querySelector('.nav-menu');
+    button.addEventListener('click', () => {
+      const open = nav.classList.toggle('is-open');
+      button.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  });
+  document.querySelectorAll('.nav-menu__item--dropdown').forEach((item) => {
+    item.addEventListener('click', (event) => {
+      if (window.innerWidth > 1024) return;
+      if (event.target.closest('.nav-dropdown__item')) return;
+      item.classList.toggle('is-open');
+    });
+  });
+</script>
+</body>
+</html>
+
+

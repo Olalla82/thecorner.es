@@ -561,7 +561,7 @@ if ($grupo_foap_encontrado) {
 
       $slug_curso = slugify($nombre);
 
-      $url_real = SITE_URL.'/cursos/'.$slug_curso;
+      $url_real = SITE_URL.'/cursos/ca/'.$slug_curso;
 
     } else if (!empty($grupo_foap_encontrado['grupo_nom']) && trim($grupo_foap_encontrado['grupo_nom']) != '') {
 
@@ -569,7 +569,7 @@ if ($grupo_foap_encontrado) {
 
       $slug_curso = slugify($nombre);
 
-      $url_real = SITE_URL.'/cursos/'.$slug_curso;
+      $url_real = SITE_URL.'/cursos/ca/'.$slug_curso;
 
     }
 
@@ -585,7 +585,7 @@ if ($grupo_foap_encontrado) {
 
       $slug_curso = slugify($nombre_limpio);
 
-      $url_real = SITE_URL.'/cursos/'.$slug_curso;
+      $url_real = SITE_URL.'/cursos/ca/'.$slug_curso;
 
     }
 
@@ -1439,7 +1439,7 @@ $curso_shared_css_version = is_file($curso_shared_css_path) ? filemtime($curso_s
 
 <!doctype html>
 
-<html lang="es">
+<html lang="ca">
 
 <head>
 
@@ -1485,9 +1485,9 @@ $curso_shared_css_version = is_file($curso_shared_css_path) ? filemtime($curso_s
 
 <meta property="og:type" content="website">
 
-<meta property="og:locale" content="es_ES">
+<meta property="og:locale" content="ca_ES">
 
-<meta property="og:locale:alternate" content="ca_ES">
+<meta property="og:locale:alternate" content="es_ES">
 
 <meta property="og:site_name" content="The Corner">
 
@@ -1678,13 +1678,13 @@ src="https://www.facebook.com/tr?id=1755236761371264&ev=PageView&noscript=1"
 
         <div class="nav-dropdown">
 
-          <a href="https://thecorner.es/orientacion-profesional/" class="nav-dropdown__item">Orientació Laboral</a>
+          <a href="https://thecorner.es/ca/orientacio-professional/" class="nav-dropdown__item">Orientació Laboral</a>
 
-          <a href="https://thecorner.es/bolsa-de-trabajo/" class="nav-dropdown__item">Borsa d'ocupació</a>
+          <a href="https://thecorner.es/ca/borsa-de-treball/" class="nav-dropdown__item">Borsa d'ocupació</a>
 
-          <a href="https://thecorner.es/formacion-para-empresas/" class="nav-dropdown__item">Formació per a Empreses</a>
+          <a href="https://thecorner.es/ca/formacio-per-a-empreses/" class="nav-dropdown__item">Formació per a Empreses</a>
 
-          <a href="https://thecorner.es/english-language-school/" class="nav-dropdown__item">The Corner Idiomes</a>
+          <a href="https://thecorner.es/ca/english-language-school/" class="nav-dropdown__item">The Corner Idiomes</a>
 
         </div>
 
@@ -1692,9 +1692,9 @@ src="https://www.facebook.com/tr?id=1755236761371264&ev=PageView&noscript=1"
 
       <a href="https://leveltest.thecorner.es/" class="nav-menu__item">Comprova el teu nivell d'anglès</a>
 
-      <a href="https://thecorner.es/contacto/" class="nav-menu__item">Contacte</a>
+      <a href="https://thecorner.es/ca/contacto/" class="nav-menu__item">Contacte</a>
 
-      <a href="https://thecorner.es/quienes-somos/" class="nav-menu__item">Qui som</a>
+      <a href="https://thecorner.es/ca/qui-som/" class="nav-menu__item">Qui som</a>
 
       <div class="nav-menu__item nav-menu__item--dropdown lang-selector-menu" style="position:relative">
 
@@ -1706,9 +1706,9 @@ src="https://www.facebook.com/tr?id=1755236761371264&ev=PageView&noscript=1"
 
           <div style="height:1px;background:#f3f4f6;margin:8px 0"></div>
 
-          <a href="/cursos/<?= htmlspecialchars($slug) ?>" class="nav-dropdown__item active-lang">Español</a>
+          <a href="/cursos/<?= htmlspecialchars($slug) ?>" class="nav-dropdown__item ">Español</a>
 
-          <a href="/cursos/ca/<?= htmlspecialchars($slug) ?>" class="nav-dropdown__item">Català</a>
+          <a href="/cursos/ca/<?= htmlspecialchars($slug) ?>" class="nav-dropdown__item active-lang">Català</a>
 
         </div>
 

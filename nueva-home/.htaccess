@@ -1,0 +1,4 @@
+# Entorno de desarrollo: no indexar ni seguir esta landing.
+<IfModule mod_headers.c>
+  Header always set X-Robots-Tag "noindex, nofollow, noarchive"
+</IfModule>
