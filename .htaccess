@@ -14,6 +14,17 @@ RewriteRule ^memoria-resultats-2025/?$ /cursos/memoria-resultats-2025.html [L,QS
 RewriteRule ^memoria-resultats-2025\.css$ /cursos/memoria-resultats-2025.css [L,QSA]
 
 #########################################################
+# ACREDITACIÓN DE COMPETENCIAS
+#########################################################
+
+RewriteRule ^acreditacion-competencias\.html$ /acreditacion-competencias/ [R=301,L]
+RewriteRule ^cursos/acreditacion-competencias\.html$ /acreditacion-competencias/ [R=301,L]
+RewriteRule ^acreditacion-competencias/?$ /cursos/acreditacion-competencias/index.html [L,QSA]
+RewriteRule ^ca/acreditacio-competencies\.html$ /ca/acreditacio-competencies/ [R=301,L]
+RewriteRule ^cursos/acreditacio-competencies\.html$ /ca/acreditacio-competencies/ [R=301,L]
+RewriteRule ^ca/acreditacio-competencies/?$ /cursos/ca/acreditacio-competencies/index.html [L,QSA]
+
+#########################################################
 # SUBDOMINIO CURSOS GRATUITOS
 #########################################################
 
