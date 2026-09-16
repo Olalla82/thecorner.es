@@ -2533,6 +2533,23 @@ while ($row = fetch_result($result_destacados)) {
 
   <div class="footer-container">
 
+    <section class="footer-accreditation" aria-labelledby="footer-accreditation-title">
+      <div class="footer-accreditation__media">
+        <img src="/cursos/assets/img/acreditacion-competencias-campanya.jpg" alt="Acreditación de competencias profesionales" width="2339" height="1560" loading="lazy" decoding="async">
+      </div>
+      <div class="footer-accreditation__content">
+        <span class="footer-accreditation__eyebrow">Nuevo servicio de orientación</span>
+        <h2 id="footer-accreditation-title">Acredita tus competencias profesionales</h2>
+        <p>Si tienes experiencia laboral, te ayudamos a identificar, ordenar y preparar tus competencias para convertirlas en una acreditación oficial.</p>
+        <ul class="footer-accreditation__list">
+          <li>Orientación personalizada</li>
+          <li>Revisión de documentación</li>
+          <li>Acompañamiento en el proceso</li>
+        </ul>
+        <a class="footer-accreditation__btn" href="/acreditacion-competencias/">Ver servicio</a>
+      </div>
+    </section>
+
     <div class="footer-subsidy-logos" aria-label="Entidades colaboradoras y financiadoras">
       <img src="/cursos/assets/img/logos-subvencionada-2026.webp" alt="Logotipos de SOC, Generalitat de Catalunya, Consorci per a la Formacio Continua de Catalunya, Ministerio de Educacion, SEPE e idiomasSL." width="1843" height="253" loading="lazy" decoding="async">
     </div>

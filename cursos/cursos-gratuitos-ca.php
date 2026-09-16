@@ -2476,6 +2476,23 @@ function curso_img($curso){
 
   <div class="footer-container">
 
+    <section class="footer-accreditation" aria-labelledby="footer-accreditation-title">
+      <div class="footer-accreditation__media">
+        <img src="/cursos/assets/img/acreditacion-competencias-campanya.jpg" alt="Acreditació de competències professionals" width="2339" height="1560" loading="lazy" decoding="async">
+      </div>
+      <div class="footer-accreditation__content">
+        <span class="footer-accreditation__eyebrow">Nou servei d'orientació</span>
+        <h2 id="footer-accreditation-title">Acredita les teves competències professionals</h2>
+        <p>Si tens experiència laboral, t'ajudem a identificar, ordenar i preparar les teves competències per convertir-les en una acreditació oficial.</p>
+        <ul class="footer-accreditation__list">
+          <li>Orientació personalitzada</li>
+          <li>Revisió de documentació</li>
+          <li>Acompanyament en el procés</li>
+        </ul>
+        <a class="footer-accreditation__btn" href="/ca/acreditacio-competencies/">Veure servei</a>
+      </div>
+    </section>
+
     <div class="footer-subsidy-logos" aria-label="Entidades colaboradoras y financiadoras">
       <img src="/cursos/assets/img/logos-subvencionada-2026.webp" alt="Logotips del SOC, Generalitat de Catalunya, Consorci per a la Formacio Continua de Catalunya, Ministerio de Educacion, SEPE i idiomesSL." width="1843" height="253" loading="lazy" decoding="async">
     </div>
