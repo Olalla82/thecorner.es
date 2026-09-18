@@ -11,6 +11,65 @@
   <link rel="alternate" hreflang="ca" href="https://thecorner.es/language-school/ca/level-test">
   <link rel="alternate" hreflang="x-default" href="https://thecorner.es/language-school/level-test">
 
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Para qué sirve una prueba de nivel de inglés?",
+        "acceptedAnswer": { "@type": "Answer", "text": "La prueba de nivel de inglés permite conocer tus conocimientos actuales del idioma y determinar desde qué nivel es recomendable empezar. Es especialmente útil antes de matricularte en un curso, para elegir una formación adecuada a tus conocimientos y objetivos." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿La prueba de nivel de inglés es gratuita?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Sí. En The Corner puedes realizar gratuitamente nuestra prueba de nivel de inglés y conocer cuál es tu nivel actual antes de elegir tu formación." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué nivel de inglés puedo tener?",
+        "acceptedAnswer": { "@type": "Answer", "text": "La prueba permite identificar tu nivel de inglés dentro de los niveles habituales de referencia. El resultado te ayudará a conocer tu punto de partida y a elegir el curso que mejor se adapte a tus conocimientos." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿La prueba de nivel sirve para saber si tengo un nivel A1, A2, B1, B2, C1 o C2?",
+        "acceptedAnswer": { "@type": "Answer", "text": "La prueba permite orientarte sobre tu nivel de inglés y establecer el punto de partida más adecuado para tu formación. Si necesitas acreditar oficialmente un nivel de inglés, tendrás que realizar el examen de certificación correspondiente." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cuánto tiempo se tarda en hacer la prueba de nivel?",
+        "acceptedAnswer": { "@type": "Answer", "text": "La duración depende de la prueba y del perfil del alumno. El objetivo es que puedas conocer tu nivel de forma sencilla y rápida, sin necesidad de realizar un proceso de evaluación complejo." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Hay una prueba de nivel de inglés para niños?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Sí. The Corner dispone de una prueba de nivel específica para niños de 7 a 11 años, adaptada a su edad y conocimientos. Para alumnos a partir de 12 años existe una prueba específica para Teens y Adultos." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué prueba de nivel tengo que hacer?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Depende de la edad del alumno. Los niños de 7 a 11 años deben realizar la prueba de nivel Kids. A partir de los 12 años corresponde realizar la prueba de nivel para Teens & Adults." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Tengo que hacer una prueba de nivel antes de apuntarme a un curso de inglés?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No siempre es imprescindible, pero realizar una prueba de nivel es recomendable para conocer tu punto de partida y elegir una formación adecuada a tus conocimientos. De esta forma, puedes evitar empezar en un nivel demasiado alto o demasiado bajo." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Puedo hacer la prueba de nivel aunque ya haya estudiado inglés?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Sí. Precisamente la prueba permite conocer cuál es tu nivel actual independientemente de cuánto tiempo hayas estudiado inglés anteriormente." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué hago después de conocer mi nivel de inglés?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Una vez conozcas tu nivel, puedes utilizar el resultado como referencia para elegir la formación más adecuada. En The Corner disponemos de cursos de inglés para diferentes edades y niveles." }
+      }
+    ]
+  }
+  </script>
+
   <style>
     :root {
       --corner-green: #c2d500;
@@ -400,6 +459,92 @@
     }
 
     /* =========================
+       FAQ
+    ========================= */
+
+    .faq {
+      padding: 95px 20px;
+      background: var(--white);
+    }
+
+    .faq-inner {
+      width: min(900px, 90%);
+      margin: 0 auto;
+    }
+
+    .faq-heading {
+      max-width: 680px;
+      margin-bottom: 42px;
+    }
+
+    .faq-heading .label {
+      color: var(--corner-green-dark);
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      margin-bottom: 9px;
+    }
+
+    .faq-heading h2 {
+      font-size: clamp(33px, 4vw, 51px);
+      line-height: 1.05;
+      letter-spacing: -1.8px;
+    }
+
+    .faq-list {
+      border-top: 1px solid var(--line);
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--line);
+    }
+
+    .faq-item summary {
+      position: relative;
+      padding: 24px 52px 24px 0;
+      color: var(--ink);
+      font-size: 18px;
+      font-weight: 800;
+      line-height: 1.35;
+      cursor: pointer;
+      list-style: none;
+    }
+
+    .faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq-item summary::after {
+      content: "+";
+      position: absolute;
+      right: 4px;
+      top: 50%;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: var(--corner-green);
+      color: var(--ink);
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 32px;
+      text-align: center;
+      transform: translateY(-50%);
+    }
+
+    .faq-item[open] summary::after {
+      content: "−";
+    }
+
+    .faq-item p {
+      max-width: 790px;
+      padding: 0 52px 24px 0;
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    /* =========================
        FINAL CTA
     ========================= */
 
@@ -554,6 +699,16 @@
         padding: 75px 20px;
       }
 
+      .faq {
+        padding: 75px 20px;
+      }
+
+      .faq-item summary {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 17px;
+      }
+
       .final-cta {
         padding: 80px 20px;
       }
@@ -573,7 +728,7 @@
           <div class="nav-dropdown">
             <a href="https://thecorner.es/orientacion-profesional/" class="nav-dropdown__item">Orientación Laboral</a>
             <a href="https://thecorner.es/bolsa-de-trabajo/" class="nav-dropdown__item">Bolsa de Empleo</a>
-            <a href="https://thecorner.es/formacion-para-empresas/" class="nav-dropdown__item">Formación para Empresas</a>
+            <a href="/formacion-bonificada/empresas/" class="nav-dropdown__item">Formación para Empresas</a>
             <a href="https://thecorner.es/english-language-school/" class="nav-dropdown__item">The Corner Idiomas</a>
           </div>
         </div>
@@ -762,6 +917,60 @@
 
         </div>
 
+      </div>
+    </section>
+
+
+    <!-- FAQ -->
+    <section class="faq" aria-labelledby="faq-title">
+      <div class="faq-inner">
+        <div class="faq-heading">
+          <div class="label">Resolvemos tus dudas</div>
+          <h2 id="faq-title">Preguntas frecuentes sobre la prueba de nivel de inglés</h2>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>¿Para qué sirve una prueba de nivel de inglés?</summary>
+            <p>La prueba de nivel de inglés permite conocer tus conocimientos actuales del idioma y determinar desde qué nivel es recomendable empezar. Es especialmente útil antes de matricularte en un curso, para elegir una formación adecuada a tus conocimientos y objetivos.</p>
+          </details>
+          <details class="faq-item">
+            <summary>¿La prueba de nivel de inglés es gratuita?</summary>
+            <p>Sí. En The Corner puedes realizar gratuitamente nuestra prueba de nivel de inglés y conocer cuál es tu nivel actual antes de elegir tu formación.</p>
+          </details>
+          <details class="faq-item">
+            <summary>¿Qué nivel de inglés puedo tener?</summary>
+            <p>La prueba permite identificar tu nivel de inglés dentro de los niveles habituales de referencia. El resultado te ayudará a conocer tu punto de partida y a elegir el curso que mejor se adapte a tus conocimientos.</p>
+          </details>
+          <details class="faq-item">
+            <summary>¿La prueba de nivel sirve para saber si tengo un nivel A1, A2, B1, B2, C1 o C2?</summary>
+            <p>La prueba permite orientarte sobre tu nivel de inglés y establecer el punto de partida más adecuado para tu formación. Si necesitas acreditar oficialmente un nivel de inglés, tendrás que realizar el examen de certificación correspondiente.</p>
+          </details>
+          <details class="faq-item">
+            <summary>¿Cuánto tiempo se tarda en hacer la prueba de nivel?</summary>
+            <p>La duración depende de la prueba y del perfil del alumno. El objetivo es que puedas conocer tu nivel de forma sencilla y rápida, sin necesidad de realizar un proceso de evaluación complejo.</p>
+          </details>
+          <details class="faq-item">
+            <summary>¿Hay una prueba de nivel de inglés para niños?</summary>
+            <p>Sí. The Corner dispone de una prueba de nivel específica para niños de 7 a 11 años, adaptada a su edad y conocimientos. Para alumnos a partir de 12 años existe una prueba específica para Teens y Adultos.</p>
+          </details>
+          <details class="faq-item">
+            <summary>¿Qué prueba de nivel tengo que hacer?</summary>
+            <p>Depende de la edad del alumno. Los niños de 7 a 11 años deben realizar la prueba de nivel Kids. A partir de los 12 años corresponde realizar la prueba de nivel para Teens &amp; Adults.</p>
+          </details>
+          <details class="faq-item">
+            <summary>¿Tengo que hacer una prueba de nivel antes de apuntarme a un curso de inglés?</summary>
+            <p>No siempre es imprescindible, pero realizar una prueba de nivel es recomendable para conocer tu punto de partida y elegir una formación adecuada a tus conocimientos. De esta forma, puedes evitar empezar en un nivel demasiado alto o demasiado bajo.</p>
+          </details>
+          <details class="faq-item">
+            <summary>¿Puedo hacer la prueba de nivel aunque ya haya estudiado inglés?</summary>
+            <p>Sí. Precisamente la prueba permite conocer cuál es tu nivel actual independientemente de cuánto tiempo hayas estudiado inglés anteriormente.</p>
+          </details>
+          <details class="faq-item">
+            <summary>¿Qué hago después de conocer mi nivel de inglés?</summary>
+            <p>Una vez conozcas tu nivel, puedes utilizar el resultado como referencia para elegir la formación más adecuada. En The Corner disponemos de cursos de inglés para diferentes edades y niveles.</p>
+          </details>
+        </div>
       </div>
     </section>
 

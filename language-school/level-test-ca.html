@@ -11,6 +11,65 @@
   <link rel="alternate" hreflang="ca" href="https://thecorner.es/language-school/ca/level-test">
   <link rel="alternate" hreflang="x-default" href="https://thecorner.es/language-school/level-test">
 
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Per a què serveix una prova de nivell d'anglès?",
+        "acceptedAnswer": { "@type": "Answer", "text": "La prova de nivell d'anglès permet conèixer els teus coneixements actuals de l'idioma i determinar des de quin nivell és recomanable començar. És especialment útil abans de matricular-te en un curs, per triar una formació adequada als teus coneixements i objectius." }
+      },
+      {
+        "@type": "Question",
+        "name": "La prova de nivell d'anglès és gratuïta?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Sí. A The Corner pots fer gratuïtament la nostra prova de nivell d'anglès i saber quin és el teu nivell actual abans de triar la teva formació." }
+      },
+      {
+        "@type": "Question",
+        "name": "Quin nivell d'anglès puc tenir?",
+        "acceptedAnswer": { "@type": "Answer", "text": "La prova permet identificar el teu nivell d'anglès dins dels nivells habituals de referència. El resultat t'ajudarà a conèixer el teu punt de partida i a triar el curs que s'adapti millor als teus coneixements." }
+      },
+      {
+        "@type": "Question",
+        "name": "La prova de nivell serveix per saber si tinc un nivell A1, A2, B1, B2, C1 o C2?",
+        "acceptedAnswer": { "@type": "Answer", "text": "La prova permet orientar-te sobre el teu nivell d'anglès i establir el punt de partida més adequat per a la teva formació. Si necessites acreditar oficialment un nivell d'anglès, hauràs de fer l'examen de certificació corresponent." }
+      },
+      {
+        "@type": "Question",
+        "name": "Quant de temps es triga a fer la prova de nivell?",
+        "acceptedAnswer": { "@type": "Answer", "text": "La durada depèn de la prova i del perfil de l'alumne. L'objectiu és que puguis conèixer el teu nivell d'una manera senzilla i ràpida, sense haver de fer un procés d'avaluació complex." }
+      },
+      {
+        "@type": "Question",
+        "name": "Hi ha una prova de nivell d'anglès per a infants?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Sí. The Corner disposa d'una prova de nivell específica per a infants de 7 a 11 anys, adaptada a la seva edat i als seus coneixements. Per a alumnes a partir de 12 anys hi ha una prova específica per a Teens i Adults." }
+      },
+      {
+        "@type": "Question",
+        "name": "Quina prova de nivell he de fer?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Depèn de l'edat de l'alumne. Els infants de 7 a 11 anys han de fer la prova de nivell Kids. A partir dels 12 anys correspon fer la prova de nivell per a Teens & Adults." }
+      },
+      {
+        "@type": "Question",
+        "name": "He de fer una prova de nivell abans d'apuntar-me a un curs d'anglès?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No sempre és imprescindible, però fer una prova de nivell és recomanable per conèixer el teu punt de partida i triar una formació adequada als teus coneixements. D'aquesta manera, pots evitar començar en un nivell massa alt o massa baix." }
+      },
+      {
+        "@type": "Question",
+        "name": "Puc fer la prova de nivell encara que ja hagi estudiat anglès?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Sí. Precisament la prova permet saber quin és el teu nivell actual independentment del temps que hagis estudiat anglès anteriorment." }
+      },
+      {
+        "@type": "Question",
+        "name": "Què faig després de conèixer el meu nivell d'anglès?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Quan coneguis el teu nivell, pots utilitzar el resultat com a referència per triar la formació més adequada. A The Corner disposem de cursos d'anglès per a diferents edats i nivells." }
+      }
+    ]
+  }
+  </script>
+
   <style>
     :root {
       --corner-green: #c2d500;
@@ -400,6 +459,92 @@
     }
 
     /* =========================
+       FAQ
+    ========================= */
+
+    .faq {
+      padding: 95px 20px;
+      background: var(--white);
+    }
+
+    .faq-inner {
+      width: min(900px, 90%);
+      margin: 0 auto;
+    }
+
+    .faq-heading {
+      max-width: 680px;
+      margin-bottom: 42px;
+    }
+
+    .faq-heading .label {
+      color: var(--corner-green-dark);
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      margin-bottom: 9px;
+    }
+
+    .faq-heading h2 {
+      font-size: clamp(33px, 4vw, 51px);
+      line-height: 1.05;
+      letter-spacing: -1.8px;
+    }
+
+    .faq-list {
+      border-top: 1px solid var(--line);
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--line);
+    }
+
+    .faq-item summary {
+      position: relative;
+      padding: 24px 52px 24px 0;
+      color: var(--ink);
+      font-size: 18px;
+      font-weight: 800;
+      line-height: 1.35;
+      cursor: pointer;
+      list-style: none;
+    }
+
+    .faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq-item summary::after {
+      content: "+";
+      position: absolute;
+      right: 4px;
+      top: 50%;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: var(--corner-green);
+      color: var(--ink);
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 32px;
+      text-align: center;
+      transform: translateY(-50%);
+    }
+
+    .faq-item[open] summary::after {
+      content: "−";
+    }
+
+    .faq-item p {
+      max-width: 790px;
+      padding: 0 52px 24px 0;
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    /* =========================
        FINAL CTA
     ========================= */
 
@@ -554,6 +699,16 @@
         padding: 75px 20px;
       }
 
+      .faq {
+        padding: 75px 20px;
+      }
+
+      .faq-item summary {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 17px;
+      }
+
       .final-cta {
         padding: 80px 20px;
       }
@@ -573,7 +728,7 @@
           <div class="nav-dropdown">
             <a href="https://thecorner.es/orientacion-profesional/" class="nav-dropdown__item">Orientació Laboral</a>
             <a href="https://thecorner.es/bolsa-de-trabajo/" class="nav-dropdown__item">Borsa de Treball</a>
-            <a href="https://thecorner.es/ca/formacio-per-a-empreses/" class="nav-dropdown__item">Formació per a Empreses</a>
+            <a href="/formacion-bonificada/ca/empreses/" class="nav-dropdown__item">Formació per a Empreses</a>
             <a href="https://thecorner.es/language-school/" class="nav-dropdown__item">The Corner Idiomes</a>
           </div>
         </div>
@@ -762,6 +917,60 @@
 
         </div>
 
+      </div>
+    </section>
+
+
+    <!-- FAQ -->
+    <section class="faq" aria-labelledby="faq-title">
+      <div class="faq-inner">
+        <div class="faq-heading">
+          <div class="label">Resolem els teus dubtes</div>
+          <h2 id="faq-title">Preguntes freqüents sobre la prova de nivell d'anglès</h2>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>Per a què serveix una prova de nivell d'anglès?</summary>
+            <p>La prova de nivell d'anglès permet conèixer els teus coneixements actuals de l'idioma i determinar des de quin nivell és recomanable començar. És especialment útil abans de matricular-te en un curs, per triar una formació adequada als teus coneixements i objectius.</p>
+          </details>
+          <details class="faq-item">
+            <summary>La prova de nivell d'anglès és gratuïta?</summary>
+            <p>Sí. A The Corner pots fer gratuïtament la nostra prova de nivell d'anglès i saber quin és el teu nivell actual abans de triar la teva formació.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Quin nivell d'anglès puc tenir?</summary>
+            <p>La prova permet identificar el teu nivell d'anglès dins dels nivells habituals de referència. El resultat t'ajudarà a conèixer el teu punt de partida i a triar el curs que s'adapti millor als teus coneixements.</p>
+          </details>
+          <details class="faq-item">
+            <summary>La prova de nivell serveix per saber si tinc un nivell A1, A2, B1, B2, C1 o C2?</summary>
+            <p>La prova permet orientar-te sobre el teu nivell d'anglès i establir el punt de partida més adequat per a la teva formació. Si necessites acreditar oficialment un nivell d'anglès, hauràs de fer l'examen de certificació corresponent.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Quant de temps es triga a fer la prova de nivell?</summary>
+            <p>La durada depèn de la prova i del perfil de l'alumne. L'objectiu és que puguis conèixer el teu nivell d'una manera senzilla i ràpida, sense haver de fer un procés d'avaluació complex.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Hi ha una prova de nivell d'anglès per a infants?</summary>
+            <p>Sí. The Corner disposa d'una prova de nivell específica per a infants de 7 a 11 anys, adaptada a la seva edat i als seus coneixements. Per a alumnes a partir de 12 anys hi ha una prova específica per a Teens i Adults.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Quina prova de nivell he de fer?</summary>
+            <p>Depèn de l'edat de l'alumne. Els infants de 7 a 11 anys han de fer la prova de nivell Kids. A partir dels 12 anys correspon fer la prova de nivell per a Teens &amp; Adults.</p>
+          </details>
+          <details class="faq-item">
+            <summary>He de fer una prova de nivell abans d'apuntar-me a un curs d'anglès?</summary>
+            <p>No sempre és imprescindible, però fer una prova de nivell és recomanable per conèixer el teu punt de partida i triar una formació adequada als teus coneixements. D'aquesta manera, pots evitar començar en un nivell massa alt o massa baix.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Puc fer la prova de nivell encara que ja hagi estudiat anglès?</summary>
+            <p>Sí. Precisament la prova permet saber quin és el teu nivell actual independentment del temps que hagis estudiat anglès anteriorment.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Què faig després de conèixer el meu nivell d'anglès?</summary>
+            <p>Quan coneguis el teu nivell, pots utilitzar el resultat com a referència per triar la formació més adequada. A The Corner disposem de cursos d'anglès per a diferents edats i nivells.</p>
+          </details>
+        </div>
       </div>
     </section>
 

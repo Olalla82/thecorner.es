@@ -1682,7 +1682,7 @@ src="https://www.facebook.com/tr?id=1755236761371264&ev=PageView&noscript=1"
 
           <a href="https://thecorner.es/ca/borsa-de-treball/" class="nav-dropdown__item">Borsa d'ocupació</a>
 
-          <a href="https://thecorner.es/ca/formacio-per-a-empreses/" class="nav-dropdown__item">Formació per a Empreses</a>
+          <a href="/formacion-bonificada/ca/empreses/" class="nav-dropdown__item">Formació per a Empreses</a>
 
           <a href="https://thecorner.es/ca/english-language-school/" class="nav-dropdown__item">The Corner Idiomes</a>
 
@@ -1690,7 +1690,7 @@ src="https://www.facebook.com/tr?id=1755236761371264&ev=PageView&noscript=1"
 
       </div>
 
-      <a href="https://leveltest.thecorner.es/" class="nav-menu__item">Comprova el teu nivell d'anglès</a>
+      <a href="/language-school/ca/level-test" class="nav-menu__item">Comprova el teu nivell d'anglès</a>
 
       <a href="https://thecorner.es/ca/contacto/" class="nav-menu__item">Contacte</a>
 

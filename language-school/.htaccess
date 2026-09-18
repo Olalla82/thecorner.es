@@ -8,7 +8,13 @@ DirectoryIndex index.html index.php
 
 # ── REDIRECCIONES URL LIMPIAS ─────────────────────────────────────────────────
 <IfModule mod_rewrite.c>
-    RewriteEngine On
+    RewriteEngine On
+
+    # Test de nivel: URL publica limpia y archivo HTML interno
+    RewriteCond %{THE_REQUEST} \s/+language-school/level-test\.html[\s?] [NC]
+    RewriteRule ^level-test\.html$ /language-school/level-test [R=301,L]
+    RewriteRule ^level-test/?$ level-test.html [L,QSA]
+    RewriteRule ^ca/level-test/?$ level-test-ca.html [L,QSA]
 
     # ==========================================================================
     # CURSO INTENSIVO INGLÉS JULIO
