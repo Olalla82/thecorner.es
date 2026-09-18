@@ -1,0 +1,7 @@
+DirectoryIndex index.html
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{THE_REQUEST} \s/+gracias-suscripcion/index\.html[\s?] [NC]
+  RewriteRule ^index\.html$ /gracias-suscripcion/ [R=301,L]
+</IfModule>

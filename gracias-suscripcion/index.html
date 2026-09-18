@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Suscripción al newsletter | The Corner</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500;700;900&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--lime:#c2d500;--navy:#1e1545;--text:#3a3a3a;--white:#fff;--bg:#f7f7f3}
+    *{box-sizing:border-box}
+    body{margin:0;min-height:100vh;background:var(--bg);color:var(--text);font-family:'Lato',sans-serif}
+    header{height:80px;display:flex;align-items:center;padding:0 clamp(24px,6vw,80px);background:var(--white);border-bottom:1px solid #e4e4de}
+    header img{width:190px;height:auto;display:block}
+    main{min-height:calc(100vh - 80px);display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,420px);align-items:center;gap:clamp(40px,8vw,120px);padding:clamp(48px,9vw,120px) clamp(24px,8vw,120px);background:linear-gradient(90deg,var(--bg) 0 72%,var(--lime) 72% 100%)}
+    .status{max-width:680px}
+    .status-mark{width:58px;height:58px;display:grid;place-items:center;margin-bottom:28px;background:var(--lime);color:var(--navy);font-size:30px;font-weight:900;border-radius:50%}
+    h1{margin:0 0 18px;color:var(--navy);font-family:'Heebo',sans-serif;font-size:clamp(38px,6vw,72px);line-height:1.02;letter-spacing:0}
+    p{max-width:620px;margin:0 0 30px;font-size:18px;line-height:1.65}
+    .actions{display:flex;flex-wrap:wrap;gap:12px}
+    .button{display:inline-flex;align-items:center;min-height:48px;padding:12px 20px;border:2px solid var(--navy);background:var(--navy);color:var(--white);font-weight:700;text-decoration:none;border-radius:6px}
+    .button.secondary{background:transparent;color:var(--navy)}
+    .aside{align-self:stretch;display:flex;align-items:flex-end;padding-bottom:8px;color:var(--navy)}
+    .aside p{margin:0;font-family:'Heebo',sans-serif;font-size:22px;font-weight:700;line-height:1.35}
+    @media(max-width:760px){header{height:72px}header img{width:165px}main{min-height:calc(100vh - 72px);grid-template-columns:1fr;align-content:center;background:linear-gradient(180deg,var(--bg) 0 82%,var(--lime) 82% 100%)}.aside{min-height:100px;align-items:center}.aside p{font-size:18px}}
+  </style>
+</head>
+<body>
+  <header>
+    <a href="/" aria-label="The Corner - Inicio">
+      <img src="https://thecorner.es/wp-content/uploads/2024/05/01-THE-CORNER-2022-Logo-Positivo-300x82.png" alt="The Corner Centre d'Estudis" width="300" height="82">
+    </a>
+  </header>
+  <main>
+    <section class="status" aria-labelledby="status-title">
+      <div class="status-mark" aria-hidden="true">✓</div>
+      <h1 id="status-title">Suscripción confirmada</h1>
+      <p id="status-copy">Tu correo ya forma parte de nuestra lista. A partir de ahora recibirás convocatorias, recursos y novedades de The Corner.</p>
+      <div class="actions">
+        <a class="button" href="/">Volver al inicio</a>
+        <a class="button secondary" href="/cursos/cursos-gratuitos">Ver cursos</a>
+      </div>
+    </section>
+    <aside class="aside" aria-label="Información sobre la suscripción">
+      <p id="status-note">Gracias por confirmar que quieres seguir en contacto con nosotros.</p>
+    </aside>
+  </main>
+  <script>
+    if (new URLSearchParams(window.location.search).get('estado') === 'pendiente') {
+      document.title = 'Confirma tu suscripción | The Corner';
+      document.getElementById('status-title').textContent = 'Revisa tu correo';
+      document.getElementById('status-copy').textContent = 'Te hemos enviado un mensaje de confirmación. Abre el correo y pulsa el enlace para completar tu suscripción al newsletter.';
+      document.getElementById('status-note').textContent = 'Si no lo encuentras, revisa las carpetas de correo no deseado o promociones.';
+    }
+  </script>
+</body>
+</html>

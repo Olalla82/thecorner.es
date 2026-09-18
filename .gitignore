@@ -3,6 +3,7 @@ wp-config.php
 .env
 .env.*
 !.env.example
+nueva-home/newsletter-config.php
 
 # Database dumps and exports
 *.sql

@@ -188,11 +188,16 @@ ul{list-style:none}
 .nl{display:flex;align-items:center;justify-content:space-between;gap:40px;padding:56px 80px;background:var(--lime)}
 .nl-txt h2{font-family:'Heebo',sans-serif;font-size:26px;font-weight:900;color:var(--navy);margin-bottom:4px}
 .nl-txt p{font-size:14px;color:rgba(30,21,69,.7)}
-.nl-form{display:flex;gap:10px;flex-shrink:0}
+.nl-form{display:grid;grid-template-columns:minmax(240px,1fr) auto;gap:10px;width:min(100%,560px);flex-shrink:0}
 .nl-input{padding:13px 20px;border:none;border-radius:8px;font-size:14px;width:260px;background:rgba(255,255,255,.55);color:var(--navy);outline:none}
 .nl-input:focus{background:#fff}
 .nl-btn{padding:13px 22px;background:var(--navy);color:#fff;border:none;border-radius:8px;font-size:14px;font-weight:700;cursor:pointer;white-space:nowrap;transition:background .15s}
 .nl-btn:hover{background:var(--navy2)}
+.nl-consent{grid-column:1/-1;display:flex;align-items:flex-start;gap:9px;text-align:left;font-size:12px;line-height:1.45;color:rgba(30,21,69,.82)}
+.nl-consent input{width:16px;height:16px;margin-top:1px;accent-color:var(--navy);flex:0 0 auto}
+.nl-consent a{color:var(--navy);font-weight:700;text-decoration:underline}
+.nl-status{grid-column:1/-1;margin:0;font-size:13px;font-weight:700;color:var(--navy)}
+.nl-hp{position:absolute!important;left:-10000px!important;width:1px!important;height:1px!important;overflow:hidden!important}
 
 /* FOOTER */
 .ftr{background:var(--navy);padding:60px 64px 32px}
@@ -230,8 +235,9 @@ ul{list-style:none}
   .ftr{padding:48px 28px 24px}
   .ftr-grid{grid-template-columns:1fr 1fr;gap:32px}
   .nl{flex-direction:column;text-align:center;padding:40px 28px}
-  .nl-form{flex-direction:column;width:100%}
+  .nl-form{grid-template-columns:1fr;width:100%}
   .nl-input{width:100%}
+  .nl-consent,.nl-status{grid-column:1}
   .hdr{padding:0 20px}
   .hdr-nav{display:none}
 }
@@ -657,14 +663,20 @@ ul{list-style:none}
 </section>
 
 <!-- NEWSLETTER -->
-<div class="nl">
+<div class="nl" id="newsletter">
   <div class="nl-txt">
     <h2>Suscríbete al newsletter</h2>
     <p>Convocatorias, recursos y novedades en tu bandeja de entrada.</p>
   </div>
-  <form class="nl-form" onsubmit="event.preventDefault()">
-    <input type="email" class="nl-input" placeholder="Tu correo electrónico">
+  <form class="nl-form" action="/nueva-home/newsletter-subscribe.php" method="post">
+    <label class="nl-hp" aria-hidden="true">No rellenar<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+    <input type="email" name="email" class="nl-input" placeholder="Tu correo electrónico" autocomplete="email" required aria-label="Correo electrónico">
     <button class="nl-btn" type="submit">Suscribirme →</button>
+    <label class="nl-consent">
+      <input type="checkbox" name="newsletter_consent" value="1" required>
+      <span>He leído y acepto la <a href="https://thecorner.es/politica-de-privacidad/" target="_blank" rel="noopener">política de privacidad</a> y autorizo el envío de comunicaciones por correo electrónico.</span>
+    </label>
+    <p class="nl-status" id="newsletter-status" role="status" hidden></p>
   </form>
 </div>
 
@@ -732,6 +744,18 @@ ul{list-style:none}
 window.addEventListener('scroll',function(){
   document.getElementById('flBtn').classList.toggle('vis', window.scrollY > 400);
 });
+
+const newsletterStatus = new URLSearchParams(window.location.search).get('newsletter');
+if (newsletterStatus) {
+  const statusElement = document.getElementById('newsletter-status');
+  const statusMessages = {
+    invalid: 'Revisa el correo y acepta la política de privacidad.',
+    config: 'La suscripción todavía no está disponible. Inténtalo de nuevo más tarde.',
+    error: 'No hemos podido completar la suscripción. Inténtalo de nuevo más tarde.'
+  };
+  statusElement.textContent = statusMessages[newsletterStatus] || statusMessages.error;
+  statusElement.hidden = false;
+}
 </script>
 <script>
   document.querySelectorAll('.mobile-menu-toggle').forEach((button) => {
