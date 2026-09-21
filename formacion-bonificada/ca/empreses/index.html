@@ -138,9 +138,16 @@
     input,select,textarea{width:100%;border:1px solid var(--line);border-radius:8px;padding:14px 15px;font:inherit;color:var(--ink);background:#fff}
     textarea{min-height:120px;resize:vertical}
     .form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .topic-fieldset{min-width:0;margin:0;padding:0;border:0}
+    .topic-fieldset legend{margin-bottom:10px;font-weight:900;color:var(--ink)}
+    .topic-options{display:grid;grid-template-columns:1fr 1fr;gap:10px 16px}
+    .topic-option{display:flex;align-items:flex-start;gap:9px;font-size:14px;line-height:1.35;color:var(--ink);cursor:pointer}
+    .topic-option input{width:18px;height:18px;margin:1px 0 0;padding:0;flex:0 0 auto;accent-color:var(--lime)}
+    .consent-list{display:grid;gap:12px}
+    .consent-option{display:flex;align-items:flex-start;gap:10px;font-size:12px;line-height:1.5;color:var(--muted);cursor:pointer}
+    .consent-option input{width:18px;height:18px;margin:1px 0 0;padding:0;flex:0 0 auto;accent-color:var(--lime)}
+    .consent-option a{text-decoration:underline}
     .submit{border:0;background:var(--lime);color:var(--navy);font-weight:900;border-radius:8px;padding:15px 18px;cursor:pointer;font-size:15px}
-    .legal{font-size:12px;color:var(--muted)}
-    .legal a{text-decoration:underline}
     .footer{background:var(--navy);color:#fff;padding:54px clamp(22px,5vw,72px) 28px}
     .footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:42px;margin-bottom:34px}
     .footer img{width:180px;filter:brightness(8);margin-bottom:16px}
@@ -161,7 +168,7 @@
       .hero-media{min-height:560px}
       h1{font-size:44px}
       .stats{grid-template-columns:1fr 1fr}
-      .areas,.process,.form-row{grid-template-columns:1fr}
+      .areas,.process,.form-row,.topic-options{grid-template-columns:1fr}
       .cta{display:block}
       .cta .btn{margin-top:22px}
       .footer-grid{grid-template-columns:1fr}
@@ -372,32 +379,241 @@
           </div>
         </div>
         <div class="contact-card">
-          <form action="https://thecorner.es/thank-you-page/" method="post">
-            <div class="form-row">
-              <input type="text" name="your-name" placeholder="Nom *" autocomplete="given-name" required>
-              <input type="text" name="apellidos" placeholder="Cognoms *" autocomplete="family-name" required>
-            </div>
-            <div class="form-row">
-              <input type="email" name="your-email" placeholder="Email *" autocomplete="email" required>
-              <input type="tel" name="telefono" placeholder="Telèfon *" autocomplete="tel" required>
-            </div>
-            <input type="text" name="your-surname" placeholder="Empresa *" required>
-            <select name="tematica" required>
-              <option value="" selected disabled>Àrea d'interès *</option>
-              <option>Idiomes</option>
-              <option>Transformació digital</option>
-              <option>Habilitats directives</option>
-              <option>Administració i finances</option>
-              <option>Màrqueting digital</option>
-              <option>Recursos humans</option>
-              <option>Formació a mida</option>
-            </select>
-            <textarea name="your-message" placeholder="Explica'ns breument quina formació necessites"></textarea>
-            <input type="hidden" name="origin" value="15">
-            <input type="hidden" name="acceptance-729" value="1">
-            <button class="submit" type="submit">Enviar sol·licitud</button>
-            <p class="legal">En enviar aquest formulari acceptes la <a href="https://thecorner.es/ca/politica-de-privacitat/">política de privacitat</a>.</p>
-          </form>
+          <form action="https://thecorner.es/thank-you-page/?origin=7" method="post">
+
+  <div class="form-row">
+    <input
+      type="text"
+      name="your-name"
+      placeholder="Nombre *"
+      autocomplete="given-name"
+      required
+    >
+
+    <input
+      type="text"
+      name="your-surname"
+      placeholder="Apellidos *"
+      autocomplete="family-name"
+      required
+    >
+  </div>
+
+  <div class="form-row">
+    <input
+      type="email"
+      name="your-email"
+      placeholder="Email *"
+      autocomplete="email"
+      required
+    >
+
+    <input
+      type="tel"
+      name="telefono"
+      placeholder="Teléfono *"
+      autocomplete="tel"
+      required
+    >
+  </div>
+
+  <!-- EMPRESA -->
+  <input
+    type="text"
+    name="empresa"
+    id="empresa"
+    placeholder="Empresa *"
+    autocomplete="organization"
+    required
+  >
+
+  <!-- TEMÁTICAS -->
+  <fieldset
+    class="topic-fieldset"
+    data-topic-group
+    data-error="Selecciona al menos una temática."
+  >
+
+    <legend>Temàtiques *</legend>
+
+    <!--
+      Campo que recibirá finalmente el PHP.
+      El JavaScript rellenará este campo con las temáticas
+      separadas por comas.
+    -->
+    <input
+      type="hidden"
+      name="tematica"
+      id="tematica-hidden"
+    >
+
+    <div class="topic-options">
+
+      <label class="topic-option">
+        <input
+          type="checkbox"
+          name="tematica_option"
+          value="Gestión Administrativa"
+        >
+        Gestió Administrativa
+      </label>
+
+      <label class="topic-option">
+        <input
+          type="checkbox"
+          name="tematica_option"
+          value="Contabilidad y Finanzas"
+        >
+        Comptabilitat i Finances
+      </label>
+
+      <label class="topic-option">
+        <input
+          type="checkbox"
+          name="tematica_option"
+          value="Idiomas"
+        >
+        Idiomes
+      </label>
+
+      <label class="topic-option">
+        <input
+          type="checkbox"
+          name="tematica_option"
+          value="Comercio"
+        >
+        Comerç
+      </label>
+
+      <label class="topic-option">
+        <input
+          type="checkbox"
+          name="tematica_option"
+          value="Tecnología"
+        >
+        Tecnologia
+      </label>
+
+      <label class="topic-option">
+        <input
+          type="checkbox"
+          name="tematica_option"
+          value="Habilidades directivas"
+        >
+        Habilitats directives
+      </label>
+
+      <label class="topic-option">
+        <input
+          type="checkbox"
+          name="tematica_option"
+          value="Marketing Digital"
+        >
+        Marketing Digital
+      </label>
+
+      <label class="topic-option">
+        <input
+          type="checkbox"
+          name="tematica_option"
+          value="Habilidades Comunicactivas"
+        >
+        Habilitats Comunicatives
+      </label>
+
+      <label class="topic-option">
+        <input
+          type="checkbox"
+          name="tematica_option"
+          value="Habilidades Interpersonales"
+        >
+        Habilitats Interpersonals
+      </label>
+
+      <label class="topic-option">
+        <input
+          type="checkbox"
+          name="tematica_option"
+          value="RRHH"
+        >
+        RRHH
+      </label>
+
+    </div>
+  </fieldset>
+
+  <!-- MENSAJE -->
+  <textarea
+    name="your-message"
+    id="your-message"
+    placeholder="Explica'ns breument quina formació necessites"
+  ></textarea>
+
+  <!-- ORIGIN -->
+  <input
+    type="hidden"
+    name="origin"
+    value="7"
+  >
+
+  <!-- CONSENTIMIENTOS -->
+  <div class="consent-list">
+
+    <label class="consent-option">
+
+      <input
+        type="checkbox"
+        name="acceptance-729"
+        value="1"
+        required
+      >
+
+      <span>
+       IDIOMES, S.L. com a responsable del tractament tractarà les teves dades
+        amb la finalitat de donar resposta a la vostra consulta o petició.
+        Pots accedir, rectificar i suprimir les teves dades, així com exercir
+        altres drets consultant la informació addicional i detallada
+        sobre protecció de dades a la nostra
+        <a
+          href="https://thecorner.es/politica-de-privacitat/"
+          target="_blank"
+          rel="noopener"
+        >
+          Política de Privadesa
+        </a>.
+        He llegit i accepto les condicions contingudes a la política de
+        privadesa sobre el tractament de les meves dades per gestionar el meu
+        consulta o petició.
+      </span>
+
+    </label>
+
+    <label class="consent-option">
+
+      <input
+        type="checkbox"
+        name="checkbox-243"
+        value="1"
+      >
+
+      <span>
+        Ens agradaria que ens prestessis el teu consentiment per enviar-te
+        informació comercial sobre els productes, serveis i novetats
+        d'IDIOMES, S.L.
+      </span>
+
+    </label>
+
+  </div>
+
+  <button
+    class="submit"
+    type="submit"
+  >
+    Enviar solicitut
+  </button>
+
+</form>
         </div>
       </div>
     </section>
@@ -443,24 +659,332 @@
   <a class="float" href="#contacto">Parlem?</a>
 
 
-<script>
-  document.querySelectorAll('.mobile-menu-toggle').forEach((button) => {
-    const nav = button.closest('.site-header').querySelector('.nav-menu');
-    button.addEventListener('click', () => {
-      const open = nav.classList.toggle('is-open');
-      button.setAttribute('aria-expanded', open ? 'true' : 'false');
-    });
-  });
-  document.querySelectorAll('.nav-menu__item--dropdown').forEach((item) => {
-    item.addEventListener('click', (event) => {
-      if (window.innerWidth > 1024) return;
-      if (event.target.closest('.nav-dropdown__item')) return;
-      item.classList.toggle('is-open');
-    });
-  });
-</script>
-</body>
-</html>
+    <script>
+
+      /*
+      * ============================================================
+      * MENÚ MÓVIL
+      * ============================================================
+      */
+
+      document.querySelectorAll('.mobile-menu-toggle').forEach((button) => {
+
+        const nav = button
+          .closest('.site-header')
+          .querySelector('.nav-menu');
+
+        button.addEventListener('click', () => {
+
+          const open = nav.classList.toggle('is-open');
+
+          button.setAttribute(
+            'aria-expanded',
+            open ? 'true' : 'false'
+          );
+
+        });
+
+      });
+
+
+      /*
+      * ============================================================
+      * MENÚ DESPLEGABLE EN MÓVIL
+      * ============================================================
+      */
+
+      document.querySelectorAll('.nav-menu__item--dropdown').forEach((item) => {
+
+        item.addEventListener('click', (event) => {
+
+          if (window.innerWidth > 1024) {
+            return;
+          }
+
+          if (event.target.closest('.nav-dropdown__item')) {
+            return;
+          }
+
+          item.classList.toggle('is-open');
+
+        });
+
+      });
+
+
+      /*
+      * ============================================================
+      * FORMULARIO
+      * ============================================================
+      *
+      * Adaptamos los datos al formato que espera el PHP existente.
+      *
+      * El PHP espera:
+      *
+      * your-name
+      * your-surname
+      * your-email
+      * telefono
+      * your-message
+      * tematica
+      * acceptance-729
+      * checkbox-243
+      * origin
+      *
+      * Por eso NO modificamos el snippet PHP.
+      */
+
+
+      document.querySelectorAll('form[action*="/thank-you-page/"]').forEach((form) => {
+
+
+        /*
+        * ----------------------------------------------------------
+        * ORIGIN
+        * ----------------------------------------------------------
+        *
+        * Conservamos el origin de la URL si existe.
+        * Si no existe, utilizamos 7.
+        */
+
+        const originParam =
+          new URLSearchParams(window.location.search).get('origin');
+
+        const origin =
+          originParam && /^\d+$/.test(originParam)
+            ? originParam
+            : '7';
+
+        const originField =
+          form.querySelector('[name="origin"]');
+
+        if (originField) {
+
+          originField.value = origin;
+
+          originField.setAttribute(
+            'value',
+            origin
+          );
+
+        }
+
+        form.action =
+          `https://thecorner.es/thank-you-page/?origin=${encodeURIComponent(origin)}`;
+
+
+        /*
+        * ----------------------------------------------------------
+        * VALIDACIÓN DE TEMÁTICAS
+        * ----------------------------------------------------------
+        *
+        * Las casillas visibles utilizan:
+        *
+        * name="tematica_option"
+        *
+        * Mientras que el campo oculto:
+        *
+        * name="tematica"
+        *
+        * será el que finalmente reciba el PHP.
+        */
+
+        const topicGroup =
+          form.querySelector('[data-topic-group]');
+
+        if (topicGroup) {
+
+          const checkboxes =
+            Array.from(
+              topicGroup.querySelectorAll(
+                'input[name="tematica_option"]'
+              )
+            );
+
+          const hiddenField =
+            topicGroup.querySelector(
+              'input[name="tematica"]'
+            );
+
+          const validateTopics = () => {
+
+            const selected =
+              checkboxes.filter(
+                (checkbox) => checkbox.checked
+              );
+
+            const hasSelection =
+              selected.length > 0;
+
+            /*
+            * Validación HTML del primer checkbox.
+            */
+
+            if (checkboxes.length > 0) {
+
+              checkboxes[0].required =
+                !hasSelection;
+
+              checkboxes[0].setCustomValidity(
+                hasSelection
+                  ? ''
+                  : (
+                      topicGroup.dataset.error ||
+                      'Selecciona al menos una temática.'
+                    )
+              );
+
+            }
+
+            /*
+            * Actualizamos el campo oculto.
+            *
+            * Ejemplo:
+            *
+            * Idiomas,Marketing Digital,Tecnología
+            */
+
+            if (hiddenField) {
+
+              hiddenField.value =
+                selected
+                  .map((checkbox) => checkbox.value)
+                  .join(',');
+
+            }
+
+          };
+
+
+          /*
+          * Ejecutar inicialmente.
+          */
+
+          validateTopics();
+
+
+          /*
+          * Actualizar cada vez que cambia una temática.
+          */
+
+          checkboxes.forEach((checkbox) => {
+
+            checkbox.addEventListener(
+              'change',
+              validateTopics
+            );
+
+          });
+
+        }
+
+
+        /*
+        * ----------------------------------------------------------
+        * ENVÍO DEL FORMULARIO
+        * ----------------------------------------------------------
+        *
+        * Antes de enviar:
+        *
+        * 1. Recogemos la empresa.
+        * 2. Recogemos las temáticas.
+        * 3. Introducimos la empresa dentro del mensaje.
+        * 4. Nos aseguramos de que tematica contiene
+        *    las temáticas separadas por comas.
+        *
+        * De esta manera el PHP existente puede procesarlo
+        * sin ninguna modificación.
+        */
+
+        form.addEventListener('submit', () => {
+
+
+          /*
+          * EMPRESA
+          */
+
+          const empresaField =
+            form.querySelector('[name="empresa"]');
+
+          const empresa =
+            empresaField
+              ? empresaField.value.trim()
+              : '';
+
+
+          /*
+          * TEMÁTICAS
+          */
+
+          const selectedTopics =
+            Array.from(
+              form.querySelectorAll(
+                '[name="tematica_option"]:checked'
+              )
+            ).map(
+              (checkbox) => checkbox.value
+            );
+
+
+          /*
+          * CAMPO OCULTO DE TEMÁTICAS
+          */
+
+          const hiddenTopicField =
+            form.querySelector(
+              '[name="tematica"]'
+            );
+
+          if (hiddenTopicField) {
+
+            hiddenTopicField.value =
+              selectedTopics.join(',');
+
+          }
+
+
+          /*
+          * MENSAJE
+          */
+
+          const messageField =
+            form.querySelector(
+              '[name="your-message"]'
+            );
+
+
+          /*
+          * Añadimos la empresa al principio
+          * del mensaje para que el PHP pueda
+          * guardarla en "comentaris".
+          */
+
+          if (
+            messageField &&
+            empresa
+          ) {
+
+            const originalMessage =
+              messageField.value.trim();
+
+            messageField.value =
+              'Empresa: ' +
+              empresa +
+              (
+                originalMessage
+                  ? '\n' + originalMessage
+                  : ''
+              );
+
+          }
+
+        });
+
+      });
+
+    </script>
+    </body>
+    </html>
 
 
 
