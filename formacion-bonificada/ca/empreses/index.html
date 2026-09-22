@@ -66,8 +66,8 @@
 .nav-dropdown__item.active-lang{background:var(--lime);color:#fff;font-weight:600}
 .mobile-menu-toggle{display:none;flex-direction:column;gap:5px;padding:8px;border:0;background:transparent;cursor:pointer}
 .mobile-menu-toggle span{display:block;width:25px;height:3px;background:#333;border-radius:2px}
-@media(max-width:1024px){.nav-menu{display:none;flex-direction:column;align-items:stretch;gap:0;position:absolute;top:80px;left:20px;right:20px;padding:10px 0;background:var(--white);border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,.12)}.nav-menu.is-open{display:flex}.nav-menu__item{padding:14px 20px}.nav-dropdown{position:static;display:none;margin:8px 0 0;box-shadow:none;border:1px solid var(--line)}.nav-menu__item--dropdown:focus-within .nav-dropdown,.nav-menu__item--dropdown.is-open .nav-dropdown{display:block;opacity:1;visibility:visible;transform:none}.mobile-menu-toggle{display:flex}}    .hero{min-height:calc(100svh - var(--header-h));display:grid;grid-template-columns:minmax(0,1fr) minmax(360px,500px);background:var(--navy);color:#fff}
-    .hero-media{position:relative;min-height:560px;background:linear-gradient(90deg,rgba(30,21,69,.9),rgba(30,21,69,.66),rgba(30,21,69,.25)),url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=1800&q=82') center/cover no-repeat;display:flex;align-items:flex-end}
+@media(max-width:1024px){.nav-menu{display:none;flex-direction:column;align-items:stretch;gap:0;position:absolute;top:80px;left:20px;right:20px;padding:10px 0;background:var(--white);border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,.12)}.nav-menu.is-open{display:flex}.nav-menu__item{padding:14px 20px}.nav-dropdown{position:static;display:none;margin:8px 0 0;box-shadow:none;border:1px solid var(--line)}.nav-menu__item--dropdown:focus-within .nav-dropdown,.nav-menu__item--dropdown.is-open .nav-dropdown{display:block;opacity:1;visibility:visible;transform:none}.mobile-menu-toggle{display:flex}}    .hero{min-height:calc(100svh - var(--header-h));display:grid;grid-template-columns:minmax(0,1fr) minmax(360px,500px);background:linear-gradient(90deg,rgba(30,21,69,.92) 0%,rgba(30,21,69,.72) 48%,rgba(30,21,69,.38) 100%),url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=1800&q=82') center/cover no-repeat;color:#fff}
+    .hero-media{position:relative;min-height:560px;display:flex;align-items:flex-end}
     .hero-content{max-width:840px;padding:clamp(42px,7vw,92px);position:relative;z-index:2}
     .eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--lime);font-size:12px;font-weight:900;letter-spacing:1.7px;text-transform:uppercase;margin-bottom:20px}
     .eyebrow::before{content:"";width:34px;height:4px;border-radius:8px;background:var(--lime)}
@@ -80,7 +80,7 @@
     .btn-lime:hover{background:var(--lime-dark)}
     .btn-ghost{border:2px solid rgba(255,255,255,.42);color:#fff}
     .btn-ghost:hover{border-color:var(--lime);color:var(--lime)}
-    .hero-panel{background:var(--white);color:var(--ink);padding:clamp(30px,4vw,46px);display:flex;align-items:center}
+    .hero-panel{background:transparent;color:var(--ink);padding:clamp(30px,4vw,46px);display:flex;align-items:center}
     .quote-box{width:100%;border:1px solid var(--line);border-radius:18px;padding:32px;background:#fff;box-shadow:0 22px 70px rgba(0,0,0,.13)}
     .quote-box h2{font-family:'Heebo',Arial,sans-serif;font-size:28px;line-height:1.15;color:var(--navy);margin-bottom:12px}
     .quote-box p{font-size:15px;color:var(--muted);margin-bottom:22px}
@@ -88,11 +88,20 @@
     .mini-list li{display:flex;gap:10px;font-size:15px;color:var(--ink)}
     .mini-list li::before{content:"";width:16px;height:16px;background:var(--lime);border-radius:50%;margin-top:5px;flex:0 0 auto}
     .lime-bar{height:5px;background:var(--lime)}
-    .stats{display:grid;grid-template-columns:repeat(4,1fr);background:var(--navy)}
-    .stat{padding:30px 18px;text-align:center;border-right:1px solid rgba(255,255,255,.08)}
-    .stat:last-child{border-right:0}
-    .stat strong{display:block;font-family:'Heebo',Arial,sans-serif;font-size:34px;line-height:1;color:var(--lime);font-weight:900}
-    .stat span{display:block;margin-top:8px;font-size:13px;color:rgba(255,255,255,.66)}
+    .stats{background:#f6f8fb;border-bottom:1px solid #dfe4ec}
+    .stats-inner{width:min(1240px,calc(100% - 40px));margin:0 auto;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));padding:34px 0}
+    .stat{min-width:0;display:grid;grid-template-columns:42px minmax(0,1fr);align-items:center;gap:14px;padding:4px 22px;border-right:1px solid #dfe4ec}
+    .stat:first-child{padding-left:0}
+    .stat:last-child{padding-right:0;border-right:0}
+    .stat-icon{width:42px;height:42px;display:grid;place-items:center;color:var(--navy)}
+    .stat-icon svg{width:30px;height:30px;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    .stat:nth-child(1) .stat-icon{color:#e94775}
+    .stat:nth-child(2) .stat-icon{color:#ef7a42}
+    .stat:nth-child(3) .stat-icon{color:#6578c8}
+    .stat:nth-child(4) .stat-icon{color:#a3b500}
+    .stat-copy{min-width:0}
+    .stat strong{display:block;font-family:'Heebo',Arial,sans-serif;font-size:17px;line-height:1.2;color:var(--navy);font-weight:900}
+    .stat span{display:block;margin-top:4px;font-size:14px;line-height:1.35;color:#687087}
     .section{padding:clamp(64px,8vw,96px) clamp(22px,5vw,72px)}
     .section.bg{background:var(--bg)}
     .section.dark{background:var(--navy);color:#fff}
@@ -128,7 +137,24 @@
     .cta h2{font-size:clamp(28px,3.3vw,42px);margin:0;color:var(--navy)}
     .cta p{color:rgba(30,21,69,.72);font-size:17px;margin-top:8px;max-width:620px}
     .cta .btn{background:var(--navy);color:#fff;flex:0 0 auto}
-    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:34px;max-width:1160px;margin:0 auto;align-items:start}
+    .contact-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:34px;max-width:1160px;margin:0 auto;align-items:stretch}
+    .contact-aside{min-height:100%;background:var(--navy);color:#fff;border-radius:16px;padding:clamp(30px,4vw,42px);display:flex;flex-direction:column;overflow:hidden}
+    .contact-aside .label{color:var(--lime)}
+    .contact-aside h2{text-align:left;font-size:clamp(34px,3.5vw,46px);color:#fff;margin-bottom:16px}
+    .contact-aside>p{max-width:460px;color:rgba(255,255,255,.72);font-size:17px;margin-bottom:26px}
+    .contact-phone{display:inline-flex;align-items:center;gap:12px;width:max-content;color:#fff;font-weight:900;font-size:18px}
+    .contact-phone svg{width:22px;height:22px;stroke:var(--lime);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    .contact-phone:hover{color:var(--lime)}
+    .contact-promises{display:grid;gap:0;margin:30px 0}
+    .contact-promises li{display:flex;align-items:flex-start;gap:12px;padding:13px 0;border-top:1px solid rgba(255,255,255,.12);color:rgba(255,255,255,.86);font-size:15px}
+    .contact-promises li:last-child{border-bottom:1px solid rgba(255,255,255,.12)}
+    .contact-promises li::before{content:"";width:10px;height:10px;margin-top:7px;border-radius:50%;background:var(--lime);flex:0 0 auto}
+    .contact-review{margin-top:auto;padding-top:28px}
+    .contact-review-label{display:block;color:var(--lime);font-size:11px;font-weight:900;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:10px}
+    .contact-review-stars{color:var(--lime);font-size:16px;letter-spacing:2px;margin-bottom:12px}
+    .contact-review blockquote{font-family:'Heebo',Arial,sans-serif;font-size:19px;line-height:1.45;font-weight:700;color:#fff;margin-bottom:16px}
+    .contact-review cite{display:block;font-style:normal;font-size:13px;line-height:1.5;color:rgba(255,255,255,.62)}
+    .contact-review cite strong{display:block;color:#fff;font-size:14px}
     .contact-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:30px}
     .contact-card h2{text-align:left;font-size:34px}
     .contact-card p{color:var(--muted);margin-bottom:20px}
@@ -160,6 +186,9 @@
     @media(max-width:1060px){
       .hero,.intro-grid,.contact-grid{grid-template-columns:1fr}
       .hero-panel{padding:32px 22px}
+      .stats-inner{grid-template-columns:1fr 1fr;row-gap:28px}
+      .stat:nth-child(2){padding-right:0;border-right:0}
+      .stat:nth-child(3){padding-left:0}
       .areas{grid-template-columns:1fr 1fr}
       .process{grid-template-columns:1fr 1fr}
       .footer-grid{grid-template-columns:1fr 1fr}
@@ -167,7 +196,10 @@
     @media(max-width:680px){
       .hero-media{min-height:560px}
       h1{font-size:44px}
-      .stats{grid-template-columns:1fr 1fr}
+      .stats-inner{width:min(100% - 44px,420px);grid-template-columns:1fr;padding:28px 0;row-gap:0}
+      .stat,.stat:first-child,.stat:nth-child(3),.stat:last-child{padding:20px 0;border-right:0;border-bottom:1px solid #dfe4ec}
+      .stat:first-child{padding-top:4px}
+      .stat:last-child{padding-bottom:4px;border-bottom:0}
       .areas,.process,.form-row,.topic-options{grid-template-columns:1fr}
       .cta{display:block}
       .cta .btn{margin-top:22px}
@@ -229,8 +261,7 @@
           <h1 id="hero-title">Formació bonificable a mida per a empreses</h1>
           <p class="hero-copy">Programes dissenyats per alinear l'aprenentatge amb els objectius de la teva empresa i millorar l'eficiència, la motivació i el rendiment del teu equip.</p>
           <div class="hero-actions">
-            <a class="btn btn-lime" href="#formaciones">Veure àrees formatives</a>
-            <a class="btn btn-ghost" href="#contacto">Parlar amb The Corner</a>
+            <a class="btn btn-ghost" href="#formaciones">Veure àrees formatives</a>
           </div>
         </div>
       </div>
@@ -252,10 +283,32 @@
     <div class="lime-bar"></div>
 
     <section class="stats" aria-label="Dades de The Corner">
-      <div class="stat"><strong>+30</strong><span>anys d'experiència</span></div>
-      <div class="stat"><strong>+50</strong><span>professionals experts</span></div>
-      <div class="stat"><strong>9</strong><span>àrees formatives</span></div>
-      <div class="stat"><strong>100%</strong><span>formació personalitzable</span></div>
+      <div class="stats-inner">
+        <div class="stat">
+          <span class="stat-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 8v4l2.5 1.5"/><circle cx="12" cy="12" r="8"/><path d="M9 2h6M12 2v2"/></svg>
+          </span>
+          <div class="stat-copy"><strong>+30 anys d'experiència</strong><span>Formant professionals</span></div>
+        </div>
+        <div class="stat">
+          <span class="stat-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </span>
+          <div class="stat-copy"><strong>+50 professionals</strong><span>Equip docent expert</span></div>
+        </div>
+        <div class="stat">
+          <span class="stat-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+          </span>
+          <div class="stat-copy"><strong>9 àrees formatives</strong><span>Per a cada repte empresarial</span></div>
+        </div>
+        <div class="stat">
+          <span class="stat-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3"/><path d="M1 14h6M9 8h6M17 16h6"/></svg>
+          </span>
+          <div class="stat-copy"><strong>100% personalitzada</strong><span>Adaptada a la teva empresa</span></div>
+        </div>
+      </div>
     </section>
 
     <section class="section bg">
@@ -354,7 +407,7 @@
         <article class="step"><b>1</b><h3>Diagnosi</h3><p>Escoltem necessitats, perfils i objectius de l'equip.</p></article>
         <article class="step"><b>2</b><h3>Proposta</h3><p>Dissenyem continguts, durada, modalitat i calendari.</p></article>
         <article class="step"><b>3</b><h3>Bonificació</h3><p>Orientem la gestió per aprofitar el crèdit formatiu disponible.</p></article>
-        <article class="step"><b>4</b><h3>Seguiment</h3><p>Mesurem assistència, satisfacció i aprofitament de la formació.</p></article>
+        <article class="step"><b>4</b><h3>Seguiment</h3><p>Mesurem l'impacte, la transferència de l'aprenentatge i la seva aplicabilitat al lloc de treball.</p></article>
       </div>
     </section>
 
@@ -368,14 +421,24 @@
 
     <section class="section bg" id="contacto">
       <div class="contact-grid">
-        <div class="contact-card">
+        <div class="contact-aside">
           <span class="label">Contacte</span>
           <h2>Explica'ns què necessita el teu equip</h2>
           <p>Prepararem una proposta formativa ajustada a la teva empresa, el teu calendari i els teus objectius.</p>
-          <div class="contact-list">
-            <a href="tel:+34933852954">Tel. 93 385 29 54</a>
-            <a href="https://api.whatsapp.com/send/?phone=34660061358&text=Hola%2C+vull+informacio+sobre+formacio+per+a+empreses&type=phone_number&app_absent=0" target="_blank" rel="noopener">WhatsApp 660 06 13 58</a>
-            <span>Santa Coloma de Gramenet</span>
+          <a class="contact-phone" href="tel:+34933852954">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.69 2.8a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.33 1.84.56 2.8.69A2 2 0 0 1 22 16.92z"/></svg>
+            <span>93 385 29 54</span>
+          </a>
+          <ul class="contact-promises" aria-label="Què pots esperar">
+            <li>Diagnosi de les necessitats i els objectius de l'equip.</li>
+            <li>Pla adaptat al calendari i la modalitat de la teva empresa.</li>
+            <li>Orientació per gestionar la bonificació FUNDAE.</li>
+          </ul>
+          <div class="contact-review">
+            <span class="contact-review-label">Experiència d'empresa</span>
+            <div class="contact-review-stars" aria-label="5 de 5 estrelles">★★★★★</div>
+            <blockquote>“Vam contractar la formació bonificada per a tot el nostre equip comercial. El procés va ser senzill; ells van gestionar tots els tràmits de FUNDAE.”</blockquote>
+            <cite><strong>Ana P.</strong>Directora de RR. HH. · Formació per a empreses</cite>
           </div>
         </div>
         <div class="contact-card">
@@ -656,7 +719,9 @@
     </div>
   </footer>
 
+  <!-- Botó flotant desactivat temporalment.
   <a class="float" href="#contacto">Parlem?</a>
+  -->
 
 
     <script>
@@ -985,9 +1050,3 @@
     </script>
     </body>
     </html>
-
-
-
-
-
-
