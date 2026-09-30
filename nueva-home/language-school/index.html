@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+
+  <title>Academia de idiomas en Santa Coloma | The Corner</title>
+  <meta name="description" content="Cursos de inglés para niños, jóvenes y adultos en Santa Coloma de Gramenet. Metodología práctica, profesores que conectan y más de 38 años enseñando idiomas.">
+  <link rel="canonical" href="https://thecorner.es/nueva-home/language-school/">
+
+  <style>
+    :root {
+      --green: #c2d500;
+      --green-dark: #a3b500;
+      --navy: #1e1545;
+      --ink: #25213d;
+      --muted: #6f6d79;
+      --soft: #f5f6f2;
+      --line: #e4e5df;
+      --white: #fff;
+      --radius: 26px;
+      --shadow: 0 22px 60px rgba(30, 21, 69, .12);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: var(--white);
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+    body.menu-open { overflow: hidden; }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; width: 100%; }
+    button, input, select, textarea { font: inherit; }
+    .container { width: min(1180px, calc(100% - 40px)); margin: 0 auto; }
+    .label {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--green-dark);
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+    .label::before { content: ""; width: 35px; height: 4px; border-radius: 20px; background: var(--green); }
+    .section-title { font-size: clamp(34px, 4.8vw, 58px); line-height: 1; letter-spacing: -2px; }
+    .section-copy { color: var(--muted); font-size: 18px; line-height: 1.75; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 13px;
+      min-height: 54px;
+      padding: 14px 25px;
+      border: 0;
+      border-radius: 999px;
+      background: var(--green);
+      color: var(--navy);
+      font-weight: 900;
+      cursor: pointer;
+      transition: transform .2s ease, background .2s ease;
+    }
+    .button:hover { transform: translateY(-3px); background: var(--green-dark); }
+    .button--outline { background: transparent; color: var(--white); border: 1px solid rgba(255,255,255,.55); }
+    .button--outline:hover { background: var(--white); color: var(--navy); }
+    .arrow { font-size: 20px; line-height: 1; }
+
+    /* Header */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: var(--white);
+      border-bottom: 1px solid var(--line);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, .05);
+    }
+    .header-inner {
+      width: min(1240px, calc(100% - 40px));
+      min-height: 80px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .brand { display: inline-flex; align-items: center; }
+    .brand img { width: 200px; height: 50px; object-fit: contain; }
+    .nav-menu { display: flex; align-items: center; gap: 28px; }
+    .nav-item { position: relative; color: #333; font-size: 15px; font-weight: 600; transition: color .2s; }
+    .nav-item:hover, .nav-item[aria-current="page"] { color: var(--green-dark); }
+    .nav-item--dropdown { display: flex; align-items: center; gap: 6px; cursor: pointer; }
+    .nav-item--dropdown::after { content: "▼"; font-size: 9px; transition: transform .2s; }
+    .nav-item--dropdown:hover::after { transform: rotate(180deg); }
+    .nav-dropdown {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      min-width: 230px;
+      padding: 10px 0;
+      margin-top: 12px;
+      border-radius: 10px;
+      background: var(--white);
+      box-shadow: 0 12px 34px rgba(30, 21, 69, .16);
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-8px);
+      transition: .2s ease;
+    }
+    .nav-item--dropdown:hover .nav-dropdown { opacity: 1; visibility: visible; transform: none; }
+    .nav-item--dropdown:last-child .nav-dropdown { left: auto; right: 0; }
+    .nav-dropdown a { display: block; padding: 11px 21px; font-size: 14px; color: #3c3948; }
+    .nav-dropdown a:hover { background: var(--soft); color: var(--green-dark); }
+    .menu-toggle { display: none; padding: 8px; border: 0; background: transparent; cursor: pointer; }
+    .menu-toggle span { display: block; width: 26px; height: 3px; margin: 5px 0; border-radius: 3px; background: var(--navy); }
+
+    /* Hero */
+    .hero {
+      position: relative;
+      min-height: 670px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      color: var(--white);
+      background:
+        linear-gradient(90deg, rgba(30,21,69,.94) 0%, rgba(30,21,69,.79) 48%, rgba(30,21,69,.22) 100%),
+        url("../../language-school/matricula-abierta-kinder/img/kinder-hero.jpg") center 42% / cover no-repeat;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      width: 100%;
+      height: 72px;
+      background: var(--white);
+      clip-path: polygon(0 100%, 100% 100%, 100% 48%, 79% 75%, 57% 35%, 31% 77%, 0 42%);
+    }
+    .hero-inner { position: relative; z-index: 2; padding: 115px 0 145px; }
+    .hero .label { color: var(--green); }
+    .hero h1 { max-width: 820px; font-size: clamp(50px, 7.6vw, 88px); line-height: .92; letter-spacing: -4px; margin-bottom: 27px; }
+    .hero h1 span { color: var(--green); }
+    .hero-copy { max-width: 670px; font-size: clamp(19px, 2vw, 23px); color: rgba(255,255,255,.9); }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 13px; margin-top: 34px; }
+
+    /* Intro and stats */
+    .intro { padding: 85px 0 100px; }
+    .intro-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: 76px; align-items: center; }
+    .intro-media { position: relative; }
+    .intro-media img { height: 570px; object-fit: cover; border-radius: var(--radius); box-shadow: var(--shadow); }
+    .intro-badge {
+      position: absolute;
+      right: -25px;
+      bottom: 34px;
+      width: 155px;
+      height: 155px;
+      display: grid;
+      place-content: center;
+      padding: 20px;
+      border-radius: 50%;
+      background: var(--green);
+      color: var(--navy);
+      text-align: center;
+      font-weight: 900;
+      line-height: 1.1;
+      box-shadow: 0 16px 35px rgba(30,21,69,.2);
+    }
+    .intro-badge strong { display: block; font-size: 35px; }
+    .intro-copy .section-title { margin-bottom: 24px; }
+    .intro-copy p + p { margin-top: 16px; }
+    .stats { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 35px; border-top: 1px solid var(--line); }
+    .stat { padding: 25px 18px 0 0; }
+    .stat strong { display: block; color: var(--navy); font-size: clamp(28px, 3vw, 40px); line-height: 1; letter-spacing: -1px; }
+    .stat span { display: block; margin-top: 8px; color: var(--muted); font-size: 13px; font-weight: 700; }
+
+    /* Courses */
+    .courses { padding: 100px 0; background: var(--soft); }
+    .courses-head { max-width: 780px; margin-bottom: 45px; }
+    .courses-head .section-title { margin-bottom: 18px; }
+    .course-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+    .course-card {
+      position: relative;
+      min-height: 420px;
+      display: flex;
+      align-items: flex-end;
+      overflow: hidden;
+      border-radius: 22px;
+      color: var(--white);
+      box-shadow: 0 14px 40px rgba(30,21,69,.12);
+      transition: transform .25s ease;
+    }
+    .course-card:hover { transform: translateY(-7px); }
+    .course-card::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 28%, rgba(30,21,69,.92) 100%); }
+    .course-card img { position: absolute; inset: 0; height: 100%; object-fit: cover; transition: transform .5s ease; }
+    .course-card:hover img { transform: scale(1.05); }
+    .course-content { position: relative; z-index: 2; width: 100%; padding: 25px; }
+    .course-age { display: inline-flex; padding: 5px 11px; margin-bottom: 10px; border-radius: 99px; background: var(--green); color: var(--navy); font-size: 11px; font-weight: 900; text-transform: uppercase; }
+    .course-card h3 { font-size: 28px; line-height: 1; }
+    .course-link { display: flex; justify-content: space-between; align-items: center; margin-top: 20px; font-size: 14px; font-weight: 800; }
+    .course-message {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 34px;
+      align-items: center;
+      margin-top: 44px;
+      padding: 34px;
+      border-radius: 22px;
+      background: var(--white);
+      box-shadow: var(--shadow);
+    }
+    .course-message blockquote { color: var(--navy); font-size: clamp(21px, 2.4vw, 30px); line-height: 1.35; font-weight: 800; }
+    .course-message__cta { text-align: right; }
+    .course-message__cta p { margin-bottom: 16px; color: var(--muted); }
+
+    /* Teaching */
+    .teaching { padding: 105px 0; }
+    .teaching-grid { display: grid; grid-template-columns: .92fr 1.08fr; gap: 75px; align-items: center; }
+    .teaching-copy .section-title { margin-bottom: 24px; }
+    .teaching-copy .section-copy + .section-copy { margin-top: 15px; }
+    .formula { display: inline-flex; margin-top: 27px; padding: 12px 18px; border-radius: 10px; background: var(--green); color: var(--navy); font-weight: 900; }
+    .teaching-visual { position: relative; }
+    .teaching-visual img { height: 570px; object-fit: cover; border-radius: var(--radius); }
+    .visual-note {
+      position: absolute;
+      left: -36px;
+      bottom: 32px;
+      max-width: 265px;
+      padding: 24px;
+      border-radius: 18px;
+      background: var(--navy);
+      color: var(--white);
+      box-shadow: var(--shadow);
+    }
+    .visual-note strong { color: var(--green); font-size: 22px; }
+    .visual-note p { margin-top: 7px; font-size: 14px; color: rgba(255,255,255,.76); }
+
+    /* Method */
+    .method { padding: 105px 0; background: var(--navy); color: var(--white); overflow: hidden; }
+    .method .label { color: var(--green); }
+    .method-head { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: end; margin-bottom: 50px; }
+    .method-head .section-copy { color: rgba(255,255,255,.72); }
+    .method-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .method-card { min-height: 260px; padding: 30px; border: 1px solid rgba(255,255,255,.13); border-radius: 20px; background: rgba(255,255,255,.06); }
+    .method-number { color: var(--green); font-size: 13px; font-weight: 900; letter-spacing: 1px; }
+    .method-card h3 { margin: 42px 0 11px; font-size: 23px; }
+    .method-card p { color: rgba(255,255,255,.68); font-size: 15px; }
+
+    /* More */
+    .more { padding: 105px 0; }
+    .more-head { max-width: 760px; margin-bottom: 43px; }
+    .more-head .section-title { margin-bottom: 18px; }
+    .more-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+    .more-card { padding: 29px; border: 1px solid var(--line); border-radius: 20px; background: var(--white); transition: transform .2s, box-shadow .2s; }
+    .more-card:hover { transform: translateY(-5px); box-shadow: var(--shadow); }
+    .more-icon { width: 52px; height: 52px; display: grid; place-items: center; margin-bottom: 28px; border-radius: 16px; background: var(--green); color: var(--navy); font-size: 22px; font-weight: 900; }
+    .more-card h3 { font-size: 21px; margin-bottom: 10px; }
+    .more-card p { color: var(--muted); font-size: 15px; }
+    .languages-strip { display: flex; align-items: center; justify-content: space-between; gap: 30px; margin-top: 23px; padding: 28px 32px; border-radius: 20px; background: var(--soft); }
+    .languages-strip h3 { font-size: 23px; }
+    .languages-strip p { color: var(--muted); }
+
+    /* Quote & contact */
+    .quote { padding: 90px 0; background: var(--green); color: var(--navy); text-align: center; }
+    .quote blockquote { width: min(900px, 90%); margin: 0 auto; font-size: clamp(27px, 4vw, 45px); line-height: 1.18; font-weight: 900; letter-spacing: -1.4px; }
+    .quote p { margin-top: 21px; font-weight: 800; }
+    .contact { padding: 105px 0; background: var(--soft); }
+    .contact-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: 70px; align-items: start; }
+    .contact-copy .section-title { margin-bottom: 22px; }
+    .contact-points { margin-top: 28px; display: grid; gap: 13px; }
+    .contact-point { display: flex; align-items: center; gap: 12px; font-weight: 700; }
+    .contact-point span { width: 30px; height: 30px; display: grid; place-items: center; border-radius: 50%; background: var(--green); }
+    .contact-form { padding: 36px; border-radius: var(--radius); background: var(--white); box-shadow: var(--shadow); }
+    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 17px; }
+    .field { display: grid; gap: 7px; }
+    .field--full { grid-column: 1 / -1; }
+    .field label { font-size: 13px; font-weight: 800; }
+    .field input, .field select, .field textarea { width: 100%; padding: 14px 15px; border: 1px solid var(--line); border-radius: 11px; background: #fbfbfa; color: var(--ink); outline: none; }
+    .field textarea { min-height: 115px; resize: vertical; }
+    .field input:focus, .field select:focus, .field textarea:focus { border-color: var(--green-dark); box-shadow: 0 0 0 3px rgba(194,213,0,.18); }
+    .privacy { display: flex; align-items: flex-start; gap: 10px; margin: 19px 0; color: var(--muted); font-size: 12px; }
+    .privacy input { margin-top: 3px; accent-color: var(--green-dark); }
+
+    /* Footer */
+    .site-footer { padding: 55px 0 25px; background: var(--navy); color: rgba(255,255,255,.7); }
+    .footer-grid { display: grid; grid-template-columns: 1.2fr .8fr .8fr; gap: 50px; padding-bottom: 38px; }
+    .footer-brand img { width: 190px; height: 50px; object-fit: contain; filter: brightness(0) invert(1); }
+    .footer-brand p { max-width: 360px; margin-top: 18px; font-size: 14px; }
+    .footer-col h3 { margin-bottom: 15px; color: var(--white); font-size: 15px; }
+    .footer-col a { display: block; margin: 9px 0; font-size: 13px; }
+    .footer-col a:hover { color: var(--green); }
+    .footer-bottom { display: flex; justify-content: space-between; gap: 20px; padding-top: 22px; border-top: 1px solid rgba(255,255,255,.12); font-size: 12px; }
+    .floating-test { position: fixed; right: 20px; bottom: 20px; z-index: 500; box-shadow: 0 12px 35px rgba(30,21,69,.25); }
+
+    @media (max-width: 1050px) {
+      .nav-menu { display: none; position: fixed; top: 80px; left: 20px; right: 20px; max-height: calc(100vh - 100px); overflow-y: auto; flex-direction: column; align-items: stretch; gap: 0; padding: 12px 0; border-radius: 12px; background: var(--white); box-shadow: var(--shadow); }
+      .nav-menu.is-open { display: flex; }
+      .nav-item { padding: 13px 21px; }
+      .nav-dropdown { position: static; display: none; margin: 8px 0 0; box-shadow: none; border: 1px solid var(--line); opacity: 1; visibility: visible; transform: none; }
+      .nav-item--dropdown.is-open .nav-dropdown { display: block; }
+      .menu-toggle { display: block; }
+      .intro-grid, .teaching-grid, .contact-grid { gap: 46px; }
+      .course-grid, .more-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 780px) {
+      .hero { min-height: 610px; }
+      .hero h1 { letter-spacing: -2.5px; }
+      .intro-grid, .teaching-grid, .method-head, .contact-grid { grid-template-columns: 1fr; }
+      .course-message { grid-template-columns: 1fr; }
+      .course-message__cta { text-align: left; }
+      .intro-media { order: 2; }
+      .intro-media img, .teaching-visual img { height: 470px; }
+      .intro-badge { right: 15px; }
+      .teaching-visual { margin-left: 30px; }
+      .method-head { gap: 22px; }
+      .method-grid { grid-template-columns: 1fr; }
+      .method-card { min-height: auto; }
+      .method-card h3 { margin-top: 28px; }
+      .languages-strip { align-items: flex-start; flex-direction: column; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .footer-brand { grid-column: 1 / -1; }
+    }
+
+    @media (max-width: 560px) {
+      .container { width: min(100% - 30px, 1180px); }
+      .header-inner { width: calc(100% - 30px); min-height: 74px; }
+      .brand img { width: 170px; }
+      .nav-menu { top: 74px; left: 15px; right: 15px; }
+      .hero { min-height: 650px; background-position: 62% center; }
+      .hero-inner { padding: 105px 0 130px; }
+      .hero h1 { font-size: 53px; }
+      .hero-actions { align-items: stretch; flex-direction: column; }
+      .button { width: 100%; }
+      .intro, .courses, .teaching, .method, .more, .contact { padding: 78px 0; }
+      .section-title { letter-spacing: -1.4px; }
+      .intro-media img, .teaching-visual img { height: 400px; }
+      .intro-badge { width: 125px; height: 125px; font-size: 13px; }
+      .intro-badge strong { font-size: 29px; }
+      .stats { grid-template-columns: 1fr; }
+      .stat { padding: 20px 0; border-bottom: 1px solid var(--line); }
+      .course-grid, .more-grid { grid-template-columns: 1fr; }
+      .course-card { min-height: 385px; }
+      .teaching-visual { margin-left: 0; padding-bottom: 80px; }
+      .visual-note { left: 15px; right: 15px; bottom: 10px; max-width: none; }
+      .form-grid { grid-template-columns: 1fr; }
+      .field--full { grid-column: auto; }
+      .contact-form { padding: 25px; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .footer-brand { grid-column: auto; }
+      .footer-bottom { flex-direction: column; }
+      .floating-test { left: 15px; right: 15px; bottom: 12px; }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="/nueva-home/" aria-label="The Corner">
+        <img src="https://thecorner.es/wp-content/uploads/2025/09/logo.png" alt="Centro de Estudios The Corner" width="200" height="50">
+      </a>
+
+      <nav class="nav-menu" aria-label="Navegación principal">
+        <div class="nav-item nav-item--dropdown" tabindex="0">Cursos de inglés
+          <div class="nav-dropdown">
+            <a href="https://thecorner.es/language-school-kinder-corner/">Kinder · 3 a 5 años</a>
+            <a href="https://thecorner.es/language-school-young-learners/">Young · 6 a 12 años</a>
+            <a href="https://thecorner.es/language-school-teens/">Teens · 13 a 17 años</a>
+            <a href="https://thecorner.es/ingles-para-adultos/">Adultos · +16 años</a>
+          </div>
+        </div>
+        <a class="nav-item" href="#metodo">Nuestro método</a>
+        <a class="nav-item" href="/language-school/level-test">Test de nivel</a>
+        <a class="nav-item" href="#contacto">Contacto</a>
+        <div class="nav-item nav-item--dropdown" tabindex="0">ES
+          <div class="nav-dropdown">
+            <a href="#" aria-current="page">Español</a>
+            <a href="https://thecorner.es/ca/english-language-school/">Català</a>
+          </div>
+        </div>
+      </nav>
+
+      <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="label">Academia de idiomas en Santa Coloma de Gramenet</div>
+        <h1>Extraescolares<br><span>de inglés.</span></h1>
+        <p class="hero-copy">Cursos de inglés para niños, jóvenes y adultos, adaptados a cada edad y nivel.</p>
+        <div class="hero-actions">
+          <a class="button" href="https://leveltestkids.thecorner.es/" target="_blank" rel="noopener">KIDS Level Test <span class="arrow">→</span></a>
+          <a class="button button--outline" href="https://leveltest.thecorner.es/" target="_blank" rel="noopener">Level Test (+12 años)</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro" aria-labelledby="intro-title">
+      <div class="container intro-grid">
+        <div class="intro-media">
+          <img src="../../language-school/matricula-abierta/img/teens-campaign.jpg" alt="Alumno de The Corner con su libro de inglés" loading="lazy">
+          <div class="intro-badge"><strong>38+</strong> años enseñando idiomas</div>
+        </div>
+        <div class="intro-copy">
+          <div class="label">Academia de idiomas</div>
+          <h2 class="section-title" id="intro-title">Para quienes realmente desean dominar una lengua extranjera.</h2>
+          <p class="section-copy">THE CORNER es la escuela de idiomas para aquellas personas que realmente desean dominar la lengua extranjera. Más de 30.000 alumnos han pasado por nuestras aulas con un ratio del 95% de aprobados recomendados en exámenes oficiales.</p>
+          <p class="section-copy">¿El secreto? Nuestros más de 38 años de experiencia en la formación de idiomas, nuestra propia metodología basada en el aprendizaje práctico y nuestros profesores estrella.</p>
+          <div class="stats" aria-label="Cifras de The Corner">
+            <div class="stat"><strong>+1.500</strong><span>alumnos cada año</span></div>
+            <div class="stat"><strong>+4.500</strong><span>aprobados</span></div>
+            <div class="stat"><strong>95%</strong><span>de recomendación</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="courses" id="cursos" aria-labelledby="courses-title">
+      <div class="container">
+        <div class="courses-head">
+          <div class="label">Cursos de inglés</div>
+          <h2 class="section-title" id="courses-title">¡Tenemos cursos para todos los niveles y edades!</h2>
+          <p class="section-copy">Contamos con la metodología de aprendizaje idónea para cada etapa, consiguiendo una adquisición natural y funcional del idioma.</p>
+        </div>
+
+        <div class="course-grid">
+          <a class="course-card" href="https://thecorner.es/language-school-kinder-corner/">
+            <img src="../../language-school/matricula-abierta-kinder/img/kinder-hero.jpg" alt="Alumnos de Kinder en clase en The Corner" loading="lazy">
+            <div class="course-content"><span class="course-age">3 a 5 años</span><h3>Kinder</h3><span class="course-link">Más información <span>→</span></span></div>
+          </a>
+          <a class="course-card" href="https://thecorner.es/language-school-young-learners/">
+            <img src="../../language-school/matricula-abierta-kinder/img/kinder-class-1.png" alt="Alumno de The Corner trabajando en clase" loading="lazy">
+            <div class="course-content"><span class="course-age">6 a 12 años</span><h3>Young</h3><span class="course-link">Más información <span>→</span></span></div>
+          </a>
+          <a class="course-card" href="https://thecorner.es/language-school-teens/">
+            <img src="../../language-school/matricula-abierta/img/teens-campaign.jpg" alt="Alumno Teen de The Corner" loading="lazy">
+            <div class="course-content"><span class="course-age">13 a 17 años</span><h3>Teens</h3><span class="course-link">Más información <span>→</span></span></div>
+          </a>
+          <a class="course-card" href="https://thecorner.es/ingles-para-adultos/">
+            <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=800&q=85" alt="Biblioteca para el aprendizaje de idiomas" loading="lazy">
+            <div class="course-content"><span class="course-age">+16 años</span><h3>Adults</h3><span class="course-link">Más información <span>→</span></span></div>
+          </a>
+        </div>
+        <div class="course-message">
+          <blockquote>«Nuestros alumnos obtienen su título FCE a los 14 años y son capaces de mantener una conversación fluida y coherente en inglés, que es lo que realmente importa cuando se aprende un idioma».</blockquote>
+          <div class="course-message__cta"><p>Si esto es lo que deseas para ti o para los tuyos… ¡no esperes más y reserva ya tu plaza!</p><a class="button" href="#contacto">Reservar plaza <span class="arrow">→</span></a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="teaching" aria-labelledby="teachers-title">
+      <div class="container teaching-grid">
+        <div class="teaching-copy">
+          <div class="label">Nuestro equipo</div>
+          <h2 class="section-title" id="teachers-title">Déjate cautivar por nuestros profesores estrella ⭐</h2>
+          <p class="section-copy">Todos recordamos y tenemos grabado en la memoria a “aquel profesor/a” que nos marcó… lo recordamos de una manera muy especial y no sólo por lo que nos enseñó, sino también porque logró conectar con nosotros. Nos entendió, nos acompañó, nos mostró estima y, con ello, se ganó nuestro corazón.</p>
+          <p class="section-copy">En The Corner queremos conseguir que todos nuestros profesores logren ese nivel de conexión emocional con sus alumnos. Por ello, reciben una formación intensiva y continua que hemos perfeccionado a lo largo de los años: The Corner Emotional Training.</p>
+          <div class="formula">MÉTODO + TECNOLOGÍA = ÉXITO ✓</div>
+        </div>
+        <div class="teaching-visual">
+          <img src="../../language-school/matricula-abierta-kinder/img/kinder-class-2.jpeg" alt="Profesora y alumnos en un aula de The Corner" loading="lazy">
+          <div class="visual-note"><strong>Smart Classrooms</strong><p>Aulas equipadas con las últimas tecnologías.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="method" id="metodo" aria-labelledby="method-title">
+      <div class="container">
+        <div class="method-head">
+          <div>
+            <div class="label">Método propio</div>
+            <h2 class="section-title" id="method-title">Una metodología de éxito contrastado 👍</h2>
+          </div>
+          <p class="section-copy">Nuestra metodología es fruto de muchos años de innovación y está basada en la experiencia personal de los profesionales del centro.</p>
+        </div>
+        <div class="method-grid">
+          <article class="method-card"><div class="method-number">01 · EXPERIENCIA</div><h3>Aprender para hablar</h3><p>Nos dimos cuenta de que, aunque muchos habíamos estudiado inglés durante años, éramos incapaces de hablar el idioma correctamente.</p></article>
+          <article class="method-card"><div class="method-number">02 · PRÁCTICA</div><h3>¡Practicar, practicar y practicar!</h3><p>Además de conocer las reglas de una lengua, lo que nos hace adquirirla de verdad y ser capaces de usarla es algo tan sencillo como hablar.</p></article>
+          <article class="method-card"><div class="method-number">03 · CONFIANZA</div><h3>Un entorno seguro</h3><p>En nuestras sesiones, los alumnos conversan constantemente entre ellos y con el profesor, pudiendo preguntar y equivocarse para seguir aprendiendo.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="more" aria-labelledby="more-title">
+      <div class="container">
+        <div class="more-head">
+          <div class="label">Más formación</div>
+          <h2 class="section-title" id="more-title">¡Nunca dejes de aprender con The Corner! 🤩</h2>
+          <p class="section-copy">No solo tenemos cursos de inglés, también ofrecemos otro tipo de formaciones y clases particulares. ¡Descúbrelas!</p>
+        </div>
+        <div class="more-grid">
+          <article class="more-card"><div class="more-icon">01</div><h3>Intensivos</h3><p>Aprovecha tu verano, disfruta del inglés y adquiere hasta un nivel entero durante el mes de julio. Grupos para todas las edades y niveles, a partir de 4 alumnos.</p></article>
+          <article class="more-card"><div class="more-icon">02</div><h3>Robótica y Programación</h3><p>Anima a los más pequeños a conocer y entender las nuevas tecnologías y el mundo digital para que sus oportunidades sean ilimitadas. A partir de 8 años.</p></article>
+          <article class="more-card"><div class="more-icon">03</div><h3>Speaking</h3><p>Mejora tus habilidades lingüísticas con nuestras clases de conversación por temáticas. Packs a partir de 5 sesiones.</p></article>
+          <article class="more-card"><div class="more-icon">04</div><h3>Clases a medida</h3><p>Si deseas aprender inglés a tu ritmo… ¡podemos ayudarte! Cuéntanos qué quieres conseguir y tu disponibilidad y te prepararemos un itinerario personalizado con clases particulares.</p></article>
+        </div>
+        <div class="languages-strip">
+          <div><h3>¿Quieres aprender otro idioma? ¡También los tenemos!</h3><p>Ofrecemos clases de francés, alemán, italiano, ruso… ¡Escríbenos y dinos qué idioma te interesa aprender!</p></div>
+          <a class="button" href="#contacto">Más información <span class="arrow">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote" aria-labelledby="opiniones-title">
+      <blockquote id="opiniones-title">¿Qué dicen de nosotros?</blockquote>
+      <p>Echa un vistazo a las opiniones y testimonios de otros alumnos como tú que han pasado por nuestro centro.</p>
+      <a class="button" href="https://thecorner.es/opiniones-the-corner/" style="margin-top:24px">Ver opiniones <span class="arrow">→</span></a>
+    </section>
+
+    <section class="contact" id="contacto" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <div class="label">Contacto</div>
+          <h2 class="section-title" id="contact-title">¿Necesitas más información?</h2>
+          <p class="section-copy">Si necesitas ayuda con la inscripción o quieres que te informemos sobre nuestros cursos, nuestra metodología o nuestros otros servicios, escríbenos. Nos pondremos en contacto contigo lo antes posible.</p>
+          <div class="contact-points"><div class="contact-point"><span>✓</span> Cursos para todos los niveles y edades</div><div class="contact-point"><span>✓</span> Metodología práctica</div><div class="contact-point"><span>✓</span> Profesores estrella</div></div>
+        </div>
+
+        <form class="contact-form" action="https://thecorner.es/contacto/" method="get">
+          <div class="form-grid">
+            <div class="field"><label for="nombre">Nombre *</label><input id="nombre" name="nombre" type="text" autocomplete="given-name" required></div>
+            <div class="field"><label for="apellidos">Apellidos *</label><input id="apellidos" name="apellidos" type="text" autocomplete="family-name" required></div>
+            <div class="field"><label for="email">Email *</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+            <div class="field"><label for="telefono">Teléfono *</label><input id="telefono" name="telefono" type="tel" autocomplete="tel" required></div>
+            <div class="field field--full"><label for="curso">Me interesa</label><select id="curso" name="curso"><option value="">Selecciona una opción</option><option>Kinder · 3 a 5 años</option><option>Young · 6 a 12 años</option><option>Teens · 13 a 17 años</option><option>Adultos</option><option>Clases particulares</option><option>Otros idiomas</option></select></div>
+            <div class="field field--full"><label for="mensaje">Mensaje</label><textarea id="mensaje" name="mensaje" placeholder="Cuéntanos qué necesitas"></textarea></div>
+          </div>
+          <label class="privacy"><input type="checkbox" required> <span>He leído y acepto la <a href="https://thecorner.es/politica-de-privacidad/" target="_blank" rel="noopener"><u>política de privacidad</u></a>.</span></label>
+          <button class="button" type="submit">Quiero más información <span class="arrow">→</span></button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="https://thecorner.es/wp-content/uploads/2025/09/logo.png" alt="The Corner" width="190" height="50">
+          <p>Academia de idiomas en Santa Coloma de Gramenet con cursos para niños, jóvenes y adultos.</p>
+        </div>
+        <div class="footer-col"><h3>Cursos</h3><a href="#cursos">Kinder</a><a href="#cursos">Young</a><a href="#cursos">Teens</a><a href="#cursos">Adultos</a></div>
+        <div class="footer-col"><h3>Información</h3><a href="/language-school/level-test">Test de nivel</a><a href="#metodo">Metodología</a><a href="#contacto">Contacto</a><a href="https://thecorner.es/quienes-somos/">Quiénes somos</a></div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 Centro de Estudios The Corner</span><span><a href="https://thecorner.es/aviso-legal/">Aviso legal</a> · <a href="https://thecorner.es/politica-de-privacidad/">Privacidad</a> · <a href="https://thecorner.es/politica-de-cookies/">Cookies</a></span></div>
+    </div>
+  </footer>
+
+  <a class="button floating-test" href="/language-school/level-test">Haz el test de nivel <span class="arrow">→</span></a>
+
+  <script>
+    (function () {
+      const toggle = document.querySelector('.menu-toggle');
+      const menu = document.querySelector('.nav-menu');
+      if (!toggle || !menu) return;
+
+      toggle.addEventListener('click', function () {
+        const open = menu.classList.toggle('is-open');
+        document.body.classList.toggle('menu-open', open);
+        toggle.setAttribute('aria-expanded', String(open));
+        toggle.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+      });
+
+      menu.querySelectorAll('.nav-item--dropdown').forEach(function (item) {
+        item.addEventListener('click', function (event) {
+          if (window.matchMedia('(max-width: 1050px)').matches && event.target === item) {
+            item.classList.toggle('is-open');
+          }
+        });
+      });
+
+      menu.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', function () {
+          menu.classList.remove('is-open');
+          document.body.classList.remove('menu-open');
+          toggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }());
+  </script>
+</body>
+</html>

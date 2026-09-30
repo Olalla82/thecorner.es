@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Orientación laboral gratuita | The Corner</title>
+<meta name="description" content="Servicio gratuito de orientación laboral y acompañamiento a la inserción en The Corner. Define tu objetivo profesional, mejora tu CV y prepara entrevistas.">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<link rel="canonical" href="https://thecorner.es/nueva-home/orientacion-laboral/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta property="og:site_name" content="The Corner">
+<meta property="og:title" content="Orientación laboral gratuita | The Corner">
+<meta property="og:description" content="Programa gratuito de orientación y acompañamiento para encontrar tu camino profesional.">
+<meta property="og:url" content="https://thecorner.es/nueva-home/orientacion-laboral/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=1200&q=80">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Orientación laboral gratuita | The Corner">
+<meta name="twitter:description" content="Te ayudamos a definir objetivos profesionales, preparar candidaturas y afrontar procesos de selección.">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=1200&q=80">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --lime:#c2d500;
+  --lime-d:#a3b500;
+  --navy:#1e1545;
+  --navy2:#2d2560;
+  --text:#3a3a3a;
+  --muted:#666;
+  --bg:#f7f7f3;
+  --white:#fff;
+  --border:#e4e4de;
+  --line:#ecece6;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:16px;scroll-behavior:smooth}
+body{font-family:'Lato',sans-serif;color:var(--text);background:var(--white);overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
+
+.site-header{position:sticky;top:0;z-index:1000;width:100%;background:var(--white);border-bottom:1px solid var(--line);box-shadow:0 2px 4px rgba(0,0,0,.05)}
+.header-inner{width:min(1240px,calc(100% - 40px));margin:0 auto;display:flex;align-items:center;justify-content:space-between;min-height:80px}
+.brand{display:inline-flex;align-items:center;transition:opacity .3s}
+.brand:hover{opacity:.8}
+.brand img{width:200px;height:50px;object-fit:contain}
+.nav-menu{display:flex;align-items:center;gap:32px}
+.nav-menu__item{position:relative;color:#333;font-size:15px;font-weight:500;cursor:pointer;transition:color .3s}
+.nav-menu__item:hover{color:var(--lime)}
+.nav-menu__item--dropdown{display:flex;align-items:center;gap:6px}
+.nav-menu__item--dropdown::after{content:'v';font-size:11px;line-height:1;transition:transform .3s}
+.nav-menu__item--dropdown:hover::after{transform:rotate(180deg)}
+.nav-dropdown{position:absolute;top:100%;left:0;min-width:220px;margin-top:12px;padding:12px 0;background:var(--white);border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,.12);opacity:0;visibility:hidden;transform:translateY(-10px);transition:all .3s ease;z-index:1001}
+.nav-menu__item:hover .nav-dropdown{opacity:1;visibility:visible;transform:translateY(0)}
+.nav-dropdown__item{display:block;padding:12px 24px;color:#333;font-size:14px;transition:all .3s;white-space:nowrap}
+.nav-dropdown__item:hover,.nav-dropdown__item.is-current{background:#f8fafc;color:var(--lime-d)}
+.lang-selector-menu .nav-dropdown{min-width:120px}
+.nav-dropdown__item.active-lang{background:var(--lime);color:var(--navy);font-weight:700}
+.mobile-menu-toggle{display:none;flex-direction:column;gap:5px;padding:8px;border:0;background:transparent;cursor:pointer}
+.mobile-menu-toggle span{display:block;width:25px;height:3px;background:#333;border-radius:2px}
+
+.hero{position:relative;min-height:640px;display:grid;align-items:end;overflow:hidden;background:var(--navy)}
+.hero-bg{position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=1800&q=82');background-size:cover;background-position:center;transform:scale(1.02)}
+.hero::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(30,21,69,.95) 0%,rgba(30,21,69,.78) 44%,rgba(30,21,69,.22) 100%)}
+.hero-inner{position:relative;z-index:1;width:min(1160px,calc(100% - 56px));margin:0 auto;padding:104px 0 76px}
+.eyebrow{display:inline-block;font-size:11px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;background:var(--lime);color:var(--navy);padding:5px 11px;border-radius:4px;margin-bottom:18px}
+.hero h1{font-family:'Heebo',sans-serif;font-size:clamp(42px,6vw,76px);font-weight:900;line-height:.98;color:#fff;max-width:760px;margin-bottom:24px;letter-spacing:0}
+.hero p{font-size:19px;line-height:1.7;color:rgba(255,255,255,.82);max-width:650px;margin-bottom:30px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:42px}
+.btn-lime,.btn-dark,.btn-outline{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:700;padding:14px 26px;border-radius:8px;transition:all .15s;width:fit-content}
+.btn-lime{background:var(--lime);color:var(--navy)}
+.btn-lime:hover{background:var(--lime-d)}
+.btn-dark{background:var(--navy);color:#fff}
+.btn-dark:hover{background:var(--navy2)}
+.btn-outline{border:2px solid rgba(255,255,255,.45);color:#fff}
+.btn-outline:hover{border-color:var(--lime);color:var(--lime)}
+.hero-points{display:grid;grid-template-columns:repeat(3,minmax(0,180px));gap:12px}
+.hero-point{border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.07);border-radius:12px;padding:14px 16px;color:#fff}
+.hero-point strong{font-family:'Heebo',sans-serif;font-size:20px;font-weight:900;color:var(--lime);display:block;line-height:1}
+.hero-point span{font-size:12px;color:rgba(255,255,255,.72);line-height:1.35;display:block;margin-top:6px}
+.lime-bar{height:5px;background:var(--lime)}
+
+.intro{display:grid;grid-template-columns:1fr 1fr;min-height:500px}
+.intro-img{position:relative;overflow:hidden}
+.intro-img img{width:100%;height:100%;object-fit:cover}
+.intro-badge{position:absolute;left:32px;bottom:32px;background:var(--lime);border-radius:12px;padding:16px 22px;color:var(--navy)}
+.intro-badge strong{font-family:'Heebo',sans-serif;font-size:28px;font-weight:900;line-height:1;display:block}
+.intro-badge span{font-size:12px;font-weight:700;opacity:.76}
+.intro-txt{background:var(--bg);padding:72px 64px;display:flex;flex-direction:column;justify-content:center}
+.sec-label{font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--lime-d);margin-bottom:16px}
+.intro-txt h2,.section-title{font-family:'Heebo',sans-serif;font-size:clamp(32px,4vw,44px);font-weight:900;line-height:1.12;color:var(--navy);margin-bottom:20px;letter-spacing:0}
+.intro-txt p,.sec-copy{font-size:16px;line-height:1.75;color:var(--muted);max-width:620px}
+.intro-txt p + p{margin-top:16px}
+
+.path{padding:88px 64px;background:var(--white)}
+.section-head{text-align:center;max-width:760px;margin:0 auto 54px}
+.section-head .sec-copy{margin:0 auto}
+.path-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;max-width:1160px;margin:0 auto}
+.path-card{border:1px solid var(--border);border-radius:14px;background:#fff;padding:24px 22px;min-height:260px;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}
+.path-card:hover{transform:translateY(-5px);box-shadow:0 18px 38px rgba(30,21,69,.1)}
+.path-num{width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--lime);color:var(--navy);font-family:'Heebo',sans-serif;font-weight:900;margin-bottom:20px}
+.path-card h3{font-family:'Heebo',sans-serif;font-size:19px;font-weight:900;line-height:1.18;color:var(--navy);margin-bottom:12px}
+.path-card p{font-size:14px;line-height:1.62;color:var(--muted)}
+
+.advantages{padding:88px 64px;background:var(--navy);position:relative;overflow:hidden}
+.advantages::before{content:'';position:absolute;right:-140px;top:-120px;width:440px;height:440px;border-radius:50%;background:rgba(194,213,0,.07)}
+.advantages-inner{position:relative;z-index:1;max-width:1160px;margin:0 auto;display:grid;grid-template-columns:.9fr 1.1fr;gap:58px;align-items:center}
+.advantages h2{font-family:'Heebo',sans-serif;font-size:clamp(32px,4vw,44px);font-weight:900;color:#fff;line-height:1.1;margin-bottom:18px}
+.advantages p{font-size:16px;line-height:1.75;color:rgba(255,255,255,.68)}
+.adv-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.adv-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:24px;display:flex;gap:15px;align-items:flex-start}
+.adv-icon{width:34px;height:34px;border-radius:9px;background:var(--lime);color:var(--navy);font-weight:900;display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+.adv-card h3{font-family:'Heebo',sans-serif;font-size:18px;font-weight:900;color:#fff;margin-bottom:6px}
+.adv-card span{font-size:14px;line-height:1.55;color:rgba(255,255,255,.66)}
+
+.figures{background:var(--lime);display:grid;grid-template-columns:repeat(3,1fr)}
+.figure{padding:36px 24px;text-align:center;border-right:1px solid rgba(30,21,69,.16)}
+.figure:last-child{border-right:0}
+.figure strong{font-family:'Heebo',sans-serif;font-size:48px;font-weight:900;color:var(--navy);line-height:1}
+.figure span{font-size:14px;font-weight:700;color:rgba(30,21,69,.72);display:block;margin-top:8px}
+
+.cta{padding:88px 64px;background:var(--bg)}
+.cta-inner{max-width:1160px;margin:0 auto;display:grid;grid-template-columns:.95fr 1.05fr;gap:36px;align-items:stretch}
+.cta-copy{background:#fff;border:1px solid var(--border);border-radius:16px;padding:42px}
+.cta-copy h2{font-family:'Heebo',sans-serif;font-size:38px;font-weight:900;line-height:1.12;color:var(--navy);margin-bottom:16px}
+.cta-copy p{font-size:16px;line-height:1.75;color:var(--muted);margin-bottom:24px}
+.cta-list{display:flex;flex-direction:column;gap:11px}
+.cta-list li{display:flex;gap:10px;font-size:14px;line-height:1.5;color:var(--text)}
+.tick{width:18px;height:18px;border-radius:50%;background:var(--lime);color:var(--navy);font-size:12px;font-weight:900;display:flex;align-items:center;justify-content:center;flex:0 0 auto;margin-top:1px}
+.lead-form{background:var(--navy);border-radius:16px;padding:34px;color:#fff}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.field{display:flex;flex-direction:column;gap:7px}
+.field.full{grid-column:1/-1}
+.field label{font-size:12px;font-weight:700;color:rgba(255,255,255,.7)}
+.field input,.field select,.field textarea{width:100%;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.08);color:#fff;border-radius:8px;padding:13px 14px;font:inherit;font-size:14px;outline:none}
+.field select option{color:var(--navy)}
+.field textarea{min-height:112px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--lime);background:rgba(255,255,255,.12)}
+.consent{display:flex;align-items:flex-start;gap:10px;grid-column:1/-1;font-size:12px;line-height:1.45;color:rgba(255,255,255,.68);margin-top:4px}
+.consent input{width:16px;height:16px;margin-top:1px;accent-color:var(--lime);flex:0 0 auto}
+.consent a{color:var(--lime);font-weight:700;text-decoration:underline}
+.lead-form button{border:0;cursor:pointer;margin-top:4px}
+
+.locations{padding:88px 64px;background:var(--white)}
+.loc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1160px;margin:44px auto 0}
+.loc-card{background:var(--white);border-radius:14px;overflow:hidden;border:1px solid var(--border);transition:transform .2s,box-shadow .2s}
+.loc-card:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(0,0,0,.08)}
+.loc-map{width:100%;height:200px;border:none;display:block}
+.loc-info{padding:20px 22px}
+.loc-name{font-family:'Heebo',sans-serif;font-weight:700;font-size:16px;color:var(--navy);margin-bottom:4px}
+.loc-addr{font-size:13px;color:var(--muted);line-height:1.5;margin-bottom:12px}
+.loc-tel{font-size:14px;font-weight:700;color:var(--lime-d);display:inline-flex;align-items:center;gap:5px}
+
+.ftr{background:var(--navy);padding:60px 64px 32px}
+.ftr-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:48px;margin-bottom:48px}
+.ftr-brand-logo{height:36px;width:auto;margin-bottom:14px;filter:brightness(10)}
+.ftr-brand p{font-size:13px;color:rgba(255,255,255,.45);line-height:1.7;max-width:230px;margin-bottom:18px}
+.ftr-socials{display:flex;gap:8px}
+.soc{width:34px;height:34px;border-radius:8px;background:rgba(255,255,255,.07);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:rgba(255,255,255,.55);transition:background .15s,color .15s}
+.soc:hover{background:var(--lime);color:var(--navy)}
+.ftr-col h4{font-family:'Heebo',sans-serif;font-size:13px;font-weight:700;color:#fff;margin-bottom:16px;letter-spacing:.3px}
+.ftr-col ul li{margin-bottom:9px}
+.ftr-col ul li a{font-size:13px;color:rgba(255,255,255,.45);transition:color .15s}
+.ftr-col ul li a:hover{color:var(--lime)}
+.ftr-btm{padding-top:24px;border-top:1px solid rgba(255,255,255,.07);display:flex;align-items:center;justify-content:space-between;gap:20px}
+.ftr-btm p{font-size:12px;color:rgba(255,255,255,.3)}
+.ftr-legal{display:flex;gap:18px;flex-wrap:wrap}
+.ftr-legal a{font-size:12px;color:rgba(255,255,255,.3);transition:color .15s}
+.ftr-legal a:hover{color:rgba(255,255,255,.6)}
+.fl-btn{position:fixed;bottom:28px;right:28px;background:var(--lime);color:var(--navy);font-weight:700;font-size:14px;padding:14px 24px;border-radius:40px;border:none;cursor:pointer;display:flex;align-items:center;gap:8px;box-shadow:0 4px 20px rgba(194,213,0,.45);transition:all .2s;opacity:0;transform:translateY(10px);z-index:199}
+.fl-btn.vis{opacity:1;transform:translateY(0)}
+.fl-btn:hover{background:var(--lime-d)}
+
+@media(max-width:1180px){
+  .path-grid{grid-template-columns:repeat(2,1fr)}
+  .path-card:last-child{grid-column:1/-1}
+}
+@media(max-width:1024px){
+  .nav-menu{display:none;flex-direction:column;align-items:stretch;gap:0;position:absolute;top:80px;left:20px;right:20px;padding:10px 0;background:var(--white);border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,.12)}
+  .nav-menu.is-open{display:flex}
+  .nav-menu__item{padding:14px 20px}
+  .nav-dropdown{position:static;display:none;margin:8px 0 0;box-shadow:none;border:1px solid var(--line)}
+  .nav-menu__item--dropdown:focus-within .nav-dropdown,.nav-menu__item--dropdown.is-open .nav-dropdown{display:block;opacity:1;visibility:visible;transform:none}
+  .mobile-menu-toggle{display:flex}
+  .hero-inner{width:min(100% - 40px,760px);padding:82px 0 58px}
+  .hero::after{background:linear-gradient(180deg,rgba(30,21,69,.94) 0%,rgba(30,21,69,.76) 100%)}
+  .hero-points{grid-template-columns:1fr}
+  .intro,.advantages-inner,.cta-inner{grid-template-columns:1fr}
+  .intro-img{min-height:320px}
+  .intro-txt,.path,.advantages,.cta,.locations{padding:60px 28px}
+  .adv-grid,.loc-grid{grid-template-columns:1fr}
+  .figures{grid-template-columns:1fr}
+  .figure{border-right:0;border-bottom:1px solid rgba(30,21,69,.16)}
+  .figure:last-child{border-bottom:0}
+  .ftr{padding:48px 28px 24px}
+  .ftr-grid{grid-template-columns:1fr 1fr;gap:32px}
+}
+@media(max-width:640px){
+  .header-inner{width:calc(100% - 28px)}
+  .brand img{width:176px}
+  .hero{min-height:auto}
+  .hero-inner{width:calc(100% - 32px);padding:64px 0 46px}
+  .hero p{font-size:17px}
+  .hero-actions{flex-direction:column;align-items:flex-start}
+  .path-grid,.form-grid{grid-template-columns:1fr}
+  .path-card:last-child{grid-column:auto}
+  .intro-badge{left:18px;bottom:18px}
+  .cta-copy,.lead-form{padding:26px}
+  .ftr-grid{grid-template-columns:1fr}
+  .ftr-btm{flex-direction:column;align-items:flex-start;gap:10px}
+  .fl-btn{left:18px;right:18px;justify-content:center}
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="/nueva-home/" aria-label="The Corner">
+      <img src="https://thecorner.es/wp-content/uploads/2025/09/logo.png" alt="Centre d'Estudis The Corner - Santa Coloma de Gramenet" width="200" height="50" decoding="async">
+    </a>
+    <nav class="nav-menu" aria-label="Navegación principal">
+      <div class="nav-menu__item nav-menu__item--dropdown">Servicios
+        <div class="nav-dropdown">
+          <a href="/nueva-home/orientacion-laboral/" class="nav-dropdown__item is-current">Orientación Laboral</a>
+          <a href="https://thecorner.es/bolsa-de-trabajo/" class="nav-dropdown__item">Bolsa de Empleo</a>
+          <a href="/formacion-bonificada/empresas/" class="nav-dropdown__item">Formación para Empresas</a>
+          <a href="https://thecorner.es/english-language-school/" class="nav-dropdown__item">The Corner Idiomas</a>
+        </div>
+      </div>
+      <a href="/language-school/level-test" class="nav-menu__item">Comprueba tu Nivel de Inglés</a>
+      <a href="https://thecorner.es/contacto/" class="nav-menu__item">Contacto</a>
+      <a href="https://thecorner.es/quienes-somos/" class="nav-menu__item">Quienes somos</a>
+      <div class="nav-menu__item nav-menu__item--dropdown lang-selector-menu">ES
+        <div class="nav-dropdown">
+          <a href="#" class="nav-dropdown__item active-lang">Español</a>
+          <a href="#" class="nav-dropdown__item">Català</a>
+        </div>
+      </div>
+    </nav>
+    <button class="mobile-menu-toggle" aria-label="Abrir menú" aria-expanded="false" type="button"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <span class="eyebrow">Orientación laboral gratuita</span>
+      <h1>Te ayudamos a encontrar tu camino profesional</h1>
+      <p>Un servicio de orientación y acompañamiento a la inserción para personas que quieren definir objetivos, mejorar su búsqueda de empleo y afrontar nuevos retos con más seguridad.</p>
+      <div class="hero-actions">
+        <a class="btn-lime" href="#inscripcion">Inscribirme ahora -></a>
+        <a class="btn-outline" href="#itinerario">Ver itinerario</a>
+      </div>
+      <div class="hero-points" aria-label="Resumen del servicio">
+        <div class="hero-point"><strong>100%</strong><span>Personalizado y adaptado a tu situación</span></div>
+        <div class="hero-point"><strong>0€</strong><span>Servicio gratuito para participantes</span></div>
+        <div class="hero-point"><strong>1:1</strong><span>Sesiones individuales con especialistas</span></div>
+      </div>
+    </div>
+  </section>
+  <div class="lime-bar"></div>
+
+  <section class="intro">
+    <div class="intro-img">
+      <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1100&q=80" alt="Sesión de orientación profesional en equipo" width="900" height="650" loading="lazy" decoding="async">
+      <div class="intro-badge"><strong>Orienta</strong><span>Acompañamiento laboral</span></div>
+    </div>
+    <div class="intro-txt">
+      <p class="sec-label">Programa de acompañamiento</p>
+      <h2>Un plan claro para avanzar en tu búsqueda de empleo</h2>
+      <p>Si estás desempleado, quieres redirigir tu carrera o no sabes por dónde empezar, trabajamos contigo mediante entrevistas y sesiones con especialistas.</p>
+      <p>Identificamos tus intereses, preferencias y competencias, definimos tu objetivo profesional y te damos herramientas prácticas para buscar empleo con solvencia.</p>
+    </div>
+  </section>
+
+  <section class="path" id="itinerario">
+    <div class="section-head">
+      <p class="sec-label">Itinerario 100% personalizado</p>
+      <h2 class="section-title">Trabajamos contigo desde el primer momento</h2>
+      <p class="sec-copy">Cada itinerario se adapta a tus necesidades, tu experiencia y el mercado laboral al que quieres acceder.</p>
+    </div>
+    <div class="path-grid">
+      <article class="path-card">
+        <div class="path-num">01</div>
+        <h3>Objetivos profesionales y competencias</h3>
+        <p>Analizamos tus intereses, motivaciones y competencias para concretar qué empleo quieres buscar y qué puedes aportar.</p>
+      </article>
+      <article class="path-card">
+        <div class="path-num">02</div>
+        <h3>Mercado de trabajo y contexto laboral</h3>
+        <p>Revisamos la situación actual del mercado para marcar objetivos realistas y detectar oportunidades acordes a tu perfil.</p>
+      </article>
+      <article class="path-card">
+        <div class="path-num">03</div>
+        <h3>Herramientas y canales de búsqueda</h3>
+        <p>Mejoramos tu CV, carta de presentación y estrategia en portales, redes profesionales y canales de búsqueda adecuados.</p>
+      </article>
+      <article class="path-card">
+        <div class="path-num">04</div>
+        <h3>Proceso de selección</h3>
+        <p>Preparamos entrevistas y pruebas, reforzando tu discurso profesional, tus puntos fuertes y tu seguridad.</p>
+      </article>
+      <article class="path-card">
+        <div class="path-num">05</div>
+        <h3>Acreditación de competencias</h3>
+        <p>Te orientamos sobre cómo validar y certificar habilidades adquiridas a lo largo de tu experiencia laboral.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="advantages">
+    <div class="advantages-inner">
+      <div>
+        <p class="sec-label">Todo ventajas</p>
+        <h2>Orientación práctica, cercana y flexible</h2>
+        <p>El objetivo no es solo preparar documentos: es ayudarte a tomar decisiones, moverte con criterio y presentarte mejor en cada oportunidad profesional.</p>
+      </div>
+      <div class="adv-grid">
+        <div class="adv-card">
+          <div class="adv-icon">✓</div>
+          <div><h3>Gratuito</h3><span>Servicio personalizado sin coste para los participantes.</span></div>
+        </div>
+        <div class="adv-card">
+          <div class="adv-icon">✓</div>
+          <div><h3>Horario flexible</h3><span>Sesiones adaptadas a tu disponibilidad y situación.</span></div>
+        </div>
+        <div class="adv-card">
+          <div class="adv-icon">✓</div>
+          <div><h3>Especialistas</h3><span>Equipo experto en mercado laboral y búsqueda de empleo.</span></div>
+        </div>
+        <div class="adv-card">
+          <div class="adv-icon">✓</div>
+          <div><h3>Formato a medida</h3><span>Sesiones individuales o grupales, presenciales o a distancia.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="figures" aria-label="Cifras del programa">
+    <div class="figure">
+      <strong>95%</strong>
+      <span>de participantes recomiendan el programa</span>
+    </div>
+    <div class="figure">
+      <strong>4,5/5</strong>
+      <span>valoración media de los participantes</span>
+    </div>
+    <div class="figure">
+      <strong>+70%</strong>
+      <span>avanza durante o después del programa</span>
+    </div>
+  </section>
+
+  <section class="cta" id="inscripcion">
+    <div class="cta-inner">
+      <div class="cta-copy">
+        <p class="sec-label">Inscripción</p>
+        <h2>Cuéntanos tu situación y te orientamos</h2>
+        <p>Déjanos tus datos y el equipo de The Corner revisará tu caso para indicarte los siguientes pasos del servicio de orientación laboral.</p>
+        <ul class="cta-list">
+          <li><span class="tick">✓</span><span>Para personas desempleadas, trabajadoras o autónomas que quieran mejorar su empleabilidad.</span></li>
+          <li><span class="tick">✓</span><span>Orientación sobre CV, entrevistas, competencias y canales de búsqueda.</span></li>
+          <li><span class="tick">✓</span><span>Acompañamiento cercano desde Santa Coloma de Gramenet.</span></li>
+        </ul>
+      </div>
+      <form class="lead-form" action="https://thecorner.es/contacto/" method="get">
+        <div class="form-grid">
+          <div class="field">
+            <label for="name">Nombre</label>
+            <input id="name" name="nombre" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="phone">Teléfono</label>
+            <input id="phone" name="telefono" type="tel" autocomplete="tel" required>
+          </div>
+          <div class="field">
+            <label for="email">Correo electrónico</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="status">Situación laboral</label>
+            <select id="status" name="situacion" required>
+              <option value="">Selecciona una opción</option>
+              <option>Desempleado/a</option>
+              <option>Trabajador/a</option>
+              <option>Autónomo/a</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label for="message">¿Qué necesitas mejorar?</label>
+            <textarea id="message" name="mensaje" placeholder="CV, entrevistas, cambio profesional, búsqueda de empleo..."></textarea>
+          </div>
+          <label class="consent">
+            <input type="checkbox" required>
+            <span>He leído y acepto la <a href="https://thecorner.es/politica-de-privacidad/" target="_blank" rel="noopener">política de privacidad</a> sobre el tratamiento de mis datos.</span>
+          </label>
+          <button class="btn-lime" type="submit">Enviar solicitud -></button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="locations">
+    <div class="section-head">
+      <p class="sec-label">Dónde estamos</p>
+      <h2 class="section-title">Tres centros en Santa Coloma de Gramenet</h2>
+      <p class="sec-copy">Puedes recibir orientación presencial en nuestros centros o consultar opciones a distancia.</p>
+    </div>
+    <div class="loc-grid">
+      <div class="loc-card">
+        <iframe class="loc-map" title="Mapa The Corner TC1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.4860492610815!2d2.2072781113074704!3d41.450372291966815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4bc8e1ea8eac9%3A0x2b9020c088b1a868!2sThe%20Corner%20Centro%20de%20Estudios!5e0!3m2!1ses!2ses!4v1760102023778!5m2!1ses!2ses" loading="lazy"></iframe>
+        <div class="loc-info">
+          <div class="loc-name">The Corner TC1</div>
+          <div class="loc-addr">Av. de la Generalitat, 5 · 08922 Santa Coloma de Gramenet</div>
+          <a href="tel:933852954" class="loc-tel">Tel. 933 85 29 54</a>
+        </div>
+      </div>
+      <div class="loc-card">
+        <iframe class="loc-map" title="Mapa The Corner TC2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.4942590621145!2d2.208329361307397!3d41.45019419197784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4bc902f0d05c9%3A0x33ee96c5c9ecd4c2!2sThe%20Corner%20Centre%20d'Estudis!5e0!3m2!1ses!2ses!4v1760102072301!5m2!1ses!2ses" loading="lazy"></iframe>
+        <div class="loc-info">
+          <div class="loc-name">The Corner TC2</div>
+          <div class="loc-addr">Carrer de Sant Silvestre, 35 · 08922 Santa Coloma de Gramenet</div>
+          <a href="tel:933852954" class="loc-tel">Tel. 933 85 29 54</a>
+        </div>
+      </div>
+      <div class="loc-card">
+        <iframe class="loc-map" title="Mapa The Corner TC3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.4942590621145!2d2.208329361307397!3d41.45019419197784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4bc8e1ea9cc49%3A0x8e768caa7a509750!2sThe%20Corner%20Centre%20d'Estudis!5e0!3m2!1ses!2ses!4v1760102099075!5m2!1ses!2ses" loading="lazy"></iframe>
+        <div class="loc-info">
+          <div class="loc-name">The Corner TC3</div>
+          <div class="loc-addr">Rambla de Sant Sebastià, 14 · 08922 Santa Coloma de Gramenet</div>
+          <a href="tel:933852954" class="loc-tel">Tel. 933 85 29 54</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="ftr">
+  <div class="ftr-grid">
+    <div class="ftr-brand">
+      <img class="ftr-brand-logo" src="https://thecorner.es/wp-content/uploads/2024/05/01-THE-CORNER-2022-Logo-Positivo-300x82.png" alt="The Corner Centre d'Estudis" width="300" height="82" loading="lazy" decoding="async">
+      <p>Centro de estudios en Santa Coloma de Gramenet. Idiomas, formación subvencionada y bonificada para empresas.</p>
+      <div class="ftr-socials">
+        <a href="https://es-es.facebook.com/centrethecorner/" class="soc" aria-label="Facebook">f</a>
+        <a href="https://www.instagram.com/centrethecorner/" class="soc" aria-label="Instagram">ig</a>
+        <a href="https://mobile.twitter.com/centrethecorner" class="soc" aria-label="Twitter">X</a>
+        <a href="https://www.youtube.com/channel/UCFXkeO4m2AUxJoXF4FtKe4A" class="soc" aria-label="YouTube">▶</a>
+        <a href="https://es.linkedin.com/school/the-corner-centre-d%27estudis/" class="soc" aria-label="LinkedIn">in</a>
+      </div>
+    </div>
+    <div class="ftr-col">
+      <h4>Academia de Idiomas</h4>
+      <ul>
+        <li><a href="https://thecorner.es/language-school-kinder-corner/">Kinder Corner</a></li>
+        <li><a href="https://thecorner.es/language-school-young-learners/">Young Learners</a></li>
+        <li><a href="https://thecorner.es/language-school-teens/">Teens</a></li>
+        <li><a href="https://thecorner.es/ingles-para-adultos/">Adultos</a></li>
+        <li><a href="https://leveltest.thecorner.es/">Test de nivel</a></li>
+      </ul>
+    </div>
+    <div class="ftr-col">
+      <h4>Formación</h4>
+      <ul>
+        <li><a href="https://thecorner.es/cursos/cursos-gratuitos">Cursos subvencionados</a></li>
+        <li><a href="https://thecorner.es/formacion-para-empresas/">Para empresas · FUNDAE</a></li>
+        <li><a href="https://thecorner.es/ingles-para-empresas/">Inglés para empresas</a></li>
+        <li><a href="/nueva-home/orientacion-laboral/">Orientación laboral</a></li>
+        <li><a href="https://thecorner.es/bolsa-de-trabajo/">Bolsa de empleo</a></li>
+      </ul>
+    </div>
+    <div class="ftr-col">
+      <h4>The Corner</h4>
+      <ul>
+        <li><a href="https://thecorner.es/quienes-somos/">Quiénes somos</a></li>
+        <li><a href="https://thecorner.es/contacto/">Contacto</a></li>
+        <li><a href="https://thecorner.es/aviso-legal/">Aviso legal</a></li>
+        <li><a href="https://thecorner.es/politica-de-privacidad/">Política de privacidad</a></li>
+        <li><a href="https://app.kenjo.io/whistleblower/1b180c4af6c42961c73733c2c61cc42e60fc9d11c5553f466affcba42bb6dc13">Canal de denuncias</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ftr-btm">
+    <p>© 2026 Centro de Estudios The Corner. Todos los derechos reservados.</p>
+    <div class="ftr-legal">
+      <a href="https://thecorner.es/aviso-legal/">Aviso Legal</a>
+      <a href="https://thecorner.es/politica-de-cookies/">Cookies</a>
+      <a href="https://thecorner.es/politica-de-privacidad/">Privacidad</a>
+    </div>
+  </div>
+</footer>
+
+<button class="fl-btn" id="flBtn" onclick="location.href='#inscripcion'">Solicitar orientación</button>
+
+<script>
+window.addEventListener('scroll',function(){
+  document.getElementById('flBtn').classList.toggle('vis', window.scrollY > 420);
+});
+document.querySelectorAll('.mobile-menu-toggle').forEach((button) => {
+  const nav = button.closest('.site-header').querySelector('.nav-menu');
+  button.addEventListener('click', () => {
+    const open = nav.classList.toggle('is-open');
+    button.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+});
+document.querySelectorAll('.nav-menu__item--dropdown').forEach((item) => {
+  item.addEventListener('click', (event) => {
+    if (window.innerWidth > 1024) return;
+    if (event.target.closest('.nav-dropdown__item')) return;
+    item.classList.toggle('is-open');
+  });
+});
+</script>
+</body>
+</html>
