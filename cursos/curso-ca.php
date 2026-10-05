@@ -1559,6 +1559,7 @@ $curso_shared_css_version = is_file($curso_shared_css_path) ? filemtime($curso_s
 <link rel="stylesheet" href="/cursos/assets/css/curso-shared.css?v=<?= $curso_shared_css_version ?>">
 
 <link rel="stylesheet" href="/cursos/assets/css/cursos-gratuitos.css">
+<?php $courseNavLocale = 'ca'; include __DIR__ . '/inc/curso-nav.php'; ?>
 
 <!-- Cookiebot (noscript) -->
 <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" 
@@ -1670,7 +1671,7 @@ src="https://www.facebook.com/tr?id=1755236761371264&ev=PageView&noscript=1"
 
     
 
-    <nav class="nav-menu">
+    <nav class="nav-menu" id="course-nav" aria-label="Principal">
 
       <div class="nav-menu__item nav-menu__item--dropdown">
 
@@ -1718,7 +1719,7 @@ src="https://www.facebook.com/tr?id=1755236761371264&ev=PageView&noscript=1"
 
     
 
-    <div class="mobile-menu-toggle">
+    <button type="button" class="mobile-menu-toggle" aria-controls="course-nav" aria-expanded="false" aria-label="Obrir el menu">
 
       <span></span>
 
@@ -1726,7 +1727,7 @@ src="https://www.facebook.com/tr?id=1755236761371264&ev=PageView&noscript=1"
 
       <span></span>
 
-    </div>
+    </button>
 
   </div>
 
