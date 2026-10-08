@@ -561,7 +561,7 @@ if ($grupo_foap_encontrado) {
 
       $slug_curso = slugify($nombre);
 
-      $url_real = SITE_URL.'/cursos/ca/'.$slug_curso;
+      $url_real = SITE_URL.'/cursos/'.$slug_curso;
 
     } else if (!empty($grupo_foap_encontrado['grupo_nom']) && trim($grupo_foap_encontrado['grupo_nom']) != '') {
 
@@ -569,7 +569,7 @@ if ($grupo_foap_encontrado) {
 
       $slug_curso = slugify($nombre);
 
-      $url_real = SITE_URL.'/cursos/ca/'.$slug_curso;
+      $url_real = SITE_URL.'/cursos/'.$slug_curso;
 
     }
 
@@ -585,7 +585,7 @@ if ($grupo_foap_encontrado) {
 
       $slug_curso = slugify($nombre_limpio);
 
-      $url_real = SITE_URL.'/cursos/ca/'.$slug_curso;
+      $url_real = SITE_URL.'/cursos/'.$slug_curso;
 
     }
 
@@ -1439,7 +1439,7 @@ $curso_shared_css_version = is_file($curso_shared_css_path) ? filemtime($curso_s
 
 <!doctype html>
 
-<html lang="ca">
+<html lang="es">
 
 <head>
 
@@ -1485,9 +1485,9 @@ $curso_shared_css_version = is_file($curso_shared_css_path) ? filemtime($curso_s
 
 <meta property="og:type" content="website">
 
-<meta property="og:locale" content="ca_ES">
+<meta property="og:locale" content="es_ES">
 
-<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="ca_ES">
 
 <meta property="og:site_name" content="The Corner">
 
@@ -1558,39 +1558,7 @@ $curso_shared_css_version = is_file($curso_shared_css_path) ? filemtime($curso_s
 
 <link rel="stylesheet" href="/cursos/assets/css/curso-shared.css?v=<?= $curso_shared_css_version ?>">
 
-<style>
-/* Header shared with the company training pages. */
-.site-header{position:sticky;top:0;z-index:1000;width:100%;background:#fff;border-bottom:1px solid #e5e7eb;box-shadow:0 2px 4px rgba(0,0,0,.05)}
-.site-header .header-inner{width:min(1240px,calc(100% - 40px));max-width:1240px;margin:0 auto;padding:0;display:flex;align-items:center;justify-content:space-between;min-height:80px}
-.site-header .brand{display:inline-flex;align-items:center;flex-shrink:0;transition:opacity .3s}
-.site-header .brand:hover{opacity:.8}
-.site-header .brand img{width:200px;height:50px;object-fit:contain}
-.site-header .nav-menu{display:flex;align-items:center;gap:32px}
-.site-header .nav-menu__item{position:relative;color:#333;font-size:15px;font-weight:500;cursor:pointer;transition:color .3s}
-.site-header .nav-menu__item:hover{color:#c2d500}
-.site-header .nav-menu__item--dropdown{display:flex;align-items:center;gap:6px}
-.site-header .nav-menu__item--dropdown::after{content:'\25BC';font-size:10px;transition:transform .3s}
-.site-header .nav-menu__item--dropdown:hover::after{transform:rotate(180deg)}
-.site-header .nav-dropdown{position:absolute;top:100%;left:0;min-width:220px;margin-top:12px;padding:12px 0;background:#fff;border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,.12);opacity:0;visibility:hidden;transform:translateY(-10px);transition:all .3s ease;z-index:1001}
-.site-header .nav-dropdown::before{content:'';position:absolute;left:0;right:0;top:-12px;height:12px}
-.site-header .nav-menu__item:hover .nav-dropdown,.site-header .nav-menu__item:focus-within .nav-dropdown{opacity:1;visibility:visible;transform:translateY(0)}
-.site-header .nav-dropdown__item{display:block;padding:12px 24px;color:#333;font-size:14px;transition:all .3s;white-space:nowrap}
-.site-header .nav-dropdown__item:hover{background:#f8fafc;color:#c2d500}
-.site-header .lang-selector-menu .nav-dropdown{left:auto;right:0;min-width:180px}
-.site-header .nav-dropdown__item.active-lang{background:#c2d500;color:#fff;font-weight:600}
-.site-header .mobile-menu-toggle{display:none;flex-direction:column;gap:5px;padding:8px;border:0;background:transparent;cursor:pointer}
-.site-header .mobile-menu-toggle span{display:block;width:25px;height:3px;background:#333;border-radius:2px}
-@media(max-width:1024px){
-  .site-header .nav-menu{display:none;flex-direction:column;align-items:stretch;gap:0;position:absolute;top:80px;left:20px;right:20px;padding:10px 0;background:#fff;border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,.12);max-height:calc(100dvh - 100px);overflow-y:auto}
-  .site-header .nav-menu.is-open{display:flex}
-  .site-header .nav-menu__item{padding:14px 20px}
-  .site-header .nav-menu__item--dropdown{flex-wrap:wrap}
-  .site-header .nav-dropdown{position:static;display:none;flex-basis:100%;min-width:0;margin:8px 0 0;box-shadow:none;border:1px solid #e5e7eb}
-  .site-header .nav-dropdown__item{white-space:normal;overflow-wrap:anywhere}
-  .site-header .nav-menu__item--dropdown:focus-within .nav-dropdown,.site-header .nav-menu__item--dropdown.is-open .nav-dropdown{display:block;opacity:1;visibility:visible;transform:none}
-  .site-header .mobile-menu-toggle{display:flex}
-}
-</style>
+<link rel="stylesheet" href="/cursos/assets/css/cursos-gratuitos.css">
 
 <!-- Cookiebot (noscript) -->
 <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" 
@@ -1704,43 +1672,43 @@ src="https://www.facebook.com/tr?id=1755236761371264&ev=PageView&noscript=1"
 
     <nav class="nav-menu">
 
-      <div class="nav-menu__item nav-menu__item--dropdown" tabindex="0">
+      <div class="nav-menu__item nav-menu__item--dropdown">
 
-        Serveis
+        Servicios
 
         <div class="nav-dropdown">
 
-          <a href="https://thecorner.es/ca/orientacio-professional/" class="nav-dropdown__item">Orientació Laboral</a>
+          <a href="https://thecorner.es/orientacion-profesional/" class="nav-dropdown__item">Orientación Laboral</a>
 
-          <a href="https://thecorner.es/ca/borsa-de-treball/" class="nav-dropdown__item">Borsa d'ocupació</a>
+          <a href="https://thecorner.es/bolsa-de-trabajo/" class="nav-dropdown__item">Bolsa de Empleo</a>
 
-          <a href="https://thecorner.es/ca/formacio-per-a-empreses/" class="nav-dropdown__item">Formació per a Empreses</a>
+          <a href="https://thecorner.es/formacion-para-empresas/" class="nav-dropdown__item">Formación para Empresas</a>
 
-          <a href="https://thecorner.es/ca/english-language-school/" class="nav-dropdown__item">The Corner Idiomes</a>
+          <a href="https://thecorner.es/english-language-school/" class="nav-dropdown__item">The Corner Idiomas</a>
 
         </div>
 
       </div>
 
-      <a href="/language-school/ca/level-test" class="nav-menu__item">Comprova el teu nivell d'anglès</a>
+      <a href="/language-school/level-test" class="nav-menu__item">Comprueba tu Nivel de Inglés</a>
 
-      <a href="https://thecorner.es/ca/contacto/" class="nav-menu__item">Contacte</a>
+      <a href="https://thecorner.es/contacto/" class="nav-menu__item">Contacto</a>
 
-      <a href="https://thecorner.es/ca/qui-som/" class="nav-menu__item">Qui som</a>
+      <a href="https://thecorner.es/quienes-somos/" class="nav-menu__item">Quienes somos</a>
 
-      <div class="nav-menu__item nav-menu__item--dropdown lang-selector-menu" style="position:relative" tabindex="0">
+      <div class="nav-menu__item nav-menu__item--dropdown lang-selector-menu" style="position:relative">
 
         ES
 
         <div class="nav-dropdown" style="min-width:180px">
 
-          <a href="/cursos/cursos-gratuitos" class="nav-dropdown__item">← Llistat cursos</a>
+          <a href="/cursos/cursos-gratuitos" class="nav-dropdown__item">← Listado cursos</a>
 
           <div style="height:1px;background:#f3f4f6;margin:8px 0"></div>
 
-          <a href="/cursos/<?= htmlspecialchars($slug) ?>" class="nav-dropdown__item ">Español</a>
+          <a href="/cursos/<?= htmlspecialchars($slug) ?>" class="nav-dropdown__item active-lang">Español</a>
 
-          <a href="/cursos/ca/<?= htmlspecialchars($slug) ?>" class="nav-dropdown__item active-lang">Català</a>
+          <a href="/cursos/ca/<?= htmlspecialchars($slug) ?>" class="nav-dropdown__item">Català</a>
 
         </div>
 
@@ -1750,7 +1718,7 @@ src="https://www.facebook.com/tr?id=1755236761371264&ev=PageView&noscript=1"
 
     
 
-    <button class="mobile-menu-toggle" type="button" aria-label="Obrir menu" aria-expanded="false">
+    <div class="mobile-menu-toggle">
 
       <span></span>
 
@@ -1758,7 +1726,7 @@ src="https://www.facebook.com/tr?id=1755236761371264&ev=PageView&noscript=1"
 
       <span></span>
 
-    </button>
+    </div>
 
   </div>
 
@@ -1794,11 +1762,11 @@ src="https://www.facebook.com/tr?id=1755236761371264&ev=PageView&noscript=1"
 
         <span>
 
-          <span class="hero-curso__label">Pròxima convocatòria 2027</span>
+          <span class="hero-curso__label">Próxima convocatoria 2027</span>
 
           <br>
 
-          <small>Pendent d'aprovació</small>
+          <small>Pendiente de aprobación</small>
 
         </span>
 
@@ -1810,7 +1778,7 @@ src="https://www.facebook.com/tr?id=1755236761371264&ev=PageView&noscript=1"
 
         <span class="hero-curso__icon"></span>
 
-        <span><span class="hero-curso__label">Hores totals:</span> <?= $curso['hores'] ?? 'No especificada' ?> h</span>
+        <span><span class="hero-curso__label">Horas totales:</span> <?= $curso['hores'] ?? 'No especificada' ?> h</span>
 
       </div>
 
@@ -1818,7 +1786,7 @@ src="https://www.facebook.com/tr?id=1755236761371264&ev=PageView&noscript=1"
 
       <div class="hero-curso__item hero-curso__item--full" style="margin-top: 12px; margin-bottom: -8px;">
 
-        <span class="btn-reservar btn-reservar--notify" style="width: 100%; text-align: center; display: block;">Avisa'm de la propera convocatòria</span>
+        <span class="btn-reservar btn-reservar--notify" style="width: 100%; text-align: center; display: block;">Avísame de la próxima convocatoria</span>
 
       </div>
 
@@ -1838,7 +1806,7 @@ src="https://www.facebook.com/tr?id=1755236761371264&ev=PageView&noscript=1"
 
         <?php 
 
-        $dies_traducidos = traducir_dies($curso['dies'], 'ca');
+        $dies_traducidos = traducir_dies($curso['dies'], 'es');
 
         // Si los días no contienen la modalidad (Presencial/Online), agregarla
 
@@ -1868,7 +1836,7 @@ src="https://www.facebook.com/tr?id=1755236761371264&ev=PageView&noscript=1"
 
         <span class="hero-curso__icon">🕑</span>
 
-        <span><span class="hero-curso__label">Inici:</span> <?= $fecha_ini ?: 'A consultar' ?></span>
+        <span><span class="hero-curso__label">Inicio:</span> <?= $fecha_ini ?: 'A consultar' ?></span>
 
       </div>
 
@@ -1890,7 +1858,7 @@ src="https://www.facebook.com/tr?id=1755236761371264&ev=PageView&noscript=1"
 
         <span class="hero-curso__icon">🕑</span>
 
-        <span><span class="hero-curso__label">Horari:</span> <?= substr($curso['hora_inici'], 0, 5) ?> - <?= substr($curso['hora_final'], 0, 5) ?></span>
+        <span><span class="hero-curso__label">Horario:</span> <?= substr($curso['hora_inici'], 0, 5) ?> - <?= substr($curso['hora_final'], 0, 5) ?></span>
 
       </div>
 
@@ -1902,7 +1870,7 @@ src="https://www.facebook.com/tr?id=1755236761371264&ev=PageView&noscript=1"
 
         <span class="hero-curso__icon">👥</span>
 
-        <span><span class="hero-curso__label">Hores totals:</span> <?= $curso['hores'] ?? 'No especificada' ?> h</span>
+        <span><span class="hero-curso__label">Horas totales:</span> <?= $curso['hores'] ?? 'No especificada' ?> h</span>
 
       </div>
 
@@ -1916,7 +1884,7 @@ src="https://www.facebook.com/tr?id=1755236761371264&ev=PageView&noscript=1"
 
     <div class="hero-curso__cta">
 
-      <a href="#reservar" class="btn-reservar">Reservar plaça</a>
+      <a href="#reservar" class="btn-reservar">Reservar plaza</a>
 
     </div>
 
@@ -1956,7 +1924,7 @@ src="https://www.facebook.com/tr?id=1755236761371264&ev=PageView&noscript=1"
 
       </svg>
 
-      <div class="caracteristica__label">Modalitat</div>
+      <div class="caracteristica__label">Modalidad</div>
 
       <div class="caracteristica__value"><?= $curso_inactivo ? 'No disponible' : strtolower($modalidad) ?></div>
 
@@ -1982,7 +1950,7 @@ src="https://www.facebook.com/tr?id=1755236761371264&ev=PageView&noscript=1"
 
       </svg>
 
-      <div class="caracteristica__label">Duració</div>
+      <div class="caracteristica__label">Duración</div>
 
       <div class="caracteristica__value"><?= $curso['hores'] ?? '0' ?></div>
 
@@ -2000,9 +1968,9 @@ src="https://www.facebook.com/tr?id=1755236761371264&ev=PageView&noscript=1"
 
       </svg>
 
-      <div class="caracteristica__label">Nivell</div>
+      <div class="caracteristica__label">Nivel</div>
 
-      <div class="caracteristica__value">Certificat Oficial</div>
+      <div class="caracteristica__value">Certificado Oficial</div>
 
     </div>
 
@@ -2022,9 +1990,9 @@ src="https://www.facebook.com/tr?id=1755236761371264&ev=PageView&noscript=1"
 
       </svg>
 
-      <div class="caracteristica__label">Preu</div>
+      <div class="caracteristica__label">Precio</div>
 
-      <div class="caracteristica__value">0 € subvencionat</div>
+      <div class="caracteristica__value">0 € subvencionado</div>
 
     </div>
 
@@ -2050,21 +2018,21 @@ src="https://www.facebook.com/tr?id=1755236761371264&ev=PageView&noscript=1"
 
     <div class="nav-curso__links">
 
-      <a href="#que-aprendere" class="nav-curso__link">Què aprendré?</a>
+      <a href="#que-aprendere" class="nav-curso__link">¿Qué aprenderé?</a>
 
-      <a href="#contenidos" class="nav-curso__link">Continguts</a>
+      <a href="#contenidos" class="nav-curso__link">Contenidos</a>
 
-      <a href="#a-quien-va-dirigido" class="nav-curso__link">A qui va dirigit?</a>
+      <a href="#a-quien-va-dirigido" class="nav-curso__link">¿A quién va dirigido?</a>
 
-      <a href="#de-que-podre-trabajar" class="nav-curso__link">De què podré treballar?</a>
+      <a href="#de-que-podre-trabajar" class="nav-curso__link">¿De qué podré trabajar?</a>
 
-      <a href="#testimonios" class="nav-curso__link">Testimonis</a>
+      <a href="#testimonios" class="nav-curso__link">Testimonios</a>
 
-      <a href="#relacionados" class="nav-curso__link">Relacionats</a>
+      <a href="#relacionados" class="nav-curso__link">Relacionados</a>
 
     </div>
 
-    <a href="#reservar" class="nav-curso__btn">Reservar plaça</a>
+    <a href="#reservar" class="nav-curso__btn">Reservar plaza</a>
 
   </div>
 
@@ -2090,7 +2058,7 @@ src="https://www.facebook.com/tr?id=1755236761371264&ev=PageView&noscript=1"
 
     <div class="card-curso">
 
-      <h2 class="card-curso__title">Què aprendré?</h2>
+      <h2 class="card-curso__title">¿Qué aprenderé?</h2>
 
       <ul class="card-curso__list">
 
@@ -2244,7 +2212,7 @@ src="https://www.facebook.com/tr?id=1755236761371264&ev=PageView&noscript=1"
 
     <div class="card-curso card-profesor" id="con-quien-aprendere">
 
-      <h2 class="card-curso__title">Amb qui aprendré?</h2>
+      <h2 class="card-curso__title">¿Con quién aprenderé?</h2>
 
       <?php if (!empty($curso['nom_formador'])): ?>
 
@@ -2278,7 +2246,7 @@ src="https://www.facebook.com/tr?id=1755236761371264&ev=PageView&noscript=1"
 
       <?php else: ?>
 
-      <p class="card-profesor__no-info">Informació del formador no disponible</p>
+      <p class="card-profesor__no-info">Información del formador no disponible</p>
 
       <?php endif; ?>
 
@@ -2304,7 +2272,7 @@ src="https://www.facebook.com/tr?id=1755236761371264&ev=PageView&noscript=1"
 
   <div class="continguts__container">
 
-    <h2 class="continguts__title">Continguts del Curs</h2>
+    <h2 class="continguts__title">Contenidos del Curso</h2>
 
     
 
@@ -2540,7 +2508,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     <div class="dirigit__content">
 
-      <h2 class="dirigit__title">A qui va dirigit?</h2>
+      <h2 class="dirigit__title">¿A quién va dirigido?</h2>
 
       
 
@@ -2552,7 +2520,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
           <span class="dirigit__icon">👤</span>
 
-          <span class="dirigit__text">Per a persones aturades (col·lectiu prioritari)</span>
+          <span class="dirigit__text">Para personas desempleadas (colectivo prioritario)</span>
 
         </div>
 
@@ -2562,7 +2530,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
           <span class="dirigit__icon">👤</span>
 
-          <span class="dirigit__text">Per a persones treballadores</span>
+          <span class="dirigit__text">Para personas trabajadoras</span>
 
         </div>
 
@@ -2572,7 +2540,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
           <span class="dirigit__icon">👤</span>
 
-          <span class="dirigit__text">Per a persones autònomes</span>
+          <span class="dirigit__text">Para personas autónomas</span>
 
         </div>
 
@@ -2582,7 +2550,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
           <span class="dirigit__icon">👤</span>
 
-          <span class="dirigit__text">Per a persones aturades</span>
+          <span class="dirigit__text">Para personas desempleadas</span>
 
         </div>
 
@@ -2592,7 +2560,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
           <span class="dirigit__icon">👤</span>
 
-          <span class="dirigit__text">Per a persones treballadores (col·lectiu prioritari)</span>
+          <span class="dirigit__text">Para personas trabajadoras (colectivo prioritario)</span>
 
         </div>
 
@@ -2602,7 +2570,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
           <span class="dirigit__icon">👤</span>
 
-          <span class="dirigit__text">Per a persones autònomes (col·lectiu prioritari)</span>
+          <span class="dirigit__text">Para personas autónomas (colectivo prioritario)</span>
 
         </div>
 
@@ -2612,7 +2580,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
       
 
-      <a href="#reservar" class="dirigit__btn">Reservar plaça</a>
+      <a href="#reservar" class="dirigit__btn">Reservar plaza</a>
 
     </div>
 
@@ -2636,7 +2604,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     <div class="treballar__card">
 
-      <h2 class="treballar__title">De què podré treballar?</h2>
+      <h2 class="treballar__title">¿De qué podré trabajar?</h2>
 
       
 
@@ -2654,7 +2622,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
           } else {
 
-            echo 'Podràs millorar les competències professionals amb aquest curs.';
+            echo 'Podrás mejorar tus competencias profesionales con este curso.';
 
           }
 
@@ -2882,7 +2850,7 @@ foreach ($grupos_relacionados_ids as $grupo_id) {
 
   <div class="relacionats">
 
-    <h2 class="relacionats__title">Cursos relacionats</h2>
+    <h2 class="relacionats__title">Cursos relacionados</h2>
 
     
 
@@ -2936,7 +2904,7 @@ foreach ($grupos_relacionados_ids as $grupo_id) {
 
     <div class="box-final">
 
-      <h2 class="box-final__title"><?php echo $curso_inactivo ? 'T\'avisem de la propera edició!' : 'Reservar plaça'; ?></h2>
+      <h2 class="box-final__title"><?php echo $curso_inactivo ? '¡Te avisamos de la próxima edición!' : 'Reservar plaza'; ?></h2>
 
       
 
@@ -2962,11 +2930,11 @@ foreach ($grupos_relacionados_ids as $grupo_id) {
 
         
 
-        <input type="text" name="your-name" placeholder="Nom *" class="form-reserva__input" required>
+        <input type="text" name="your-name" placeholder="Nombre *" class="form-reserva__input" required>
 
         
 
-        <input type="text" name="your-surname" placeholder="Cognoms *" class="form-reserva__input" required>
+        <input type="text" name="your-surname" placeholder="Apellidos *" class="form-reserva__input" required>
 
         
 
@@ -2974,7 +2942,7 @@ foreach ($grupos_relacionados_ids as $grupo_id) {
 
         
 
-        <input type="tel" name="telefono" placeholder="Telèfon *" class="form-reserva__input" required>
+        <input type="tel" name="telefono" placeholder="Teléfono *" class="form-reserva__input" required>
 
         
 
@@ -2982,21 +2950,21 @@ foreach ($grupos_relacionados_ids as $grupo_id) {
 
         
 
-        <label class="form-reserva__label">Situació laboral: *</label>
+        <label class="form-reserva__label">Situación laboral: *</label>
 
         <select name="menu-702" class="form-reserva__select" required>
 
           <option value="">Selecciona...</option>
 
-          <option value="Desempleat/a">Desempleat/a</option>
+          <option value="Desempleado/a">Desempleado/a</option>
 
-          <option value="Treballador/a o Autònom/a">Traballador/a o Autònom/a</option>
+          <option value="Trabajador/a o Autónomo/a">Trabajador/a o Autónomo/a</option>
 
         </select>
 
         
 
-        <!-- <textarea name="your-message" placeholder="Missatge (opcional)" class="form-reserva__input" rows="3" style="resize: vertical; min-height: 60px;"></textarea> -->
+        <!-- <textarea name="your-message" placeholder="Mensaje (opcional)" class="form-reserva__input" rows="3" style="resize: vertical; min-height: 60px;"></textarea> -->
 
         
 
@@ -3006,13 +2974,13 @@ foreach ($grupos_relacionados_ids as $grupo_id) {
 
           <label for="acceptance-729">
 
-            IDIOMES, S.L. com a responsable del tractament tractarà les teves dades amb la finalitat de donar resposta a la teva consulta o petició. 
+            IDIOMES, S.L. como responsable del tratamiento tratará tus datos con la finalidad de dar respuesta a tu consulta o petición. 
 
-            Pots accedir, rectificar i suprimir les teves dades, així com exercir altres drets consultant la informació addicional i detallada sobre protecció de dades a la nostra
+            Puedes acceder, rectificar y suprimir tus datos, así como ejercer otros derechos consultando la información adicional y detallada sobre protección de datos en nuestra 
 
-            <a href="https://thecorner.es/politica-de-privacitat/" target="_blank">Política de Privacitat</a>. 
+            <a href="https://thecorner.es/politica-de-privacitat/" target="_blank">Política de Privacidad</a>. 
 
-            He llegit i accepto les condicions contingudes a la política de privadesa sobre el tractament de les meves dades per gestionar la meva consulta o petició
+            He leído y acepto las condiciones contenidas en la política de privacidad sobre el tratamiento de mis datos para gestionar mi consulta o petición
 
           </label>
 
@@ -3026,7 +2994,7 @@ foreach ($grupos_relacionados_ids as $grupo_id) {
 
           <label for="checkbox-243">
 
-           Ens agradaria que ens prestessis el teu consentiment per a: Enviar informació comercial sobre els productes, serveis, novetats d'IDIOMES, S.L.
+            Nos gustaría que nos prestaras tu consentimiento para: Enviarte información comercial sobre los productos, servicios, novedades de IDIOMES, S.L.
 
           </label>
 
@@ -3034,7 +3002,7 @@ foreach ($grupos_relacionados_ids as $grupo_id) {
 
         
 
-        <button type="submit" class="form-reserva__submit"><?php echo $curso_inactivo ? 'VULL QUE M\'AVISIN' : 'INSCRIU-TE'; ?></button>
+        <button type="submit" class="form-reserva__submit"><?php echo $curso_inactivo ? 'QUIERO QUE ME AVISEN' : 'INSCRÍBETE'; ?></button>
 
       </form>
 
@@ -3046,7 +3014,7 @@ foreach ($grupos_relacionados_ids as $grupo_id) {
 
     <div class="box-final" id="testimonios">
 
-      <h2 class="box-final__title">Què diuen de nosaltres?</h2>
+      <h2 class="box-final__title">¿Qué dicen de nosotros?</h2>
 
       
 
@@ -3122,13 +3090,13 @@ foreach ($grupos_relacionados_ids as $grupo_id) {
 
             <p class="testimonio__text"><?= htmlspecialchars($text) ?></p>
 
-            <span class="testimonio__more">Llegir més</span>
+            <span class="testimonio__more">Leer más</span>
 
           </div>
 
         <?php else: ?>
 
-          <p style="text-align:center;color:#6b7280;">No hi ha ressenyes disponibles en aquest moment.</p>
+          <p style="text-align:center;color:#6b7280;">No hay reseñas disponibles en este momento.</p>
 
         <?php endif; ?>
 
@@ -3152,11 +3120,11 @@ foreach ($grupos_relacionados_ids as $grupo_id) {
 
           <p class="testimonio__rating">
 
-           La valoració general a <strong>Google</strong> és <strong><?= number_format($google_reviews_data['rating'], 1) ?></strong> de 5, basada en <strong><?= $google_reviews_data['user_ratings_total'] ?> reseñas</strong>
+            La valoración general en <strong>Google</strong> es <strong><?= number_format($google_reviews_data['rating'], 1) ?></strong> de 5, basada en <strong><?= $google_reviews_data['user_ratings_total'] ?> reseñas</strong>
 
           </p>
 
-          <span class="testimonio__badge">Verificat per: Google Reviews ⓘ</span>
+          <span class="testimonio__badge">Verificado por: Google Reviews ⓘ</span>
 
         </div>
 
@@ -3192,7 +3160,7 @@ foreach ($grupos_relacionados_ids as $grupo_id) {
 
     <div class="footer-links">
 
-      <a href="https://thecorner.es/aviso-legal/">Avis Legal</a>
+      <a href="https://thecorner.es/aviso-legal/">Aviso Legal</a>
 
       <span class="footer-separator">|</span>
 
@@ -3200,15 +3168,15 @@ foreach ($grupos_relacionados_ids as $grupo_id) {
 
       <span class="footer-separator">|</span>
 
-      <a href="https://thecorner.es/politica-de-privacidad/">Política de privacitat</a>
+      <a href="https://thecorner.es/politica-de-privacidad/">Política de privacidad</a>
 
       <span class="footer-separator">|</span>
 
-      <a href="https://thecorner.es/privacidad-en-redes-sociales/">Privacitat a xarxes socials</a>
+      <a href="https://thecorner.es/privacidad-en-redes-sociales/">Privacidad en redes sociales</a>
 
       <span class="footer-separator">|</span>
 
-      <a href="https://thecorner.es/canal-de-denuncias/">Canal de denuncies</a>
+      <a href="https://thecorner.es/canal-de-denuncias/">Canal de denuncias</a>
 
       <span class="footer-separator">|</span>
 
@@ -3274,38 +3242,7 @@ include __DIR__ . '/assets/js/curso-shared.inline.php';
 
 document.addEventListener('DOMContentLoaded', function() {
 
-  const header = document.querySelector('.site-header');
-  const toggle = header.querySelector('.mobile-menu-toggle');
-  const nav = header.querySelector('.nav-menu');
-
-  toggle.addEventListener('click', function() {
-    toggle.setAttribute('aria-expanded', String(nav.classList.toggle('is-open')));
-  });
-
-  header.querySelectorAll('.nav-menu__item--dropdown').forEach(function(item) {
-    item.addEventListener('click', function(event) {
-      if (window.innerWidth <= 1024 && !event.target.closest('a')) {
-        item.classList.toggle('is-open');
-      }
-    });
-    item.addEventListener('keydown', function(event) {
-      if (event.target === item && (event.key === 'Enter' || event.key === ' ')) {
-        event.preventDefault();
-        item.classList.toggle('is-open');
-      }
-    });
-  });
-
-  header.addEventListener('keydown', function(event) {
-    if (event.key === 'Escape') {
-      nav.classList.remove('is-open');
-      header.querySelectorAll('.is-open').forEach(function(item) {
-        item.classList.remove('is-open');
-      });
-      toggle.setAttribute('aria-expanded', 'false');
-      toggle.focus();
-    }
-  });
+  // Aquí se puede agregar funcionalidad adicional si es necesaria
 
 });
 

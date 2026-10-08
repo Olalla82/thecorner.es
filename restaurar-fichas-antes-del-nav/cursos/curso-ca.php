@@ -1558,39 +1558,7 @@ $curso_shared_css_version = is_file($curso_shared_css_path) ? filemtime($curso_s
 
 <link rel="stylesheet" href="/cursos/assets/css/curso-shared.css?v=<?= $curso_shared_css_version ?>">
 
-<style>
-/* Header shared with the company training pages. */
-.site-header{position:sticky;top:0;z-index:1000;width:100%;background:#fff;border-bottom:1px solid #e5e7eb;box-shadow:0 2px 4px rgba(0,0,0,.05)}
-.site-header .header-inner{width:min(1240px,calc(100% - 40px));max-width:1240px;margin:0 auto;padding:0;display:flex;align-items:center;justify-content:space-between;min-height:80px}
-.site-header .brand{display:inline-flex;align-items:center;flex-shrink:0;transition:opacity .3s}
-.site-header .brand:hover{opacity:.8}
-.site-header .brand img{width:200px;height:50px;object-fit:contain}
-.site-header .nav-menu{display:flex;align-items:center;gap:32px}
-.site-header .nav-menu__item{position:relative;color:#333;font-size:15px;font-weight:500;cursor:pointer;transition:color .3s}
-.site-header .nav-menu__item:hover{color:#c2d500}
-.site-header .nav-menu__item--dropdown{display:flex;align-items:center;gap:6px}
-.site-header .nav-menu__item--dropdown::after{content:'\25BC';font-size:10px;transition:transform .3s}
-.site-header .nav-menu__item--dropdown:hover::after{transform:rotate(180deg)}
-.site-header .nav-dropdown{position:absolute;top:100%;left:0;min-width:220px;margin-top:12px;padding:12px 0;background:#fff;border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,.12);opacity:0;visibility:hidden;transform:translateY(-10px);transition:all .3s ease;z-index:1001}
-.site-header .nav-dropdown::before{content:'';position:absolute;left:0;right:0;top:-12px;height:12px}
-.site-header .nav-menu__item:hover .nav-dropdown,.site-header .nav-menu__item:focus-within .nav-dropdown{opacity:1;visibility:visible;transform:translateY(0)}
-.site-header .nav-dropdown__item{display:block;padding:12px 24px;color:#333;font-size:14px;transition:all .3s;white-space:nowrap}
-.site-header .nav-dropdown__item:hover{background:#f8fafc;color:#c2d500}
-.site-header .lang-selector-menu .nav-dropdown{left:auto;right:0;min-width:180px}
-.site-header .nav-dropdown__item.active-lang{background:#c2d500;color:#fff;font-weight:600}
-.site-header .mobile-menu-toggle{display:none;flex-direction:column;gap:5px;padding:8px;border:0;background:transparent;cursor:pointer}
-.site-header .mobile-menu-toggle span{display:block;width:25px;height:3px;background:#333;border-radius:2px}
-@media(max-width:1024px){
-  .site-header .nav-menu{display:none;flex-direction:column;align-items:stretch;gap:0;position:absolute;top:80px;left:20px;right:20px;padding:10px 0;background:#fff;border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,.12);max-height:calc(100dvh - 100px);overflow-y:auto}
-  .site-header .nav-menu.is-open{display:flex}
-  .site-header .nav-menu__item{padding:14px 20px}
-  .site-header .nav-menu__item--dropdown{flex-wrap:wrap}
-  .site-header .nav-dropdown{position:static;display:none;flex-basis:100%;min-width:0;margin:8px 0 0;box-shadow:none;border:1px solid #e5e7eb}
-  .site-header .nav-dropdown__item{white-space:normal;overflow-wrap:anywhere}
-  .site-header .nav-menu__item--dropdown:focus-within .nav-dropdown,.site-header .nav-menu__item--dropdown.is-open .nav-dropdown{display:block;opacity:1;visibility:visible;transform:none}
-  .site-header .mobile-menu-toggle{display:flex}
-}
-</style>
+<link rel="stylesheet" href="/cursos/assets/css/cursos-gratuitos.css">
 
 <!-- Cookiebot (noscript) -->
 <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" 
@@ -1704,7 +1672,7 @@ src="https://www.facebook.com/tr?id=1755236761371264&ev=PageView&noscript=1"
 
     <nav class="nav-menu">
 
-      <div class="nav-menu__item nav-menu__item--dropdown" tabindex="0">
+      <div class="nav-menu__item nav-menu__item--dropdown">
 
         Serveis
 
@@ -1728,7 +1696,7 @@ src="https://www.facebook.com/tr?id=1755236761371264&ev=PageView&noscript=1"
 
       <a href="https://thecorner.es/ca/qui-som/" class="nav-menu__item">Qui som</a>
 
-      <div class="nav-menu__item nav-menu__item--dropdown lang-selector-menu" style="position:relative" tabindex="0">
+      <div class="nav-menu__item nav-menu__item--dropdown lang-selector-menu" style="position:relative">
 
         ES
 
@@ -1750,7 +1718,7 @@ src="https://www.facebook.com/tr?id=1755236761371264&ev=PageView&noscript=1"
 
     
 
-    <button class="mobile-menu-toggle" type="button" aria-label="Obrir menu" aria-expanded="false">
+    <div class="mobile-menu-toggle">
 
       <span></span>
 
@@ -1758,7 +1726,7 @@ src="https://www.facebook.com/tr?id=1755236761371264&ev=PageView&noscript=1"
 
       <span></span>
 
-    </button>
+    </div>
 
   </div>
 
@@ -3274,38 +3242,7 @@ include __DIR__ . '/assets/js/curso-shared.inline.php';
 
 document.addEventListener('DOMContentLoaded', function() {
 
-  const header = document.querySelector('.site-header');
-  const toggle = header.querySelector('.mobile-menu-toggle');
-  const nav = header.querySelector('.nav-menu');
-
-  toggle.addEventListener('click', function() {
-    toggle.setAttribute('aria-expanded', String(nav.classList.toggle('is-open')));
-  });
-
-  header.querySelectorAll('.nav-menu__item--dropdown').forEach(function(item) {
-    item.addEventListener('click', function(event) {
-      if (window.innerWidth <= 1024 && !event.target.closest('a')) {
-        item.classList.toggle('is-open');
-      }
-    });
-    item.addEventListener('keydown', function(event) {
-      if (event.target === item && (event.key === 'Enter' || event.key === ' ')) {
-        event.preventDefault();
-        item.classList.toggle('is-open');
-      }
-    });
-  });
-
-  header.addEventListener('keydown', function(event) {
-    if (event.key === 'Escape') {
-      nav.classList.remove('is-open');
-      header.querySelectorAll('.is-open').forEach(function(item) {
-        item.classList.remove('is-open');
-      });
-      toggle.setAttribute('aria-expanded', 'false');
-      toggle.focus();
-    }
-  });
+  // Aquí se puede agregar funcionalidad adicional si es necesaria
 
 });
 
